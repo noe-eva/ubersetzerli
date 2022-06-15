@@ -1,4 +1,4 @@
-<h1 align="center">🇨🇭 Übersetzer.li</h1>
+<h1 align="center">🇨🇭 übersetzer.li</h1>
 
 <p align="center">
   <i>

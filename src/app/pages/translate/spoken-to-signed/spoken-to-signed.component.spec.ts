@@ -2,7 +2,6 @@ import {ComponentFixture, fakeAsync, TestBed, tick} from '@angular/core/testing'
 import {axe, toHaveNoViolations} from 'jasmine-axe';
 
 import {SpokenToSignedComponent} from './spoken-to-signed.component';
-import {SignWritingComponent} from '../signwriting/sign-writing.component';
 import {TextToSpeechComponent} from '../../../components/text-to-speech/text-to-speech.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
@@ -20,7 +19,7 @@ describe('SpokenToSignedComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [SpokenToSignedComponent, SignWritingComponent, TextToSpeechComponent],
+      declarations: [SpokenToSignedComponent, TextToSpeechComponent],
       imports: [
         NgxsModule.forRoot([SettingsState, TranslateState], ngxsConfig),
         FormsModule,
@@ -51,7 +50,7 @@ describe('SpokenToSignedComponent', () => {
 
   it('text change should dispatch action', fakeAsync(() => {
     const spy = spyOn(store, 'dispatch');
-    component.text.patchValue('test');
+    component.inputText.patchValue('test');
     tick(500);
 
     expect(spy).toHaveBeenCalledWith(new SetInputLanguageText('test'));
