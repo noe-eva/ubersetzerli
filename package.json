@@ -5,7 +5,7 @@
     "ng": "ng",
     "lint": "ng lint",
     "start": "ng serve --host 0.0.0.0",
-    "build": "ng build --base-href=/",
+    "build": "ng build --configuration=production --base-href=/",
     "build:stats": "ng build --stats-json",
     "analyze": "webpack-bundle-analyzer dist/ubersetzerli/stats.json",
     "pwa:assets": "pwa-asset-generator src/assets/icons/dark-logo.svg src/assets/icons/generated/ -i src/index.html -m src/manifest.webmanifest --background white --favicon --mstile && pwa-asset-generator src/assets/icons/light-logo.svg --dark-mode src/assets/icons/generated/ -i src/index.html --background black --splash-only",
