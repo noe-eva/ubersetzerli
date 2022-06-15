@@ -50,7 +50,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: build-dist
-          path: dist/sign-translate/
+          path: dist/ubersetzerli/
 
   lighthouse:
     name: Lighthouse Test
@@ -63,7 +63,7 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: build-dist
-          path: dist/sign-translate/
+          path: dist/ubersetzerli/
 
       - name: Run Lighthouse against a static dist dir
         uses: treosh/lighthouse-ci-action@v9
@@ -84,7 +84,7 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: build-dist
-          path: dist/sign-translate/
+          path: dist/ubersetzerli/
 
       - name: Create HTTP/2 Server Push Headers
         run: node tools/firebase-http-push.js
@@ -93,9 +93,9 @@ jobs:
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
-          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_SIGN_MT }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_UBERSETZERLI }}
           channelId: live
-          projectId: sign-mt
+          projectId: ubersetzerli
 
   website-deploy-dev:
     name: Deploy to Firebase
@@ -109,11 +109,11 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: build-dist
-          path: dist/sign-translate/
+          path: dist/ubersetzerli/
 
       - name: Deploy Development Channel 🚀
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
-          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_SIGN_MT }}
-          projectId: sign-mt
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_UBERSETZERLI }}
+          projectId: ubersetzerli

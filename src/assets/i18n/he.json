@@ -28,7 +28,7 @@
     },
     "upload": {
       "title": "יש לבחור וידאו",
-      "types": "צריך להעלות קובץ MP4,‏ OGV,‏ או WEBM.",
+      "types": "צריך להעלות קובץ DOCX,‏ PDF,‏ PPTX או XLSX.",
       "browse": "עיון במחשב"
     }
   },

@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 import {LanguageIdentifier} from 'cld3-asm';
 import {GoogleAnalyticsTimingService} from '../../core/modules/google-analytics/google-analytics.service';
-import {Observable} from 'rxjs';
+import {Observable, of} from 'rxjs';
 import {HttpClient} from '@angular/common/http';
 import {map} from 'rxjs/operators';
 
@@ -10,15 +10,11 @@ const OBSOLETE_LANGUAGE_CODES = {
 };
 const DEFAULT_SPOKEN_LANGUAGE = 'en';
 
-interface SpokenToSignWritingResponse {
-  country_code: string;
-  direction: string;
-  language_code: string;
-  n_best: string;
-  text: string;
-  translation_type: string;
-  translations: string[];
-}
+// https://en.wikipedia.org/wiki/ISO_3166-2:CH
+// [...$0.querySelectorAll('tr')].slice(1, -1).map(tr => {
+//   const [codeTd, nameTd] = Array.from(tr.querySelectorAll('td'));
+//   return [codeTd.innerText, nameTd.innerText, nameTd.querySelector('img').src];
+// });
 
 @Injectable({
   providedIn: 'root',
@@ -26,53 +22,40 @@ interface SpokenToSignWritingResponse {
 export class TranslationService {
   private cld: LanguageIdentifier;
 
-  signedLanguages = [
-    'us',
-    'gb',
-    'fr',
-    'es',
-    'sy',
-    'by',
-    'bg',
-    'cn',
-    'hr',
-    'cz',
-    'dk',
-    'in',
-    'nz',
-    'ee',
-    'fi',
-    'at',
-    'de',
-    'cy',
-    'gr',
-    'is',
-    'isl',
-    'it',
-    'jp',
-    'lv',
-    'lt',
-    'ir',
-    'pl',
-    'br',
-    'pt',
-    'ro',
-    'ru',
-    'sk',
-    'ar',
-    'cl',
-    'cu',
-    'mx',
-    'se',
-    'tr',
-    'ua',
-    'pk',
+  dialects = [
+    'CH-ZH',
+    'CH-BE',
+    'CH-GR',
+    'CH-AG',
+    'CH-AR',
+    'CH-AI',
+    'CH-BL',
+    'CH-BS',
+    'CH-FR',
+    'CH-GE',
+    'CH-GL',
+    'CH-JU',
+    'CH-LU',
+    'CH-NE',
+    'CH-NW',
+    'CH-OW',
+    'CH-SG',
+    'CH-SH',
+    'CH-SZ',
+    'CH-SO',
+    'CH-TG',
+    'CH-TI',
+    'CH-UR',
+    'CH-VS',
+    'CH-VD',
+    'CH-ZG',
   ];
 
   spokenLanguages = [
+    'de',
     'en',
     'fr',
-    'es',
+    'it',
     'af',
     'sq',
     'am',
@@ -100,7 +83,7 @@ export class TranslationService {
     'fy',
     'gl',
     'ka',
-    'de',
+    'es',
     'el',
     'gu',
     'ht',
@@ -114,7 +97,6 @@ export class TranslationService {
     'ig',
     'id',
     'ga',
-    'it',
     'ja',
     'jv',
     'kn',
@@ -202,19 +184,35 @@ export class TranslationService {
     return this.spokenLanguages.includes(correctedCode) ? correctedCode : DEFAULT_SPOKEN_LANGUAGE;
   }
 
-  translateSpokenToSigned(text: string, spokenLanguage: string, signedLanguage: string): string {
+  translateSpokenToSigned(text: string, spokenLanguage: string, signedLanguage: string): Observable<string> {
     const api = 'https://nlp.biu.ac.il/~ccohenya8/sign/sentence/';
-    return `${api}?slang=${spokenLanguage}&dlang=${signedLanguage}&sentence=${encodeURIComponent(text)}`;
+    return of(`${api}?slang=${spokenLanguage}&dlang=${signedLanguage}&sentence=${encodeURIComponent(text)}`);
   }
 
-  translateSpokenToSignWriting(text: string, spokenLanguage: string, signedLanguage: string): Observable<string[]> {
-    const api = 'https://pub.cl.uzh.ch/demo/signwriting/spoken2sign';
-    const body = {
-      country_code: signedLanguage,
-      language_code: spokenLanguage,
-      text,
-      translation_type: 'sent',
-    };
-    return this.http.post<SpokenToSignWritingResponse>(api, body).pipe(map(res => res.translations[0].split(' ')));
+  translateSignedToSpoken(text: string, signedLanguage: string, spokenLanguage: string): Observable<string> {
+    const srcLang = ['CH-TI'].includes(signedLanguage)
+      ? 'it'
+      : ['CH-VD', 'CH-NE', 'CH-GE', 'CH-JU'].includes(signedLanguage)
+      ? 'fr'
+      : 'de';
+    const dstLang = spokenLanguage;
+
+    // Caching
+    // const hash = md5(`${srcLang}-${dstLang}-${text}`);
+    // const obj = this.db.object(srcLang + '/' + dstLang + '/' + hash);
+    //       obj.valueChanges()
+    //         .pipe(take(1))
+    //         .subscribe(async (value: { src: string, tgt: string }) => {
+    //           if (value) {
+    //             resolve(value.tgt);
+    //           } else {
+
+    const params = `client=gtx&sl=${srcLang}&tl=${dstLang}&dt=t&q=${encodeURIComponent(text)}`;
+
+    return this.http
+      .get(`https://translate.googleapis.com/translate_a/single?${params}`)
+      .pipe(map(res => res[0][0][0] as string));
   }
+
+  async translate(src) {}
 }

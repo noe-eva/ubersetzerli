@@ -18,7 +18,7 @@
     },
     "swapLanguages": "Skrift sprog",
     "upload": {
-      "types": "Upload en fil i formatet .mp4, .ogv eller .webm.",
+      "types": "Upload en fil i formatet .docx, .pdf, .pptx eller .xlsx.",
       "browse": "Find en fil på din computer",
       "title": "Vælg en video"
     },

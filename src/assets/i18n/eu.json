@@ -18,7 +18,7 @@
     },
     "swapLanguages": "Aldatu hizkuntzak",
     "upload": {
-      "types": "Kargatu .mp4, .ogv edo .webm formatuko fitxategi bat.",
+      "types": "Kargatu .docx, .pdf, .pptx edo .xlsx formatuko fitxategi bat.",
       "browse": "Arakatu ordenagailua",
       "title": "Aukeratu bideo bat"
     },

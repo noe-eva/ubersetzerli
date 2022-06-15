@@ -1,0 +1,5 @@
+<ng-container *transloco="let t; read: 'translate.upload'">
+  <h3>{{ t('title') }}</h3>
+  <p>{{ t('types') }}</p>
+  <button (click)="upload()" color="primary" mat-flat-button [disabled]="true">{{ t('browse') }} (coming soon)</button>
+</ng-container>

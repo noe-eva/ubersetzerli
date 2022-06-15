@@ -4,14 +4,8 @@ import {BaseComponent} from '../../../components/base/base.component';
 import {debounce, distinctUntilChanged, skipWhile, takeUntil, tap} from 'rxjs/operators';
 import {interval, Observable} from 'rxjs';
 import {Select, Store} from '@ngxs/store';
-import {
-  CopySignedLanguageVideo,
-  DownloadSignedLanguageVideo,
-  SetSpokenLanguageText,
-  ShareSignedLanguageVideo,
-} from '../../../modules/translate/translate.actions';
-import {PoseViewerSetting} from '../../../modules/settings/settings.state';
-import {DomSanitizer, SafeUrl} from '@angular/platform-browser';
+import {SetInputLanguageText} from '../../../modules/translate/translate.actions';
+import {SafeUrl} from '@angular/platform-browser';
 import {TranslateStateModel} from '../../../modules/translate/translate.state';
 
 @Component({
@@ -20,75 +14,50 @@ import {TranslateStateModel} from '../../../modules/translate/translate.state';
   styleUrls: ['./spoken-to-signed.component.scss'],
 })
 export class SpokenToSignedComponent extends BaseComponent implements OnInit {
-  @Select(state => state.settings.poseViewer) poseViewerSetting$: Observable<PoseViewerSetting>;
   @Select(state => state.translate) translate$: Observable<TranslateStateModel>;
-  @Select(state => state.translate.spokenLanguageText) text$: Observable<string>;
-  @Select(state => state.translate.signWriting) signWriting$: Observable<string[]>;
-  @Select(state => state.translate.signedLanguagePose) pose$: Observable<string>;
-  @Select(state => state.translate.signedLanguageVideo) video$: Observable<string>;
+  @Select(state => state.translate.inputMode) inputMode$: Observable<string>;
+  @Select(state => state.translate.inputLanguageText) inputText$: Observable<string>;
+  @Select(state => state.translate.outputLanguageText) outputText$: Observable<string>;
+  @Select(state => state.translate.spokenLanguage) spokenLanguage$: Observable<string>;
 
-  videoUrl: SafeUrl;
-  spokenLanguage: string;
+  inputLanguage: string;
+  outputLanguage: string;
 
-  text = new FormControl();
-  maxTextLength = 500;
+  inputText = new FormControl();
+  maxTextLength = 5000;
 
-  constructor(private store: Store, private domSanitizer: DomSanitizer) {
+  constructor(private store: Store) {
     super();
   }
 
   ngOnInit(): void {
     this.translate$
       .pipe(
-        tap(({spokenLanguage, detectedLanguage}) => (this.spokenLanguage = spokenLanguage || detectedLanguage)),
+        tap(({spokenToSigned, spokenLanguage, signedLanguage, detectedLanguage}) => {
+          this.inputLanguage = (spokenToSigned ? spokenLanguage : 'de') || detectedLanguage;
+          this.outputLanguage = !spokenToSigned ? spokenLanguage : 'de';
+        }),
         takeUntil(this.ngUnsubscribe)
       )
       .subscribe();
 
     // Local text changes
-    this.text.valueChanges
+    this.inputText.valueChanges
       .pipe(
         debounce(() => interval(500)),
         distinctUntilChanged(),
         skipWhile(text => !text), // Don't run on empty text, on app launch
-        tap(text => this.store.dispatch(new SetSpokenLanguageText(text))),
+        tap(text => this.store.dispatch(new SetInputLanguageText(text))),
         takeUntil(this.ngUnsubscribe)
       )
       .subscribe();
 
     // Changes from the store
-    this.text$
+    this.inputText$
       .pipe(
-        tap(text => this.text.setValue(text)),
+        tap(text => this.inputText.setValue(text)),
         takeUntil(this.ngUnsubscribe)
       )
       .subscribe();
-
-    this.video$
-      .pipe(
-        tap(url => {
-          this.videoUrl = url ? this.domSanitizer.bypassSecurityTrustUrl(url) : null;
-        }),
-        takeUntil(this.ngUnsubscribe)
-      )
-      .subscribe();
-  }
-
-  shareIcon(): string {
-    const isMacLike = /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform);
-    const isIOS = /(iPhone|iPod|iPad)/i.test(navigator.platform);
-    return isIOS || isMacLike ? 'ios_share' : 'share';
-  }
-
-  copyTranslation(): void {
-    this.store.dispatch(CopySignedLanguageVideo);
-  }
-
-  downloadTranslation(): void {
-    this.store.dispatch(DownloadSignedLanguageVideo);
-  }
-
-  shareTranslation(): void {
-    this.store.dispatch(ShareSignedLanguageVideo);
   }
 }

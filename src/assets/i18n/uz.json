@@ -18,7 +18,7 @@
     },
     "swapLanguages": "Tillarni almashtirish",
     "upload": {
-      "types": "mp4, .ogv va .webm formatdagi fayllarni yuklang.",
+      "types": "docx, .pdf, .pptx va .xlsx formatdagi fayllarni yuklang.",
       "browse": "Kompyuter ichidan tanlash",
       "title": "Videoni tanlang"
     },

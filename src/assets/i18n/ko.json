@@ -18,7 +18,7 @@
     },
     "swapLanguages": "언어 전환",
     "upload": {
-      "types": ".mp4, .ogv 또는 .webm 파일을 업로드하세요.",
+      "types": ".docx, .pdf, .pptx 또는 .xlsx 파일을 업로드하세요.",
       "browse": "컴퓨터에서 찾아보기",
       "title": "동영상 선택"
     },

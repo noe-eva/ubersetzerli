@@ -18,7 +18,7 @@
     },
     "swapLanguages": "Talen omwisselen",
     "upload": {
-      "types": "Upload een .mp4, .ogv, of .webm.",
+      "types": "Upload een .docx, .pdf, .pptx, of .xlsx.",
       "browse": "Browsen op uw computer",
       "title": "Kies een video"
     },

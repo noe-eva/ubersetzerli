@@ -18,7 +18,7 @@
     },
     "swapLanguages": "Intercambiar idiomas",
     "upload": {
-      "types": "Sube un archivo .mp4, .ogv o .webm.",
+      "types": "Sube un archivo .docx, .pdf, .pptx o .xlsx.",
       "browse": "Explorar ordenador",
       "title": "Elige un vídeo"
     },

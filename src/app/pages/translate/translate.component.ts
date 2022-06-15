@@ -20,25 +20,14 @@ import {MatDrawer} from '@angular/material/sidenav';
   styleUrls: ['./translate.component.scss'],
 })
 export class TranslateComponent extends BaseComponent implements OnInit {
+  @Select(state => state.translate.signedLanguage) signedLanguage$: Observable<string>;
   @Select(state => state.translate.spokenToSigned) spokenToSigned$: Observable<boolean>;
   @Select(state => state.translate.inputMode) inputMode$: Observable<InputMode>;
 
   @HostBinding('class.spoken-to-signed') spokenToSigned: boolean;
 
-  @ViewChild('appearance') appearance: MatDrawer;
-  loadAppearance = false; // Appearance panel should be loaded at will, and then never unloaded
-
   constructor(private store: Store, private transloco: TranslocoService, public translation: TranslationService) {
     super();
-
-    // Default settings
-    this.store.dispatch([
-      new SetSetting('receiveVideo', true),
-      new SetSetting('detectSign', false),
-      new SetSetting('drawSignWriting', false), // This setting currently also controls loading the SignWriting models.
-      new SetSetting('drawPose', true),
-      new SetSetting('poseViewer', 'pose'),
-    ]);
   }
 
   ngOnInit(): void {
@@ -58,44 +47,10 @@ export class TranslateComponent extends BaseComponent implements OnInit {
 
     this.spokenToSigned$
       .pipe(
-        tap(spokenToSigned => {
-          this.spokenToSigned = spokenToSigned;
-          if (!this.spokenToSigned) {
-            this.store.dispatch(new SetSetting('drawSignWriting', true));
-          }
-        }),
+        tap(spokenToSigned => (this.spokenToSigned = spokenToSigned)),
         takeUntil(this.ngUnsubscribe)
       )
       .subscribe();
-
-    this.playVideos();
-  }
-
-  async playVideos(): Promise<void> {
-    // Autoplay videos don't play before page interaction, or after re-opening PWA without refresh
-    fromEvent(window, 'click')
-      .pipe(
-        tap(async () => {
-          const videos = Array.from(document.getElementsByTagName('video'));
-
-          for (const video of videos) {
-            if (video.autoplay && video.paused) {
-              try {
-                await video.play();
-              } catch (e) {
-                console.error(e);
-              }
-            }
-          }
-        }),
-        takeUntil(this.ngUnsubscribe)
-      )
-      .subscribe();
-  }
-
-  openAppearancePanel() {
-    this.loadAppearance = true;
-    return this.appearance.open();
   }
 
   setSignedLanguage(lang: string): void {

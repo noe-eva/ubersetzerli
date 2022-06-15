@@ -10,7 +10,7 @@ import {NgxsModule, Store} from '@ngxs/store';
 import {SettingsState} from '../../../modules/settings/settings.state';
 import {ngxsConfig} from '../../../core/modules/ngxs/ngxs.module';
 import {TranslateState} from '../../../modules/translate/translate.state';
-import {SetSpokenLanguageText} from '../../../modules/translate/translate.actions';
+import {SetInputLanguageText} from '../../../modules/translate/translate.actions';
 import {HttpClientModule} from '@angular/common/http';
 
 describe('SpokenToSignedComponent', () => {
@@ -54,7 +54,7 @@ describe('SpokenToSignedComponent', () => {
     component.text.patchValue('test');
     tick(500);
 
-    expect(spy).toHaveBeenCalledWith(new SetSpokenLanguageText('test'));
+    expect(spy).toHaveBeenCalledWith(new SetInputLanguageText('test'));
     expect(spy).toHaveBeenCalledTimes(1);
   }));
 

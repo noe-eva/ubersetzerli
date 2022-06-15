@@ -62,15 +62,7 @@ async function applyGoogleLanguage(language, filePath) {
     );
 
   let [_1, uploadTypes, browseComputer] = /class="TEGJAb">(.*?)<.*?sSlcId.*?>(.*?)</g.exec(main);
-  uploadTypes = uploadTypes
-    .trim()
-    .replace('docx', 'mp4')
-    .replace('DOCX', 'MP4')
-    .replace('pdf', 'ogv')
-    .replace('PDF', 'OGV')
-    .replace('xlsx', 'webm')
-    .replace('XLSX', 'WEBM')
-    .replace(/[,、]? ?[..]?PPTX/i, '');
+  uploadTypes = uploadTypes.trim();
 
   const [aboutTitle, languagesTitle, contributeTitle, toolsTitle] = [
     ...about.matchAll(/h-c-header__nav-li-link.*?"\s*title="(.*?)"/g),
@@ -87,7 +79,7 @@ async function applyGoogleLanguage(language, filePath) {
       shift: shift.trim(),
     },
     translate: {
-      title: /<title>(.*?)<\/title>/g.exec(main)[1].replace('Google', 'Sign'),
+      title: 'übersetzerli',
       'language-selector': {
         detected: '{{lang}}',
       },

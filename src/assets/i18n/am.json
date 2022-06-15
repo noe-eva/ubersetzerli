@@ -18,7 +18,7 @@
     },
     "swapLanguages": "ቋንቋዎች ቀያይር",
     "upload": {
-      "types": ".Docx፣ .ogv፣ ወይም .webm ይስቀሉ",
+      "types": ".Docx፣ .pdf፣ .pptx ወይም .xlsx ይስቀሉ",
       "browse": "ኮምፒውተርዎን ያስሱ",
       "title": "ቪዲዮ ይምረጡ"
     },

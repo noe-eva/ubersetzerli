@@ -18,7 +18,7 @@
     },
     "swapLanguages": "Хэл солих",
     "upload": {
-      "types": ".mp4, .ogv, эсвэл .webm-р байршуулна.",
+      "types": ".docx, .pdf, .pptx, эсвэл .xlsx-р байршуулна.",
       "browse": "Компьютерээс хайх",
       "title": "Видео сонгоно уу"
     },

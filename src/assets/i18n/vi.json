@@ -18,7 +18,7 @@
     },
     "swapLanguages": "Hoán đổi ngôn ngữ",
     "upload": {
-      "types": "Tải một tệp .mp4, .ogv hoặc .webm lên.",
+      "types": "Tải một tệp .docx, .pdf, .pptx hoặc .xlsx lên.",
       "browse": "Tìm tệp trên máy tính của bạn",
       "title": "Chọn một video"
     },

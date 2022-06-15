@@ -1,78 +1,48 @@
 {
-  "name": "Sign Translate",
-  "short_name": "Sign Translate",
+  "name": "übersetzerli",
+  "short_name": "übersetzerli",
   "scope": "/",
-  "id": "sign.mt",
+  "id": "ubersetzer.li",
   "start_url": "/",
   "display": "standalone",
-  "theme_color": "#3F51B5",
+  "theme_color": "#f44336",
   "background_color": "#FFF",
   "user_preferences": {
     "color_scheme_dark": {
-      "theme_color": "#3F51B5",
+      "theme_color": "#f44336",
       "background_color": "#000"
     },
     "color_scheme_light": {
-      "theme_color": "#3F51B5",
+      "theme_color": "#f44336",
       "background_color": "#FFF"
     }
   },
   "icons": [
     {
-      "src": "assets/icons/generated/manifest-icon-192.png",
+      "src": "assets/icons/generated/manifest-icon-192.maskable.png",
       "sizes": "192x192",
       "type": "image/png",
-      "purpose": "maskable any"
+      "purpose": "any"
     },
     {
-      "src": "assets/icons/generated/manifest-icon-512.png",
+      "src": "assets/icons/generated/manifest-icon-192.maskable.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "assets/icons/generated/manifest-icon-512.maskable.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "maskable any"
-    }
-  ],
-  "protocol_handlers": [
-    {
-      "protocol": "web+sign",
-      "url": "/?text=%s"
-    }
-  ],
-  "file_handlers": [
-    {
-      "action": "/",
-      "accept": {"application/*": [".pose"]},
-      "icons": [],
-      "launch_type": "multiple-clients"
-    }
-  ],
-  "shortcuts": [
-    {
-      "name": "Translate sign language",
-      "short_name": "Signed-to-Spoken",
-      "description": "Open signed-to-spoken language translation",
-      "icons": [
-        {
-          "src": "assets/icons/generated/manifest-icon-192.png",
-          "sizes": "192x192",
-          "type": "image/png"
-        }
-      ],
-      "url": "/?direction=signed-to-spoken"
+      "purpose": "any"
     },
     {
-      "name": "Translate spoken language",
-      "short_name": "Spoken-to-Signed",
-      "description": "Open spoken-to-signed language translation",
-      "icons": [
-        {
-          "src": "assets/icons/generated/manifest-icon-192.png",
-          "sizes": "192x192",
-          "type": "image/png"
-        }
-      ],
-      "url": "/?direction=spoken-to-signed"
+      "src": "assets/icons/generated/manifest-icon-512.maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ],
-  "description": "Open source web app for sign language translation",
+  "description": "Translation app for Swiss German",
   "screenshots": []
 }

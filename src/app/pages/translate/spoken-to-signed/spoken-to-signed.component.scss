@@ -2,16 +2,20 @@
 @import '../../../../theme/variables';
 
 :host {
-  display: grid;
   width: 100%;
-  grid-template-areas: 'spoken signwriting signed';
-  grid-template-columns: auto 100px 50%;
+  display: flex;
+
+  .translation-input,
+  .translation-output {
+    @media #{$mat-gt-xs} {
+      width: calc(50% - 48px);
+    }
+  }
 
   @media #{$mat-lt-sm} {
-    grid-template-areas: 'spoken signwriting' 'signed signed';
-    grid-template-columns: auto 100px;
+    flex-direction: column;
 
-    .sign-language {
+    .translation-output {
       border-top: 1px solid map-get(mat.$light-theme-foreground-palette, divider);
 
       @media (prefers-color-scheme: dark) {
@@ -29,17 +33,9 @@
   }
 }
 
-app-sign-writing {
-  @media #{$mat-lt-sm} {
-    border: none !important;
-    height: 195px;
-  }
-}
-
-.translation-text {
+.translation-input {
   padding: 20px 24px;
   color: map-get(mat.$light-theme-foreground-palette, text);
-  flex: 1;
 
   @media (prefers-color-scheme: dark) {
     color: map-get(mat.$dark-theme-foreground-palette, text);
@@ -81,31 +77,31 @@ app-sign-writing {
   text-align: start !important;
 }
 
-.sign-language {
-  grid-area: signed;
+.translation-output {
   background-color: #f5f5f5;
   position: relative;
-  aspect-ratio: 1;
+
+  font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+  padding: 20px 58px 20px 24px;
+  color: #878787;
+  font-size: 24px;
+  line-height: 32px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 150px;
+
+  :first-child {
+    flex-grow: 1;
+  }
 
   @media (prefers-color-scheme: dark) {
     background-color: #202124;
   }
-
-  #actions {
-    position: absolute;
-    margin: 14px;
-    bottom: 0;
-    right: 0;
-    text-align: end;
-    width: calc(100% - 2 * 14px - 56px); // 56px for AR on mobile
-
-    mat-spinner {
-      display: inline-block;
-      margin: 0 8px -8px;
-    }
-  }
 }
 
-video {
-  display: block;
+app-upload {
+  text-align: center;
+  padding: 43px 16px 65px;
+  width: 100%;
 }

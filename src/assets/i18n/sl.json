@@ -18,7 +18,7 @@
     },
     "swapLanguages": "Zamenjaj jezika",
     "upload": {
-      "types": "Naložite datoteko .mp4, .ogv ali .webm.",
+      "types": "Naložite datoteko .docx, .pdf, .pptx ali .xlsx.",
       "browse": "Prebrskajte računalnik",
       "title": "Izberite videoposnetek"
     },

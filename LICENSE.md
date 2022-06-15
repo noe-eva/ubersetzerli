@@ -1,19 +1,4 @@
-# `sign/translate` License
-
-Depending on the type of your legal entity, you are granted permission to use `sign/translate` for your project.
-Individuals, non-profits, and educational institutes are allowed to use `sign/transalte` to translate from and to sign language for free,
-while a company license is required for for-profit organisations.
-This two-tier system was designed to ensure funding for this project while still allowing the source code to be available and the program to be free for most.
-Read below for the exact terms of use.
-
-- [Free license](#free-license)
-- [Company license](#company-license)
-
----
-
-## Free license
-
-Copyright (c) 2022 sign.mt ltd
+Copyright (c) 2022 noe-eva
 
 ### [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
@@ -176,11 +161,3 @@ d. Nothing in this Public License constitutes or may be interpreted as a limitat
 > Creative Commons is not a party to its public licenses. Notwithstanding, Creative Commons may elect to apply one of its public licenses to material it publishes and in those instances will be considered the “Licensor.” Except for the limited purpose of indicating that material is shared under a Creative Commons public license or as otherwise permitted by the Creative Commons policies published at [creativecommons.org/policies](http://creativecommons.org/policies), Creative Commons does not authorize the use of the trademark “Creative Commons” or any other trademark or logo of Creative Commons without its prior written consent including, without limitation, in connection with any unauthorized modifications to any of its public licenses or any other arrangements, understandings, or agreements concerning use of licensed material. For the avoidance of doubt, this paragraph does not form part of the public licenses.
 >
 > Creative Commons may be contacted at creativecommons.org
-
----
-
-## Company license
-
-You are required to obtain a company license to use `sign/translate` if you are not within the group of entities eligible for a free license.
-
-Contact `license@sign.mt` for additional information.

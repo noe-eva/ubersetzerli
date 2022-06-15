@@ -18,7 +18,7 @@
     },
     "swapLanguages": "Ndërro gjuhët",
     "upload": {
-      "types": "Ngarko një dokument .mp4, .ogv ose .webm.",
+      "types": "Ngarko një dokument .docx, .pdf, .pptx ose .xlsx.",
       "browse": "Shfleto kompjuterin tënd",
       "title": "Zgjidhni një video"
     },

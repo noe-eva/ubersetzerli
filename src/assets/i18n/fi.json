@@ -18,7 +18,7 @@
     },
     "swapLanguages": "Vaihda kieliä",
     "upload": {
-      "types": "Lataa .mp4, .ogv tai .webm.",
+      "types": "Lataa .docx, .pdf, .pptx tai .xlsx.",
       "browse": "Selaa tietokonetta",
       "title": "Valitse video"
     },

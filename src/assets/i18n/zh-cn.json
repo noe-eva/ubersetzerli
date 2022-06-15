@@ -18,7 +18,7 @@
     },
     "swapLanguages": "交换源语言和目标语言",
     "upload": {
-      "types": "请上传 .mp4、.ogv 或 .webm 文件。",
+      "types": "请上传 .docx、.pdf、.pptx 或 .xlsx 文件。",
       "browse": "浏览您的计算机",
       "title": "选择一个视频"
     },

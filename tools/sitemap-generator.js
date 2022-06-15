@@ -5,7 +5,7 @@ const fs = require('fs');
 const now = new Date();
 const baseUrls = [
   '/',
-  '/about', // '/about/languages', '/about/contribute', '/about/tools',
+  // '/about', // '/about/languages', '/about/contribute', '/about/tools',
   // '/legal/terms', '/legal/privacy', '/legal/licenses'
 ];
 
@@ -24,8 +24,8 @@ for (const file of fs.readdirSync(langsDir)) {
 
 // writes sitemaps and index out to the destination you provide.
 simpleSitemapAndIndex({
-  hostname: 'https://sign.mt',
-  destinationDir: `${baseDir}dist/sign-translate/`,
+  hostname: 'https://ubersetzer.li',
+  destinationDir: `${baseDir}dist/ubersetzerli/`,
   sourceData: urls.map(url => ({url, lastmod: now})),
   gzip: false,
 })

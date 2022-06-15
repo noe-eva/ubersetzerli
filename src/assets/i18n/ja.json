@@ -18,7 +18,7 @@
     },
     "swapLanguages": "言語を入れ替え",
     "upload": {
-      "types": ".mp4、.ogv、.webm のいずれかをアップロードしてください。",
+      "types": ".docx、.pdf、.pptx、.xlsx のいずれかをアップロードしてください。",
       "browse": "パソコンを参照",
       "title": "ビデオを選択してください"
     },

@@ -24,6 +24,7 @@
   @include mat.progress-bar-theme($theme);
   @include mat.tooltip-theme($theme);
   @include mat.card-theme($theme);
+  @include mat.dialog-theme($theme);
   @include mat.tabs-theme($theme);
 }
 

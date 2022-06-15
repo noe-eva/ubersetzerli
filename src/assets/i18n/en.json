@@ -4,7 +4,7 @@
     "shift": "Shift"
   },
   "translate": {
-    "title": "Sign Translate",
+    "title": "übersetzerli",
     "language-selector": {
       "detected": "{{lang}} - Detected",
       "more": "More Languages",
@@ -33,9 +33,37 @@
       }
     },
     "upload": {
-      "title": "Choose a video",
-      "types": "Upload a .mp4, .ogv, or .webm.",
+      "title": "Choose a document",
+      "types": "Upload a .docx, .pdf, .pptx, or .xlsx.",
       "browse": "Browse your computer"
+    },
+    "dialects": {
+      "CH-AG": "Aargau",
+      "CH-AR": "Appenzell Ausserrhoden",
+      "CH-AI": "Appenzell Innerrhoden",
+      "CH-BL": "Basel-Landschaft",
+      "CH-BS": "Basel-Stadt",
+      "CH-BE": "Bern",
+      "CH-FR": "Fribourg",
+      "CH-GE": "Genève",
+      "CH-GL": "Glarus",
+      "CH-GR": "Graubünden",
+      "CH-JU": "Jura",
+      "CH-LU": "Luzern",
+      "CH-NE": "Neuchâtel",
+      "CH-NW": "Nidwalden",
+      "CH-OW": "Obwalden",
+      "CH-SG": "Sankt Gallen",
+      "CH-SH": "Schaffhausen",
+      "CH-SZ": "Schwyz",
+      "CH-SO": "Solothurn",
+      "CH-TG": "Thurgau",
+      "CH-TI": "Ticino",
+      "CH-UR": "Uri",
+      "CH-VS": "Valais",
+      "CH-VD": "Vaud",
+      "CH-ZG": "Zug",
+      "CH-ZH": "Zürich"
     }
   },
   "landing": {
@@ -61,34 +89,6 @@
       "title": "Tools"
     }
   },
-  "playground": {
-    "title": "Sign Language Processing Playground"
-  },
-  "benchmark": {
-    "title": "Benchmark",
-    "stats": {
-      "cld": {
-        "title": "Spoken Language Identification",
-        "import": "Import Module",
-        "load": "Load Model",
-        "find": "Identify Text",
-        "create": "Create"
-      },
-      "pix2pix": {
-        "title": "Human Pose Viewer",
-        "init": "Worker Init",
-        "load": "Load Model",
-        "first-frame": "First Frame Inference",
-        "frame": "Frame Inference"
-      },
-      "pose": {
-        "title": "Full Body Pose Estimation",
-        "load": "Model Load",
-        "first-frame": "First Frame Inference",
-        "frame": "Frame Inference"
-      }
-    }
-  },
   "legal": {
     "terms": {
       "title": "Terms"
@@ -99,29 +99,6 @@
     "licenses": {
       "title": "Software and Licenses"
     }
-  },
-  "appearance": {
-    "title": "Appearance",
-    "action": "Modify appearance",
-    "random": "Get a random photo",
-    "upload": "Upload your own photo"
-  },
-  "video": {
-    "errors": {
-      "starting": "Camera starting",
-      "turnedOff": "Camera turned off",
-      "notConnected": "Camera not connected",
-      "permissionDenied": "Camera permission denied"
-    },
-    "controls": {
-      "receiveVideo": {
-        "on": "Turn off camera",
-        "off": "Turn on camera"
-      }
-    }
-  },
-  "pose": {
-    "loading": "Loading Pose Estimation..."
   },
   "language-selector": {
     "label": "Change language or region"
@@ -137,18 +114,5 @@
     "not-allowed": "Need permission to use microphone",
     "language-not-supported": "Selected language is not supported",
     "browser-not-supported": "Voice input isn't supported on this browser"
-  },
-  "settings": {
-    "title": "Settings",
-    "detectSign": "Detect Sign",
-    "drawVideo": "Draw Video",
-    "drawPose": "Draw Pose",
-    "drawSignWriting": "Draw Sign Writing",
-    "animatePose": "Animate Pose",
-    "poseViewer": {
-      "pose": "Skeleton",
-      "avatar": "Avatar",
-      "human": "Human"
-    }
   }
 }

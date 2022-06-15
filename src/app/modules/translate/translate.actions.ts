@@ -22,35 +22,10 @@ export class SetSignedLanguage {
   constructor(public language: string) {}
 }
 
-export class SetSpokenLanguageText {
+export class SetInputLanguageText {
   static readonly type = '[Translate] Set Spoken Language Text';
 
   constructor(public text: string) {}
-}
-
-export class SetSignedLanguageVideo {
-  static readonly type = '[Translate] Set Signed Language Video';
-
-  constructor(public url: string) {}
-}
-
-// TODO remove this action, this is a mock
-export class SetSignWritingText {
-  static readonly type = '[Translate] SetSignWritingText';
-
-  constructor(public text: string[]) {}
-}
-
-export class CopySignedLanguageVideo {
-  static readonly type = '[Translate] Copy Signed Language Video';
-}
-
-export class ShareSignedLanguageVideo {
-  static readonly type = '[Translate] Share Signed Language Video';
-}
-
-export class DownloadSignedLanguageVideo {
-  static readonly type = '[Translate] Download Signed Language Video';
 }
 
 export class ChangeTranslation {

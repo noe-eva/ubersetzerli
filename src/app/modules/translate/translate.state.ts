@@ -3,27 +3,18 @@ import {Action, NgxsOnInit, Select, State, StateContext} from '@ngxs/store';
 // eslint-disable-next-line max-len
 import {
   ChangeTranslation,
-  CopySignedLanguageVideo,
-  DownloadSignedLanguageVideo,
   FlipTranslationDirection,
   SetInputMode,
   SetSignedLanguage,
-  SetSignedLanguageVideo,
-  SetSignWritingText,
   SetSpokenLanguage,
-  SetSpokenLanguageText,
-  ShareSignedLanguageVideo,
+  SetInputLanguageText,
   UploadPoseFile,
 } from './translate.actions';
 import {TranslationService} from './translate.service';
-import {SetVideo, StartCamera, StopVideo} from '../../core/modules/ngxs/store/video/video.actions';
 import {Observable, of} from 'rxjs';
-import {PoseViewerSetting} from '../settings/settings.state';
 import {tap} from 'rxjs/operators';
-import {signNormalize} from '@sutton-signwriting/font-ttf/fsw/fsw';
-import {font} from '@sutton-signwriting/font-ttf/index.js';
 
-export type InputMode = 'webcam' | 'upload' | 'text';
+export type InputMode = 'upload' | 'text';
 
 export interface TranslateStateModel {
   spokenToSigned: boolean;
@@ -33,24 +24,20 @@ export interface TranslateStateModel {
   signedLanguage: string;
   detectedLanguage: string;
 
-  spokenLanguageText: string;
-  signWriting: string[];
-  signedLanguagePose: string;
-  signedLanguageVideo: string;
+  inputLanguageText: string;
+  outputLanguageText: string;
 }
 
 const initialState: TranslateStateModel = {
-  spokenToSigned: true,
+  spokenToSigned: false,
   inputMode: 'text',
 
   spokenLanguage: 'en',
-  signedLanguage: 'us',
+  signedLanguage: 'CH-ZH',
   detectedLanguage: null,
 
-  spokenLanguageText: '',
-  signWriting: [],
-  signedLanguagePose: null,
-  signedLanguageVideo: null,
+  inputLanguageText: '',
+  outputLanguageText: null,
 };
 
 @Injectable()
@@ -59,38 +46,22 @@ const initialState: TranslateStateModel = {
   defaults: initialState,
 })
 export class TranslateState implements NgxsOnInit {
-  @Select(state => state.settings.poseViewer) poseViewerSetting$: Observable<PoseViewerSetting>;
-
   constructor(private service: TranslationService) {}
 
   ngxsOnInit({dispatch}: StateContext<TranslateStateModel>): any {
     dispatch(ChangeTranslation);
-
-    // Reset video whenever viewer setting changes
-    this.poseViewerSetting$.pipe(tap(() => dispatch(new SetSignedLanguageVideo(null)))).subscribe();
   }
 
   @Action(FlipTranslationDirection)
-  async flipTranslationMode({getState, patchState, dispatch}: StateContext<TranslateStateModel>): Promise<void> {
-    const {spokenToSigned, spokenLanguage, signedLanguage, detectedLanguage, signedLanguageVideo} = getState();
+  async flipTranslationMode({getState, patchState}: StateContext<TranslateStateModel>): Promise<void> {
+    const {spokenToSigned, spokenLanguage, signedLanguage, detectedLanguage} = getState();
     patchState({
       spokenToSigned: !spokenToSigned,
       // Collapse detected language if used
       spokenLanguage: spokenLanguage ?? detectedLanguage,
       signedLanguage: signedLanguage ?? detectedLanguage,
       detectedLanguage: null,
-      signedLanguageVideo: null,
     });
-
-    if (spokenToSigned) {
-      if (signedLanguageVideo) {
-        dispatch([new SetInputMode('upload'), new SetVideo(signedLanguageVideo)]);
-      } else {
-        dispatch(new SetInputMode('webcam'));
-      }
-    } else {
-      dispatch(new SetInputMode('text'));
-    }
   }
 
   @Action(SetInputMode)
@@ -105,11 +76,7 @@ export class TranslateState implements NgxsOnInit {
 
     patchState({inputMode: mode});
 
-    dispatch([StopVideo, ChangeTranslation]);
-
-    if (mode === 'webcam') {
-      dispatch(StartCamera);
-    }
+    dispatch([ChangeTranslation]);
   }
 
   @Action(SetSpokenLanguage)
@@ -122,9 +89,9 @@ export class TranslateState implements NgxsOnInit {
     // Load and apply language detection if selected
     if (!language) {
       await this.service.initCld();
-      const {spokenLanguageText} = getState();
-      if (spokenLanguageText) {
-        patchState({detectedLanguage: this.service.detectSpokenLanguage(spokenLanguageText)});
+      const {inputLanguageText} = getState();
+      if (inputLanguageText) {
+        patchState({detectedLanguage: this.service.detectSpokenLanguage(inputLanguageText)});
       }
     }
 
@@ -140,127 +107,48 @@ export class TranslateState implements NgxsOnInit {
     dispatch(ChangeTranslation);
   }
 
-  @Action(SetSpokenLanguageText)
-  async setSpokenLanguageText(
+  @Action(SetInputLanguageText)
+  async setInputLanguageText(
     {patchState, getState, dispatch}: StateContext<TranslateStateModel>,
-    {text}: SetSpokenLanguageText
+    {text}: SetInputLanguageText
   ): Promise<void> {
     const {spokenLanguage} = getState();
     patchState({
-      spokenLanguageText: text,
+      inputLanguageText: text,
       detectedLanguage: !text || spokenLanguage ? null : this.service.detectSpokenLanguage(text),
     });
 
     dispatch(ChangeTranslation);
   }
 
-  @Action(SetSignedLanguageVideo)
-  async setSignedLanguageVideo(
-    {patchState, dispatch}: StateContext<TranslateStateModel>,
-    {url}: SetSignedLanguageVideo
-  ): Promise<void> {
-    patchState({signedLanguageVideo: url});
-  }
-
-  @Action(SetSignWritingText)
-  async setSignWritingText(
-    {patchState, dispatch}: StateContext<TranslateStateModel>,
-    {text}: SetSignWritingText
-  ): Promise<void> {
-    // signNormalize only works after the SignWriting font is loaded
-    font.cssLoaded(() => {
-      const signWriting: string[] = text.map(sign => {
-        const box = sign.startsWith('M') ? sign : 'M500x500' + sign;
-        return signNormalize(box);
-      });
-      patchState({signWriting});
-    });
-  }
-
   @Action(ChangeTranslation, {cancelUncompleted: true})
   changeTranslation({getState, patchState, dispatch}: StateContext<TranslateStateModel>): Observable<any> {
-    const {spokenToSigned, spokenLanguage, signedLanguage, detectedLanguage, spokenLanguageText} = getState();
-    if (spokenToSigned) {
-      patchState({signedLanguageVideo: null, signWriting: null}); // reset the signed language translation
+    const {spokenToSigned, spokenLanguage, signedLanguage, detectedLanguage, inputLanguageText} = getState();
+    patchState({outputLanguageText: null});
 
-      if (!spokenLanguageText) {
-        patchState({signedLanguagePose: null, signWriting: []});
-      } else {
-        const actualSpokenLanguage = spokenLanguage || detectedLanguage;
-        const path = this.service.translateSpokenToSigned(spokenLanguageText, actualSpokenLanguage, signedLanguage);
-        patchState({signedLanguagePose: path});
-        return this.service
-          .translateSpokenToSignWriting(spokenLanguageText, actualSpokenLanguage, signedLanguage)
-          .pipe(tap(signWriting => dispatch(new SetSignWritingText(signWriting))));
-      }
+    if (!inputLanguageText) {
+      return of();
     }
 
-    return of();
+    if (spokenToSigned) {
+      const actualSpokenLanguage = spokenLanguage || detectedLanguage;
+      return this.service
+        .translateSpokenToSigned(inputLanguageText, actualSpokenLanguage, signedLanguage)
+        .pipe(tap(outputText => patchState({outputLanguageText: outputText})));
+    }
+
+    const actualSignedLanguage = signedLanguage || detectedLanguage;
+
+    return this.service
+      .translateSignedToSpoken(inputLanguageText, actualSignedLanguage, spokenLanguage)
+      .pipe(tap(outputText => patchState({outputLanguageText: outputText})));
   }
 
   @Action(UploadPoseFile)
   uploadPoseFile({getState, patchState}: StateContext<TranslateStateModel>, {url}: UploadPoseFile): void {
     const {spokenToSigned} = getState();
     if (spokenToSigned) {
-      patchState({signedLanguagePose: url});
+      patchState({outputLanguageText: url});
     }
-  }
-
-  @Action(CopySignedLanguageVideo)
-  async copySignedLanguageVideo({getState}: StateContext<TranslateStateModel>): Promise<void> {
-    const {signedLanguageVideo} = getState();
-
-    const data = await fetch(signedLanguageVideo);
-    const blob = await data.blob();
-    try {
-      const item = new ClipboardItem({[blob.type]: Promise.resolve(blob)});
-      await navigator.clipboard.write([item]);
-    } catch (e) {
-      console.error(e);
-      alert(`Copying "${blob.type}" on this device is not supported`);
-    }
-  }
-
-  @Action(ShareSignedLanguageVideo)
-  async shareSignedLanguageVideo({getState}: StateContext<TranslateStateModel>): Promise<void> {
-    const {signedLanguageVideo} = getState();
-
-    if (!('share' in navigator)) {
-      // For example in non-HTTPS on iOS
-      alert(`Share functionality is not available`);
-      return;
-    }
-
-    const data = await fetch(signedLanguageVideo);
-    const blob = await data.blob();
-    const ext = blob.type.split('/').pop();
-
-    const files: File[] = [new File([blob], 'video.' + ext, {type: blob.type})];
-
-    const url = window.location.href;
-    const title = 'Signed Language Video for text';
-
-    if ('canShare' in navigator && (navigator as any).canShare({files})) {
-      // Apps like WhatsApp only support sharing a single item
-      await navigator.share({files} as ShareData);
-    } else {
-      // TODO convert the video to GIF, try to share the GIF.
-      await navigator.share({text: title, title, url});
-    }
-  }
-
-  @Action(DownloadSignedLanguageVideo)
-  async downloadSignedLanguageVideo({getState}: StateContext<TranslateStateModel>): Promise<void> {
-    const {signedLanguageVideo} = getState();
-
-    const ext = signedLanguageVideo.split('.').pop();
-    const downloadName = ['webm', 'mp4'].includes(ext) ? signedLanguageVideo : signedLanguageVideo + '.mp4';
-
-    const a = document.createElement('a');
-    a.href = signedLanguageVideo;
-    a.download = downloadName;
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
   }
 }

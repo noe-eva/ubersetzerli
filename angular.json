@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "sign-translate": {
+    "ubersetzerli": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/sign-translate",
+            "outputPath": "dist/ubersetzerli",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -25,21 +25,6 @@
             "assets": [
               "src/assets",
               "src/manifest.webmanifest",
-              {
-                "glob": "**/*",
-                "input": "./node_modules/@mediapipe/holistic/",
-                "output": "./assets/models/holistic/"
-              },
-              {
-                "glob": "*.svg",
-                "input": "./node_modules/flag-icon-css/flags/1x1/",
-                "output": "./assets/flags/1x1/"
-              },
-              {
-                "glob": "*.ttf",
-                "input": "./node_modules/@sutton-signwriting/font-ttf/font",
-                "output": "./assets/fonts/signwriting/"
-              },
               {
                 "glob": "**/*.json",
                 "input": "node_modules/@sign/i18n/build/",
@@ -50,6 +35,10 @@
               {
                 "input": "src/theme/styles.scss",
                 "bundleName": "app"
+              },
+              {
+                "input": "./node_modules/leaflet/dist/leaflet.css",
+                "bundleName": "map"
               }
             ],
             "stylePreprocessorOptions": {
@@ -63,8 +52,7 @@
             "buildOptimizer": false,
             "sourceMap": true,
             "optimization": false,
-            "namedChunks": true,
-            "webWorkerTsConfig": "tsconfig.worker.json"
+            "namedChunks": true
           },
           "configurations": {
             "production": {
@@ -100,18 +88,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "sign-translate:build"
+            "browserTarget": "ubersetzerli:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "sign-translate:build:production"
+              "browserTarget": "ubersetzerli:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "sign-translate:build"
+            "browserTarget": "ubersetzerli:build"
           }
         },
         "test": {
@@ -125,29 +113,13 @@
               "src/assets",
               "src/manifest.webmanifest",
               {
-                "glob": "**/*",
-                "input": "./node_modules/@mediapipe/holistic/",
-                "output": "./assets/models/holistic/"
-              },
-              {
-                "glob": "*.svg",
-                "input": "./node_modules/flag-icon-css/flags/1x1/",
-                "output": "./assets/flags/1x1/"
-              },
-              {
-                "glob": "*.ttf",
-                "input": "./node_modules/@sutton-signwriting/font-ttf/font",
-                "output": "./assets/fonts/signwriting/"
-              },
-              {
                 "glob": "**/*.json",
                 "input": "node_modules/@sign/i18n/build/",
                 "output": "./assets/i18n/"
               }
             ],
             "styles": ["src/theme/styles.scss"],
-            "scripts": [],
-            "webWorkerTsConfig": "tsconfig.worker.json"
+            "scripts": []
           }
         },
         "lint": {
@@ -159,7 +131,7 @@
       }
     }
   },
-  "defaultProject": "sign-translate",
+  "defaultProject": "ubersetzerli",
   "cli": {
     "analytics": "da7f7e1b-ea69-47b0-a971-5d7f28b86a48",
     "defaultCollection": "@angular-eslint/schematics"

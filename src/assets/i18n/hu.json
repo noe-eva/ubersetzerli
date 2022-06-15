@@ -18,7 +18,7 @@
     },
     "swapLanguages": "Nyelvek felcserélése",
     "upload": {
-      "types": ".mp4, .ogv vagy .webm formátumú fájlt töltsön fel.",
+      "types": ".docx, .pdf, .pptx vagy .xlsx formátumú fájlt töltsön fel.",
       "browse": "Tallózás a számítógépen",
       "title": "Válassz egy videót"
     },

@@ -18,7 +18,7 @@
     },
     "swapLanguages": "Byt språk",
     "upload": {
-      "types": "Ladda upp en .mp4-, .ogv-- eller .webm-fil",
+      "types": "Ladda upp en .docx-, .pdf-, .pptx- eller .xlsx-fil",
       "browse": "Bläddra efter filer på datorn",
       "title": "Välj en video"
     },

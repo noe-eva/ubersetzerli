@@ -2,7 +2,9 @@ import {Component} from '@angular/core';
 import {TranslocoService} from '@ngneat/transloco';
 import {tap} from 'rxjs/operators';
 import {Store} from '@ngxs/store';
-import {SetSpokenLanguageText} from './modules/translate/translate.actions';
+import {SetInputLanguageText} from './modules/translate/translate.actions';
+import {MatIconRegistry} from '@angular/material/icon';
+import {DomSanitizer} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -12,10 +14,23 @@ import {SetSpokenLanguageText} from './modules/translate/translate.actions';
 export class AppComponent {
   urlParams = new URLSearchParams(window.location.search);
 
-  constructor(private transloco: TranslocoService, private store: Store) {
+  constructor(
+    private transloco: TranslocoService,
+    private store: Store,
+    private matIconRegistry: MatIconRegistry,
+    private domSanitizer: DomSanitizer
+  ) {
     this.listenLanguageChange();
     this.checkURLEmbedding();
     this.checkURLText();
+    this.registerIcons();
+  }
+
+  registerIcons() {
+    this.matIconRegistry.addSvgIcon(
+      `switzerland`,
+      this.domSanitizer.bypassSecurityTrustResourceUrl(`assets/icons/favicon.svg`)
+    );
   }
 
   listenLanguageChange(): void {
@@ -54,7 +69,7 @@ export class AppComponent {
   checkURLText(): void {
     const urlParam = this.urlParams.get('text');
     if (urlParam !== null) {
-      this.store.dispatch(new SetSpokenLanguageText(urlParam));
+      this.store.dispatch(new SetInputLanguageText(urlParam));
     }
   }
 }

@@ -18,7 +18,7 @@
     },
     "swapLanguages": "語言對調",
     "upload": {
-      "types": "上傳 .mp4, .ogv, 或 .webm。",
+      "types": "上傳 .docx, .pdf, .pptx, 或 .xlsx。",
       "browse": "瀏覽你的電腦",
       "title": "選擇一個視頻"
     },

@@ -6,6 +6,6 @@ import {Component, Input} from '@angular/core';
   styleUrls: ['./flag-icon.component.scss'],
 })
 export class FlagIconComponent {
-  @Input() country: string;
-  @Input() squared: boolean;
+  @Input() flag: string;
+  @Input() alt: string;
 }

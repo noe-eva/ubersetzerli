@@ -18,7 +18,7 @@
     },
     "swapLanguages": "ສັບປ່ຽນພາສາ",
     "upload": {
-      "types": "ອັບໂຫຼດໄຟລ໌ .mp4, .ogv ຫຼື .webm.",
+      "types": "ອັບໂຫຼດໄຟລ໌ .docx, .pdf, .pptx ຫຼື .xlsx.",
       "browse": "ຊອກຫາໃນຄອມພິວເຕີ",
       "title": "ເລືອກວິດີໂອ"
     },
