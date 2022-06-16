@@ -29,7 +29,41 @@
         "download": "Deskargatu Itzulpena",
         "copy": "Kopiatu Itzulpena",
         "share": "Partekatu itzulpena"
+      },
+      "progress-bars": {
+        "human-pose-viewer": {
+          "loading": "Giza bideo eredua kargatzen",
+          "generating": "Bideoa sortzea"
+        }
       }
+    },
+    "dialects": {
+      "CH-AG": "Argovia",
+      "CH-AR": "Appenzell Ausserrhoden",
+      "CH-AI": "Appenzell Innerrhoden",
+      "CH-BL": "Basilea-Landschaft",
+      "CH-BS": "Basilea Hiria",
+      "CH-BE": "Berna",
+      "CH-FR": "Friburgo",
+      "CH-GE": "Genève",
+      "CH-GL": "Glarus",
+      "CH-GR": "Graubünden",
+      "CH-JU": "Jura",
+      "CH-LU": "Luzern",
+      "CH-NE": "Neuchâtel",
+      "CH-NW": "Nidwalden",
+      "CH-OW": "Obwalden",
+      "CH-SG": "Sankt Gallen",
+      "CH-SH": "Schaffhausen",
+      "CH-SZ": "Schwyz",
+      "CH-SO": "Solothurn",
+      "CH-TG": "Turgovia",
+      "CH-TI": "Ticino",
+      "CH-UR": "Uri",
+      "CH-VS": "Valais",
+      "CH-VD": "Vaud",
+      "CH-ZG": "Zug",
+      "CH-ZH": "Zurich"
     }
   },
   "landing": {
@@ -49,6 +83,10 @@
     },
     "tools": {
       "title": "Tresnak"
+    },
+    "nav": {
+      "pages": "Nabigatu beste orrietara",
+      "legal": "Nabigatu legezko orrietara"
     }
   },
   "text-to-speech": {

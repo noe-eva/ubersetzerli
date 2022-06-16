@@ -29,7 +29,41 @@
         "download": "Budata Ntụgharị asụsụ",
         "copy": "Detuo ntụgharị asụsụ",
         "share": "Kekọrịta ntụgharị asụsụ"
+      },
+      "progress-bars": {
+        "human-pose-viewer": {
+          "loading": "Na-ebu ihe ngosi vidiyo mmadụ",
+          "generating": "Na-emepụta vidiyo"
+        }
       }
+    },
+    "dialects": {
+      "CH-AG": "Aargau",
+      "CH-AR": "Appenzell Ausserrhoden",
+      "CH-AI": "Appenzell Innerrhoden",
+      "CH-BL": "Basel-Landchaft",
+      "CH-BS": "Basel-Stadt",
+      "CH-BE": "Bern",
+      "CH-FR": "Fribourg",
+      "CH-GE": "Genève",
+      "CH-GL": "Glarus",
+      "CH-GR": "Graubünden",
+      "CH-JU": "Jura",
+      "CH-LU": "Luzern",
+      "CH-NE": "Neuchâtel",
+      "CH-NW": "Nidwalden",
+      "CH-OW": "Obwalden",
+      "CH-SG": "Sankt Gallen",
+      "CH-SH": "Schafhausen",
+      "CH-SZ": "Schwyz",
+      "CH-SO": "Solothurn",
+      "CH-TG": "Thurgau",
+      "CH-TI": "Ticino",
+      "CH-UR": "Uri",
+      "CH-VS": "Valais",
+      "CH-VD": "Vaud",
+      "CH-ZG": "Zug",
+      "CH-ZH": "Zürich"
     }
   },
   "landing": {
@@ -49,6 +83,10 @@
     },
     "tools": {
       "title": "Ngwaọrụ"
+    },
+    "nav": {
+      "pages": "Gaa na ibe ndị ọzọ",
+      "legal": "Gaa na ibe iwu"
     }
   },
   "text-to-speech": {

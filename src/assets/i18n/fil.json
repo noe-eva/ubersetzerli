@@ -29,7 +29,41 @@
         "download": "I-download ang Pagsasalin",
         "copy": "Kopyahin ang Pagsasalin",
         "share": "Ibahagi ang Pagsasalin"
+      },
+      "progress-bars": {
+        "human-pose-viewer": {
+          "loading": "Nilo-load ang modelo ng video ng tao",
+          "generating": "Bumubuo ng video"
+        }
       }
+    },
+    "dialects": {
+      "CH-AG": "Aargau",
+      "CH-AR": "Appenzell Ausserrhoden",
+      "CH-AI": "Appenzell Innerrhoden",
+      "CH-BL": "Basel-Landschaft",
+      "CH-BS": "Basel-Stadt",
+      "CH-BE": "Bern",
+      "CH-FR": "Fribourg",
+      "CH-GE": "Genève",
+      "CH-GL": "Glarus",
+      "CH-GR": "Graubünden",
+      "CH-JU": "Jura",
+      "CH-LU": "Luzern",
+      "CH-NE": "Neuchâtel",
+      "CH-NW": "Nidwalden",
+      "CH-OW": "Obwalden",
+      "CH-SG": "Sankt Gallen",
+      "CH-SH": "Schaffhausen",
+      "CH-SZ": "Schwyz",
+      "CH-SO": "Solothurn",
+      "CH-TG": "Thurgau",
+      "CH-TI": "Ticino",
+      "CH-UR": "Uri",
+      "CH-VS": "Valais",
+      "CH-VD": "Vaud",
+      "CH-ZG": "Zug",
+      "CH-ZH": "Zürich"
     }
   },
   "landing": {
@@ -49,6 +83,10 @@
     },
     "tools": {
       "title": "Mga tool"
+    },
+    "nav": {
+      "pages": "Mag-navigate sa iba pang mga pahina",
+      "legal": "Mag-navigate sa mga legal na pahina"
     }
   },
   "text-to-speech": {

@@ -29,7 +29,41 @@
         "download": "אראפקאפיע איבערזעצונג",
         "copy": "קאָפּי איבערזעצונג",
         "share": "ייַנטיילן איבערזעצונג"
+      },
+      "progress-bars": {
+        "human-pose-viewer": {
+          "loading": "לאָודינג מענטש ווידעא מאָדעל",
+          "generating": "דזשענערייטינג ווידעא"
+        }
       }
+    },
+    "dialects": {
+      "CH-AG": "Aargau",
+      "CH-AR": "Appenzell Ausserrhoden",
+      "CH-AI": "אַפּענזעל ינעררהאָדען",
+      "CH-BL": "באַסעל-לאַנדשאַפֿט",
+      "CH-BS": "באַסעל-שטאַדט",
+      "CH-BE": "בערן",
+      "CH-FR": "פריבאָרג",
+      "CH-GE": "Genève",
+      "CH-GL": "גלרוס",
+      "CH-GR": "גראַובונדען",
+      "CH-JU": "דזשוראַ",
+      "CH-LU": "לוזערן",
+      "CH-NE": "Neuchâtel",
+      "CH-NW": "נידוואַלדן",
+      "CH-OW": "אָבוואַלדן",
+      "CH-SG": "Sankt Gallen",
+      "CH-SH": "שאַפפהאַוסען",
+      "CH-SZ": "שוויץ",
+      "CH-SO": "סאָלאָטהורן",
+      "CH-TG": "Thurgau",
+      "CH-TI": "טיסינאָ",
+      "CH-UR": "אורי",
+      "CH-VS": "Valais",
+      "CH-VD": "Vaud",
+      "CH-ZG": "Zug",
+      "CH-ZH": "Zürich"
     }
   },
   "landing": {
@@ -49,6 +83,10 @@
     },
     "tools": {
       "title": "ווערקצויגע"
+    },
+    "nav": {
+      "pages": "נאַוויגירן צו אנדערע בלעטער",
+      "legal": "נאַוויגירן צו לעגאַל בלעטער"
     }
   },
   "text-to-speech": {

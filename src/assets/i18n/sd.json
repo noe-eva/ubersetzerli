@@ -29,7 +29,41 @@
         "download": "ڊائون لوڊ ترجمو",
         "copy": "نقل ڪريو ترجمو",
         "share": "ترجمو حصيداري ڪريو"
+      },
+      "progress-bars": {
+        "human-pose-viewer": {
+          "loading": "انساني وڊيو ماڊل لوڊ ڪندي",
+          "generating": "وڊيو ٺاهي رهيو آهي"
+        }
       }
+    },
+    "dialects": {
+      "CH-AG": "آرگو",
+      "CH-AR": "Appenzell Auserrhoden",
+      "CH-AI": "Appenzell Innerrhoden",
+      "CH-BL": "باسل-لينڊ شافٽ",
+      "CH-BS": "باسل-اسٽاڊٽ",
+      "CH-BE": "برن",
+      "CH-FR": "فريبورگ",
+      "CH-GE": "جيني",
+      "CH-GL": "گلرس",
+      "CH-GR": "Graubunden",
+      "CH-JU": "جورا",
+      "CH-LU": "لوزرن",
+      "CH-NE": "Neuchâtel",
+      "CH-NW": "نيدوالدن",
+      "CH-OW": "اوبوالڊن",
+      "CH-SG": "سنڪٽ گلن",
+      "CH-SH": "شيفهاؤسن",
+      "CH-SZ": "شوز",
+      "CH-SO": "سولوٿورن",
+      "CH-TG": "ٿرگو",
+      "CH-TI": "ٽڪينو",
+      "CH-UR": "اُرِي",
+      "CH-VS": "ويلس",
+      "CH-VD": "واڊ",
+      "CH-ZG": "زُگ",
+      "CH-ZH": "زيورخ"
     }
   },
   "landing": {
@@ -49,6 +83,10 @@
     },
     "tools": {
       "title": "اوزار"
+    },
+    "nav": {
+      "pages": "ٻين صفحن ڏانهن وڃو",
+      "legal": "قانوني صفحن تي وڃو"
     }
   },
   "text-to-speech": {

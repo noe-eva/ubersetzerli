@@ -29,7 +29,41 @@
         "download": "Hoʻoiho i ka unuhi",
         "copy": "E kope i ka unuhi",
         "share": "Kaʻana unuhi"
+      },
+      "progress-bars": {
+        "human-pose-viewer": {
+          "loading": "Ke hoʻouka nei i ke kumu hoʻohālike wikiō kanaka",
+          "generating": "Hoʻopuka wikiō"
+        }
       }
+    },
+    "dialects": {
+      "CH-AG": "ʻAargau",
+      "CH-AR": "ʻO Appenzell Ausserrhoden",
+      "CH-AI": "ʻO Appenzell Innerrhoden",
+      "CH-BL": "Basel-Landschaft",
+      "CH-BS": "Basel-Stadt",
+      "CH-BE": "ʻO Bern",
+      "CH-FR": "Fribourg",
+      "CH-GE": "ʻO Genève",
+      "CH-GL": "Glarus",
+      "CH-GR": "Graubünden",
+      "CH-JU": "ʻO Jura",
+      "CH-LU": "Luzern",
+      "CH-NE": "Neuchâtel",
+      "CH-NW": "Nidwalden",
+      "CH-OW": "Obwalden",
+      "CH-SG": "Sankt Gallen",
+      "CH-SH": "Schaffhausen",
+      "CH-SZ": "ʻO Schwyz",
+      "CH-SO": "Solothurn",
+      "CH-TG": "Thurgau",
+      "CH-TI": "Ticino",
+      "CH-UR": "ʻO Uri",
+      "CH-VS": "ʻO Valais",
+      "CH-VD": "ʻO Vaud",
+      "CH-ZG": "ʻO Zug",
+      "CH-ZH": "Zürich"
     }
   },
   "landing": {
@@ -49,6 +83,10 @@
     },
     "tools": {
       "title": "Nā meahana"
+    },
+    "nav": {
+      "pages": "E hoʻokele i nā ʻaoʻao ʻē aʻe",
+      "legal": "E hoʻokele i nā ʻaoʻao kānāwai"
     }
   },
   "text-to-speech": {

@@ -24,12 +24,46 @@
         "download": "הורדת תרגום",
         "copy": "העתקת תרגום",
         "share": "שיתוף תרגום"
+      },
+      "progress-bars": {
+        "human-pose-viewer": {
+          "loading": "טוען דגם וידאו אנושי",
+          "generating": "יצירת וידאו"
+        }
       }
     },
     "upload": {
       "title": "יש לבחור וידאו",
       "types": "צריך להעלות קובץ DOCX,‏ PDF,‏ PPTX או XLSX.",
       "browse": "עיון במחשב"
+    },
+    "dialects": {
+      "CH-AG": "ארגאו",
+      "CH-AR": "אפנצל אוסררודן",
+      "CH-AI": "Appenzell Innerrhoden",
+      "CH-BL": "באזל-לנדשפט",
+      "CH-BS": "באזל-שטדט",
+      "CH-BE": "ברן",
+      "CH-FR": "פריבורג",
+      "CH-GE": "ז'נבה",
+      "CH-GL": "גלרוס",
+      "CH-GR": "גראובינדן",
+      "CH-JU": "ג'ורה",
+      "CH-LU": "לוצרן",
+      "CH-NE": "Neuchâtel",
+      "CH-NW": "נידוולדן",
+      "CH-OW": "אובולדן",
+      "CH-SG": "סנקט גאלן",
+      "CH-SH": "שאפהאוזן",
+      "CH-SZ": "שוויץ",
+      "CH-SO": "סולותורן",
+      "CH-TG": "תורגאו",
+      "CH-TI": "טיצ'ינו",
+      "CH-UR": "אורי",
+      "CH-VS": "ואלה",
+      "CH-VD": "Vaud",
+      "CH-ZG": "צוג",
+      "CH-ZH": "ציריך"
     }
   },
   "landing": {
@@ -49,6 +83,10 @@
     },
     "tools": {
       "title": "כלים"
+    },
+    "nav": {
+      "pages": "נווט לדפים אחרים",
+      "legal": "נווט לדפים משפטיים"
     }
   },
   "playground": {

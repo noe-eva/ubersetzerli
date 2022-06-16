@@ -29,7 +29,41 @@
         "download": "ဘာသာပြန်ဆိုချက်ကို ဒေါင်းလုဒ်လုပ်ပါ။",
         "copy": "ကူးယူဘာသာပြန်ခြင်း။",
         "share": "ဘာသာပြန်ခြင်းမျှဝေပါ။"
+      },
+      "progress-bars": {
+        "human-pose-viewer": {
+          "loading": "လူ့ဗီဒီယို မော်ဒယ်ကို တင်နေသည်။",
+          "generating": "ဗီဒီယိုထုတ်လုပ်ခြင်း။"
+        }
       }
+    },
+    "dialects": {
+      "CH-AG": "Aargau",
+      "CH-AR": "Appenzell Ausserrhoden",
+      "CH-AI": "Appenzell Innerrhoden",
+      "CH-BL": "Basel-Landschaft",
+      "CH-BS": "Basel-Stadt",
+      "CH-BE": "ဘန်",
+      "CH-FR": "Friborg",
+      "CH-GE": "Genève",
+      "CH-GL": "Glarus",
+      "CH-GR": "Graubünden",
+      "CH-JU": "Jura",
+      "CH-LU": "Luzern",
+      "CH-NE": "Neuchâtel",
+      "CH-NW": "Nidwalden",
+      "CH-OW": "Obwalden",
+      "CH-SG": "Sankt Gallen",
+      "CH-SH": "Schaffhausen",
+      "CH-SZ": "Schwyz",
+      "CH-SO": "ဗောက်",
+      "CH-TG": "Thurgau",
+      "CH-TI": "Ticino",
+      "CH-UR": "Uri",
+      "CH-VS": "ဗလိုင်း",
+      "CH-VD": "Vaud",
+      "CH-ZG": "Zug",
+      "CH-ZH": "ဇူးရစ်"
     }
   },
   "landing": {
@@ -49,6 +83,10 @@
     },
     "tools": {
       "title": "ကိရိယာများ"
+    },
+    "nav": {
+      "pages": "အခြားစာမျက်နှာများသို့ သွားပါ။",
+      "legal": "တရားဝင်စာမျက်နှာများသို့သွားပါ။"
     }
   },
   "text-to-speech": {

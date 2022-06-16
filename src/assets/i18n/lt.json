@@ -29,7 +29,41 @@
         "download": "Atsisiųskite vertimą",
         "copy": "Kopijuoti vertimą",
         "share": "Pasidalinti vertimu"
+      },
+      "progress-bars": {
+        "human-pose-viewer": {
+          "loading": "Įkeliamas žmogaus vaizdo modelis",
+          "generating": "Kuriamas vaizdo įrašas"
+        }
       }
+    },
+    "dialects": {
+      "CH-AG": "Argau",
+      "CH-AR": "Appenzell Ausserrhoden",
+      "CH-AI": "Appenzell Innerrhoden",
+      "CH-BL": "Bazelis-Landschaft",
+      "CH-BS": "Bazelis-Štadtas",
+      "CH-BE": "Bernas",
+      "CH-FR": "Fribūras",
+      "CH-GE": "Ženeva",
+      "CH-GL": "Glarus",
+      "CH-GR": "Graubündenas",
+      "CH-JU": "Jura",
+      "CH-LU": "Liuzernas",
+      "CH-NE": "Neuchâtel",
+      "CH-NW": "Nidwaldenas",
+      "CH-OW": "Obvaldenas",
+      "CH-SG": "Sankt Gallenas",
+      "CH-SH": "Šafhauzenas",
+      "CH-SZ": "Schwyz",
+      "CH-SO": "Solothurn",
+      "CH-TG": "Thurgau",
+      "CH-TI": "Ticino",
+      "CH-UR": "Uri",
+      "CH-VS": "Valė",
+      "CH-VD": "Vaud",
+      "CH-ZG": "Zug",
+      "CH-ZH": "Ciurichas"
     }
   },
   "landing": {
@@ -49,6 +83,10 @@
     },
     "tools": {
       "title": "Įrankiai"
+    },
+    "nav": {
+      "pages": "Eikite į kitus puslapius",
+      "legal": "Eikite į teisinius puslapius"
     }
   },
   "text-to-speech": {

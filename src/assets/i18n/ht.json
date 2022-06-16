@@ -29,7 +29,41 @@
         "download": "Telechaje Tradiksyon",
         "copy": "Kopi Tradiksyon",
         "share": "Pataje tradiksyon"
+      },
+      "progress-bars": {
+        "human-pose-viewer": {
+          "loading": "Chaje modèl videyo imen",
+          "generating": "Jenere videyo"
+        }
       }
+    },
+    "dialects": {
+      "CH-AG": "Aargau",
+      "CH-AR": "Appenzell Ausserrhoden",
+      "CH-AI": "Appenzell Innerrhoden",
+      "CH-BL": "Basel-Landschaft",
+      "CH-BS": "Basel-Lavil",
+      "CH-BE": "Bern",
+      "CH-FR": "Fribourg",
+      "CH-GE": "Genève",
+      "CH-GL": "Glaris",
+      "CH-GR": "Graubünden",
+      "CH-JU": "Jura",
+      "CH-LU": "Luzern",
+      "CH-NE": "Neuchâtel",
+      "CH-NW": "Nidwalden",
+      "CH-OW": "Obwalden",
+      "CH-SG": "Sankt Gallen",
+      "CH-SH": "Schaffhausen",
+      "CH-SZ": "Schwyz",
+      "CH-SO": "Solothurn",
+      "CH-TG": "Thurgou",
+      "CH-TI": "Ticino",
+      "CH-UR": "Ouri",
+      "CH-VS": "Valais",
+      "CH-VD": "Vaud",
+      "CH-ZG": "Zoug",
+      "CH-ZH": "Zurich"
     }
   },
   "landing": {
@@ -49,6 +83,10 @@
     },
     "tools": {
       "title": "Zouti yo"
+    },
+    "nav": {
+      "pages": "Navige nan lòt paj",
+      "legal": "Navige nan paj legal yo"
     }
   },
   "text-to-speech": {

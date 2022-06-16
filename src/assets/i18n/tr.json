@@ -29,7 +29,41 @@
         "download": "Çeviriyi İndir",
         "copy": "Çeviriyi Kopyala",
         "share": "Çeviriyi Paylaş"
+      },
+      "progress-bars": {
+        "human-pose-viewer": {
+          "loading": "İnsan video modeli yükleniyor",
+          "generating": "Video oluşturuluyor"
+        }
       }
+    },
+    "dialects": {
+      "CH-AG": "Aargau",
+      "CH-AR": "Appenzell Ausserrhoden",
+      "CH-AI": "Appenzell Innerrhoden",
+      "CH-BL": "Basel-Landschaft",
+      "CH-BS": "Basel-Stadt",
+      "CH-BE": "Bern",
+      "CH-FR": "Fribourg",
+      "CH-GE": "Cenevre",
+      "CH-GL": "glarus",
+      "CH-GR": "Graubünden",
+      "CH-JU": "Jura",
+      "CH-LU": "Luzern",
+      "CH-NE": "Neuchâtel",
+      "CH-NW": "Nidwalden",
+      "CH-OW": "Obwalden",
+      "CH-SG": "Sankt Gallen",
+      "CH-SH": "Schaffhausen",
+      "CH-SZ": "Schwyz",
+      "CH-SO": "Solothurn",
+      "CH-TG": "Turgau",
+      "CH-TI": "Ticino",
+      "CH-UR": "Uri",
+      "CH-VS": "Valais",
+      "CH-VD": "vaud",
+      "CH-ZG": "Zug",
+      "CH-ZH": "Zürih"
     }
   },
   "landing": {
@@ -49,6 +83,10 @@
     },
     "tools": {
       "title": "Araçlar"
+    },
+    "nav": {
+      "pages": "Diğer sayfalara gidin",
+      "legal": "Yasal sayfalara gidin"
     }
   },
   "text-to-speech": {

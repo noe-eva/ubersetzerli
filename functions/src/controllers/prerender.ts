@@ -11,8 +11,8 @@ app.get('/opensearch.xml', (req, res) => {
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
   <ShortName>übersetzerli</ShortName>
   <Description>Get translations from übersetzerli.</Description>
-  <Url type="text/html" method="get" template="https://ubersetzer.li/?text={searchTerms}"/>
-  <Image width="32" height="32" alt="">https://ubersetzer.li/assets/icons/favicon.svg</Image>
+  <Url type="text/html" method="get" template="https://übersetzer.li/?text={searchTerms}"/>
+  <Image width="32" height="32" alt="">https://übersetzer.li/assets/icons/favicon.svg</Image>
 </OpenSearchDescription>`;
 
   res.set('Content-Type', 'text/xml');

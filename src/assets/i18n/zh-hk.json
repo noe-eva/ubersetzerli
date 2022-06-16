@@ -29,7 +29,41 @@
         "download": "下載翻譯",
         "copy": "複製翻譯",
         "share": "分享翻譯"
+      },
+      "progress-bars": {
+        "human-pose-viewer": {
+          "loading": "加載人類視頻模型",
+          "generating": "生成視頻"
+        }
       }
+    },
+    "dialects": {
+      "CH-AG": "阿爾高",
+      "CH-AR": "南阿彭策爾",
+      "CH-AI": "內阿彭策爾",
+      "CH-BL": "巴塞爾土地協會",
+      "CH-BS": "巴塞爾城市",
+      "CH-BE": "伯爾尼",
+      "CH-FR": "弗里堡",
+      "CH-GE": "日內瓦",
+      "CH-GL": "格拉魯斯",
+      "CH-GR": "格勞賓登州",
+      "CH-JU": "汝拉",
+      "CH-LU": "盧塞恩",
+      "CH-NE": "納沙泰爾",
+      "CH-NW": "下瓦爾登",
+      "CH-OW": "上瓦爾登",
+      "CH-SG": "聖加侖",
+      "CH-SH": "沙夫豪森",
+      "CH-SZ": "施維茨",
+      "CH-SO": "索洛圖恩",
+      "CH-TG": "圖爾高",
+      "CH-TI": "提契諾",
+      "CH-UR": "烏里",
+      "CH-VS": "瓦萊州",
+      "CH-VD": "沃州",
+      "CH-ZG": "楚格",
+      "CH-ZH": "蘇黎世"
     }
   },
   "landing": {
@@ -49,6 +83,10 @@
     },
     "tools": {
       "title": "工具"
+    },
+    "nav": {
+      "pages": "導航到其他頁面",
+      "legal": "導航到法律頁面"
     }
   },
   "text-to-speech": {

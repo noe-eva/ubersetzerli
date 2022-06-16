@@ -29,7 +29,41 @@
         "download": "Tarjima yuklab olish",
         "copy": "Tarjimani nusxalash",
         "share": "Tarjimani ulashish"
+      },
+      "progress-bars": {
+        "human-pose-viewer": {
+          "loading": "Inson video modeli yuklanmoqda",
+          "generating": "Video yaratish"
+        }
       }
+    },
+    "dialects": {
+      "CH-AG": "Aargau",
+      "CH-AR": "Appenzell Ausserrhoden",
+      "CH-AI": "Appenzell Innerrhoden",
+      "CH-BL": "Bazel-Landschaft",
+      "CH-BS": "Bazel-Shtadt",
+      "CH-BE": "Bern",
+      "CH-FR": "Fribourg",
+      "CH-GE": "Jenev",
+      "CH-GL": "Glarus",
+      "CH-GR": "Graubünden",
+      "CH-JU": "Yura",
+      "CH-LU": "Luzern",
+      "CH-NE": "Neuchatel",
+      "CH-NW": "Nidvalden",
+      "CH-OW": "Obvalden",
+      "CH-SG": "Sankt Gallen",
+      "CH-SH": "Shaffhauzen",
+      "CH-SZ": "Schwyz",
+      "CH-SO": "Solothurn",
+      "CH-TG": "Turgau",
+      "CH-TI": "Ticino",
+      "CH-UR": "Uri",
+      "CH-VS": "Valais",
+      "CH-VD": "Vaud",
+      "CH-ZG": "Zug",
+      "CH-ZH": "Tsyurix"
     }
   },
   "landing": {
@@ -49,6 +83,10 @@
     },
     "tools": {
       "title": "Asbob va vositalar"
+    },
+    "nav": {
+      "pages": "Boshqa sahifalarga o'ting",
+      "legal": "Yuridik sahifalarga o'ting"
     }
   },
   "text-to-speech": {

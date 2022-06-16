@@ -29,7 +29,41 @@
         "download": "번역 다운로드",
         "copy": "번역 복사",
         "share": "번역 공유"
+      },
+      "progress-bars": {
+        "human-pose-viewer": {
+          "loading": "사람 비디오 모델 로드 중",
+          "generating": "비디오 생성"
+        }
       }
+    },
+    "dialects": {
+      "CH-AG": "아르가우",
+      "CH-AR": "아펜첼 아우서로덴",
+      "CH-AI": "아펜첼 이너로덴",
+      "CH-BL": "바젤-랜드샤프트",
+      "CH-BS": "바젤-슈타트",
+      "CH-BE": "베른",
+      "CH-FR": "프리부르",
+      "CH-GE": "제네바",
+      "CH-GL": "글라루스",
+      "CH-GR": "그라우뷘덴",
+      "CH-JU": "쥐라",
+      "CH-LU": "루체른",
+      "CH-NE": "뇌샤텔",
+      "CH-NW": "니드왈덴",
+      "CH-OW": "오브발덴",
+      "CH-SG": "장크트 갈렌",
+      "CH-SH": "샤프하우젠",
+      "CH-SZ": "슈비츠",
+      "CH-SO": "졸로투른",
+      "CH-TG": "투르가우",
+      "CH-TI": "티치노",
+      "CH-UR": "우리",
+      "CH-VS": "발레",
+      "CH-VD": "보드",
+      "CH-ZG": "저그",
+      "CH-ZH": "취리히"
     }
   },
   "landing": {
@@ -49,6 +83,10 @@
     },
     "tools": {
       "title": "도구"
+    },
+    "nav": {
+      "pages": "다른 페이지로 이동",
+      "legal": "법률 페이지로 이동"
     }
   },
   "text-to-speech": {

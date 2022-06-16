@@ -29,7 +29,41 @@
         "download": "Descarrega Traducció",
         "copy": "Copia Traducció",
         "share": "Comparteix la traducció"
+      },
+      "progress-bars": {
+        "human-pose-viewer": {
+          "loading": "S'està carregant el model de vídeo humà",
+          "generating": "Generació de vídeo"
+        }
       }
+    },
+    "dialects": {
+      "CH-AG": "Argovia",
+      "CH-AR": "Appenzell Ausserrhoden",
+      "CH-AI": "Appenzell Rhoden Interior",
+      "CH-BL": "Basilea-Campanya",
+      "CH-BS": "Basilea Ciutat",
+      "CH-BE": "Berna",
+      "CH-FR": "Friburg",
+      "CH-GE": "Genève",
+      "CH-GL": "Glaris",
+      "CH-GR": "Graubünden",
+      "CH-JU": "Jura",
+      "CH-LU": "Lucerna",
+      "CH-NE": "Neuchâtel",
+      "CH-NW": "Nidwalden",
+      "CH-OW": "Obwalden",
+      "CH-SG": "Sant Gallen",
+      "CH-SH": "Xafhausen",
+      "CH-SZ": "Schwyz",
+      "CH-SO": "Soleura",
+      "CH-TG": "Turgovia",
+      "CH-TI": "Ticino",
+      "CH-UR": "Uri",
+      "CH-VS": "Valais",
+      "CH-VD": "Vaud",
+      "CH-ZG": "Zug",
+      "CH-ZH": "Zuric"
     }
   },
   "landing": {
@@ -49,6 +83,10 @@
     },
     "tools": {
       "title": "Eines"
+    },
+    "nav": {
+      "pages": "Navegueu a altres pàgines",
+      "legal": "Navegueu a pàgines legals"
     }
   },
   "text-to-speech": {

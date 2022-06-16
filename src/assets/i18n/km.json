@@ -29,7 +29,41 @@
         "download": "ទាញយកការបកប្រែ",
         "copy": "ចម្លងការបកប្រែ",
         "share": "ចែករំលែកការបកប្រែ"
+      },
+      "progress-bars": {
+        "human-pose-viewer": {
+          "loading": "កំពុងផ្ទុកគំរូវីដេអូរបស់មនុស្ស",
+          "generating": "ការបង្កើតវីដេអូ"
+        }
       }
+    },
+    "dialects": {
+      "CH-AG": "អាហ្គាហ្គូ",
+      "CH-AR": "Appenzell Ausserrhoden",
+      "CH-AI": "Appenzell Innerrhoden",
+      "CH-BL": "Basel-Landschaft",
+      "CH-BS": "បាសែល-ស្តាត",
+      "CH-BE": "ប៊ែន",
+      "CH-FR": "ហ្វ្រីបឺក",
+      "CH-GE": "ហ្សឺណែវ",
+      "CH-GL": "Glarus",
+      "CH-GR": "Graubünden",
+      "CH-JU": "ជូរ៉ា",
+      "CH-LU": "លូហ្សឺន",
+      "CH-NE": "Neuchâtel",
+      "CH-NW": "Nidwalden",
+      "CH-OW": "អូវ៉ាលដិន",
+      "CH-SG": "Sankt Gallen",
+      "CH-SH": "លោក Schaffhausen",
+      "CH-SZ": "ស្វីស",
+      "CH-SO": "សូឡូថន",
+      "CH-TG": "ធូហ្គោ",
+      "CH-TI": "ទីស៊ីណូ",
+      "CH-UR": "យូរី",
+      "CH-VS": "វ៉ាឡៃ",
+      "CH-VD": "វ៉ាដ",
+      "CH-ZG": "ហ្សុក",
+      "CH-ZH": "ហ្សឺរីច"
     }
   },
   "landing": {
@@ -49,6 +83,10 @@
     },
     "tools": {
       "title": "ឧបករណ៍"
+    },
+    "nav": {
+      "pages": "រុករកទៅទំព័រផ្សេងទៀត។",
+      "legal": "រុករកទៅទំព័រច្បាប់"
     }
   },
   "text-to-speech": {

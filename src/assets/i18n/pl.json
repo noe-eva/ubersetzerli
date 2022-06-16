@@ -29,7 +29,41 @@
         "download": "Pobierz tłumaczenie",
         "copy": "Kopiuj tłumaczenie",
         "share": "Udostępnij tłumaczenie"
+      },
+      "progress-bars": {
+        "human-pose-viewer": {
+          "loading": "Ładowanie ludzkiego modelu wideo",
+          "generating": "Generowanie wideo"
+        }
       }
+    },
+    "dialects": {
+      "CH-AG": "Argowia",
+      "CH-AR": "Appenzell Ausserrhoden",
+      "CH-AI": "Appenzell Innerrhoden",
+      "CH-BL": "Bazylea-Okręg",
+      "CH-BS": "Bazylea-Stadt",
+      "CH-BE": "Berno",
+      "CH-FR": "Fryburg",
+      "CH-GE": "Genewa",
+      "CH-GL": "Glarus",
+      "CH-GR": "Gryzonia",
+      "CH-JU": "jura",
+      "CH-LU": "Lucerna",
+      "CH-NE": "Neuchâtel",
+      "CH-NW": "Nidwalden",
+      "CH-OW": "Obwalden",
+      "CH-SG": "Sankt Gallen",
+      "CH-SH": "Szafuza",
+      "CH-SZ": "Schwyz",
+      "CH-SO": "Solothurn",
+      "CH-TG": "Turgowia",
+      "CH-TI": "Ticino",
+      "CH-UR": "Uri",
+      "CH-VS": "Valais",
+      "CH-VD": "Vaud",
+      "CH-ZG": "Zug",
+      "CH-ZH": "Zurych"
     }
   },
   "landing": {
@@ -49,6 +83,10 @@
     },
     "tools": {
       "title": "Narzędzia"
+    },
+    "nav": {
+      "pages": "Przejdź do innych stron",
+      "legal": "Przejdź do stron prawnych"
     }
   },
   "text-to-speech": {

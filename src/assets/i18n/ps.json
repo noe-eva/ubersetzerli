@@ -29,7 +29,41 @@
         "download": "ژباړه ډاونلوډ کړئ",
         "copy": "کاپي ژباړه",
         "share": "ژباړه شریک کړئ"
+      },
+      "progress-bars": {
+        "human-pose-viewer": {
+          "loading": "د انسان ویډیو ماډل پورته کول",
+          "generating": "ویډیو جوړول"
+        }
       }
+    },
+    "dialects": {
+      "CH-AG": "ارګو",
+      "CH-AR": "Appenzell Ausserrhoden",
+      "CH-AI": "Appenzell Innerrhoden",
+      "CH-BL": "باسل-لنډشافت",
+      "CH-BS": "باسل-سټډټ",
+      "CH-BE": "برن",
+      "CH-FR": "فریبورګ",
+      "CH-GE": "جینیو",
+      "CH-GL": "ګلاروس",
+      "CH-GR": "Graubünden",
+      "CH-JU": "جورا",
+      "CH-LU": "لوزرن",
+      "CH-NE": "Neuchâtel",
+      "CH-NW": "نیدوالدین",
+      "CH-OW": "Obwalden",
+      "CH-SG": "سانکت ګالین",
+      "CH-SH": "Schaffhausen",
+      "CH-SZ": "Schwyz",
+      "CH-SO": "سولوتورن",
+      "CH-TG": "تورګو",
+      "CH-TI": "ټیکینو",
+      "CH-UR": "اوری",
+      "CH-VS": "ویلای",
+      "CH-VD": "واود",
+      "CH-ZG": "زګ",
+      "CH-ZH": "زیوریخ"
     }
   },
   "landing": {
@@ -49,6 +83,10 @@
     },
     "tools": {
       "title": "توکي"
+    },
+    "nav": {
+      "pages": "نورو پاڼو ته لاړ شئ",
+      "legal": "قانوني پاڼو ته لاړ شئ"
     }
   },
   "text-to-speech": {

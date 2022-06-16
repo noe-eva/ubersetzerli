@@ -29,7 +29,41 @@
         "download": "Unduh Terjemahan",
         "copy": "Salin Terjemahan",
         "share": "Bagikan Terjemahan"
+      },
+      "progress-bars": {
+        "human-pose-viewer": {
+          "loading": "Memuat model video manusia",
+          "generating": "Membuat video"
+        }
       }
+    },
+    "dialects": {
+      "CH-AG": "Aargau",
+      "CH-AR": "Appenzell Ausserrhoden",
+      "CH-AI": "Appenzell Innerrhoden",
+      "CH-BL": "Basel-Landschaft",
+      "CH-BS": "Basel-Stadt",
+      "CH-BE": "Bern",
+      "CH-FR": "Friborg",
+      "CH-GE": "Genève",
+      "CH-GL": "Glarus",
+      "CH-GR": "Graubünden",
+      "CH-JU": "jura",
+      "CH-LU": "Luzern",
+      "CH-NE": "Neuchâtel",
+      "CH-NW": "Nidwalden",
+      "CH-OW": "Obwalden",
+      "CH-SG": "Sankt Gallen",
+      "CH-SH": "Schaffhausen",
+      "CH-SZ": "Schwyz",
+      "CH-SO": "Solothurn",
+      "CH-TG": "Thurgau",
+      "CH-TI": "Ticino",
+      "CH-UR": "uri",
+      "CH-VS": "Valais",
+      "CH-VD": "Vaud",
+      "CH-ZG": "Zug",
+      "CH-ZH": "Zürich"
     }
   },
   "landing": {
@@ -49,6 +83,10 @@
     },
     "tools": {
       "title": "Peralatan"
+    },
+    "nav": {
+      "pages": "Navigasikan ke halaman lain",
+      "legal": "Arahkan ke halaman hukum"
     }
   },
   "text-to-speech": {

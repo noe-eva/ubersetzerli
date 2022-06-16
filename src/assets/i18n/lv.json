@@ -29,7 +29,41 @@
         "download": "Lejupielādēt tulkojumu",
         "copy": "Kopēt tulkojumu",
         "share": "Kopīgot tulkojumu"
+      },
+      "progress-bars": {
+        "human-pose-viewer": {
+          "loading": "Notiek cilvēka video modeļa ielāde",
+          "generating": "Notiek video ģenerēšana"
+        }
       }
+    },
+    "dialects": {
+      "CH-AG": "Ārgau",
+      "CH-AR": "Appenzell Ausserrhoden",
+      "CH-AI": "Apencelle Inerrodena",
+      "CH-BL": "Bāzele-Landšafta",
+      "CH-BS": "Bāzele-Štāte",
+      "CH-BE": "Berne",
+      "CH-FR": "Fribourg",
+      "CH-GE": "Ženēva",
+      "CH-GL": "Glarus",
+      "CH-GR": "Graubinden",
+      "CH-JU": "Jura",
+      "CH-LU": "Luzern",
+      "CH-NE": "Neišatela",
+      "CH-NW": "Nidwalden",
+      "CH-OW": "Obwalden",
+      "CH-SG": "Sanktgallena",
+      "CH-SH": "Šafhauzens",
+      "CH-SZ": "Schwyz",
+      "CH-SO": "Solothurn",
+      "CH-TG": "Thurgau",
+      "CH-TI": "Tičīno",
+      "CH-UR": "Uri",
+      "CH-VS": "Valē",
+      "CH-VD": "Vaud",
+      "CH-ZG": "Cūga",
+      "CH-ZH": "Cīrihe"
     }
   },
   "landing": {
@@ -49,6 +83,10 @@
     },
     "tools": {
       "title": "Rīki"
+    },
+    "nav": {
+      "pages": "Pārejiet uz citām lapām",
+      "legal": "Pārejiet uz juridiskajām lapām"
     }
   },
   "text-to-speech": {

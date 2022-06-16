@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <a href="https://ubersetzer.li/"><strong>ubersetzer.li</strong></a>
+  <a href="https://übersetzer.li/"><strong>übersetzer.li</strong></a>
   <br>
 </p>
 

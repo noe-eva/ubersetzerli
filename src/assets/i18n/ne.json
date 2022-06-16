@@ -29,7 +29,41 @@
         "download": "अनुवाद डाउनलोड गर्नुहोस्",
         "copy": "अनुवाद प्रतिलिपि गर्नुहोस्",
         "share": "अनुवाद साझेदारी गर्नुहोस्"
+      },
+      "progress-bars": {
+        "human-pose-viewer": {
+          "loading": "मानव भिडियो मोडेल लोड गर्दै",
+          "generating": "भिडियो उत्पन्न गर्दै"
+        }
       }
+    },
+    "dialects": {
+      "CH-AG": "अर्गाउ",
+      "CH-AR": "Appenzell Ausserrhoden",
+      "CH-AI": "Appenzell Innerrhoden",
+      "CH-BL": "बेसल-ल्याण्डस्चाफ्ट",
+      "CH-BS": "Basel-Stadt",
+      "CH-BE": "बर्न",
+      "CH-FR": "फ्राइबर्ग",
+      "CH-GE": "जेनेभ",
+      "CH-GL": "ग्लारस",
+      "CH-GR": "Graubünden",
+      "CH-JU": "जुरा",
+      "CH-LU": "लुजर्न",
+      "CH-NE": "Neuchâtel",
+      "CH-NW": "निडवाल्डेन",
+      "CH-OW": "Obwalden",
+      "CH-SG": "Sankt Gallen",
+      "CH-SH": "शाफहाउसेन",
+      "CH-SZ": "Schwyz",
+      "CH-SO": "सोलोथर्न",
+      "CH-TG": "थर्गाउ",
+      "CH-TI": "टिकिनो",
+      "CH-UR": "उरी",
+      "CH-VS": "Valais",
+      "CH-VD": "वाउड",
+      "CH-ZG": "जुग",
+      "CH-ZH": "जुरिच"
     }
   },
   "landing": {
@@ -49,6 +83,10 @@
     },
     "tools": {
       "title": "उपकरणहरू"
+    },
+    "nav": {
+      "pages": "अन्य पृष्ठहरूमा नेभिगेट गर्नुहोस्",
+      "legal": "कानूनी पृष्ठहरूमा नेभिगेट गर्नुहोस्"
     }
   },
   "text-to-speech": {

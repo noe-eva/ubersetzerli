@@ -29,7 +29,41 @@
         "download": "Scarica traduzione",
         "copy": "Copia traduzione",
         "share": "Condividi traduzione"
+      },
+      "progress-bars": {
+        "human-pose-viewer": {
+          "loading": "Caricamento del modello video umano",
+          "generating": "Generazione video"
+        }
       }
+    },
+    "dialects": {
+      "CH-AG": "Argovia",
+      "CH-AR": "Appenzello Esterno",
+      "CH-AI": "Appenzello Interno",
+      "CH-BL": "Basilea Campagna",
+      "CH-BS": "Basilea Città",
+      "CH-BE": "Berna",
+      "CH-FR": "Friburgo",
+      "CH-GE": "Ginevra",
+      "CH-GL": "Glarona",
+      "CH-GR": "Grigioni",
+      "CH-JU": "Giura",
+      "CH-LU": "Lucerna",
+      "CH-NE": "Neuchâtel",
+      "CH-NW": "Nidvaldo",
+      "CH-OW": "Obvaldo",
+      "CH-SG": "San Gallo",
+      "CH-SH": "Sciaffusa",
+      "CH-SZ": "Svitto",
+      "CH-SO": "Soletta",
+      "CH-TG": "Turgovia",
+      "CH-TI": "Ticino",
+      "CH-UR": "Uri",
+      "CH-VS": "Vallese",
+      "CH-VD": "Vaud",
+      "CH-ZG": "Zugo",
+      "CH-ZH": "Zurigo"
     }
   },
   "landing": {
@@ -49,6 +83,10 @@
     },
     "tools": {
       "title": "Strumenti"
+    },
+    "nav": {
+      "pages": "Passa ad altre pagine",
+      "legal": "Vai alle pagine legali"
     }
   },
   "text-to-speech": {

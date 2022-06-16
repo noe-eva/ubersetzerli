@@ -29,7 +29,41 @@
         "download": "下载翻译",
         "copy": "复制翻译",
         "share": "分享翻译"
+      },
+      "progress-bars": {
+        "human-pose-viewer": {
+          "loading": "加载人类视频模型",
+          "generating": "生成视频"
+        }
       }
+    },
+    "dialects": {
+      "CH-AG": "阿尔高",
+      "CH-AR": "南阿彭策尔",
+      "CH-AI": "内阿彭策尔",
+      "CH-BL": "巴塞尔土地协会",
+      "CH-BS": "巴塞尔城市",
+      "CH-BE": "伯尔尼",
+      "CH-FR": "弗里堡",
+      "CH-GE": "日内瓦",
+      "CH-GL": "格拉鲁斯",
+      "CH-GR": "格劳宾登州",
+      "CH-JU": "汝拉",
+      "CH-LU": "卢塞恩",
+      "CH-NE": "纳沙泰尔",
+      "CH-NW": "下瓦尔登",
+      "CH-OW": "上瓦尔登",
+      "CH-SG": "圣加仑",
+      "CH-SH": "沙夫豪森",
+      "CH-SZ": "施维茨",
+      "CH-SO": "索洛图恩",
+      "CH-TG": "图尔高",
+      "CH-TI": "提契诺",
+      "CH-UR": "乌里",
+      "CH-VS": "瓦莱州",
+      "CH-VD": "沃州",
+      "CH-ZG": "楚格",
+      "CH-ZH": "苏黎世"
     }
   },
   "landing": {
@@ -49,6 +83,10 @@
     },
     "tools": {
       "title": "工具"
+    },
+    "nav": {
+      "pages": "导航到其他页面",
+      "legal": "导航到法律页面"
     }
   },
   "text-to-speech": {

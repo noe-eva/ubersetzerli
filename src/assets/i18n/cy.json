@@ -29,7 +29,41 @@
         "download": "Download Cyfieithiad",
         "copy": "Copi Cyfieithiad",
         "share": "Rhannu Cyfieithiad"
+      },
+      "progress-bars": {
+        "human-pose-viewer": {
+          "loading": "Llwytho model fideo dynol",
+          "generating": "Cynhyrchu fideo"
+        }
       }
+    },
+    "dialects": {
+      "CH-AG": "Aargau",
+      "CH-AR": "Appenzell Ausserrhoden",
+      "CH-AI": "Appenzell Innerrhoden",
+      "CH-BL": "Basel-Tirsiafft",
+      "CH-BS": "Basel-Stadt",
+      "CH-BE": "Bern",
+      "CH-FR": "Fribourg",
+      "CH-GE": "Genève",
+      "CH-GL": "Glarus",
+      "CH-GR": "Graubünden",
+      "CH-JU": "Jura",
+      "CH-LU": "Luzern",
+      "CH-NE": "Neuchâtel",
+      "CH-NW": "Nidwalden",
+      "CH-OW": "Obwalden",
+      "CH-SG": "Sankt Gallen",
+      "CH-SH": "Schaffhausen",
+      "CH-SZ": "Schwyz",
+      "CH-SO": "Solothurn",
+      "CH-TG": "Thurgau",
+      "CH-TI": "Ticino",
+      "CH-UR": "Uri",
+      "CH-VS": "Valais",
+      "CH-VD": "Vaud",
+      "CH-ZG": "Swg",
+      "CH-ZH": "Zürich"
     }
   },
   "landing": {
@@ -49,6 +83,10 @@
     },
     "tools": {
       "title": "Offer"
+    },
+    "nav": {
+      "pages": "Llywiwch i dudalennau eraill",
+      "legal": "Llywiwch i dudalennau cyfreithiol"
     }
   },
   "text-to-speech": {

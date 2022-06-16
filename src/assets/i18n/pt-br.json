@@ -29,7 +29,41 @@
         "download": "Baixar tradução",
         "copy": "Copiar Tradução",
         "share": "Compartilhar tradução"
+      },
+      "progress-bars": {
+        "human-pose-viewer": {
+          "loading": "Carregando modelo de vídeo humano",
+          "generating": "Gerando vídeo"
+        }
       }
+    },
+    "dialects": {
+      "CH-AG": "Argóvia",
+      "CH-AR": "Appenzell Ausserrhoden",
+      "CH-AI": "Appenzell Innerrhoden",
+      "CH-BL": "Basel-Landschaft",
+      "CH-BS": "Basileia-Estado",
+      "CH-BE": "Berna",
+      "CH-FR": "Friburgo",
+      "CH-GE": "Genebra",
+      "CH-GL": "Glarus",
+      "CH-GR": "Grisões",
+      "CH-JU": "Jura",
+      "CH-LU": "Luzern",
+      "CH-NE": "Neuchâtel",
+      "CH-NW": "Nidwalden",
+      "CH-OW": "Obwalden",
+      "CH-SG": "Sankt Gallen",
+      "CH-SH": "Schaffhausen",
+      "CH-SZ": "Schwyz",
+      "CH-SO": "Solothurn",
+      "CH-TG": "Thurgau",
+      "CH-TI": "Ticino",
+      "CH-UR": "Uri",
+      "CH-VS": "Valais",
+      "CH-VD": "Vaud",
+      "CH-ZG": "Zug",
+      "CH-ZH": "Zurique"
     }
   },
   "landing": {
@@ -49,6 +83,10 @@
     },
     "tools": {
       "title": "Ferramentas"
+    },
+    "nav": {
+      "pages": "Navegue para outras páginas",
+      "legal": "Navegue para páginas jurídicas"
     }
   },
   "text-to-speech": {

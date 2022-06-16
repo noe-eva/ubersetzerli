@@ -29,7 +29,41 @@
         "download": "Niżżel Traduzzjoni",
         "copy": "Kopja tat-Traduzzjoni",
         "share": "Share Traduzzjoni"
+      },
+      "progress-bars": {
+        "human-pose-viewer": {
+          "loading": "Tagħbija tal-mudell tal-vidjo uman",
+          "generating": "Ġenerazzjoni tal-vidjo"
+        }
       }
+    },
+    "dialects": {
+      "CH-AG": "Aargau",
+      "CH-AR": "Appenzell Ausserrhoden",
+      "CH-AI": "Appenzell Innerrhoden",
+      "CH-BL": "Basel-Landschaft",
+      "CH-BS": "Basel-Stadt",
+      "CH-BE": "Berna",
+      "CH-FR": "Friborg",
+      "CH-GE": "Genève",
+      "CH-GL": "Glarus",
+      "CH-GR": "Graubünden",
+      "CH-JU": "Ġura",
+      "CH-LU": "Luzern",
+      "CH-NE": "Neuchâtel",
+      "CH-NW": "Nidwalden",
+      "CH-OW": "Obwalden",
+      "CH-SG": "Sankt Gallen",
+      "CH-SH": "Schaffhausen",
+      "CH-SZ": "Schwyz",
+      "CH-SO": "Solothurn",
+      "CH-TG": "Thurgau",
+      "CH-TI": "Tiċino",
+      "CH-UR": "Uri",
+      "CH-VS": "Valais",
+      "CH-VD": "Vaud",
+      "CH-ZG": "Zug",
+      "CH-ZH": "Zurich"
     }
   },
   "landing": {
@@ -49,6 +83,10 @@
     },
     "tools": {
       "title": "Għodod"
+    },
+    "nav": {
+      "pages": "Innaviga lejn paġni oħra",
+      "legal": "Innaviga lejn paġni legali"
     }
   },
   "text-to-speech": {

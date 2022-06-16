@@ -29,7 +29,41 @@
         "download": "Λήψη μετάφρασης",
         "copy": "Αντιγραφή μετάφρασης",
         "share": "Κοινή χρήση μετάφρασης"
+      },
+      "progress-bars": {
+        "human-pose-viewer": {
+          "loading": "Φόρτωση μοντέλου ανθρώπινου βίντεο",
+          "generating": "Δημιουργία βίντεο"
+        }
       }
+    },
+    "dialects": {
+      "CH-AG": "Aargau",
+      "CH-AR": "Appenzell Ausserrhoden",
+      "CH-AI": "Appenzell Innerrhoden",
+      "CH-BL": "Βασιλεία-Landschaft",
+      "CH-BS": "Βασιλεία-Σταντ",
+      "CH-BE": "Βέρνη",
+      "CH-FR": "Fribourg",
+      "CH-GE": "Genève",
+      "CH-GL": "Γκλάρους",
+      "CH-GR": "Graubünden",
+      "CH-JU": "Jura",
+      "CH-LU": "Λουκέρνη",
+      "CH-NE": "Neuchâtel",
+      "CH-NW": "Nidwalden",
+      "CH-OW": "Ο Ομπβάλντεν",
+      "CH-SG": "Sankt Gallen",
+      "CH-SH": "Σαφχάουζεν",
+      "CH-SZ": "Schwyz",
+      "CH-SO": "Solothurn",
+      "CH-TG": "Τουργκάου",
+      "CH-TI": "Τιτσίνο",
+      "CH-UR": "Uri",
+      "CH-VS": "Valais",
+      "CH-VD": "Vaud",
+      "CH-ZG": "Zug",
+      "CH-ZH": "Ζυρίχη"
     }
   },
   "landing": {
@@ -49,6 +83,10 @@
     },
     "tools": {
       "title": "Εργαλεία"
+    },
+    "nav": {
+      "pages": "Πλοηγηθείτε σε άλλες σελίδες",
+      "legal": "Πλοηγηθείτε σε νομικές σελίδες"
     }
   },
   "text-to-speech": {

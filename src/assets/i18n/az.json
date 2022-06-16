@@ -29,7 +29,41 @@
         "download": "Tərcüməni yükləyin",
         "copy": "Tərcüməni Kopyalayın",
         "share": "Tərcüməni Paylaşın"
+      },
+      "progress-bars": {
+        "human-pose-viewer": {
+          "loading": "İnsan video modeli yüklənir",
+          "generating": "Videonun yaradılması"
+        }
       }
+    },
+    "dialects": {
+      "CH-AG": "Aarqau",
+      "CH-AR": "Appenzell Ausserrhoden",
+      "CH-AI": "Appenzell Innerrhoden",
+      "CH-BL": "Bazel-Landşaft",
+      "CH-BS": "Bazel-Ştadt",
+      "CH-BE": "Bern",
+      "CH-FR": "Fribourq",
+      "CH-GE": "Cenevrə",
+      "CH-GL": "Glarus",
+      "CH-GR": "Graubünden",
+      "CH-JU": "Jura",
+      "CH-LU": "Luzern",
+      "CH-NE": "Neuchâtel",
+      "CH-NW": "Nidwalden",
+      "CH-OW": "Obwalden",
+      "CH-SG": "Sankt Gallen",
+      "CH-SH": "Şaffhauzen",
+      "CH-SZ": "Schwyz",
+      "CH-SO": "Solothurn",
+      "CH-TG": "Turqau",
+      "CH-TI": "Ticino",
+      "CH-UR": "Uri",
+      "CH-VS": "Valais",
+      "CH-VD": "Vaud",
+      "CH-ZG": "Zuq",
+      "CH-ZH": "Sürix"
     }
   },
   "landing": {
@@ -49,6 +83,10 @@
     },
     "tools": {
       "title": "Alətlər"
+    },
+    "nav": {
+      "pages": "Digər səhifələrə keçin",
+      "legal": "Hüquqi səhifələrə keçin"
     }
   },
   "text-to-speech": {

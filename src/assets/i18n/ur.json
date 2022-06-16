@@ -29,7 +29,41 @@
         "download": "ترجمہ ڈاؤن لوڈ کریں۔",
         "copy": "ترجمہ کاپی کریں۔",
         "share": "ترجمہ شیئر کریں۔"
+      },
+      "progress-bars": {
+        "human-pose-viewer": {
+          "loading": "انسانی ویڈیو ماڈل لوڈ ہو رہا ہے۔",
+          "generating": "ویڈیو بنا رہا ہے۔"
+        }
       }
+    },
+    "dialects": {
+      "CH-AG": "آرگاؤ",
+      "CH-AR": "Appenzell Auserrhoden",
+      "CH-AI": "اپینزیل انیرروڈن",
+      "CH-BL": "بیسل لینڈ شافٹ",
+      "CH-BS": "باسل سٹیڈٹ",
+      "CH-BE": "برن",
+      "CH-FR": "فریبرگ",
+      "CH-GE": "جینیو",
+      "CH-GL": "گلورس",
+      "CH-GR": "Graubünden",
+      "CH-JU": "جورا",
+      "CH-LU": "لوزرن",
+      "CH-NE": "Neuchâtel",
+      "CH-NW": "نڈوالڈن",
+      "CH-OW": "اوبوالڈن",
+      "CH-SG": "سانکٹ گیلن",
+      "CH-SH": "Schaffhausen",
+      "CH-SZ": "Schwyz",
+      "CH-SO": "سولوتھرن",
+      "CH-TG": "تھرگاؤ",
+      "CH-TI": "Ticino",
+      "CH-UR": "یوری",
+      "CH-VS": "والیس",
+      "CH-VD": "واڈ",
+      "CH-ZG": "زگ",
+      "CH-ZH": "زیورخ"
     }
   },
   "landing": {
@@ -49,6 +83,10 @@
     },
     "tools": {
       "title": "آلات"
+    },
+    "nav": {
+      "pages": "دوسرے صفحات پر جائیں۔",
+      "legal": "قانونی صفحات پر جائیں۔"
     }
   },
   "text-to-speech": {

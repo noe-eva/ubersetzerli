@@ -29,7 +29,41 @@
         "download": "Landa Ukuhumusha",
         "copy": "Kopisha Ukuhumusha",
         "share": "Yabelana ngokuhumusha"
+      },
+      "progress-bars": {
+        "human-pose-viewer": {
+          "loading": "Ilayisha imodeli yevidiyo yomuntu",
+          "generating": "Ikhiqiza ividiyo"
+        }
       }
+    },
+    "dialects": {
+      "CH-AG": "Aargau",
+      "CH-AR": "Appenzell Ausserrhoden",
+      "CH-AI": "I-Appenzell Innerrhoden",
+      "CH-BL": "I-Basel-Landschaft",
+      "CH-BS": "I-Basel-Stadt",
+      "CH-BE": "Bern",
+      "CH-FR": "Fribourg",
+      "CH-GE": "I-Genève",
+      "CH-GL": "I-Glarus",
+      "CH-GR": "Graubünden",
+      "CH-JU": "Jura",
+      "CH-LU": "Luzern",
+      "CH-NE": "Neuchâtel",
+      "CH-NW": "Nidwalden",
+      "CH-OW": "Obwalden",
+      "CH-SG": "Sankt Gallen",
+      "CH-SH": "Schaffhausen",
+      "CH-SZ": "Schwyz",
+      "CH-SO": "I-Solothurn",
+      "CH-TG": "Thurgau",
+      "CH-TI": "I-Ticino",
+      "CH-UR": "Uri",
+      "CH-VS": "Valais",
+      "CH-VD": "Vaud",
+      "CH-ZG": "Zug",
+      "CH-ZH": "Zürich"
     }
   },
   "landing": {
@@ -49,6 +83,10 @@
     },
     "tools": {
       "title": "Amathuluzi"
+    },
+    "nav": {
+      "pages": "Zulazulela kwamanye amakhasi",
+      "legal": "Zulazulela emakhasini asemthethweni"
     }
   },
   "text-to-speech": {

@@ -29,7 +29,41 @@
         "download": "Terjimäni göçürip al",
         "copy": "Terjimäni göçüriň",
         "share": "Terjimäni paýlaş"
+      },
+      "progress-bars": {
+        "human-pose-viewer": {
+          "loading": "Adam wideo modelini ýüklemek",
+          "generating": "Wideo döretmek"
+        }
       }
+    },
+    "dialects": {
+      "CH-AG": "Aargau",
+      "CH-AR": "Appenzell Ausserrhoden",
+      "CH-AI": "Appenzell Innerrhoden",
+      "CH-BL": "Bazel-Landschaft",
+      "CH-BS": "Bazel-Stadt",
+      "CH-BE": "Bern",
+      "CH-FR": "Friborg",
+      "CH-GE": "Genève",
+      "CH-GL": "Glarus",
+      "CH-GR": "Graubünden",
+      "CH-JU": "Jura",
+      "CH-LU": "Luzern",
+      "CH-NE": "Neuchâtel",
+      "CH-NW": "Nidwalden",
+      "CH-OW": "Obwalden",
+      "CH-SG": "Sankt Gallen",
+      "CH-SH": "Şafhauzen",
+      "CH-SZ": "Schwyz",
+      "CH-SO": "Solothurn",
+      "CH-TG": "Thurgau",
+      "CH-TI": "Ticino",
+      "CH-UR": "Uri",
+      "CH-VS": "Walais",
+      "CH-VD": "Vaud",
+      "CH-ZG": "Zug",
+      "CH-ZH": "Zürich"
     }
   },
   "landing": {
@@ -49,6 +83,10 @@
     },
     "tools": {
       "title": "Gurallar"
+    },
+    "nav": {
+      "pages": "Beýleki sahypalara geçiň",
+      "legal": "Hukuk sahypalaryna geçiň"
     }
   },
   "text-to-speech": {

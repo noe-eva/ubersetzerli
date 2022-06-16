@@ -29,7 +29,41 @@
         "download": "Zazzage Fassara",
         "copy": "Kwafi Fassara",
         "share": "Raba Fassarar"
+      },
+      "progress-bars": {
+        "human-pose-viewer": {
+          "loading": "Ana loda samfurin bidiyo na ɗan adam",
+          "generating": "Samar da bidiyo"
+        }
       }
+    },
+    "dialects": {
+      "CH-AG": "Aargau",
+      "CH-AR": "Appenzell Ausserrhoden",
+      "CH-AI": "Bayanin Appenzell Innerrhoden",
+      "CH-BL": "Basel-Landschaft",
+      "CH-BS": "Basel-Stadt",
+      "CH-BE": "Bern",
+      "CH-FR": "Fribourg",
+      "CH-GE": "Genève",
+      "CH-GL": "Glarus",
+      "CH-GR": "Graubünden",
+      "CH-JU": "Jura",
+      "CH-LU": "Luzern",
+      "CH-NE": "Neuchâtel",
+      "CH-NW": "Nidwalden",
+      "CH-OW": "Obwalden",
+      "CH-SG": "Sankt Gallen",
+      "CH-SH": "Schafhausen",
+      "CH-SZ": "Schwyz",
+      "CH-SO": "Solothurn",
+      "CH-TG": "Thurgau",
+      "CH-TI": "Ticino",
+      "CH-UR": "Uri",
+      "CH-VS": "Valais",
+      "CH-VD": "Wato",
+      "CH-ZG": "Zug",
+      "CH-ZH": "Zurich"
     }
   },
   "landing": {
@@ -49,6 +83,10 @@
     },
     "tools": {
       "title": "Kayan Aiki"
+    },
+    "nav": {
+      "pages": "Kewaya zuwa wasu shafuka",
+      "legal": "Kewaya zuwa shafukan doka"
     }
   },
   "text-to-speech": {

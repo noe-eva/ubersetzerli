@@ -29,7 +29,41 @@
         "download": "Translation Download",
         "copy": "Котормосун көчүрүү",
         "share": "Котормо менен бөлүшүү"
+      },
+      "progress-bars": {
+        "human-pose-viewer": {
+          "loading": "Адамдын видео модели жүктөлүүдө",
+          "generating": "Видео түзүлүүдө"
+        }
       }
+    },
+    "dialects": {
+      "CH-AG": "Ааргау",
+      "CH-AR": "Аппенцелл Ауссерроден",
+      "CH-AI": "Appenzell Innerrhoden",
+      "CH-BL": "Базель-Ландшафт",
+      "CH-BS": "Базель-Штадт",
+      "CH-BE": "Берн",
+      "CH-FR": "Фриборг",
+      "CH-GE": "Женева",
+      "CH-GL": "Glarus",
+      "CH-GR": "Graubünden",
+      "CH-JU": "Юра",
+      "CH-LU": "Luzern",
+      "CH-NE": "Neuchâtel",
+      "CH-NW": "Nidwalden",
+      "CH-OW": "Obwalden",
+      "CH-SG": "Санкт Галлен",
+      "CH-SH": "Шаффхаузен",
+      "CH-SZ": "Schwyz",
+      "CH-SO": "Solothurn",
+      "CH-TG": "Тургау",
+      "CH-TI": "Ticino",
+      "CH-UR": "Uri",
+      "CH-VS": "Valais",
+      "CH-VD": "Vaud",
+      "CH-ZG": "Zug",
+      "CH-ZH": "Цюрих"
     }
   },
   "landing": {
@@ -49,6 +83,10 @@
     },
     "tools": {
       "title": "Куралдар"
+    },
+    "nav": {
+      "pages": "Башка барактарга өтүңүз",
+      "legal": "Юридикалык барактарга өтүңүз"
     }
   },
   "text-to-speech": {
