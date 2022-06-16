@@ -112,70 +112,7 @@
       "title": "Software en lisinsjes"
     }
   },
-  "playground": {
-    "title": "Gebeartetaalferwurkingsboarterstún"
-  },
-  "benchmark": {
-    "title": "Benchmark",
-    "stats": {
-      "cld": {
-        "title": "Spoken Language Identification",
-        "import": "Ymportearje Module",
-        "load": "Laden Model",
-        "find": "Tekst identifisearje",
-        "create": "Meitsje"
-      },
-      "pix2pix": {
-        "title": "Human Pose Viewer",
-        "init": "Arbeider Init",
-        "load": "Laden Model",
-        "first-frame": "Earste Frame Inference",
-        "frame": "Frame konklúzje"
-      },
-      "pose": {
-        "title": "Skatting fan folsleine lichemsposysje",
-        "load": "Model Load",
-        "first-frame": "Earste Frame Inference",
-        "frame": "Frame konklúzje"
-      }
-    }
-  },
-  "appearance": {
-    "title": "Ferskining",
-    "action": "Feroarje uterlik",
-    "random": "Krij in willekeurige foto",
-    "upload": "Upload dyn eigen foto"
-  },
-  "video": {
-    "errors": {
-      "starting": "Kamera begjint",
-      "turnedOff": "Kamera útskeakele",
-      "notConnected": "Kamera net ferbûn",
-      "permissionDenied": "Kameratastimming wegere"
-    },
-    "controls": {
-      "receiveVideo": {
-        "on": "Kamera útsette",
-        "off": "Kamera oansette"
-      }
-    }
-  },
-  "pose": {
-    "loading": "Poseskatting laden..."
-  },
   "language-selector": {
     "label": "Feroarje taal of regio"
-  },
-  "settings": {
-    "detectSign": "Detect Sign",
-    "drawVideo": "Fideo tekenje",
-    "drawPose": "Draw Pose",
-    "drawSignWriting": "Teken teken skriuwen",
-    "animatePose": "Animearje Pose",
-    "poseViewer": {
-      "pose": "Skelet",
-      "avatar": "Avatar",
-      "human": "Minske"
-    }
   }
 }

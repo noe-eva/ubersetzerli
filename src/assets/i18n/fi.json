@@ -112,70 +112,7 @@
       "title": "Ohjelmistot ja käyttöluvat"
     }
   },
-  "playground": {
-    "title": "Viittomakielen käsittelyn leikkikenttä"
-  },
-  "benchmark": {
-    "title": "Vertailuarvo",
-    "stats": {
-      "cld": {
-        "title": "Puhutun kielen tunnistus",
-        "import": "Tuo moduuli",
-        "load": "Lataa malli",
-        "find": "Tunnista teksti",
-        "create": "Luoda"
-      },
-      "pix2pix": {
-        "title": "Ihmisasennon katseluohjelma",
-        "init": "Työntekijä Init",
-        "load": "Lataa malli",
-        "first-frame": "Ensimmäisen kehyksen päättely",
-        "frame": "Frame johtopäätös"
-      },
-      "pose": {
-        "title": "Koko kehon asentoarvio",
-        "load": "Mallin kuormitus",
-        "first-frame": "Ensimmäisen kehyksen päättely",
-        "frame": "Frame johtopäätös"
-      }
-    }
-  },
-  "appearance": {
-    "title": "Ulkomuoto",
-    "action": "Muokkaa ulkonäköä",
-    "random": "Ota satunnainen valokuva",
-    "upload": "Lataa oma valokuvasi"
-  },
-  "video": {
-    "errors": {
-      "starting": "Kamera käynnistyy",
-      "turnedOff": "Kamera sammutettu",
-      "notConnected": "Kameraa ei ole kytketty",
-      "permissionDenied": "Kameran lupa evätty"
-    },
-    "controls": {
-      "receiveVideo": {
-        "on": "Sammuta kamera",
-        "off": "Kytke kamera päälle"
-      }
-    }
-  },
-  "pose": {
-    "loading": "Ladataan asentoarviota..."
-  },
   "language-selector": {
     "label": "Vaihda kieli tai alue"
-  },
-  "settings": {
-    "detectSign": "Tunnista merkki",
-    "drawVideo": "Piirrä video",
-    "drawPose": "Piirrä Pose",
-    "drawSignWriting": "Piirrä merkkien kirjoittaminen",
-    "animatePose": "Animate Pose",
-    "poseViewer": {
-      "pose": "Luuranko",
-      "avatar": "hahmo",
-      "human": "Ihmisen"
-    }
   }
 }

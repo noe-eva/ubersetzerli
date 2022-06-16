@@ -112,70 +112,7 @@
       "title": "Software jeung Lisénsi"
     }
   },
-  "playground": {
-    "title": "Tanda kaulinan Processing Basa"
-  },
-  "benchmark": {
-    "title": "Patokan",
-    "stats": {
-      "cld": {
-        "title": "Idéntifikasi basa lisan",
-        "import": "Modul impor",
-        "load": "Modél beban",
-        "find": "Identipikasi téks",
-        "create": "Nyiptakeun"
-      },
-      "pix2pix": {
-        "title": "Manusa Pose Viewer",
-        "init": "Pagawe Init",
-        "load": "Modél beban",
-        "first-frame": "Inferensi pigura munggaran",
-        "frame": "Bingkai Inferensi"
-      },
-      "pose": {
-        "title": "Estimasi Pose Awak pinuh",
-        "load": "Modél Beban",
-        "first-frame": "Inferensi pigura munggaran",
-        "frame": "Bingkai Inferensi"
-      }
-    }
-  },
-  "appearance": {
-    "title": "Penampilan",
-    "action": "Ngarobah penampilan",
-    "random": "Meunang poto acak",
-    "upload": "Unggah poto anjeun nyalira"
-  },
-  "video": {
-    "errors": {
-      "starting": "Kaméra ngamimitian",
-      "turnedOff": "Kaméra dipareuman",
-      "notConnected": "Kaméra teu nyambung",
-      "permissionDenied": "Idin kaméra ditolak"
-    },
-    "controls": {
-      "receiveVideo": {
-        "on": "Pareuman kaméra",
-        "off": "Hurungkeun kaméra"
-      }
-    }
-  },
-  "pose": {
-    "loading": "Ngamuat Estimasi Pose..."
-  },
   "language-selector": {
     "label": "Ganti basa atanapi daérah"
-  },
-  "settings": {
-    "detectSign": "Ngadeteksi Tanda",
-    "drawVideo": "Ngagambar Video",
-    "drawPose": "Ngagambar Pose",
-    "drawSignWriting": "Ngagambar Tulisan Tanda",
-    "animatePose": "Ngahirupkeun Pose",
-    "poseViewer": {
-      "pose": "Rorongkong",
-      "avatar": "Avatar",
-      "human": "Manusa"
-    }
   }
 }

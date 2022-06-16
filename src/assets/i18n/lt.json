@@ -112,70 +112,7 @@
       "title": "Programinė įranga ir licencijos"
     }
   },
-  "playground": {
-    "title": "Gestų kalbos apdorojimo žaidimų aikštelė"
-  },
-  "benchmark": {
-    "title": "Etalonas",
-    "stats": {
-      "cld": {
-        "title": "Šnekamosios kalbos identifikavimas",
-        "import": "Importavimo modulis",
-        "load": "Krovinio modelis",
-        "find": "Identifikuokite tekstą",
-        "create": "Sukurti"
-      },
-      "pix2pix": {
-        "title": "Žmogaus pozų žiūrovas",
-        "init": "Darbuotojas Initas",
-        "load": "Krovinio modelis",
-        "first-frame": "Pirmojo kadro išvada",
-        "frame": "Rėmo išvada"
-      },
-      "pose": {
-        "title": "Viso kūno pozos įvertinimas",
-        "load": "Modelio apkrova",
-        "first-frame": "Pirmojo kadro išvada",
-        "frame": "Rėmo išvada"
-      }
-    }
-  },
-  "appearance": {
-    "title": "Išvaizda",
-    "action": "Keisti išvaizdą",
-    "random": "Gaukite atsitiktinę nuotrauką",
-    "upload": "Įkelk savo nuotrauką"
-  },
-  "video": {
-    "errors": {
-      "starting": "Fotoaparato paleidimas",
-      "turnedOff": "Kamera išjungta",
-      "notConnected": "Kamera neprijungta",
-      "permissionDenied": "Fotoaparato leidimas atmestas"
-    },
-    "controls": {
-      "receiveVideo": {
-        "on": "Išjunkite kamerą",
-        "off": "Įjunkite kamerą"
-      }
-    }
-  },
-  "pose": {
-    "loading": "Įkeliamas pozos įvertinimas..."
-  },
   "language-selector": {
     "label": "Pakeiskite kalbą arba regioną"
-  },
-  "settings": {
-    "detectSign": "Aptikti ženklą",
-    "drawVideo": "Nupiešti vaizdo įrašą",
-    "drawPose": "Pieškite pozą",
-    "drawSignWriting": "Pieškite ženklų rašymą",
-    "animatePose": "Animuoti poza",
-    "poseViewer": {
-      "pose": "Skeletas",
-      "avatar": "Avataras",
-      "human": "Žmogus"
-    }
   }
 }

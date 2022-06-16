@@ -112,70 +112,7 @@
       "title": "Bogearraí agus Ceadúnais"
     }
   },
-  "playground": {
-    "title": "Clós Súgartha Próiseála Teanga Chomharthaíochta"
-  },
-  "benchmark": {
-    "title": "Tagarmharc",
-    "stats": {
-      "cld": {
-        "title": "Aitheantas Teanga Labhartha",
-        "import": "Modúl Iompórtála",
-        "load": "Samhail Luchtaigh",
-        "find": "Téacs a aithint",
-        "create": "Cruthaigh"
-      },
-      "pix2pix": {
-        "title": "Amharcóir Staid an Duine",
-        "init": "Init Oibrithe",
-        "load": "Samhail Luchtaigh",
-        "first-frame": "Tátal an Chéad Fhráma",
-        "frame": "Tátal Fráma"
-      },
-      "pose": {
-        "title": "Meastachán Seasamh an Choirp Iomlán",
-        "load": "Ualach Múnla",
-        "first-frame": "Tátal an Chéad Fhráma",
-        "frame": "Tátal Fráma"
-      }
-    }
-  },
-  "appearance": {
-    "title": "Dealramh",
-    "action": "Athraigh an chuma",
-    "random": "Faigh grianghraf randamach",
-    "upload": "Íoslódáil an pictiúr ar do dheasc féin"
-  },
-  "video": {
-    "errors": {
-      "starting": "Ceamara ag tosú",
-      "turnedOff": "Tá an ceamara múchta",
-      "notConnected": "Níl an ceamara ceangailte",
-      "permissionDenied": "Diúltaíodh cead ceamara"
-    },
-    "controls": {
-      "receiveVideo": {
-        "on": "Múch an ceamara",
-        "off": "Cuir an ceamara ar siúl"
-      }
-    }
-  },
-  "pose": {
-    "loading": "Meastachán Staidéir á Luchtú..."
-  },
   "language-selector": {
     "label": "Athraigh teanga nó réigiún"
-  },
-  "settings": {
-    "detectSign": "Braith Comhartha",
-    "drawVideo": "Tarraing Físeán",
-    "drawPose": "Tarraing Pose",
-    "drawSignWriting": "Tarraing Scríobh Comhartha",
-    "animatePose": "Animate Pose",
-    "poseViewer": {
-      "pose": "creatlach",
-      "avatar": "Avatar",
-      "human": "Duine"
-    }
   }
 }

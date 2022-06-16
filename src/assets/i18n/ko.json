@@ -112,70 +112,7 @@
       "title": "소프트웨어 및 라이선스"
     }
   },
-  "playground": {
-    "title": "수화 처리 놀이터"
-  },
-  "benchmark": {
-    "title": "기준",
-    "stats": {
-      "cld": {
-        "title": "구어 식별",
-        "import": "모듈 가져오기",
-        "load": "모델 로드",
-        "find": "텍스트 식별",
-        "create": "창조하다"
-      },
-      "pix2pix": {
-        "title": "인간 포즈 뷰어",
-        "init": "작업자 초기화",
-        "load": "모델 로드",
-        "first-frame": "첫 번째 프레임 추론",
-        "frame": "프레임 추론"
-      },
-      "pose": {
-        "title": "전신 포즈 추정",
-        "load": "모델 로드",
-        "first-frame": "첫 번째 프레임 추론",
-        "frame": "프레임 추론"
-      }
-    }
-  },
-  "appearance": {
-    "title": "모습",
-    "action": "모양 수정",
-    "random": "무작위 사진 얻기",
-    "upload": "나만의 사진 업로드"
-  },
-  "video": {
-    "errors": {
-      "starting": "카메라 시작",
-      "turnedOff": "카메라가 꺼짐",
-      "notConnected": "카메라가 연결되지 않음",
-      "permissionDenied": "카메라 권한이 거부되었습니다."
-    },
-    "controls": {
-      "receiveVideo": {
-        "on": "카메라 끄기",
-        "off": "카메라 켜기"
-      }
-    }
-  },
-  "pose": {
-    "loading": "포즈 추정 로드 중..."
-  },
   "language-selector": {
     "label": "언어 또는 지역 변경"
-  },
-  "settings": {
-    "detectSign": "징후 감지",
-    "drawVideo": "비디오 그리기",
-    "drawPose": "포즈 그리기",
-    "drawSignWriting": "사인 쓰기 그리기",
-    "animatePose": "애니메이션 포즈",
-    "poseViewer": {
-      "pose": "해골",
-      "avatar": "화신",
-      "human": "인간"
-    }
   }
 }

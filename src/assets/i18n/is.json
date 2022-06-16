@@ -112,70 +112,7 @@
       "title": "Hugbúnaður og leyfi"
     }
   },
-  "playground": {
-    "title": "Leikvöllur fyrir táknmálsvinnslu"
-  },
-  "benchmark": {
-    "title": "Viðmið",
-    "stats": {
-      "cld": {
-        "title": "Auðkenning talaðs tungumáls",
-        "import": "Innflutningseining",
-        "load": "Hlaða líkan",
-        "find": "Þekkja texta",
-        "create": "Búa til"
-      },
-      "pix2pix": {
-        "title": "Human Pose Viewer",
-        "init": "Verkamaður Init",
-        "load": "Hlaða líkan",
-        "first-frame": "Fyrsta ramma ályktun",
-        "frame": "Ályktun ramma"
-      },
-      "pose": {
-        "title": "Mat á fullri líkamsstöðu",
-        "load": "Fyrirmyndarhleðsla",
-        "first-frame": "Fyrsta ramma ályktun",
-        "frame": "Ályktun ramma"
-      }
-    }
-  },
-  "appearance": {
-    "title": "Útlit",
-    "action": "Breyta útliti",
-    "random": "Fáðu handahófskennda mynd",
-    "upload": "Hladdu upp þinni eigin mynd"
-  },
-  "video": {
-    "errors": {
-      "starting": "Myndavél að byrja",
-      "turnedOff": "Slökkt á myndavélinni",
-      "notConnected": "Myndavél ekki tengd",
-      "permissionDenied": "Myndavélarleyfi hafnað"
-    },
-    "controls": {
-      "receiveVideo": {
-        "on": "Slökktu á myndavélinni",
-        "off": "Kveiktu á myndavélinni"
-      }
-    }
-  },
-  "pose": {
-    "loading": "Hleður stöðumat..."
-  },
   "language-selector": {
     "label": "Breyta tungumáli eða svæði"
-  },
-  "settings": {
-    "detectSign": "Greina merki",
-    "drawVideo": "Teikna myndband",
-    "drawPose": "Draw Pose",
-    "drawSignWriting": "Draw Sign Ritun",
-    "animatePose": "Hreyfanlegur stelling",
-    "poseViewer": {
-      "pose": "Beinagrind",
-      "avatar": "Avatar",
-      "human": "Mannlegur"
-    }
   }
 }

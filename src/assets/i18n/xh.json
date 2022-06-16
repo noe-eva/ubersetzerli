@@ -112,70 +112,7 @@
       "title": "iSoftware kunye neMigaqo"
     }
   },
-  "playground": {
-    "title": "Ibala lokudlala lokuLungiselela uLwimi lweZandla"
-  },
-  "benchmark": {
-    "title": "Umlinganiselo",
-    "stats": {
-      "cld": {
-        "title": "Ukuchongwa kolwimi oluthethwayo",
-        "import": "Ngenisa Imodyuli",
-        "load": "Layisha iModeli",
-        "find": "Chonga Isiqendu",
-        "create": "Yenza"
-      },
-      "pix2pix": {
-        "title": "Umjongi wePose yoMntu",
-        "init": "Umsebenzi wokuqala",
-        "load": "Layisha iModeli",
-        "first-frame": "Ukungeniswa kwesakhelo sokuqala",
-        "frame": "Ukungeniswa kwesakhelo"
-      },
-      "pose": {
-        "title": "Uqikelelo lokuma komzimba ogcweleyo",
-        "load": "Umthwalo wemodeli",
-        "first-frame": "Ukungeniswa kwesakhelo sokuqala",
-        "frame": "Ukungeniswa kwesakhelo"
-      }
-    }
-  },
-  "appearance": {
-    "title": "Imbonakalo",
-    "action": "Guqula inkangeleko",
-    "random": "Fumana ifoto engaqhelekanga",
-    "upload": "Layisha eyakho ifoto"
-  },
-  "video": {
-    "errors": {
-      "starting": "Ikhamera iyaqala",
-      "turnedOff": "Ikhamera icinyiwe",
-      "notConnected": "Ikhamera ayiqhagamshelwanga",
-      "permissionDenied": "Imvume yekhamera yaliwe"
-    },
-    "controls": {
-      "receiveVideo": {
-        "on": "Cima ikhamera",
-        "off": "Layita ikhamera"
-      }
-    }
-  },
-  "pose": {
-    "loading": "Ilayisha uqikelelo lweNdawo..."
-  },
   "language-selector": {
     "label": "Guqula ulwimi okanye ummandla"
-  },
-  "settings": {
-    "detectSign": "Khangela Uphawu",
-    "drawVideo": "Zoba iVidiyo",
-    "drawPose": "Zoba Ukuma",
-    "drawSignWriting": "Zoba uBhalo loMqondiso",
-    "animatePose": "Philisa Ukuma",
-    "poseViewer": {
-      "pose": "Amathambo",
-      "avatar": "IAvatar",
-      "human": "Umntu"
-    }
   }
 }

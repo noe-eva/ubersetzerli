@@ -112,70 +112,7 @@
       "title": "Rindram-baiko sy fahazoan-dalana"
     }
   },
-  "playground": {
-    "title": "kianja filalaovana fanodinana ny tenin'ny tanana"
-  },
-  "benchmark": {
-    "title": "Benchmark",
-    "stats": {
-      "cld": {
-        "title": "Famantarana ny fiteny miteny",
-        "import": "Import Module",
-        "load": "Load Model",
-        "find": "Fantaro ny soratra",
-        "create": "MANANGANA"
-      },
-      "pix2pix": {
-        "title": "Human Pose Viewer",
-        "init": "Mpiasa Init",
-        "load": "Load Model",
-        "first-frame": "Famintinana Frame voalohany",
-        "frame": "Frame Inferences"
-      },
-      "pose": {
-        "title": "Tombanana amin'ny vatana manontolo",
-        "load": "Model Load",
-        "first-frame": "Famintinana Frame voalohany",
-        "frame": "Frame Inferences"
-      }
-    }
-  },
-  "appearance": {
-    "title": "Bika Aman 'endrika",
-    "action": "Manova endrika",
-    "random": "Makà sary kisendrasendra",
-    "upload": "Ampidiro ny sarinao manokana"
-  },
-  "video": {
-    "errors": {
-      "starting": "Manomboka ny fakan-tsary",
-      "turnedOff": "Neno ny fakan-tsary",
-      "notConnected": "Tsy mifandray ny fakan-tsary",
-      "permissionDenied": "Nolavina ny fakan-tsary"
-    },
-    "controls": {
-      "receiveVideo": {
-        "on": "Vonoy ny fakantsary",
-        "off": "Alefaso ny fakantsary"
-      }
-    }
-  },
-  "pose": {
-    "loading": "Mametaka ny tombantombana pose..."
-  },
   "language-selector": {
     "label": "Hanova fiteny na faritra"
-  },
-  "settings": {
-    "detectSign": "Fantaro famantarana",
-    "drawVideo": "Manaova sary video",
-    "drawPose": "Manaova sary Pose",
-    "drawSignWriting": "Soraty ny sora-baventy",
-    "animatePose": "Animate Pose",
-    "poseViewer": {
-      "pose": "taolana",
-      "avatar": "Avatar",
-      "human": "OLONA"
-    }
   }
 }

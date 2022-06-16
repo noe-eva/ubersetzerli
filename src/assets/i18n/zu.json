@@ -112,70 +112,7 @@
       "title": "Isofthiwe namalayisense"
     }
   },
-  "playground": {
-    "title": "Inkundla Yokucubungula Ulimi Lwezandla"
-  },
-  "benchmark": {
-    "title": "Ibhentshimakhi",
-    "stats": {
-      "cld": {
-        "title": "Ukuhlonza Ulimi Olukhulunywayo",
-        "import": "Ngenisa Imojuli",
-        "load": "Layisha Imodeli",
-        "find": "Thola Umbhalo",
-        "create": "Dala"
-      },
-      "pix2pix": {
-        "title": "Isibukeli Sesimo Somuntu",
-        "init": "I-Worker Init",
-        "load": "Layisha Imodeli",
-        "first-frame": "I-Inference Yohlaka Lokuqala",
-        "frame": "Ukuchazwa kozimele"
-      },
-      "pose": {
-        "title": "Ukulinganisa Ukuma Komzimba Ogcwele",
-        "load": "Umthwalo Wemodeli",
-        "first-frame": "I-Inference Yohlaka Lokuqala",
-        "frame": "Ukuchazwa kozimele"
-      }
-    }
-  },
-  "appearance": {
-    "title": "Ukubukeka",
-    "action": "Lungisa ukubukeka",
-    "random": "Thola isithombe esingahleliwe",
-    "upload": "Layisha esakho isithombe"
-  },
-  "video": {
-    "errors": {
-      "starting": "Ikhamera iyaqala",
-      "turnedOff": "Ikhamera ivaliwe",
-      "notConnected": "Ikhamera ayixhunyiwe",
-      "permissionDenied": "Imvume yekhamera inqatshiwe"
-    },
-    "controls": {
-      "receiveVideo": {
-        "on": "Vala ikhamera",
-        "off": "Vula ikhamera"
-      }
-    }
-  },
-  "pose": {
-    "loading": "Ilayisha Ukulinganisa Ukuma..."
-  },
   "language-selector": {
     "label": "Shintsha ulimi noma isifunda"
-  },
-  "settings": {
-    "detectSign": "Thola Uphawu",
-    "drawVideo": "Dweba Ividiyo",
-    "drawPose": "Dweba Ukuma",
-    "drawSignWriting": "Dweba Ukubhalwa Kwezimpawu",
-    "animatePose": "I-Animate Pose",
-    "poseViewer": {
-      "pose": "Uhlaka lwamathambo",
-      "avatar": "Isithombe",
-      "human": "Umuntu"
-    }
   }
 }

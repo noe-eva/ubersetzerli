@@ -112,70 +112,7 @@
       "title": "Softwarea eta lizentziak"
     }
   },
-  "playground": {
-    "title": "Zeinu Hizkuntza Prozesatzeko Jolastokia"
-  },
-  "benchmark": {
-    "title": "Erreferentzia",
-    "stats": {
-      "cld": {
-        "title": "Ahozko hizkuntzaren identifikazioa",
-        "import": "Inportazio modulua",
-        "load": "Karga eredua",
-        "find": "Testua identifikatzea",
-        "create": "Sortu"
-      },
-      "pix2pix": {
-        "title": "Giza jarreraren ikuslea",
-        "init": "Langilea Init",
-        "load": "Karga eredua",
-        "first-frame": "Lehenengo fotograma inferentzia",
-        "frame": "Frame Inferentzia"
-      },
-      "pose": {
-        "title": "Gorputz osoko jarreraren estimazioa",
-        "load": "Ereduaren Karga",
-        "first-frame": "Lehenengo fotograma inferentzia",
-        "frame": "Frame Inferentzia"
-      }
-    }
-  },
-  "appearance": {
-    "title": "Itxura",
-    "action": "Aldatu itxura",
-    "random": "Lortu ausaz argazki bat",
-    "upload": "Kargatu zure argazkia"
-  },
-  "video": {
-    "errors": {
-      "starting": "Kamera martxan",
-      "turnedOff": "Kamera itzalita",
-      "notConnected": "Kamera ez dago konektatuta",
-      "permissionDenied": "Kameraren baimena ukatu da"
-    },
-    "controls": {
-      "receiveVideo": {
-        "on": "Itzali kamera",
-        "off": "Aktibatu kamera"
-      }
-    }
-  },
-  "pose": {
-    "loading": "Poseen estimazioa kargatzen..."
-  },
   "language-selector": {
     "label": "Aldatu hizkuntza edo eskualdea"
-  },
-  "settings": {
-    "detectSign": "Detektatu seinalea",
-    "drawVideo": "Marraztu Bideoa",
-    "drawPose": "Marraztu Pose",
-    "drawSignWriting": "Marraztu zeinu idazkera",
-    "animatePose": "Animatu Pose",
-    "poseViewer": {
-      "pose": "Hezurdura",
-      "avatar": "Avatarra",
-      "human": "Gizakia"
-    }
   }
 }

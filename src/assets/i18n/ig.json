@@ -112,70 +112,7 @@
       "title": "Ngwanrọ na Ikikere"
     }
   },
-  "playground": {
-    "title": "Ebe egwuregwu na-ahazi asụsụ ogbi"
-  },
-  "benchmark": {
-    "title": "Benchmark",
-    "stats": {
-      "cld": {
-        "title": "Nchọpụta Asụsụ Asụsụ",
-        "import": "Bubata Modul",
-        "load": "Nlereanya ibu",
-        "find": "Chọpụta Ederede",
-        "create": "Mepụta"
-      },
-      "pix2pix": {
-        "title": "Ihe nlere anya mmadụ",
-        "init": "Onye ọrụ Init",
-        "load": "Nlereanya ibu",
-        "first-frame": "Ntuziaka Frame Mbụ",
-        "frame": "Ntinye Frame"
-      },
-      "pose": {
-        "title": "Ntụle ọnọdụ ahụ zuru oke",
-        "load": "Ibu Model",
-        "first-frame": "Ntuziaka Frame Mbụ",
-        "frame": "Ntinye Frame"
-      }
-    }
-  },
-  "appearance": {
-    "title": "Ọdịdị",
-    "action": "Gbanwee ọdịdị",
-    "random": "Nweta foto enweghị usoro",
-    "upload": "Bulite foto nke gị"
-  },
-  "video": {
-    "errors": {
-      "starting": "Igwefoto na-amalite",
-      "turnedOff": "Agbanyụrụ igwefoto",
-      "notConnected": "Ejikọghị igwefoto",
-      "permissionDenied": "Ajụrụ ikike igwefoto"
-    },
-    "controls": {
-      "receiveVideo": {
-        "on": "Gbanyụọ igwefoto",
-        "off": "Gbanwuo igwefoto"
-      }
-    }
-  },
-  "pose": {
-    "loading": "Na-ebunye Ntụle Ngosipụta..."
-  },
   "language-selector": {
     "label": "Gbanwee asụsụ ma ọ bụ mpaghara"
-  },
-  "settings": {
-    "detectSign": "Chọpụta akara",
-    "drawVideo": "See vidiyo",
-    "drawPose": "Dọta Pose",
-    "drawSignWriting": "See Ihe odide akara",
-    "animatePose": "Ọnọdụ ndụ",
-    "poseViewer": {
-      "pose": "Ọkpụkpụ",
-      "avatar": "Avatar",
-      "human": "Mmadụ"
-    }
   }
 }

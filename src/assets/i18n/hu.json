@@ -112,70 +112,7 @@
       "title": "Szoftverek és licencek"
     }
   },
-  "playground": {
-    "title": "Jelnyelv-feldolgozó játszótér"
-  },
-  "benchmark": {
-    "title": "Viszonyítási alap",
-    "stats": {
-      "cld": {
-        "title": "Beszélt nyelvi azonosítás",
-        "import": "Import modul",
-        "load": "Betöltési modell",
-        "find": "Szöveg azonosítása",
-        "create": "Teremt"
-      },
-      "pix2pix": {
-        "title": "Human Pose Viewer",
-        "init": "Munkás Init",
-        "load": "Betöltési modell",
-        "first-frame": "Első képkocka következtetés",
-        "frame": "Keret következtetés"
-      },
-      "pose": {
-        "title": "Teljes testhelyzet becslés",
-        "load": "Modellterhelés",
-        "first-frame": "Első képkocka következtetés",
-        "frame": "Keret következtetés"
-      }
-    }
-  },
-  "appearance": {
-    "title": "Kinézet",
-    "action": "Megjelenés módosítása",
-    "random": "Vegyél egy véletlenszerű fényképet",
-    "upload": "Töltsd fel saját fotódat"
-  },
-  "video": {
-    "errors": {
-      "starting": "Kamera indul",
-      "turnedOff": "Kamera kikapcsolva",
-      "notConnected": "A kamera nincs csatlakoztatva",
-      "permissionDenied": "Kameraengedély megtagadva"
-    },
-    "controls": {
-      "receiveVideo": {
-        "on": "Kapcsolja ki a kamerát",
-        "off": "Kapcsolja be a kamerát"
-      }
-    }
-  },
-  "pose": {
-    "loading": "Pózbecslés betöltése..."
-  },
   "language-selector": {
     "label": "Nyelv vagy régió módosítása"
-  },
-  "settings": {
-    "detectSign": "Jel észlelése",
-    "drawVideo": "Rajzolj videót",
-    "drawPose": "Rajzolj pózt",
-    "drawSignWriting": "Rajzolj Jelírás",
-    "animatePose": "Animált póz",
-    "poseViewer": {
-      "pose": "Csontváz",
-      "avatar": "Avatar",
-      "human": "Emberi"
-    }
   }
 }

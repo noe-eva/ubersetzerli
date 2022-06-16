@@ -112,70 +112,7 @@
       "title": "ሶፍትዌር እና ፈቃዶች"
     }
   },
-  "playground": {
-    "title": "የምልክት ቋንቋ ሂደት የመጫወቻ ሜዳ"
-  },
-  "benchmark": {
-    "title": "ቤንችማርክ",
-    "stats": {
-      "cld": {
-        "title": "የንግግር ቋንቋ መለያ",
-        "import": "ሞጁል አስመጣ",
-        "load": "የመጫኛ ሞዴል",
-        "find": "ጽሑፍን መለየት",
-        "create": "ፍጠር"
-      },
-      "pix2pix": {
-        "title": "የሰው አቀማመጥ ተመልካች",
-        "init": "የሰራተኛ ኢኒት",
-        "load": "የመጫኛ ሞዴል",
-        "first-frame": "የመጀመሪያ ፍሬም ኢንፈረንስ",
-        "frame": "የፍሬም ኢንፈረንስ"
-      },
-      "pose": {
-        "title": "የሙሉ የሰውነት አቀማመጥ ግምት",
-        "load": "የሞዴል ጭነት",
-        "first-frame": "የመጀመሪያ ፍሬም ኢንፈረንስ",
-        "frame": "የፍሬም ኢንፈረንስ"
-      }
-    }
-  },
-  "appearance": {
-    "title": "መልክ",
-    "action": "መልክን ቀይር",
-    "random": "የዘፈቀደ ፎቶ ያግኙ",
-    "upload": "የራስዎን ፎቶ ይስቀሉ"
-  },
-  "video": {
-    "errors": {
-      "starting": "ካሜራ ይጀምራል",
-      "turnedOff": "ካሜራ ጠፍቷል",
-      "notConnected": "ካሜራ አልተገናኘም።",
-      "permissionDenied": "የካሜራ ፍቃድ ተከልክሏል።"
-    },
-    "controls": {
-      "receiveVideo": {
-        "on": "ካሜራን ያጥፉ",
-        "off": "ካሜራን ያብሩ"
-      }
-    }
-  },
-  "pose": {
-    "loading": "Pose ግምትን በመጫን ላይ..."
-  },
   "language-selector": {
     "label": "ቋንቋ ወይም ክልል ቀይር"
-  },
-  "settings": {
-    "detectSign": "ምልክትን ፈልግ",
-    "drawVideo": "ቪዲዮ ይሳሉ",
-    "drawPose": "አቀማመጥ ይሳሉ",
-    "drawSignWriting": "የምልክት ጽሑፍ ይሳሉ",
-    "animatePose": "Animate Pose",
-    "poseViewer": {
-      "pose": "አጽም",
-      "avatar": "አምሳያ",
-      "human": "ሰው"
-    }
   }
 }

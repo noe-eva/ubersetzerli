@@ -112,70 +112,7 @@
       "title": "Phần mềm và giấy phép"
     }
   },
-  "playground": {
-    "title": "Sân chơi xử lý ngôn ngữ ký hiệu"
-  },
-  "benchmark": {
-    "title": "Điểm chuẩn",
-    "stats": {
-      "cld": {
-        "title": "Nhận dạng ngôn ngữ nói",
-        "import": "Nhập mô-đun",
-        "load": "Tải mô hình",
-        "find": "Xác định Văn bản",
-        "create": "Tạo ra"
-      },
-      "pix2pix": {
-        "title": "Người xem tư thế người",
-        "init": "Công nhân Init",
-        "load": "Tải mô hình",
-        "first-frame": "Suy luận khung đầu tiên",
-        "frame": "Suy luận khung"
-      },
-      "pose": {
-        "title": "Ước tính tư thế toàn thân",
-        "load": "Tải mô hình",
-        "first-frame": "Suy luận khung đầu tiên",
-        "frame": "Suy luận khung"
-      }
-    }
-  },
-  "appearance": {
-    "title": "Xuất hiện",
-    "action": "Sửa đổi ngoại hình",
-    "random": "Nhận một bức ảnh ngẫu nhiên",
-    "upload": "Tải lên ảnh của riêng bạn"
-  },
-  "video": {
-    "errors": {
-      "starting": "Máy ảnh khởi động",
-      "turnedOff": "Máy ảnh đã tắt",
-      "notConnected": "Máy ảnh không được kết nối",
-      "permissionDenied": "Quyền đối với máy ảnh bị từ chối"
-    },
-    "controls": {
-      "receiveVideo": {
-        "on": "Tắt máy ảnh",
-        "off": "Bật máy ảnh"
-      }
-    }
-  },
-  "pose": {
-    "loading": "Đang tải ước tính tư thế ..."
-  },
   "language-selector": {
     "label": "Thay đổi ngôn ngữ hoặc khu vực"
-  },
-  "settings": {
-    "detectSign": "Dấu hiệu phát hiện",
-    "drawVideo": "Vẽ video",
-    "drawPose": "Vẽ tư thế",
-    "drawSignWriting": "Vẽ Ký hiệu Viết",
-    "animatePose": "Animate Pose",
-    "poseViewer": {
-      "pose": "Bộ xương",
-      "avatar": "hình đại diện",
-      "human": "Nhân loại"
-    }
   }
 }

@@ -112,70 +112,7 @@
       "title": "Programari i llicències"
     }
   },
-  "playground": {
-    "title": "Pati de processament de la llengua de signes"
-  },
-  "benchmark": {
-    "title": "Referent",
-    "stats": {
-      "cld": {
-        "title": "Identificació de la llengua parlada",
-        "import": "Mòdul d'importació",
-        "load": "Model de càrrega",
-        "find": "Identificar el text",
-        "create": "Crear"
-      },
-      "pix2pix": {
-        "title": "Visor de posicions humanes",
-        "init": "Treballador Init",
-        "load": "Model de càrrega",
-        "first-frame": "Inferència del primer fotograma",
-        "frame": "Inferència de marc"
-      },
-      "pose": {
-        "title": "Estimació de la postura del cos sencer",
-        "load": "Càrrega del model",
-        "first-frame": "Inferència del primer fotograma",
-        "frame": "Inferència de marc"
-      }
-    }
-  },
-  "appearance": {
-    "title": "Aparença",
-    "action": "Modificar l'aparença",
-    "random": "Aconsegueix una foto aleatòria",
-    "upload": "Puja la teva pròpia foto"
-  },
-  "video": {
-    "errors": {
-      "starting": "S'està iniciant la càmera",
-      "turnedOff": "Càmera apagada",
-      "notConnected": "La càmera no està connectada",
-      "permissionDenied": "S'ha denegat el permís de la càmera"
-    },
-    "controls": {
-      "receiveVideo": {
-        "on": "Apagueu la càmera",
-        "off": "Enceneu la càmera"
-      }
-    }
-  },
-  "pose": {
-    "loading": "S'està carregant l'estimació de la posició..."
-  },
   "language-selector": {
     "label": "Canvia l'idioma o la regió"
-  },
-  "settings": {
-    "detectSign": "Senyal de detecció",
-    "drawVideo": "Vídeo de dibuix",
-    "drawPose": "Dibuixa la postura",
-    "drawSignWriting": "Dibuixa l'escriptura de signes",
-    "animatePose": "Posa animada",
-    "poseViewer": {
-      "pose": "Esquelet",
-      "avatar": "Avatar",
-      "human": "Humans"
-    }
   }
 }

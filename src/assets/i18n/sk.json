@@ -112,70 +112,7 @@
       "title": "Softvér a licencie"
     }
   },
-  "playground": {
-    "title": "Ihrisko na spracovanie posunkovej reči"
-  },
-  "benchmark": {
-    "title": "Benchmark",
-    "stats": {
-      "cld": {
-        "title": "Identifikácia hovoreného jazyka",
-        "import": "Importovať modul",
-        "load": "Načítať model",
-        "find": "Identifikujte text",
-        "create": "Vytvorte"
-      },
-      "pix2pix": {
-        "title": "Prehliadač ľudskej pózy",
-        "init": "Worker Init",
-        "load": "Načítať model",
-        "first-frame": "Prvý rámcový záver",
-        "frame": "Frame Inference"
-      },
-      "pose": {
-        "title": "Odhad polohy celého tela",
-        "load": "Modelové zaťaženie",
-        "first-frame": "Prvý rámcový záver",
-        "frame": "Frame Inference"
-      }
-    }
-  },
-  "appearance": {
-    "title": "Vzhľad",
-    "action": "Upravte vzhľad",
-    "random": "Získajte náhodnú fotografiu",
-    "upload": "Nahrajte svoju vlastnú fotografiu"
-  },
-  "video": {
-    "errors": {
-      "starting": "Spustenie fotoaparátu",
-      "turnedOff": "Kamera je vypnutá",
-      "notConnected": "Kamera nie je pripojená",
-      "permissionDenied": "Povolenie fotoaparátu bolo zamietnuté"
-    },
-    "controls": {
-      "receiveVideo": {
-        "on": "Vypnite fotoaparát",
-        "off": "Zapnite fotoaparát"
-      }
-    }
-  },
-  "pose": {
-    "loading": "Načítava sa odhad pozície..."
-  },
   "language-selector": {
     "label": "Zmeňte jazyk alebo región"
-  },
-  "settings": {
-    "detectSign": "Rozpoznať znamenie",
-    "drawVideo": "Nakresliť video",
-    "drawPose": "Kresliť pózu",
-    "drawSignWriting": "Kresliť Znak Písanie",
-    "animatePose": "Animovaná póza",
-    "poseViewer": {
-      "pose": "Kostra",
-      "avatar": "Avatar",
-      "human": "Ľudské"
-    }
   }
 }

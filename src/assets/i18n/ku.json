@@ -112,70 +112,7 @@
       "title": "Nivîsbarî û Lîsans"
     }
   },
-  "playground": {
-    "title": "Lîstika Pêvajoya Zimanê Îşaretê"
-  },
-  "benchmark": {
-    "title": "Benchmark",
-    "stats": {
-      "cld": {
-        "title": "Nasnameya Zimanê axaftinê",
-        "import": "Import Module",
-        "load": "Modela barkirinê",
-        "find": "Nasnameya Nivîsar",
-        "create": "Xûliqandin"
-      },
-      "pix2pix": {
-        "title": "Dîmenderê Pozê Mirovan",
-        "init": "Karker Init",
-        "load": "Modela barkirinê",
-        "first-frame": "Encama Çarçoveya Yekem",
-        "frame": "Encama çarçoveyê"
-      },
-      "pose": {
-        "title": "Texmîna Pozê Tevahiya Body",
-        "load": "Model Load",
-        "first-frame": "Encama Çarçoveya Yekem",
-        "frame": "Encama çarçoveyê"
-      }
-    }
-  },
-  "appearance": {
-    "title": "Xuyabûnî",
-    "action": "Dîmenê biguherînin",
-    "random": "Wêneyek rasthatî bistînin",
-    "upload": "Wêneya xwe barkirin"
-  },
-  "video": {
-    "errors": {
-      "starting": "Kamera dest pê dike",
-      "turnedOff": "Kamera girt",
-      "notConnected": "Kamera ne girêdayî ye",
-      "permissionDenied": "Destûra kamerayê hat redkirin"
-    },
-    "controls": {
-      "receiveVideo": {
-        "on": "Kamera vemirînin",
-        "off": "Kamera veke"
-      }
-    }
-  },
-  "pose": {
-    "loading": "Barkirina Texmîna Pozê..."
-  },
   "language-selector": {
     "label": "Ziman an herêmê biguherînin"
-  },
-  "settings": {
-    "detectSign": "Detect Sign",
-    "drawVideo": "Vîdyoyê Draw",
-    "drawPose": "Draw Pose",
-    "drawSignWriting": "Draw Sign Writing",
-    "animatePose": "Animate Pose",
-    "poseViewer": {
-      "pose": "Hestî",
-      "avatar": "Avatar",
-      "human": "Mirov"
-    }
   }
 }

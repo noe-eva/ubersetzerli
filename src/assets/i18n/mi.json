@@ -112,70 +112,7 @@
       "title": "Ngā Pūmanawa me ngā Raihana"
     }
   },
-  "playground": {
-    "title": "Papa takaro Tukatuka Reo Waitohu"
-  },
-  "benchmark": {
-    "title": "Tohu Paerewa",
-    "stats": {
-      "cld": {
-        "title": "Tautuhi Reo Korero",
-        "import": "Kawemai Kōwae",
-        "load": "Tauira Uta",
-        "find": "Tautuhi Kuputuhi",
-        "create": "Waihanga"
-      },
-      "pix2pix": {
-        "title": "Kaitirohanga Pose Tangata",
-        "init": "Kaimahi Init",
-        "load": "Tauira Uta",
-        "first-frame": "Whakataunga Tāpare Tuatahi",
-        "frame": "Tāpare Inference"
-      },
-      "pose": {
-        "title": "Te Whakatau Whakatau Tino Tino",
-        "load": "Tauira Uta",
-        "first-frame": "Whakataunga Tāpare Tuatahi",
-        "frame": "Tāpare Inference"
-      }
-    }
-  },
-  "appearance": {
-    "title": "Te ahua",
-    "action": "Whakarerekē ahua",
-    "random": "Tikina he whakaahua matapōkere",
-    "upload": "Tukuna ake to whakaahua"
-  },
-  "video": {
-    "errors": {
-      "starting": "Ka timata te kamera",
-      "turnedOff": "Kua weto te kamera",
-      "notConnected": "Kāre i tūhono te kāmera",
-      "permissionDenied": "Kua whakakorehia te whakaaetanga kamera"
-    },
-    "controls": {
-      "receiveVideo": {
-        "on": "Whakawetohia te kamera",
-        "off": "Whakakāhia te kāmera"
-      }
-    }
-  },
-  "pose": {
-    "loading": "Uta ana i te whakatau tata..."
-  },
   "language-selector": {
     "label": "Hurihia te reo, rohe ranei"
-  },
-  "settings": {
-    "detectSign": "Rapu Waitohu",
-    "drawVideo": "Tuhia Ataata",
-    "drawPose": "Tuhia Pose",
-    "drawSignWriting": "Tuhia te Tuhi Tohu",
-    "animatePose": "Whakaora Pose",
-    "poseViewer": {
-      "pose": "Koiwi",
-      "avatar": "Avatar",
-      "human": "Tangata"
-    }
   }
 }

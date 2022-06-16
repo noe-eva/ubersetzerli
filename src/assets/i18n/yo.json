@@ -112,70 +112,7 @@
       "title": "Ẹ̀yà àìrídìmú àti Àwọn Ìgbaniláyè"
     }
   },
-  "playground": {
-    "title": "Ibi ibi isere ti Ṣiṣe Èdè Afọwọṣe"
-  },
-  "benchmark": {
-    "title": "Aṣepari",
-    "stats": {
-      "cld": {
-        "title": "Sọ Language Idanimọ",
-        "import": "Gbe wọle Module",
-        "load": "Awoṣe fifuye",
-        "find": "Ṣe idanimọ Ọrọ",
-        "create": "Ṣẹda"
-      },
-      "pix2pix": {
-        "title": "Oluwo Iduro Eniyan",
-        "init": "Osise Init",
-        "load": "Awoṣe fifuye",
-        "first-frame": "Itọkasi fireemu akọkọ",
-        "frame": "Atọka fireemu"
-      },
-      "pose": {
-        "title": "Kikun Ara Iduro Ifoju",
-        "load": "Awoṣe fifuye",
-        "first-frame": "Itọkasi fireemu akọkọ",
-        "frame": "Atọka fireemu"
-      }
-    }
-  },
-  "appearance": {
-    "title": "Ifarahan",
-    "action": "Ṣatunṣe irisi",
-    "random": "Gba fọto laileto",
-    "upload": "Po si ara rẹ Fọto"
-  },
-  "video": {
-    "errors": {
-      "starting": "Kamẹra bẹrẹ",
-      "turnedOff": "Kamẹra wa ni pipa",
-      "notConnected": "Kamẹra ko sopọ",
-      "permissionDenied": "Ti kọ igbanilaaye kamẹra"
-    },
-    "controls": {
-      "receiveVideo": {
-        "on": "Pa kamẹra",
-        "off": "Tan kamẹra"
-      }
-    }
-  },
-  "pose": {
-    "loading": "Iṣiro Iṣiro Iduro..."
-  },
   "language-selector": {
     "label": "Yi ede tabi agbegbe pada"
-  },
-  "settings": {
-    "detectSign": "Wa Ami",
-    "drawVideo": "Fa Fidio",
-    "drawPose": "Fa Iduro",
-    "drawSignWriting": "Fa Ami kikọ",
-    "animatePose": "Iduro Animate",
-    "poseViewer": {
-      "pose": "Egungun",
-      "avatar": "Afata",
-      "human": "Eniyan"
-    }
   }
 }

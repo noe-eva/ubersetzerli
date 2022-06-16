@@ -112,70 +112,7 @@
       "title": "Software și licențe"
     }
   },
-  "playground": {
-    "title": "Loc de joacă pentru procesarea limbajului semnelor"
-  },
-  "benchmark": {
-    "title": "Benchmark",
-    "stats": {
-      "cld": {
-        "title": "Identificarea limbajului vorbit",
-        "import": "Modul de import",
-        "load": "Încărcare model",
-        "find": "Identificați textul",
-        "create": "Crea"
-      },
-      "pix2pix": {
-        "title": "Vizualizator de poziție umană",
-        "init": "Muncitor Init",
-        "load": "Încărcare model",
-        "first-frame": "Inferența primului cadru",
-        "frame": "Inferență de cadru"
-      },
-      "pose": {
-        "title": "Estimarea poziției întregului corp",
-        "load": "Încărcare model",
-        "first-frame": "Inferența primului cadru",
-        "frame": "Inferență de cadru"
-      }
-    }
-  },
-  "appearance": {
-    "title": "Aspect",
-    "action": "Modificați aspectul",
-    "random": "Obțineți o fotografie aleatorie",
-    "upload": "Încărcați propria fotografie"
-  },
-  "video": {
-    "errors": {
-      "starting": "Camera pornește",
-      "turnedOff": "Camera oprită",
-      "notConnected": "Camera nu este conectată",
-      "permissionDenied": "Permisiunea camerei a fost refuzată"
-    },
-    "controls": {
-      "receiveVideo": {
-        "on": "Opriți camera",
-        "off": "Aprinde camera"
-      }
-    }
-  },
-  "pose": {
-    "loading": "Se încarcă estimarea pozitiei..."
-  },
   "language-selector": {
     "label": "Schimbați limba sau regiunea"
-  },
-  "settings": {
-    "detectSign": "Detectează semnul",
-    "drawVideo": "Desenați video",
-    "drawPose": "Desenează Poza",
-    "drawSignWriting": "Desenați scrierea semnelor",
-    "animatePose": "Poza animată",
-    "poseViewer": {
-      "pose": "Schelet",
-      "avatar": "Avatar",
-      "human": "Uman"
-    }
   }
 }

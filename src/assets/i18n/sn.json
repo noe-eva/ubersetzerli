@@ -112,70 +112,7 @@
       "title": "MaSofutiwee nemaRaisenzi awo"
     }
   },
-  "playground": {
-    "title": "Mutauro Wemasaini Wokugadzira Nzvimbo Yekutamba"
-  },
-  "benchmark": {
-    "title": "Benchmark",
-    "stats": {
-      "cld": {
-        "title": "Kuzivikanwa Mutauro Unotaurwa",
-        "import": "Import Module",
-        "load": "Rodha Model",
-        "find": "Ziva Rugwaro",
-        "create": "Create"
-      },
-      "pix2pix": {
-        "title": "Human Pose Viewer",
-        "init": "Worker Init",
-        "load": "Rodha Model",
-        "first-frame": "Yekutanga Frame Inference",
-        "frame": "Frame Inference"
-      },
-      "pose": {
-        "title": "Muviri Wakazara Pose Estimation",
-        "load": "Model Mutoro",
-        "first-frame": "Yekutanga Frame Inference",
-        "frame": "Frame Inference"
-      }
-    }
-  },
-  "appearance": {
-    "title": "Chitarisiko",
-    "action": "Chinja chitarisiko",
-    "random": "Tora mufananidzo wakasarudzika",
-    "upload": "Isa mufananidzo wako"
-  },
-  "video": {
-    "errors": {
-      "starting": "Kamera inotanga",
-      "turnedOff": "Kamera yakadzimwa",
-      "notConnected": "Kamera haina kubatana",
-      "permissionDenied": "Mvumo yekamera yarambwa"
-    },
-    "controls": {
-      "receiveVideo": {
-        "on": "Dzima kamera",
-        "off": "Batidza kamera"
-      }
-    }
-  },
-  "pose": {
-    "loading": "Loading Pose Estimation..."
-  },
   "language-selector": {
     "label": "Shandura mutauro kana dunhu"
-  },
-  "settings": {
-    "detectSign": "Ziva Chiratidzo",
-    "drawVideo": "Dhirowa Vhidhiyo",
-    "drawPose": "Draw Pose",
-    "drawSignWriting": "Dhirowa Kunyora Masaini",
-    "animatePose": "Animate Pose",
-    "poseViewer": {
-      "pose": "Skeleton",
-      "avatar": "Avatar",
-      "human": "Munhu"
-    }
   }
 }

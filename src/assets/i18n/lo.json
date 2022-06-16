@@ -112,70 +112,7 @@
       "title": "ຊອບ​ແວ ແລະ ລິຂະສິດ"
     }
   },
-  "playground": {
-    "title": "ເຄື່ອງຫຼີ້ນການປະມວນຜົນພາສາມື"
-  },
-  "benchmark": {
-    "title": "ດັດຊະນີ",
-    "stats": {
-      "cld": {
-        "title": "ການລະບຸພາສາເວົ້າ",
-        "import": "ໂມດູນນໍາເຂົ້າ",
-        "load": "ໂຫຼດຕົວແບບ",
-        "find": "ລະບຸຂໍ້ຄວາມ",
-        "create": "ສ້າງ"
-      },
-      "pix2pix": {
-        "title": "ຜູ້ເບິ່ງທ່າຂອງມະນຸດ",
-        "init": "ຄົນງານ Init",
-        "load": "ໂຫຼດຕົວແບບ",
-        "first-frame": "Inference ກອບທໍາອິດ",
-        "frame": "Frame Inference"
-      },
-      "pose": {
-        "title": "ການຄາດຄະເນການວາງຕົວເຕັມ",
-        "load": "ການໂຫຼດຕົວແບບ",
-        "first-frame": "Inference ກອບທໍາອິດ",
-        "frame": "Frame Inference"
-      }
-    }
-  },
-  "appearance": {
-    "title": "ຮູບລັກສະນະ",
-    "action": "ແກ້ໄຂຮູບລັກສະນະ",
-    "random": "ເອົາຮູບສຸ່ມ",
-    "upload": "ອັບໂຫຼດຮູບຂອງທ່ານເອງ"
-  },
-  "video": {
-    "errors": {
-      "starting": "ກ້ອງຖ່າຍຮູບເລີ່ມຕົ້ນ",
-      "turnedOff": "ກ້ອງຖ່າຍຮູບຖືກປິດ",
-      "notConnected": "ກ້ອງຖ່າຍຮູບບໍ່ໄດ້ເຊື່ອມຕໍ່",
-      "permissionDenied": "ການອະນຸຍາດກ້ອງຖ່າຍຮູບຖືກປະຕິເສດ"
-    },
-    "controls": {
-      "receiveVideo": {
-        "on": "ປິດກ້ອງຖ່າຍຮູບ",
-        "off": "ເປີດກ້ອງຖ່າຍຮູບ"
-      }
-    }
-  },
-  "pose": {
-    "loading": "ກໍາລັງໂຫລດການຄາດຄະເນ Pose..."
-  },
   "language-selector": {
     "label": "ປ່ຽນພາສາ ຫຼືພາກພື້ນ"
-  },
-  "settings": {
-    "detectSign": "ກວດພົບສັນຍານ",
-    "drawVideo": "ແຕ້ມວິດີໂອ",
-    "drawPose": "ແຕ້ມຮູບ",
-    "drawSignWriting": "ແຕ້ມປ້າຍຂຽນ",
-    "animatePose": "ພາບເຄື່ອນໄຫວ",
-    "poseViewer": {
-      "pose": "ໂຄງກະດູກ",
-      "avatar": "ຮູບແທນຕົວ",
-      "human": "ມະນຸດ"
-    }
   }
 }

@@ -112,70 +112,7 @@
       "title": "Bathar-bog is ceadachasan"
     }
   },
-  "playground": {
-    "title": "Raon-cluiche Giullachd Cànain Soidhnidh"
-  },
-  "benchmark": {
-    "title": "Slat-tomhais",
-    "stats": {
-      "cld": {
-        "title": "Aithneachadh Cànain Labhairt",
-        "import": "Modal ion-phortadh",
-        "load": "Modail luchdachadh",
-        "find": "Comharraich Teacsa",
-        "create": "Cruthaich"
-      },
-      "pix2pix": {
-        "title": "Sealladair suidheachadh daonna",
-        "init": "Init neach-obrach",
-        "load": "Modail luchdachadh",
-        "first-frame": "Co-dhùnadh a’ chiad fhrèam",
-        "frame": "Co-dhùnadh frèam"
-      },
-      "pose": {
-        "title": "Measadh Seasamh Corporra Làn",
-        "load": "Luchdaich a-nuas modail",
-        "first-frame": "Co-dhùnadh a’ chiad fhrèam",
-        "frame": "Co-dhùnadh frèam"
-      }
-    }
-  },
-  "appearance": {
-    "title": "Coltas",
-    "action": "Atharraich coltas",
-    "random": "Faigh dealbh air thuaiream",
-    "upload": "Luchdaich a-nuas an dealbh fhèin"
-  },
-  "video": {
-    "errors": {
-      "starting": "Camara a' tòiseachadh",
-      "turnedOff": "Chaidh an camara a chuir dheth",
-      "notConnected": "Chan eil an camara ceangailte",
-      "permissionDenied": "Chaidh cead camara a dhiùltadh"
-    },
-    "controls": {
-      "receiveVideo": {
-        "on": "Cuir dheth an camara",
-        "off": "Tionndaidh air a 'chamara"
-      }
-    }
-  },
-  "pose": {
-    "loading": "A’ luchdachadh tuairmse suidheachadh..."
-  },
   "language-selector": {
     "label": "Atharraich cànan no sgìre"
-  },
-  "settings": {
-    "detectSign": "Soidhne lorg",
-    "drawVideo": "Tarraing bhidio",
-    "drawPose": "Tarraing Pose",
-    "drawSignWriting": "Tarraing Sgrìobhadh Soidhne",
-    "animatePose": "Beothachadh Pose",
-    "poseViewer": {
-      "pose": "cnàimhneach",
-      "avatar": "Avatar",
-      "human": "Duine"
-    }
   }
 }

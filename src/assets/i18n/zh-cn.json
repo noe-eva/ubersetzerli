@@ -112,70 +112,7 @@
       "title": "软件和许可"
     }
   },
-  "playground": {
-    "title": "手语处理游乐场"
-  },
-  "benchmark": {
-    "title": "基准",
-    "stats": {
-      "cld": {
-        "title": "口语识别",
-        "import": "导入模块",
-        "load": "加载模型",
-        "find": "识别文本",
-        "create": "创造"
-      },
-      "pix2pix": {
-        "title": "人体姿势查看器",
-        "init": "工人初始化",
-        "load": "加载模型",
-        "first-frame": "第一帧推理",
-        "frame": "帧推断"
-      },
-      "pose": {
-        "title": "全身姿势估计",
-        "load": "模型加载",
-        "first-frame": "第一帧推理",
-        "frame": "帧推断"
-      }
-    }
-  },
-  "appearance": {
-    "title": "外貌",
-    "action": "修改外观",
-    "random": "获取随机照片",
-    "upload": "上传您自己的照片"
-  },
-  "video": {
-    "errors": {
-      "starting": "相机启动",
-      "turnedOff": "相机已关闭",
-      "notConnected": "相机未连接",
-      "permissionDenied": "相机权限被拒绝"
-    },
-    "controls": {
-      "receiveVideo": {
-        "on": "关闭相机",
-        "off": "打开相机"
-      }
-    }
-  },
-  "pose": {
-    "loading": "正在加载姿势估计..."
-  },
   "language-selector": {
     "label": "更改语言或地区"
-  },
-  "settings": {
-    "detectSign": "检测标志",
-    "drawVideo": "画视频",
-    "drawPose": "画姿势",
-    "drawSignWriting": "画标志写作",
-    "animatePose": "动画姿势",
-    "poseViewer": {
-      "pose": "骨骼",
-      "avatar": "阿凡达",
-      "human": "人类"
-    }
   }
 }

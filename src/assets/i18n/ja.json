@@ -112,70 +112,7 @@
       "title": "ソフトウェアとライセンス"
     }
   },
-  "playground": {
-    "title": "手話処理遊び場"
-  },
-  "benchmark": {
-    "title": "基準",
-    "stats": {
-      "cld": {
-        "title": "口頭言語の識別",
-        "import": "インポートモジュール",
-        "load": "荷重モデル",
-        "find": "テキストを特定する",
-        "create": "作成"
-      },
-      "pix2pix": {
-        "title": "人間のポーズビューア",
-        "init": "ワーカー初期化",
-        "load": "荷重モデル",
-        "first-frame": "最初のフレーム推論",
-        "frame": "フレーム推論"
-      },
-      "pose": {
-        "title": "全身ポーズ推定",
-        "load": "モデルのロード",
-        "first-frame": "最初のフレーム推論",
-        "frame": "フレーム推論"
-      }
-    }
-  },
-  "appearance": {
-    "title": "外観",
-    "action": "外観を変更する",
-    "random": "ランダムな写真を撮る",
-    "upload": "自分の写真をアップロードする"
-  },
-  "video": {
-    "errors": {
-      "starting": "カメラ始動",
-      "turnedOff": "カメラがオフになりました",
-      "notConnected": "カメラが接続されていません",
-      "permissionDenied": "カメラの許可が拒否されました"
-    },
-    "controls": {
-      "receiveVideo": {
-        "on": "カメラの電源を切ります",
-        "off": "カメラの電源を入れます"
-      }
-    }
-  },
-  "pose": {
-    "loading": "負荷ポーズ推定..。"
-  },
   "language-selector": {
     "label": "言語または地域を変更する"
-  },
-  "settings": {
-    "detectSign": "サインを検出する",
-    "drawVideo": "ビデオを描く",
-    "drawPose": "ポーズを描く",
-    "drawSignWriting": "サインライティングを描く",
-    "animatePose": "ポーズをアニメートする",
-    "poseViewer": {
-      "pose": "スケルトン",
-      "avatar": "アバター",
-      "human": "人間"
-    }
   }
 }

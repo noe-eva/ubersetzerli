@@ -112,70 +112,7 @@
       "title": "Software da kuma Zanen Shafin"
     }
   },
-  "playground": {
-    "title": "Filin Wasan sarrafa Harshen Alama"
-  },
-  "benchmark": {
-    "title": "Alamar alama",
-    "stats": {
-      "cld": {
-        "title": "Fahimtar Harshen Magana",
-        "import": "Shigo Module",
-        "load": "Load Model",
-        "find": "Gane Rubutu",
-        "create": "Ƙirƙiri"
-      },
-      "pix2pix": {
-        "title": "Mai Kallon Matsayin Dan Adam",
-        "init": "Ma'aikacin Init",
-        "load": "Load Model",
-        "first-frame": "Fahimtar Tsarin Farko",
-        "frame": "Fitowar Firam"
-      },
-      "pose": {
-        "title": "Cikakkun Matsayin Jiki",
-        "load": "Model Load",
-        "first-frame": "Fahimtar Tsarin Farko",
-        "frame": "Fitowar Firam"
-      }
-    }
-  },
-  "appearance": {
-    "title": "Bayyanar",
-    "action": "Gyara kamanni",
-    "random": "Samun hoto bazuwar",
-    "upload": "Sanya hoton ku"
-  },
-  "video": {
-    "errors": {
-      "starting": "Kamara tana farawa",
-      "turnedOff": "An kashe kamara",
-      "notConnected": "Ba a haɗa kamara ba",
-      "permissionDenied": "An ƙi izinin kyamara"
-    },
-    "controls": {
-      "receiveVideo": {
-        "on": "Kashe kamara",
-        "off": "Kunna kamara"
-      }
-    }
-  },
-  "pose": {
-    "loading": "Ana Load da Ƙimar Matsayi..."
-  },
   "language-selector": {
     "label": "Canja harshe ko yanki"
-  },
-  "settings": {
-    "detectSign": "Gano Alamar",
-    "drawVideo": "Zana Bidiyo",
-    "drawPose": "Zana Matsayi",
-    "drawSignWriting": "Zana Rubutun Alamar",
-    "animatePose": "Matsayi mai rai",
-    "poseViewer": {
-      "pose": "kwarangwal",
-      "avatar": "Avatar",
-      "human": "Mutum"
-    }
   }
 }

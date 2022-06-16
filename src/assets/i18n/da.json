@@ -112,70 +112,7 @@
       "title": "Software og licenser"
     }
   },
-  "playground": {
-    "title": "Tegnsprogsbehandlingslegeplads"
-  },
-  "benchmark": {
-    "title": "Benchmark",
-    "stats": {
-      "cld": {
-        "title": "Talesprogsidentifikation",
-        "import": "Import modul",
-        "load": "Belastningsmodel",
-        "find": "Identificer tekst",
-        "create": "skab"
-      },
-      "pix2pix": {
-        "title": "Human Pose Viewer",
-        "init": "Arbejder Init",
-        "load": "Belastningsmodel",
-        "first-frame": "Første rammeslutning",
-        "frame": "Rammeslutning"
-      },
-      "pose": {
-        "title": "Vurdering af helkropsstilling",
-        "load": "Modelbelastning",
-        "first-frame": "Første rammeslutning",
-        "frame": "Rammeslutning"
-      }
-    }
-  },
-  "appearance": {
-    "title": "Udseende",
-    "action": "Ændre udseende",
-    "random": "Få et tilfældigt billede",
-    "upload": "Upload dit eget billede"
-  },
-  "video": {
-    "errors": {
-      "starting": "Kamera starter",
-      "turnedOff": "Kameraet er slukket",
-      "notConnected": "Kamera ikke tilsluttet",
-      "permissionDenied": "Kameratilladelse nægtet"
-    },
-    "controls": {
-      "receiveVideo": {
-        "on": "Sluk kameraet",
-        "off": "Tænd kameraet"
-      }
-    }
-  },
-  "pose": {
-    "loading": "Indlæser stillingsestimat..."
-  },
   "language-selector": {
     "label": "Skift sprog eller område"
-  },
-  "settings": {
-    "detectSign": "Opdag tegn",
-    "drawVideo": "Tegn video",
-    "drawPose": "Tegn Pose",
-    "drawSignWriting": "Tegne tegnskrivning",
-    "animatePose": "Animer positur",
-    "poseViewer": {
-      "pose": "Skelet",
-      "avatar": "Avatar",
-      "human": "Human"
-    }
   }
 }

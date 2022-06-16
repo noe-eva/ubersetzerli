@@ -112,70 +112,7 @@
       "title": "Sagteware en lisensies"
     }
   },
-  "playground": {
-    "title": "Gebaretaalverwerking speelgrond"
-  },
-  "benchmark": {
-    "title": "Maatstaf",
-    "stats": {
-      "cld": {
-        "title": "Gesproke Taal Identifikasie",
-        "import": "Invoer module",
-        "load": "Laai model",
-        "find": "Identifiseer teks",
-        "create": "Skep"
-      },
-      "pix2pix": {
-        "title": "Menslike pose-kyker",
-        "init": "Werker Init",
-        "load": "Laai model",
-        "first-frame": "Eerste raamafleiding",
-        "frame": "Raamafleiding"
-      },
-      "pose": {
-        "title": "Volle liggaamshouding skatting",
-        "load": "Modellading",
-        "first-frame": "Eerste raamafleiding",
-        "frame": "Raamafleiding"
-      }
-    }
-  },
-  "appearance": {
-    "title": "Voorkoms",
-    "action": "Verander voorkoms",
-    "random": "Kry 'n ewekansige foto",
-    "upload": "Laai jou eie foto op"
-  },
-  "video": {
-    "errors": {
-      "starting": "Kamera begin",
-      "turnedOff": "Kamera is afgeskakel",
-      "notConnected": "Kamera nie gekoppel nie",
-      "permissionDenied": "Kameratoestemming geweier"
-    },
-    "controls": {
-      "receiveVideo": {
-        "on": "Skakel kamera af",
-        "off": "Skakel kamera aan"
-      }
-    }
-  },
-  "pose": {
-    "loading": "Laai tans houdingskatting..."
-  },
   "language-selector": {
     "label": "Verander taal of streek"
-  },
-  "settings": {
-    "detectSign": "Bespeur teken",
-    "drawVideo": "Teken video",
-    "drawPose": "Teken Posisie",
-    "drawSignWriting": "Teken Teken Skryf",
-    "animatePose": "Geanimeerde houding",
-    "poseViewer": {
-      "pose": "Geraamte",
-      "avatar": "Avatar",
-      "human": "Mens"
-    }
   }
 }

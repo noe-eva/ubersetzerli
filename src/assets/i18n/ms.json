@@ -112,70 +112,7 @@
       "title": "Perisian dan Lesen"
     }
   },
-  "playground": {
-    "title": "Taman Permainan Pemprosesan Bahasa Isyarat"
-  },
-  "benchmark": {
-    "title": "Penanda aras",
-    "stats": {
-      "cld": {
-        "title": "Pengenalan Bahasa Pertuturan",
-        "import": "Modul Import",
-        "load": "Muatkan Model",
-        "find": "Kenal pasti Teks",
-        "create": "Buat"
-      },
-      "pix2pix": {
-        "title": "Pemapar Pose Manusia",
-        "init": "Pekerja Init",
-        "load": "Muatkan Model",
-        "first-frame": "Inferens Bingkai Pertama",
-        "frame": "Inferens Bingkai"
-      },
-      "pose": {
-        "title": "Anggaran Pose Badan Penuh",
-        "load": "Beban Model",
-        "first-frame": "Inferens Bingkai Pertama",
-        "frame": "Inferens Bingkai"
-      }
-    }
-  },
-  "appearance": {
-    "title": "Penampilan",
-    "action": "Ubah suai penampilan",
-    "random": "Dapatkan foto rawak",
-    "upload": "Muat naik foto anda sendiri"
-  },
-  "video": {
-    "errors": {
-      "starting": "Kamera bermula",
-      "turnedOff": "Kamera dimatikan",
-      "notConnected": "Kamera tidak disambungkan",
-      "permissionDenied": "Kebenaran kamera ditolak"
-    },
-    "controls": {
-      "receiveVideo": {
-        "on": "Matikan kamera",
-        "off": "Hidupkan kamera"
-      }
-    }
-  },
-  "pose": {
-    "loading": "Memuatkan Anggaran Pose..."
-  },
   "language-selector": {
     "label": "Tukar bahasa atau wilayah"
-  },
-  "settings": {
-    "detectSign": "Tanda Kesan",
-    "drawVideo": "Lukis Video",
-    "drawPose": "Lukis Pose",
-    "drawSignWriting": "Lukis Tulisan Tanda",
-    "animatePose": "Animasikan Pose",
-    "poseViewer": {
-      "pose": "Rangka",
-      "avatar": "Avatar",
-      "human": "Manusia"
-    }
   }
 }

@@ -112,70 +112,7 @@
       "title": "Programvara och licenser"
     }
   },
-  "playground": {
-    "title": "Lekplats för teckenspråksbearbetning"
-  },
-  "benchmark": {
-    "title": "Benchmark",
-    "stats": {
-      "cld": {
-        "title": "Identifiering av talat språk",
-        "import": "Importmodul",
-        "load": "Ladda modell",
-        "find": "Identifiera text",
-        "create": "Skapa"
-      },
-      "pix2pix": {
-        "title": "Mänsklig Pose Viewer",
-        "init": "Arbetare Init",
-        "load": "Ladda modell",
-        "first-frame": "Första ramslutledning",
-        "frame": "Frame inferens"
-      },
-      "pose": {
-        "title": "Uppskattning av helkroppsställning",
-        "load": "Modellbelastning",
-        "first-frame": "Första ramslutledning",
-        "frame": "Frame inferens"
-      }
-    }
-  },
-  "appearance": {
-    "title": "Utseende",
-    "action": "Ändra utseende",
-    "random": "Få ett slumpmässigt foto",
-    "upload": "Ladda upp ditt eget foto"
-  },
-  "video": {
-    "errors": {
-      "starting": "Kameran startar",
-      "turnedOff": "Kameran avstängd",
-      "notConnected": "Kameran är inte ansluten",
-      "permissionDenied": "Kameratillstånd nekad"
-    },
-    "controls": {
-      "receiveVideo": {
-        "on": "Stäng av kameran",
-        "off": "Slå på kameran"
-      }
-    }
-  },
-  "pose": {
-    "loading": "Laddar uppskattning av position..."
-  },
   "language-selector": {
     "label": "Ändra språk eller region"
-  },
-  "settings": {
-    "detectSign": "Upptäck tecken",
-    "drawVideo": "Rita video",
-    "drawPose": "Rita Pose",
-    "drawSignWriting": "Rita teckenskrivning",
-    "animatePose": "Animera Pose",
-    "poseViewer": {
-      "pose": "Skelett",
-      "avatar": "Avatar",
-      "human": "Mänsklig"
-    }
   }
 }

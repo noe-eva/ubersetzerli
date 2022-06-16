@@ -112,70 +112,7 @@
       "title": "Programma üpjünçiligi we lisenziýalar"
     }
   },
-  "playground": {
-    "title": "Sözlük dilini gaýtadan işlemek meýdançasy"
-  },
-  "benchmark": {
-    "title": "Benchmark",
-    "stats": {
-      "cld": {
-        "title": "Gepleşik dilini kesgitlemek",
-        "import": "Moduly import ediň",
-        "load": "Modelük modeli",
-        "find": "Teksti kesgitläň",
-        "create": "Dörediň"
-      },
-      "pix2pix": {
-        "title": "Adamyň pozisi",
-        "init": "Işçi Init",
-        "load": "Modelük modeli",
-        "first-frame": "Ilkinji çarçuwaly maglumat",
-        "frame": "Çarçuwaly maglumat"
-      },
-      "pose": {
-        "title": "Bedeniň doly bahasy",
-        "load": "Model ýük",
-        "first-frame": "Ilkinji çarçuwaly maglumat",
-        "frame": "Çarçuwaly maglumat"
-      }
-    }
-  },
-  "appearance": {
-    "title": "Daş görnüşi",
-    "action": "Daş görnüşini üýtgediň",
-    "random": "Tötänleýin surat alyň",
-    "upload": "Öz suratyňyzy ýükläň"
-  },
-  "video": {
-    "errors": {
-      "starting": "Kamera başlaýar",
-      "turnedOff": "Kamera öçürildi",
-      "notConnected": "Kamera birikdirilmedik",
-      "permissionDenied": "Kameranyň rugsady ret edildi"
-    },
-    "controls": {
-      "receiveVideo": {
-        "on": "Kamerany öçüriň",
-        "off": "Kamerany açyň"
-      }
-    }
-  },
-  "pose": {
-    "loading": "Pozanyň bahasyny ýüklemek ..."
-  },
   "language-selector": {
     "label": "Dili ýa-da sebiti üýtgediň"
-  },
-  "settings": {
-    "detectSign": "Belgini kesgitläň",
-    "drawVideo": "Wideo çyzyň",
-    "drawPose": "Surat çekiň",
-    "drawSignWriting": "Bellik ýazgyny çyzyň",
-    "animatePose": "Animasiýa pozasy",
-    "poseViewer": {
-      "pose": "Skelet",
-      "avatar": "Awatar",
-      "human": "Adam"
-    }
   }
 }

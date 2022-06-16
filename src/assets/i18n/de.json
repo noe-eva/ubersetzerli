@@ -112,70 +112,7 @@
       "title": "Software und Lizenzen"
     }
   },
-  "playground": {
-    "title": "Spielplatz für Gebärdensprachverarbeitung"
-  },
-  "benchmark": {
-    "title": "Benchmark",
-    "stats": {
-      "cld": {
-        "title": "Identifizierung der gesprochenen Sprache",
-        "import": "Modul importieren",
-        "load": "Modell laden",
-        "find": "Texte identifizieren",
-        "create": "Erstellen"
-      },
-      "pix2pix": {
-        "title": "Viewer für menschliche Posen",
-        "init": "Worker-Init",
-        "load": "Modell laden",
-        "first-frame": "Erste Frame-Inferenz",
-        "frame": "Frame-Inferenz"
-      },
-      "pose": {
-        "title": "Schätzung der Ganzkörperhaltung",
-        "load": "Modell laden",
-        "first-frame": "Erste Frame-Inferenz",
-        "frame": "Frame-Inferenz"
-      }
-    }
-  },
-  "appearance": {
-    "title": "Aussehen",
-    "action": "Aussehen ändern",
-    "random": "Holen Sie sich ein zufälliges Foto",
-    "upload": "Laden Sie Ihr eigenes Foto hoch"
-  },
-  "video": {
-    "errors": {
-      "starting": "Kamera startet",
-      "turnedOff": "Kamera ausgeschaltet",
-      "notConnected": "Kamera nicht verbunden",
-      "permissionDenied": "Kameraerlaubnis verweigert"
-    },
-    "controls": {
-      "receiveVideo": {
-        "on": "Kamera ausschalten",
-        "off": "Kamera einschalten"
-      }
-    }
-  },
-  "pose": {
-    "loading": "Haltungsschätzung wird geladen..."
-  },
   "language-selector": {
     "label": "Sprache oder Region ändern"
-  },
-  "settings": {
-    "detectSign": "Zeichen erkennen",
-    "drawVideo": "Video zeichnen",
-    "drawPose": "Pose zeichnen",
-    "drawSignWriting": "Zeichnen Sie das Schreiben von Zeichen",
-    "animatePose": "Pose animieren",
-    "poseViewer": {
-      "pose": "Skelett",
-      "avatar": "Benutzerbild",
-      "human": "Menschlich"
-    }
   }
 }

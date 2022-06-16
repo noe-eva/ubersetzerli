@@ -112,70 +112,7 @@
       "title": "ဆော့ဖ်ဝဲနှင့်လိုင်စင်များ"
     }
   },
-  "playground": {
-    "title": "လက်သင်္ကေတပြဘာသာစကား လုပ်ဆောင်ခြင်း ကစားကွင်း"
-  },
-  "benchmark": {
-    "title": "စံသတ်မှတ်ချက်",
-    "stats": {
-      "cld": {
-        "title": "စကားပြောဘာသာစကား ခွဲခြားသတ်မှတ်ခြင်း။",
-        "import": "Module ကို တင်သွင်းပါ။",
-        "load": "မော်ဒယ်ကို တင်ပါ။",
-        "find": "စာသားကိုခွဲခြားသတ်မှတ်ပါ။",
-        "create": "ဖန်တီးပါ။"
-      },
-      "pix2pix": {
-        "title": "Human Pose Viewer",
-        "init": "အလုပ်သမား Init",
-        "load": "မော်ဒယ်ကို တင်ပါ။",
-        "first-frame": "ပထမ Frame Inference",
-        "frame": "Frame Inference"
-      },
-      "pose": {
-        "title": "ခန္ဓာကိုယ်အပြည့် အနေအထား ခန့်မှန်းချက်",
-        "load": "Model Load",
-        "first-frame": "ပထမ Frame Inference",
-        "frame": "Frame Inference"
-      }
-    }
-  },
-  "appearance": {
-    "title": "အသွင်အပြင်",
-    "action": "အသွင်အပြင်ကို ပြုပြင်ပါ။",
-    "random": "ကျပန်းဓာတ်ပုံရယူပါ။",
-    "upload": "သင့်ကိုယ်ပိုင်ဓာတ်ပုံကို အပ်လုဒ်လုပ်ပါ။"
-  },
-  "video": {
-    "errors": {
-      "starting": "ကင်မရာစတင်",
-      "turnedOff": "ကင်မရာကို ပိတ်ထားသည်။",
-      "notConnected": "ကင်မရာ ချိတ်ဆက်မထားပါ။",
-      "permissionDenied": "ကင်မရာခွင့်ပြုချက်ကို ငြင်းဆိုထားသည်။"
-    },
-    "controls": {
-      "receiveVideo": {
-        "on": "ကင်မရာကို ပိတ်ပါ။",
-        "off": "ကင်မရာကိုဖွင့်ပါ။"
-      }
-    }
-  },
-  "pose": {
-    "loading": "Pose ခန့်မှန်းချက်ကို ဖွင့်နေသည်..."
-  },
   "language-selector": {
     "label": "ဘာသာစကား သို့မဟုတ် ဒေသကို ပြောင်းပါ။"
-  },
-  "settings": {
-    "detectSign": "လက္ခဏာကို ထောက်လှမ်းပါ။",
-    "drawVideo": "Video ဆွဲပါ။",
-    "drawPose": "Pose ဆွဲပါ။",
-    "drawSignWriting": "Sign Writing ဆွဲပါ။",
-    "animatePose": "Animate Pose",
-    "poseViewer": {
-      "pose": "အရိုးစု",
-      "avatar": "ကိုယ်ပွား",
-      "human": "လူ့"
-    }
   }
 }

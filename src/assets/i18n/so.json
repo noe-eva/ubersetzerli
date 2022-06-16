@@ -112,70 +112,7 @@
       "title": "Sooofti weerka iyo Ruqsahaha"
     }
   },
-  "playground": {
-    "title": "Garoonka Kubadda Cagta ee ka Hagaajinta Luqadda Calaamadaha"
-  },
-  "benchmark": {
-    "title": "Benchmark",
-    "stats": {
-      "cld": {
-        "title": "Aqoonsiga Luuqadda lagu hadlo",
-        "import": "Soo dejinta Module",
-        "load": "Modelka Xamuulka",
-        "find": "Aqoonso Qoraalka",
-        "create": "Abuur"
-      },
-      "pix2pix": {
-        "title": "Daawashada Muuqaalka Aadanaha",
-        "init": "Shaqaale Init",
-        "load": "Modelka Xamuulka",
-        "first-frame": "Farqiga Qaabka Koowaad",
-        "frame": "Faragelinta Frame"
-      },
-      "pose": {
-        "title": "Qiyaasta Meesha Jirka oo Buuxa",
-        "load": "Xamuulka Model",
-        "first-frame": "Farqiga Qaabka Koowaad",
-        "frame": "Faragelinta Frame"
-      }
-    }
-  },
-  "appearance": {
-    "title": "Muuqashada",
-    "action": "Wax ka beddel muuqaalka",
-    "random": "Hel sawir aan toos ahayn",
-    "upload": "Soo rar sawirkaaga"
-  },
-  "video": {
-    "errors": {
-      "starting": "Kamarada bilaabma",
-      "turnedOff": "Kamarada ayaa dansan",
-      "notConnected": "Kamarada kuma xidhna",
-      "permissionDenied": "Oggolaanshaha kamarada waa la diiday"
-    },
-    "controls": {
-      "receiveVideo": {
-        "on": "Dami kamarada",
-        "off": "Daar kamarada"
-      }
-    }
-  },
-  "pose": {
-    "loading": "Soodejinaya Qiyaasta Meesha..."
-  },
   "language-selector": {
     "label": "Beddel luqadda ama gobolka"
-  },
-  "settings": {
-    "detectSign": "Calaamadee calaamad",
-    "drawVideo": "Sawir Video",
-    "drawPose": "Sawir Sawir",
-    "drawSignWriting": "Sawir Qoraalka Saxeexa",
-    "animatePose": "Joogsiga noole",
-    "poseViewer": {
-      "pose": "Qalfoofka",
-      "avatar": "Avatar",
-      "human": "Aadane"
-    }
   }
 }

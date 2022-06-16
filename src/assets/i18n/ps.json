@@ -112,70 +112,7 @@
       "title": "سافټ ویر او جواز لیکونه"
     }
   },
-  "playground": {
-    "title": "د نښې ژبې پروسس کولو لوبې ډګر"
-  },
-  "benchmark": {
-    "title": "بنچمارک",
-    "stats": {
-      "cld": {
-        "title": "د خبرې ژبې پیژندنه",
-        "import": "د واردولو ماډل",
-        "load": "موډل بار کړئ",
-        "find": "د متن پیژندنه",
-        "create": "جوړ کړئ"
-      },
-      "pix2pix": {
-        "title": "د انسان پوز لیدونکی",
-        "init": "کارګر انیټ",
-        "load": "موډل بار کړئ",
-        "first-frame": "د لومړي چوکاټ تحلیل",
-        "frame": "د چوکاټ تحلیل"
-      },
-      "pose": {
-        "title": "د بشپړ بدن پوز اټکل",
-        "load": "د ماډل بار",
-        "first-frame": "د لومړي چوکاټ تحلیل",
-        "frame": "د چوکاټ تحلیل"
-      }
-    }
-  },
-  "appearance": {
-    "title": "بڼه",
-    "action": "بڼه بدله کړئ",
-    "random": "یو تصادفي عکس ترلاسه کړئ",
-    "upload": "خپل عکس اپلوډ کړئ"
-  },
-  "video": {
-    "errors": {
-      "starting": "کیمره پیل کیږي",
-      "turnedOff": "کیمره بنده شوه",
-      "notConnected": "کیمره تړل شوې نه ده",
-      "permissionDenied": "د کیمرې اجازه رد شوه"
-    },
-    "controls": {
-      "receiveVideo": {
-        "on": "کیمره بنده کړئ",
-        "off": "کیمره چالان کړئ"
-      }
-    }
-  },
-  "pose": {
-    "loading": "د پوز اټکل پورته کول..."
-  },
   "language-selector": {
     "label": "ژبه یا سیمه بدله کړئ"
-  },
-  "settings": {
-    "detectSign": "نښه کشف کړئ",
-    "drawVideo": "ویډیو رسم کړئ",
-    "drawPose": "پوز رسم کړئ",
-    "drawSignWriting": "د لاسلیک لیکنه رسم کړئ",
-    "animatePose": "متحرک پوز",
-    "poseViewer": {
-      "pose": "کنکال",
-      "avatar": "اوتار",
-      "human": "انسان"
-    }
   }
 }

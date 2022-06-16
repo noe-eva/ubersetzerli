@@ -112,70 +112,7 @@
       "title": "Tarkvara ja litsentsid"
     }
   },
-  "playground": {
-    "title": "Viipekeele töötlemise mänguväljak"
-  },
-  "benchmark": {
-    "title": "Võrdlusnäitaja",
-    "stats": {
-      "cld": {
-        "title": "Kõnekeele tuvastamine",
-        "import": "Impordi moodul",
-        "load": "Laadi mudel",
-        "find": "Tuvastage tekst",
-        "create": "Loo"
-      },
-      "pix2pix": {
-        "title": "Inimpoosi vaataja",
-        "init": "Tööline Init",
-        "load": "Laadi mudel",
-        "first-frame": "Esimese kaadri järeldus",
-        "frame": "Raami järeldus"
-      },
-      "pose": {
-        "title": "Kogu keha asendi hinnang",
-        "load": "Mudeli koormus",
-        "first-frame": "Esimese kaadri järeldus",
-        "frame": "Raami järeldus"
-      }
-    }
-  },
-  "appearance": {
-    "title": "Välimus",
-    "action": "Muutke välimust",
-    "random": "Tehke juhuslik foto",
-    "upload": "Laadige üles oma foto"
-  },
-  "video": {
-    "errors": {
-      "starting": "Kaamera käivitus",
-      "turnedOff": "Kaamera välja lülitatud",
-      "notConnected": "Kaamera pole ühendatud",
-      "permissionDenied": "Kaamera luba on keelatud"
-    },
-    "controls": {
-      "receiveVideo": {
-        "on": "Lülitage kaamera välja",
-        "off": "Lülitage kaamera sisse"
-      }
-    }
-  },
-  "pose": {
-    "loading": "Poosihinnangu laadimine..."
-  },
   "language-selector": {
     "label": "Muutke keelt või piirkonda"
-  },
-  "settings": {
-    "detectSign": "Tuvasta märk",
-    "drawVideo": "Joonista video",
-    "drawPose": "Joonista poos",
-    "drawSignWriting": "Joonista märkide kirjutamine",
-    "animatePose": "Animeerida poos",
-    "poseViewer": {
-      "pose": "Skelett",
-      "avatar": "Avatar",
-      "human": "Inimene"
-    }
   }
 }

@@ -112,70 +112,7 @@
       "title": "Softueri dhe Licencat"
     }
   },
-  "playground": {
-    "title": "Shesh lojërash për përpunimin e gjuhës së shenjave"
-  },
-  "benchmark": {
-    "title": "Standardi",
-    "stats": {
-      "cld": {
-        "title": "Identifikimi i gjuhës së folur",
-        "import": "Moduli i importit",
-        "load": "Modeli i ngarkimit",
-        "find": "Identifikimi i tekstit",
-        "create": "Krijo"
-      },
-      "pix2pix": {
-        "title": "Shikuesi i pozës njerëzore",
-        "init": "Initi i Punëtorëve",
-        "load": "Modeli i ngarkimit",
-        "first-frame": "Konkluzioni i Kornizës së Parë",
-        "frame": "Konkluzioni i kornizës"
-      },
-      "pose": {
-        "title": "Vlerësimi i pozitës së plotë të trupit",
-        "load": "Ngarkesa e modelit",
-        "first-frame": "Konkluzioni i Kornizës së Parë",
-        "frame": "Konkluzioni i kornizës"
-      }
-    }
-  },
-  "appearance": {
-    "title": "Pamja e jashtme",
-    "action": "Ndryshoni pamjen",
-    "random": "Merrni një foto të rastësishme",
-    "upload": "Ngarkoni foton tuaj"
-  },
-  "video": {
-    "errors": {
-      "starting": "Fillimi i kamerës",
-      "turnedOff": "Kamera u fikur",
-      "notConnected": "Kamera nuk është e lidhur",
-      "permissionDenied": "Leja e kamerës u refuzua"
-    },
-    "controls": {
-      "receiveVideo": {
-        "on": "Fik kamerën",
-        "off": "Aktivizo kamerën"
-      }
-    }
-  },
-  "pose": {
-    "loading": "Po ngarkohet vlerësimi i pozicionit..."
-  },
   "language-selector": {
     "label": "Ndryshoni gjuhën ose rajonin"
-  },
-  "settings": {
-    "detectSign": "Shenja e zbulimit",
-    "drawVideo": "Vizatoni video",
-    "drawPose": "Vizatoni pozën",
-    "drawSignWriting": "Vizatoni Shkrim i Shenjave",
-    "animatePose": "Pozë e gjallë",
-    "poseViewer": {
-      "pose": "Skeleti",
-      "avatar": "Avatari",
-      "human": "Njerëzore"
-    }
   }
 }

@@ -112,70 +112,7 @@
       "title": "Programmatūra un licences"
     }
   },
-  "playground": {
-    "title": "Zīmju valodas apstrādes rotaļu laukums"
-  },
-  "benchmark": {
-    "title": "Etalons",
-    "stats": {
-      "cld": {
-        "title": "Runātās valodas identifikācija",
-        "import": "Importēšanas modulis",
-        "load": "Slodzes modelis",
-        "find": "Identificēt tekstu",
-        "create": "Izveidot"
-      },
-      "pix2pix": {
-        "title": "Cilvēka pozu skatītājs",
-        "init": "Strādnieks Init",
-        "load": "Slodzes modelis",
-        "first-frame": "Pirmā kadra secinājums",
-        "frame": "Rāmja secinājums"
-      },
-      "pose": {
-        "title": "Pilnas ķermeņa pozas novērtējums",
-        "load": "Modeļa slodze",
-        "first-frame": "Pirmā kadra secinājums",
-        "frame": "Rāmja secinājums"
-      }
-    }
-  },
-  "appearance": {
-    "title": "Izskats",
-    "action": "Mainīt izskatu",
-    "random": "Iegūstiet nejaušu fotoattēlu",
-    "upload": "Augšupielādējiet savu fotoattēlu"
-  },
-  "video": {
-    "errors": {
-      "starting": "Kameras palaišana",
-      "turnedOff": "Kamera izslēgta",
-      "notConnected": "Kamera nav pievienota",
-      "permissionDenied": "Kameras atļauja liegta"
-    },
-    "controls": {
-      "receiveVideo": {
-        "on": "Izslēdziet kameru",
-        "off": "Ieslēdziet kameru"
-      }
-    }
-  },
-  "pose": {
-    "loading": "Notiek pozas aplēses ielāde..."
-  },
   "language-selector": {
     "label": "Mainiet valodu vai reģionu"
-  },
-  "settings": {
-    "detectSign": "Atklāt zīmi",
-    "drawVideo": "Zīmēt video",
-    "drawPose": "Zīmēt poza",
-    "drawSignWriting": "Zīmēt zīmju rakstīšana",
-    "animatePose": "Animēt poza",
-    "poseViewer": {
-      "pose": "Skelets",
-      "avatar": "Iemiesojums",
-      "human": "Cilvēks"
-    }
   }
 }

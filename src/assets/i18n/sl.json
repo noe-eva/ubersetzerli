@@ -112,70 +112,7 @@
       "title": "Programska oprema in licence"
     }
   },
-  "playground": {
-    "title": "Igrišče za obdelavo znakovnega jezika"
-  },
-  "benchmark": {
-    "title": "Benchmark",
-    "stats": {
-      "cld": {
-        "title": "Identifikacija govorjenega jezika",
-        "import": "Uvozni modul",
-        "load": "Model nalaganja",
-        "find": "Prepoznajte besedilo",
-        "create": "Ustvari"
-      },
-      "pix2pix": {
-        "title": "Pregledovalnik človeške poze",
-        "init": "Delavec Init",
-        "load": "Model nalaganja",
-        "first-frame": "Sklepanje prvega okvirja",
-        "frame": "Sklepanje okvirja"
-      },
-      "pose": {
-        "title": "Ocena položaja celotnega telesa",
-        "load": "Obremenitev modela",
-        "first-frame": "Sklepanje prvega okvirja",
-        "frame": "Sklepanje okvirja"
-      }
-    }
-  },
-  "appearance": {
-    "title": "Videz",
-    "action": "Spremenite videz",
-    "random": "Pridobite naključno fotografijo",
-    "upload": "Naložite svojo fotografijo"
-  },
-  "video": {
-    "errors": {
-      "starting": "Zagon kamere",
-      "turnedOff": "Kamera je izklopljena",
-      "notConnected": "Kamera ni povezana",
-      "permissionDenied": "Dovoljenje za kamero je zavrnjeno"
-    },
-    "controls": {
-      "receiveVideo": {
-        "on": "Izklopite kamero",
-        "off": "Vklopite kamero"
-      }
-    }
-  },
-  "pose": {
-    "loading": "Nalaganje ocene položaja ..."
-  },
   "language-selector": {
     "label": "Spremenite jezik ali regijo"
-  },
-  "settings": {
-    "detectSign": "Zaznaj znak",
-    "drawVideo": "Risanje videa",
-    "drawPose": "Narišite pozo",
-    "drawSignWriting": "Risanje znakovnega pisanja",
-    "animatePose": "Animirana poza",
-    "poseViewer": {
-      "pose": "Okostje",
-      "avatar": "Avatar",
-      "human": "Človek"
-    }
   }
 }

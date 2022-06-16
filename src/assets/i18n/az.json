@@ -112,70 +112,7 @@
       "title": "Proqram və Lisenziya"
     }
   },
-  "playground": {
-    "title": "İşarə Dili Emalı Oyun Meydançası"
-  },
-  "benchmark": {
-    "title": "Benchmark",
-    "stats": {
-      "cld": {
-        "title": "Danışıq dilinin identifikasiyası",
-        "import": "İdxal Modulu",
-        "load": "Yükləmə Modeli",
-        "find": "Mətni müəyyənləşdirin",
-        "create": "Yaradın"
-      },
-      "pix2pix": {
-        "title": "İnsan Poza Baxıcı",
-        "init": "İşçi Init",
-        "load": "Yükləmə Modeli",
-        "first-frame": "İlk Çərçivə Nəticəsi",
-        "frame": "Çərçivə Nəticəsi"
-      },
-      "pose": {
-        "title": "Tam Bədən Pozunun Qiymətləndirilməsi",
-        "load": "Model yükü",
-        "first-frame": "İlk Çərçivə Nəticəsi",
-        "frame": "Çərçivə Nəticəsi"
-      }
-    }
-  },
-  "appearance": {
-    "title": "Görünüş",
-    "action": "Görünüşü dəyişdirin",
-    "random": "Təsadüfi bir şəkil alın",
-    "upload": "Öz şəklinizi yükləyin"
-  },
-  "video": {
-    "errors": {
-      "starting": "Kamera başlayır",
-      "turnedOff": "Kamera söndürüldü",
-      "notConnected": "Kamera qoşulmayıb",
-      "permissionDenied": "Kamera icazəsi rədd edildi"
-    },
-    "controls": {
-      "receiveVideo": {
-        "on": "Kameranı söndürün",
-        "off": "Kameranı yandırın"
-      }
-    }
-  },
-  "pose": {
-    "loading": "Duruş Təxmini Yüklənir..."
-  },
   "language-selector": {
     "label": "Dili və ya bölgəni dəyişdirin"
-  },
-  "settings": {
-    "detectSign": "İşarəni aşkarla",
-    "drawVideo": "Video çəkmək",
-    "drawPose": "Poza çəkin",
-    "drawSignWriting": "İşarə yazısını çəkin",
-    "animatePose": "Animasiya pozası",
-    "poseViewer": {
-      "pose": "Skelet",
-      "avatar": "Avatar",
-      "human": "İnsan"
-    }
   }
 }

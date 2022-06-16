@@ -52,7 +52,7 @@ function removeExtraEntries(source, target) {
       delete target[key];
     } else {
       if (typeof value !== 'string') {
-        removeExtraEntries(source[key], target);
+        removeExtraEntries(source[key], value);
       }
     }
   }
@@ -65,7 +65,6 @@ async function main() {
       const source = languages[DEFAULT_LANGUAGE].content;
       await translateMissingEntries(source, content, lang);
       removeExtraEntries(source, content);
-      // TODO remove any key not available in the default language
       fs.writeFileSync(filePath, JSON.stringify(content, null, 2) + '\n');
     }
   }

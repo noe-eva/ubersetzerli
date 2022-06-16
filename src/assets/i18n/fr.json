@@ -112,70 +112,7 @@
       "title": "Logiciels et licences"
     }
   },
-  "playground": {
-    "title": "Terrain de jeu pour le traitement de la langue des signes"
-  },
-  "benchmark": {
-    "title": "Référence",
-    "stats": {
-      "cld": {
-        "title": "Identification de la langue parlée",
-        "import": "Module d'importation",
-        "load": "Charger le modèle",
-        "find": "Identifier le texte",
-        "create": "Créer"
-      },
-      "pix2pix": {
-        "title": "Visionneuse de pose humaine",
-        "init": "Init du travailleur",
-        "load": "Charger le modèle",
-        "first-frame": "Inférence de la première image",
-        "frame": "Inférence de cadre"
-      },
-      "pose": {
-        "title": "Estimation de la pose complète du corps",
-        "load": "Charge du modèle",
-        "first-frame": "Inférence de la première image",
-        "frame": "Inférence de cadre"
-      }
-    }
-  },
-  "appearance": {
-    "title": "Apparence",
-    "action": "Modifier l'apparence",
-    "random": "Obtenez une photo au hasard",
-    "upload": "Téléchargez votre propre photo"
-  },
-  "video": {
-    "errors": {
-      "starting": "Démarrage de la caméra",
-      "turnedOff": "Caméra éteinte",
-      "notConnected": "Caméra non connectée",
-      "permissionDenied": "Autorisation de caméra refusée"
-    },
-    "controls": {
-      "receiveVideo": {
-        "on": "Éteindre la caméra",
-        "off": "Allumer la caméra"
-      }
-    }
-  },
-  "pose": {
-    "loading": "Chargement de l'estimation de la pose..."
-  },
   "language-selector": {
     "label": "Changer de langue ou de région"
-  },
-  "settings": {
-    "detectSign": "Détecter le signe",
-    "drawVideo": "Dessiner une vidéo",
-    "drawPose": "Dessiner la pose",
-    "drawSignWriting": "Dessiner l'écriture de signe",
-    "animatePose": "Animer la pose",
-    "poseViewer": {
-      "pose": "Squelette",
-      "avatar": "Avatar",
-      "human": "Humain"
-    }
   }
 }

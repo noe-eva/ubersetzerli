@@ -112,70 +112,7 @@
       "title": "Software e licenze"
     }
   },
-  "playground": {
-    "title": "Parco giochi per l'elaborazione della lingua dei segni"
-  },
-  "benchmark": {
-    "title": "Segno di riferimento",
-    "stats": {
-      "cld": {
-        "title": "Identificazione della lingua parlata",
-        "import": "Modulo di importazione",
-        "load": "Carica modello",
-        "find": "Identifica il testo",
-        "create": "Creare"
-      },
-      "pix2pix": {
-        "title": "Visualizzatore di pose umane",
-        "init": "Iniz. lavoratore",
-        "load": "Carica modello",
-        "first-frame": "Inferenza del primo fotogramma",
-        "frame": "Inferenza telaio"
-      },
-      "pose": {
-        "title": "Stima della posa del corpo intero",
-        "load": "Carico del modello",
-        "first-frame": "Inferenza del primo fotogramma",
-        "frame": "Inferenza telaio"
-      }
-    }
-  },
-  "appearance": {
-    "title": "Aspetto",
-    "action": "Modifica aspetto",
-    "random": "Ottieni una foto a caso",
-    "upload": "Carica la tua foto"
-  },
-  "video": {
-    "errors": {
-      "starting": "Fotocamera in partenza",
-      "turnedOff": "Fotocamera spenta",
-      "notConnected": "Fotocamera non collegata",
-      "permissionDenied": "Autorizzazione della fotocamera negata"
-    },
-    "controls": {
-      "receiveVideo": {
-        "on": "Spegni la fotocamera",
-        "off": "Accendi la fotocamera"
-      }
-    }
-  },
-  "pose": {
-    "loading": "Caricamento della stima della posa..."
-  },
   "language-selector": {
     "label": "Cambia lingua o regione"
-  },
-  "settings": {
-    "detectSign": "Rileva segno",
-    "drawVideo": "Disegna video",
-    "drawPose": "Disegna la posa",
-    "drawSignWriting": "Disegna la scrittura del segno",
-    "animatePose": "Anima la posa",
-    "poseViewer": {
-      "pose": "Scheletro",
-      "avatar": "Avatar",
-      "human": "Umano"
-    }
   }
 }

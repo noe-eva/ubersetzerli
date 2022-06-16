@@ -112,70 +112,7 @@
       "title": "Mapulogalamu ndi Malaisensi"
     }
   },
-  "playground": {
-    "title": "Malo Osewerera Chinenero Chamanja"
-  },
-  "benchmark": {
-    "title": "Benchmark",
-    "stats": {
-      "cld": {
-        "title": "Chizindikiritso cha Chinenero Cholankhulidwa",
-        "import": "Import Module",
-        "load": "Katundu Model",
-        "find": "Dziwani Malemba",
-        "create": "Pangani"
-      },
-      "pix2pix": {
-        "title": "Munthu Pose Viewer",
-        "init": "Woyamba Wogwira Ntchito",
-        "load": "Katundu Model",
-        "first-frame": "Chiyambi cha Frame Inference",
-        "frame": "Kufotokozera kwa Frame"
-      },
-      "pose": {
-        "title": "Kuyerekeza Kwamaonekedwe a Thupi Lonse",
-        "load": "Katundu Wachitsanzo",
-        "first-frame": "Chiyambi cha Frame Inference",
-        "frame": "Kufotokozera kwa Frame"
-      }
-    }
-  },
-  "appearance": {
-    "title": "Maonekedwe",
-    "action": "Sinthani maonekedwe",
-    "random": "Pezani chithunzi mwachisawawa",
-    "upload": "Kwezani chithunzi chanu"
-  },
-  "video": {
-    "errors": {
-      "starting": "Kamera ikuyamba",
-      "turnedOff": "Kamera yazimitsidwa",
-      "notConnected": "Kamera sinalumikizidwe",
-      "permissionDenied": "Chilolezo cha kamera chatsutsidwa"
-    },
-    "controls": {
-      "receiveVideo": {
-        "on": "Zimitsani kamera",
-        "off": "Yatsani kamera"
-      }
-    }
-  },
-  "pose": {
-    "loading": "Tikuyesa Pose Estimation..."
-  },
   "language-selector": {
     "label": "Sinthani chinenero kapena dera"
-  },
-  "settings": {
-    "detectSign": "Dziwani Chizindikiro",
-    "drawVideo": "Jambulani Kanema",
-    "drawPose": "Jambulani Maonekedwe",
-    "drawSignWriting": "Jambulani Kulemba kwa Chizindikiro",
-    "animatePose": "Animate Pose",
-    "poseViewer": {
-      "pose": "Chigoba",
-      "avatar": "Avatar",
-      "human": "Munthu"
-    }
   }
 }

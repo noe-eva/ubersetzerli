@@ -112,70 +112,7 @@
       "title": "Software en licenties"
     }
   },
-  "playground": {
-    "title": "Speeltuin voor gebarentaalverwerking"
-  },
-  "benchmark": {
-    "title": "Benchmark",
-    "stats": {
-      "cld": {
-        "title": "Gesproken taalidentificatie",
-        "import": "Module importeren",
-        "load": "Laadmodel",
-        "find": "Identificeer tekst",
-        "create": "Creëren"
-      },
-      "pix2pix": {
-        "title": "Kijker naar menselijke poses",
-        "init": "Werknemer Init",
-        "load": "Laadmodel",
-        "first-frame": "Eerste frame-inferentie",
-        "frame": "Frame-inferentie"
-      },
-      "pose": {
-        "title": "Schatting van de volledige lichaamshouding",
-        "load": "Modelbelasting:",
-        "first-frame": "Eerste frame-inferentie",
-        "frame": "Frame-inferentie"
-      }
-    }
-  },
-  "appearance": {
-    "title": "Verschijning",
-    "action": "Uiterlijk wijzigen",
-    "random": "Krijg een willekeurige foto",
-    "upload": "Upload je eigen foto"
-  },
-  "video": {
-    "errors": {
-      "starting": "Camera starten",
-      "turnedOff": "Camera uitgeschakeld",
-      "notConnected": "Camera niet aangesloten",
-      "permissionDenied": "Cameratoestemming geweigerd"
-    },
-    "controls": {
-      "receiveVideo": {
-        "on": "Camera uitschakelen",
-        "off": "Zet de camera aan"
-      }
-    }
-  },
-  "pose": {
-    "loading": "Pose-schatting laden..."
-  },
   "language-selector": {
     "label": "Wijzig taal of regio"
-  },
-  "settings": {
-    "detectSign": "Teken detecteren",
-    "drawVideo": "Video tekenen",
-    "drawPose": "Teken pose",
-    "drawSignWriting": "Teken teken schrijven",
-    "animatePose": "Animeren pose",
-    "poseViewer": {
-      "pose": "Skelet",
-      "avatar": "Avatar",
-      "human": "Menselijk"
-    }
   }
 }

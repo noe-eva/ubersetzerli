@@ -112,70 +112,7 @@
       "title": "Oprogramowanie i licencje"
     }
   },
-  "playground": {
-    "title": "Plac zabaw przetwarzania języka migowego"
-  },
-  "benchmark": {
-    "title": "Reper",
-    "stats": {
-      "cld": {
-        "title": "Identyfikacja w języku mówionym",
-        "import": "Moduł importu",
-        "load": "Załaduj model",
-        "find": "Zidentyfikuj tekst",
-        "create": "Tworzyć"
-      },
-      "pix2pix": {
-        "title": "Przeglądarka ludzkiej pozy",
-        "init": "Pracownik początkowy",
-        "load": "Załaduj model",
-        "first-frame": "Wnioskowanie o pierwszej klatce",
-        "frame": "Wnioskowanie ramki"
-      },
-      "pose": {
-        "title": "Szacowanie pozycji całego ciała",
-        "load": "Obciążenie modelu",
-        "first-frame": "Wnioskowanie o pierwszej klatce",
-        "frame": "Wnioskowanie ramki"
-      }
-    }
-  },
-  "appearance": {
-    "title": "Wygląd zewnętrzny",
-    "action": "Zmodyfikuj wygląd",
-    "random": "Zdobądź losowe zdjęcie",
-    "upload": "Prześlij własne zdjęcie"
-  },
-  "video": {
-    "errors": {
-      "starting": "Uruchamianie aparatu",
-      "turnedOff": "Aparat wyłączony",
-      "notConnected": "Kamera nie jest podłączona",
-      "permissionDenied": "Odmowa pozwolenia na aparat"
-    },
-    "controls": {
-      "receiveVideo": {
-        "on": "Wyłącz aparat",
-        "off": "Włącz aparat"
-      }
-    }
-  },
-  "pose": {
-    "loading": "Wczytywanie oszacowania ułożenia..."
-  },
   "language-selector": {
     "label": "Zmień język lub region"
-  },
-  "settings": {
-    "detectSign": "Wykryj znak",
-    "drawVideo": "Rysuj wideo",
-    "drawPose": "Rysuj pozę",
-    "drawSignWriting": "Narysuj pisanie znakami",
-    "animatePose": "Animowana pozycja",
-    "poseViewer": {
-      "pose": "Szkielet",
-      "avatar": "Awatara",
-      "human": "Człowiek"
-    }
   }
 }

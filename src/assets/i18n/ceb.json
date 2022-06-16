@@ -112,70 +112,7 @@
       "title": "Software ug Mga Lisensya"
     }
   },
-  "playground": {
-    "title": "Dulaanan sa Pagproseso sa Sign Language"
-  },
-  "benchmark": {
-    "title": "Benchmark",
-    "stats": {
-      "cld": {
-        "title": "Identipikasyon sa Gisulti nga Pinulongan",
-        "import": "Import nga Module",
-        "load": "Modelo sa Pagkarga",
-        "find": "Ilha ang Teksto",
-        "create": "Paghimo"
-      },
-      "pix2pix": {
-        "title": "Tawo nga Pose Viewer",
-        "init": "Trabaho Init",
-        "load": "Modelo sa Pagkarga",
-        "first-frame": "Unang Frame Inference",
-        "frame": "Frame Inference"
-      },
-      "pose": {
-        "title": "Pagbanabana sa Tibuok Lawas nga Posisyon",
-        "load": "Model Load",
-        "first-frame": "Unang Frame Inference",
-        "frame": "Frame Inference"
-      }
-    }
-  },
-  "appearance": {
-    "title": "Panagway",
-    "action": "Usba ang hitsura",
-    "random": "Pagkuha ug random nga litrato",
-    "upload": "Pag-upload sa imong kaugalingon nga litrato"
-  },
-  "video": {
-    "errors": {
-      "starting": "Nagsugod ang camera",
-      "turnedOff": "Gipalong ang camera",
-      "notConnected": "Ang camera dili konektado",
-      "permissionDenied": "Gidili ang pagtugot sa camera"
-    },
-    "controls": {
-      "receiveVideo": {
-        "on": "I-off ang camera",
-        "off": "I-on ang camera"
-      }
-    }
-  },
-  "pose": {
-    "loading": "Nagkarga sa Pagbanabana sa Posisyon..."
-  },
   "language-selector": {
     "label": "Usba ang pinulongan o rehiyon"
-  },
-  "settings": {
-    "detectSign": "Detect Sign",
-    "drawVideo": "Pagdrowing og Video",
-    "drawPose": "Pagdrowing og Pose",
-    "drawSignWriting": "Pagdibuho sa Pagsulat sa Timailhan",
-    "animatePose": "Animate Pose",
-    "poseViewer": {
-      "pose": "Kalabera",
-      "avatar": "Avatar",
-      "human": "Tawo"
-    }
   }
 }

@@ -112,70 +112,7 @@
       "title": "Softewere le Lilaesense"
     }
   },
-  "playground": {
-    "title": "Lebala la ho Etsa Puo ea Matsoho"
-  },
-  "benchmark": {
-    "title": "Benchmark",
-    "stats": {
-      "cld": {
-        "title": "Boitsebiso ba Puo e Builoeng",
-        "import": "Theha Mojule",
-        "load": "Laela Mohlala",
-        "find": "Lemoha Mongolo",
-        "create": "Theha"
-      },
-      "pix2pix": {
-        "title": "Motho Pose Viewer",
-        "init": "Sehlopha sa Basebetsi",
-        "load": "Laela Mohlala",
-        "first-frame": "Tlhahiso ea Pele ea Frame",
-        "frame": "Tlhaloso ea Frame"
-      },
-      "pose": {
-        "title": "Khakanyo ea Boemo ba 'mele o Feletseng",
-        "load": "Mojaro oa Mohlala",
-        "first-frame": "Tlhahiso ea Pele ea Frame",
-        "frame": "Tlhaloso ea Frame"
-      }
-    }
-  },
-  "appearance": {
-    "title": "Ponahalo",
-    "action": "Fetola chebahalo",
-    "random": "Fumana foto e sa reroang",
-    "upload": "Kenya senepe sa hau"
-  },
-  "video": {
-    "errors": {
-      "starting": "Khamera e qala",
-      "turnedOff": "Khamera e timiloe",
-      "notConnected": "Khamera ha e ea hokahanngoa",
-      "permissionDenied": "Tumello ea khamera e hanetsoe"
-    },
-    "controls": {
-      "receiveVideo": {
-        "on": "Tima khamera",
-        "off": "Bulela khamera"
-      }
-    }
-  },
-  "pose": {
-    "loading": "Loading Pose Estimation..."
-  },
   "language-selector": {
     "label": "Fetola puo kapa sebaka"
-  },
-  "settings": {
-    "detectSign": "Lemoha Letšoao",
-    "drawVideo": "Thala Video",
-    "drawPose": "Draw Pose",
-    "drawSignWriting": "Thala Mongolo oa Letšoao",
-    "animatePose": "Animate Pose",
-    "poseViewer": {
-      "pose": "Skeleton",
-      "avatar": "Avatar",
-      "human": "Motho"
-    }
   }
 }

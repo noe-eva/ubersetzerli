@@ -112,70 +112,7 @@
       "title": "Meddalwedd a Thrwyddedau"
     }
   },
-  "playground": {
-    "title": "Maes Chwarae Prosesu Iaith Arwyddion"
-  },
-  "benchmark": {
-    "title": "Meincnod",
-    "stats": {
-      "cld": {
-        "title": "Adnabod Iaith Lafar",
-        "import": "Modiwl Mewnforio",
-        "load": "Model Llwyth",
-        "find": "Adnabod Testun",
-        "create": "Creu"
-      },
-      "pix2pix": {
-        "title": "Gwyliwr Ystumiau Dynol",
-        "init": "Init Gweithiwr",
-        "load": "Model Llwyth",
-        "first-frame": "Casgliad Ffrâm Cyntaf",
-        "frame": "Casgliad Ffrâm"
-      },
-      "pose": {
-        "title": "Amcangyfrif Safle Corff Llawn",
-        "load": "Llwyth Model",
-        "first-frame": "Casgliad Ffrâm Cyntaf",
-        "frame": "Casgliad Ffrâm"
-      }
-    }
-  },
-  "appearance": {
-    "title": "Ymddangosiad",
-    "action": "Addasu ymddangosiad",
-    "random": "Cael llun ar hap",
-    "upload": "Llwythwch eich llun eich hun i fyny"
-  },
-  "video": {
-    "errors": {
-      "starting": "Camera yn dechrau",
-      "turnedOff": "Camera wedi'i ddiffodd",
-      "notConnected": "Camera heb ei gysylltu",
-      "permissionDenied": "Caniatâd camera wedi'i wrthod"
-    },
-    "controls": {
-      "receiveVideo": {
-        "on": "Trowch y camera i ffwrdd",
-        "off": "Trowch y camera ymlaen"
-      }
-    }
-  },
-  "pose": {
-    "loading": "Wrthi'n llwytho amcangyfrif ystum..."
-  },
   "language-selector": {
     "label": "Newid iaith neu ranbarth"
-  },
-  "settings": {
-    "detectSign": "Canfod Arwydd",
-    "drawVideo": "Tynnu Fideo",
-    "drawPose": "Tynnu Pose",
-    "drawSignWriting": "Tynnwch Ysgrifennu Arwyddion",
-    "animatePose": "Animeiddio Pos",
-    "poseViewer": {
-      "pose": "sgerbwd",
-      "avatar": "Avatar",
-      "human": "Dynol"
-    }
   }
 }

@@ -112,70 +112,7 @@
       "title": "Lojisyèl ak Lisans yo"
     }
   },
-  "playground": {
-    "title": "Lakou rekreyasyon pou trete lang siy"
-  },
-  "benchmark": {
-    "title": "Referans",
-    "stats": {
-      "cld": {
-        "title": "Idantifikasyon lang ki pale",
-        "import": "Enpòte Modil",
-        "load": "Chaj modèl",
-        "find": "Idantifye tèks",
-        "create": "Kreye"
-      },
-      "pix2pix": {
-        "title": "Moun Poz Viewer",
-        "init": "Travayè Init",
-        "load": "Chaj modèl",
-        "first-frame": "Premye Enferans ankadreman",
-        "frame": "Enferans ankadreman"
-      },
-      "pose": {
-        "title": "Estimasyon plen kò poze",
-        "load": "Modèl chaj",
-        "first-frame": "Premye Enferans ankadreman",
-        "frame": "Enferans ankadreman"
-      }
-    }
-  },
-  "appearance": {
-    "title": "Aparans",
-    "action": "Modifye aparans",
-    "random": "Jwenn yon foto o aza",
-    "upload": "Telechaje pwòp foto ou"
-  },
-  "video": {
-    "errors": {
-      "starting": "Kamera kòmanse",
-      "turnedOff": "Kamera etenn",
-      "notConnected": "Kamera pa konekte",
-      "permissionDenied": "Pèmisyon kamera refize"
-    },
-    "controls": {
-      "receiveVideo": {
-        "on": "Etenn kamera",
-        "off": "Limen kamera"
-      }
-    }
-  },
-  "pose": {
-    "loading": "Chaje estimasyon poze..."
-  },
   "language-selector": {
     "label": "Chanje lang oswa rejyon an"
-  },
-  "settings": {
-    "detectSign": "Detekte siy",
-    "drawVideo": "Trase Videyo",
-    "drawPose": "Trase poze",
-    "drawSignWriting": "Trase ekriti siy",
-    "animatePose": "Anime poze",
-    "poseViewer": {
-      "pose": "Kilè eskèlèt",
-      "avatar": "Avatar",
-      "human": "Moun"
-    }
   }
 }
