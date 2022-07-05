@@ -1,4 +1,4 @@
-import {AfterViewInit, Component} from '@angular/core';
+import {AfterViewInit, Component, Inject, PLATFORM_ID} from '@angular/core';
 import {TranslocoService} from '@ngneat/transloco';
 import {filter, tap} from 'rxjs/operators';
 import {Store} from '@ngxs/store';
@@ -10,6 +10,7 @@ import {firstValueFrom} from 'rxjs';
 import {NavigationEnd, Router} from '@angular/router';
 import {GoogleAnalyticsService} from './core/modules/google-analytics/google-analytics.service';
 import {Capacitor} from '@capacitor/core';
+import {isPlatformServer} from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -26,7 +27,8 @@ export class AppComponent implements AfterViewInit {
     private domSanitizer: DomSanitizer,
     private platform: Platform,
     private ga: GoogleAnalyticsService,
-    private router: Router
+    private router: Router,
+    @Inject(PLATFORM_ID) private platformId: string
   ) {
     this.listenLanguageChange();
     this.logRouterNavigation();
@@ -35,11 +37,20 @@ export class AppComponent implements AfterViewInit {
     this.registerIcons();
   }
 
-  registerIcons() {
-    this.matIconRegistry.addSvgIcon(
-      `switzerland`,
-      this.domSanitizer.bypassSecurityTrustResourceUrl(`assets/icons/favicon.svg`)
-    );
+  async registerIcons() {
+    const icons = {
+      switzerland: 'assets/icons/favicon.svg',
+    };
+
+    for (const [name, path] of Object.entries(icons)) {
+      if (isPlatformServer(this.platformId)) {
+        /* Register empty icons for server-side-rendering to prevent errors */
+        // const svgContent = String(fs.readFileSync(`${__dirname}/../browser/${path}`));
+        this.matIconRegistry.addSvgIconLiteral(name, this.domSanitizer.bypassSecurityTrustHtml('<svg></svg>'));
+      } else {
+        this.matIconRegistry.addSvgIcon(name, this.domSanitizer.bypassSecurityTrustResourceUrl(path));
+      }
+    }
   }
 
   async ngAfterViewInit() {

@@ -1,12 +1,13 @@
-import {Component} from '@angular/core';
+import {Component, NgModule} from '@angular/core';
 import {geoJSON, latLng, latLngBounds, Map, tileLayer} from 'leaflet';
-import {HttpClient} from '@angular/common/http';
-import {Store} from '@ngxs/store';
-import {Observable} from 'rxjs';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
+import {NgxsModule, Store} from '@ngxs/store';
+import {firstValueFrom, Observable} from 'rxjs';
 import {BaseComponent} from '../../../components/base/base.component';
 import {takeUntil, tap} from 'rxjs/operators';
 import {SetSignedLanguage} from 'src/app/modules/translate/translate.actions';
-import {MatDialogRef} from '@angular/material/dialog';
+import {MatDialogModule, MatDialogRef} from '@angular/material/dialog';
+import {LeafletModule} from '@asymmetrik/ngx-leaflet';
 
 @Component({
   selector: 'app-map',
@@ -14,6 +15,8 @@ import {MatDialogRef} from '@angular/material/dialog';
   styleUrls: ['./map.component.scss'],
 })
 export class MapComponent extends BaseComponent {
+  static mapGeoJson = null;
+
   signedLanguage$: Observable<string>;
   selectedDialect: string = '';
 
@@ -44,7 +47,7 @@ export class MapComponent extends BaseComponent {
       .subscribe();
   }
 
-  onMapReady(map: Map) {
+  async onMapReady(map: Map) {
     const initialOpacity = 0.6;
 
     const dialectCode = id => `CH-${id}`;
@@ -72,21 +75,29 @@ export class MapComponent extends BaseComponent {
     };
 
     // TODO figure out how to use the `cantons.geojson` (topology) file because it is 8 times smaller
-    this.http.get('assets/geography/map.geojson').subscribe((json: any) => {
-      geoJSON(json, {
-        style,
-        onEachFeature: function (feature, layer) {
-          layer.on('mouseover', function () {
-            this.setStyle({fillOpacity: 1});
-          });
-          layer.on('mouseout', function () {
-            this.setStyle(modifyStyle(feature, {fillOpacity: initialOpacity}));
-          });
-          layer.on('click', function () {
-            selectDialect(dialectCode(feature.id));
-          });
-        },
-      }).addTo(map);
-    });
+    if (!MapComponent.mapGeoJson) {
+      MapComponent.mapGeoJson = await firstValueFrom(this.http.get('assets/geography/map.geojson'));
+    }
+
+    geoJSON(MapComponent.mapGeoJson, {
+      style,
+      onEachFeature: function (feature, layer) {
+        layer.on('mouseover', function () {
+          this.setStyle({fillOpacity: 1});
+        });
+        layer.on('mouseout', function () {
+          this.setStyle(modifyStyle(feature, {fillOpacity: initialOpacity}));
+        });
+        layer.on('click', function () {
+          selectDialect(dialectCode(feature.id));
+        });
+      },
+    }).addTo(map);
   }
 }
+
+@NgModule({
+  declarations: [MapComponent],
+  imports: [MatDialogModule, LeafletModule, HttpClientModule, NgxsModule.forFeature([])],
+})
+export class SimpleDialogModule {}

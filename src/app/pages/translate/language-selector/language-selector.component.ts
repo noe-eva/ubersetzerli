@@ -1,8 +1,8 @@
 import {Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges} from '@angular/core';
 import {Select} from '@ngxs/store';
 import {Observable} from 'rxjs';
-import {MapComponent} from '../map/map.component';
 import {MatDialog} from '@angular/material/dialog';
+import {ComponentType} from '@angular/cdk/overlay';
 
 @Component({
   selector: 'app-language-selector',
@@ -73,8 +73,16 @@ export class LanguageSelectorComponent implements OnInit, OnChanges {
     }
   }
 
-  openMap() {
-    this.dialog.open(MapComponent, {
+  mapComponent: ComponentType<unknown> = null;
+
+  async openMap() {
+    // Load leaflet dynamically
+    if (!this.mapComponent) {
+      const chunk = await import('../map/map.component');
+      this.mapComponent = Object.values(chunk)[0] as ComponentType<unknown>;
+    }
+
+    this.dialog.open(this.mapComponent, {
       height: '720px',
       width: '1280px',
     });

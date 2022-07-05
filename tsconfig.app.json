@@ -5,5 +5,5 @@
     "types": ["@types/dom-speech-recognition", "@types/node"]
   },
   "files": ["src/main.ts", "src/polyfills.ts"],
-  "include": ["src/**/*.d.ts", "node_modules/@types/chrome/index.d.ts"]
+  "include": ["src/**/*.d.ts", "src/app/pages/translate/map/map.component.ts", "node_modules/@types/chrome/index.d.ts"]
 }

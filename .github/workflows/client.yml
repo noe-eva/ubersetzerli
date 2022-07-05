@@ -41,7 +41,7 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build project
-        run: npm run build
+        run: npm run prerender
 
       - name: Generate Sitemap
         run: node tools/sitemap-generator.js
