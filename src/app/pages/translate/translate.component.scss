@@ -24,6 +24,9 @@
 }
 
 mat-toolbar {
+  overflow: hidden;
+  transition: height 0.15s ease-out;
+
   span {
     flex: 1 1 auto;
   }
@@ -31,6 +34,10 @@ mat-toolbar {
   mat-icon {
     font-weight: 900;
   }
+}
+
+:host.keyboard-open mat-toolbar {
+  height: 0;
 }
 
 #container {

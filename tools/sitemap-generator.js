@@ -25,7 +25,7 @@ for (const file of fs.readdirSync(langsDir)) {
 // writes sitemaps and index out to the destination you provide.
 simpleSitemapAndIndex({
   hostname: 'https://ubersetzer.li',
-  destinationDir: `${baseDir}dist/ubersetzerli/`,
+  destinationDir: `${baseDir}dist/ubersetzerli/browser/`,
   sourceData: urls.map(url => ({url, lastmod: now})),
   gzip: false,
 })

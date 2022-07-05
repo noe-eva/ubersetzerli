@@ -1,10 +1,9 @@
-import {Component, HostBinding, OnInit, ViewChild} from '@angular/core';
+import {Component, HostBinding, OnInit} from '@angular/core';
 import {Select, Store} from '@ngxs/store';
 import {SetSetting} from '../../modules/settings/settings.actions';
 import {fromEvent, Observable} from 'rxjs';
 import {BaseComponent} from '../../components/base/base.component';
 import {takeUntil, tap} from 'rxjs/operators';
-import {InputMode} from '../../modules/translate/translate.state';
 import {
   FlipTranslationDirection,
   SetSignedLanguage,
@@ -12,7 +11,9 @@ import {
 } from '../../modules/translate/translate.actions';
 import {TranslocoService} from '@ngneat/transloco';
 import {TranslationService} from '../../modules/translate/translate.service';
-import {MatDrawer} from '@angular/material/sidenav';
+import {Capacitor} from '@capacitor/core';
+import {Keyboard} from '@capacitor/keyboard';
+import {Meta, Title} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-translate',
@@ -22,11 +23,17 @@ import {MatDrawer} from '@angular/material/sidenav';
 export class TranslateComponent extends BaseComponent implements OnInit {
   @Select(state => state.translate.signedLanguage) signedLanguage$: Observable<string>;
   @Select(state => state.translate.spokenToSigned) spokenToSigned$: Observable<boolean>;
-  @Select(state => state.translate.inputMode) inputMode$: Observable<InputMode>;
 
   @HostBinding('class.spoken-to-signed') spokenToSigned: boolean;
+  @HostBinding('class.keyboard-open') keyboardOpen: boolean;
 
-  constructor(private store: Store, private transloco: TranslocoService, public translation: TranslationService) {
+  constructor(
+    private store: Store,
+    private transloco: TranslocoService,
+    public translation: TranslationService,
+    private meta: Meta,
+    private title: Title
+  ) {
     super();
   }
 
@@ -34,12 +41,14 @@ export class TranslateComponent extends BaseComponent implements OnInit {
     this.transloco.events$
       .pipe(
         tap(() => {
-          document.title = this.transloco.translate('translate.title');
-
-          const descriptionEl = document.head.children.namedItem('description');
-          if (descriptionEl) {
-            descriptionEl.setAttribute('content', this.transloco.translate('translate.description'));
-          }
+          this.title.setTitle(this.transloco.translate('translate.title'));
+          this.meta.updateTag(
+            {
+              name: 'description',
+              content: this.transloco.translate('translate.description'),
+            },
+            'name=description'
+          );
         }),
         takeUntil(this.ngUnsubscribe)
       )
@@ -48,6 +57,42 @@ export class TranslateComponent extends BaseComponent implements OnInit {
     this.spokenToSigned$
       .pipe(
         tap(spokenToSigned => (this.spokenToSigned = spokenToSigned)),
+        takeUntil(this.ngUnsubscribe)
+      )
+      .subscribe();
+
+    this.initKeyboardListeners();
+  }
+
+  async initKeyboardListeners() {
+    if (Capacitor.isNativePlatform()) {
+      const {Keyboard} = await import('@capacitor/keyboard');
+      Keyboard.addListener('keyboardWillShow', () => (this.keyboardOpen = true));
+      Keyboard.addListener('keyboardWillHide', () => (this.keyboardOpen = false));
+    }
+  }
+
+  async playVideos(): Promise<void> {
+    if (!('window' in globalThis)) {
+      return;
+    }
+
+    // Autoplay videos don't play before page interaction, or after re-opening PWA without refresh
+    fromEvent(window, 'click')
+      .pipe(
+        tap(async () => {
+          const videos = Array.from(document.getElementsByTagName('video'));
+
+          for (const video of videos) {
+            if (video.autoplay && video.paused) {
+              try {
+                await video.play();
+              } catch (e) {
+                console.error(e);
+              }
+            }
+          }
+        }),
         takeUntil(this.ngUnsubscribe)
       )
       .subscribe();

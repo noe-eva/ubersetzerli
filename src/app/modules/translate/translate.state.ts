@@ -13,6 +13,7 @@ import {
 import {TranslationService} from './translate.service';
 import {Observable, of} from 'rxjs';
 import {tap} from 'rxjs/operators';
+import {Capacitor} from '@capacitor/core';
 
 export type InputMode = 'upload' | 'text';
 
@@ -91,7 +92,8 @@ export class TranslateState implements NgxsOnInit {
       await this.service.initCld();
       const {inputLanguageText} = getState();
       if (inputLanguageText) {
-        patchState({detectedLanguage: this.service.detectSpokenLanguage(inputLanguageText)});
+        const detectedLanguage = await this.service.detectSpokenLanguage(spokenLanguageText);
+        patchState({detectedLanguage});
       }
     }
 
@@ -115,7 +117,7 @@ export class TranslateState implements NgxsOnInit {
     const {spokenLanguage} = getState();
     patchState({
       inputLanguageText: text,
-      detectedLanguage: !text || spokenLanguage ? null : this.service.detectSpokenLanguage(text),
+      detectedLanguage: !text || spokenLanguage ? null : await this.service.detectSpokenLanguage(text),
     });
 
     dispatch(ChangeTranslation);

@@ -11,6 +11,7 @@ import {ngxsConfig} from '../../../core/modules/ngxs/ngxs.module';
 import {TranslateState} from '../../../modules/translate/translate.state';
 import {SetInputLanguageText} from '../../../modules/translate/translate.actions';
 import {HttpClientModule} from '@angular/common/http';
+import {AppTranslocoTestingModule} from '../../../core/modules/transloco/transloco-testing.module';
 
 describe('SpokenToSignedComponent', () => {
   let component: SpokenToSignedComponent;
@@ -25,6 +26,7 @@ describe('SpokenToSignedComponent', () => {
         FormsModule,
         ReactiveFormsModule,
         HttpClientModule,
+        AppTranslocoTestingModule,
       ],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
     }).compileComponents();

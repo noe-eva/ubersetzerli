@@ -21,6 +21,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {FlagIconComponent} from './components/flag-icon/flag-icon.component';
 import {MapComponent} from './pages/translate/map/map.component';
 import {UploadComponent} from './pages/translate/spoken-to-signed/upload/upload.component';
+import {TRANSLOCO_LOADER} from '@ngneat/transloco';
+import {HttpLoader} from './core/modules/transloco/transloco.loader';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,7 @@ import {UploadComponent} from './pages/translate/spoken-to-signed/upload/upload.
     MapComponent,
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({appId: 'serverApp'}),
     BrowserAnimationsModule,
     ReactiveFormsModule,
     AppRoutingModule,
@@ -52,6 +54,7 @@ import {UploadComponent} from './pages/translate/spoken-to-signed/upload/upload.
       registrationStrategy: 'registerWhenStable:30000',
     }),
   ],
+  providers: [{provide: TRANSLOCO_LOADER, useClass: HttpLoader}],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })

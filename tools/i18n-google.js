@@ -97,7 +97,7 @@ async function applyGoogleLanguage(language, filePath) {
       swapLanguages: swapLanguages.trim(),
 
       'language-selector': {
-        detect: /,\["auto","(.*?)"\]/g.exec(main)[1],
+        detect: /\[\[\["auto","(.*?)"\]/g.exec(main)[1],
         // "detected": "{lang} - Detected" // TODO get from a js file?
       },
       // "spoken-to-signed": {
