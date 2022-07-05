@@ -92,7 +92,7 @@ export class TranslateState implements NgxsOnInit {
       await this.service.initCld();
       const {inputLanguageText} = getState();
       if (inputLanguageText) {
-        const detectedLanguage = await this.service.detectSpokenLanguage(spokenLanguageText);
+        const detectedLanguage = await this.service.detectSpokenLanguage(inputLanguageText);
         patchState({detectedLanguage});
       }
     }

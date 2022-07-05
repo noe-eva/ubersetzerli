@@ -61,11 +61,4 @@ export class SpokenToSignedComponent extends BaseComponent implements OnInit {
       )
       .subscribe();
   }
-
-  playVideoIfPaused(event: MouseEvent): void {
-    const video = event.target as HTMLPoseViewerElement;
-    if (video.paused) {
-      video.play().then().catch();
-    }
-  }
 }

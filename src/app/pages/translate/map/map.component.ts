@@ -1,10 +1,8 @@
-import {Component, OnInit} from '@angular/core';
+import {Component} from '@angular/core';
 import {geoJSON, latLng, latLngBounds, Map, tileLayer} from 'leaflet';
 import {HttpClient} from '@angular/common/http';
-import {topology, mesh} from 'topojson';
-import {Select, Store} from '@ngxs/store';
+import {Store} from '@ngxs/store';
 import {Observable} from 'rxjs';
-import {InputMode} from '../../../modules/translate/translate.state';
 import {BaseComponent} from '../../../components/base/base.component';
 import {takeUntil, tap} from 'rxjs/operators';
 import {SetSignedLanguage} from 'src/app/modules/translate/translate.actions';

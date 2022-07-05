@@ -1,11 +1,10 @@
 import {AfterViewInit, Component} from '@angular/core';
-import {getBrowserLang, TranslocoService} from '@ngneat/transloco';
+import {TranslocoService} from '@ngneat/transloco';
 import {filter, tap} from 'rxjs/operators';
 import {Store} from '@ngxs/store';
 import {SetInputLanguageText} from './modules/translate/translate.actions';
 import {MatIconRegistry} from '@angular/material/icon';
 import {DomSanitizer} from '@angular/platform-browser';
-import {SetSpokenLanguageText} from './modules/translate/translate.actions';
 import {Platform} from '@angular/cdk/platform';
 import {firstValueFrom} from 'rxjs';
 import {NavigationEnd, Router} from '@angular/router';
@@ -27,9 +26,7 @@ export class AppComponent implements AfterViewInit {
     private domSanitizer: DomSanitizer,
     private platform: Platform,
     private ga: GoogleAnalyticsService,
-    private transloco: TranslocoService,
-    private router: Router,
-    private store: Store
+    private router: Router
   ) {
     this.listenLanguageChange();
     this.logRouterNavigation();

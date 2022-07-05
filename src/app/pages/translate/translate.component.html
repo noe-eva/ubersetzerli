@@ -1,53 +1,56 @@
-<ng-container *transloco="let t; read: 'translate'">
-  <mat-toolbar color="primary">
-    <mat-icon>add</mat-icon>
-    <span>&nbsp;{{ t('title') }}</span>
-  </mat-toolbar>
+<mat-toolbar color="primary">
+  <mat-icon>add</mat-icon>
+  <span>&nbsp;{{ 'translate.title' | transloco }}</span>
+</mat-toolbar>
 
-  <div id="container">
-    <div id="input-mode-group">
-      <app-translate-input-button mode="text" icon="translate"></app-translate-input-button>
-      <app-translate-input-button mode="upload" icon="upload"></app-translate-input-button>
-    </div>
-
-    <div id="translation-card">
-      <div id="language-selector">
-        <app-language-selector
-          [flags]="true"
-          [map]="true"
-          [hasLanguageDetection]="false"
-          [language]="signedLanguage$ | async"
-          [languages]="translation.dialects"
-          translationKey="translate.dialects"
-          urlParameter="di"
-          (languageChange)="setSignedLanguage($event)"></app-language-selector>
-
-        <!--        <button-->
-        <!--          (click)='swapLanguages()'-->
-        <!--          id='swap-languages'-->
-        <!--          mat-icon-button-->
-        <!--          [disabled]='true'-->
-        <!--          [matTooltip]="t('swapLanguages')"-->
-        <!--          [attr.aria-label]="t('swapLanguages')">-->
-        <!--          <mat-icon>swap_horiz</mat-icon>-->
-        <!--        </button>-->
-        <button id="swap-languages" mat-icon-button [disabled]="true">
-          <mat-icon>arrow_forward</mat-icon>
-        </button>
-        <app-language-selector
-          [hasLanguageDetection]="spokenToSigned"
-          [languages]="translation.spokenLanguages"
-          translationKey="languages"
-          urlParameter="spl"
-          (languageChange)="setSpokenLanguage($event)"></app-language-selector>
-      </div>
-
-      <div id="content">
-        <app-spoken-to-signed></app-spoken-to-signed>
-      </div>
-    </div>
-    <a id="feedback" href="https://github.com/noe-eva/ubersetzerli/issues" target="_blank">
-      {{ t('feedback') }}
-    </a>
+<div id="container">
+  <div id="input-mode-group">
+    <app-translate-input-button mode="text" icon="translate"></app-translate-input-button>
+    <app-translate-input-button mode="upload" icon="upload"></app-translate-input-button>
   </div>
-</ng-container>
+
+  <div id="translation-card">
+    <div id="language-selector">
+      <app-language-selector
+        [flags]="true"
+        [map]="true"
+        [hasLanguageDetection]="false"
+        [language]="signedLanguage$ | async"
+        [languages]="translation.dialects"
+        translationKey="translate.dialects"
+        urlParameter="di"
+        (languageChange)="setSignedLanguage($event)"></app-language-selector>
+
+      <!--        <button-->
+      <!--          (click)='swapLanguages()'-->
+      <!--          id='swap-languages'-->
+      <!--          mat-icon-button-->
+      <!--          [disabled]='true'-->
+      <!--      [matTooltip]="'translate.swapLanguages' | transloco"-->
+      <!--      [attr.aria-label]="'translate.swapLanguages' | transloco"-->
+      <!--          <mat-icon>swap_horiz</mat-icon>-->
+      <!--        </button>-->
+      <button
+        id="swap-languages"
+        mat-icon-button
+        [disabled]="true"
+        [matTooltip]="'translate.swapLanguages' | transloco"
+        [attr.aria-label]="'translate.swapLanguages' | transloco">
+        <mat-icon>arrow_forward</mat-icon>
+      </button>
+      <app-language-selector
+        [hasLanguageDetection]="spokenToSigned"
+        [languages]="translation.spokenLanguages"
+        translationKey="languages"
+        urlParameter="spl"
+        (languageChange)="setSpokenLanguage($event)"></app-language-selector>
+    </div>
+
+    <div id="content">
+      <app-spoken-to-signed></app-spoken-to-signed>
+    </div>
+  </div>
+  <a id="feedback" href="https://github.com/noe-eva/ubersetzerli/issues" target="_blank">
+    {{ 'translate.feedback' | transloco }}
+  </a>
+</div>

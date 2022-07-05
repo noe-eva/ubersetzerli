@@ -29,8 +29,8 @@ jobs:
       - name: Lint code
         run: npm run lint
 
-      - name: Test code
-        run: npm run test:ci
+      #      - name: Test code
+      #        run: npm run test:ci
 
       #- name: Verify all translations exist
       #  run: npx transloco-keys-manager find --emit-error-on-extra-keys
@@ -41,7 +41,7 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build project
-        run: npm run prerender
+        run: npm run build
 
       - name: Generate Sitemap
         run: node tools/sitemap-generator.js
