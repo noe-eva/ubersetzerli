@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://übersetzer.li/sitemap-index.xml
+Sitemap: https://ubersetzer.li/sitemap-index.xml
