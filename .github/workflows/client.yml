@@ -35,10 +35,10 @@ jobs:
       #- name: Verify all translations exist
       #  run: npx transloco-keys-manager find --emit-error-on-extra-keys
 
-      - name: Coveralls
-        uses: coverallsapp/github-action@master
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+      #      - name: Coveralls
+      #        uses: coverallsapp/github-action@master
+      #        with:
+      #          github-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build project
         run: npm run prerender
