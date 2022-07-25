@@ -1,6 +1,13 @@
 <mat-toolbar color="primary">
   <mat-icon>add</mat-icon>
   <span>&nbsp;{{ 'translate.title' | transloco }}</span>
+  <button
+    id="header-map-button"
+    mat-icon-button
+    (click)="languageSelector.openMap()"
+    [attr.aria-label]="'translate.language-selector.more' | transloco">
+    <mat-icon svgIcon="switzerland"></mat-icon>
+  </button>
 </mat-toolbar>
 
 <div id="container">
@@ -12,6 +19,7 @@
   <div id="translation-card">
     <div id="language-selector">
       <app-language-selector
+        #languageSelector
         [flags]="true"
         [map]="true"
         [hasLanguageDetection]="false"

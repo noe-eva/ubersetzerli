@@ -7,4 +7,9 @@ div {
   .mat-dialog-container {
     padding: 0 !important;
   }
+
+  .cdk-overlay-pane {
+    max-width: 90vw;
+    max-height: 90vh;
+  }
 }

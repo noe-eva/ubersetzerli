@@ -31,8 +31,16 @@ mat-toolbar {
     flex: 1 1 auto;
   }
 
-  mat-icon {
+  > mat-icon {
     font-weight: 900;
+  }
+
+  #header-map-button {
+    filter: invert(1);
+    display: none;
+    @media #{$mat-lt-md} {
+      display: block;
+    }
   }
 }
 

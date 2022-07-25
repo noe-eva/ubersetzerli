@@ -1,4 +1,4 @@
-import {Component, NgModule} from '@angular/core';
+import {Component, NgModule, OnInit} from '@angular/core';
 import {geoJSON, latLng, latLngBounds, Map, tileLayer} from 'leaflet';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {NgxsModule, Store} from '@ngxs/store';
@@ -14,7 +14,7 @@ import {LeafletModule} from '@asymmetrik/ngx-leaflet';
   templateUrl: './map.component.html',
   styleUrls: ['./map.component.scss'],
 })
-export class MapComponent extends BaseComponent {
+export class MapComponent extends BaseComponent implements OnInit {
   static mapGeoJson = null;
 
   signedLanguage$: Observable<string>;
@@ -23,7 +23,7 @@ export class MapComponent extends BaseComponent {
   options = {
     layers: [
       tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        minZoom: 7,
+        minZoom: 6,
         maxZoom: 10,
         attribution: '',
       }),
@@ -47,7 +47,24 @@ export class MapComponent extends BaseComponent {
       .subscribe();
   }
 
+  ngOnInit() {
+    if (!('document' in globalThis)) {
+      return;
+    }
+
+    const head = document.getElementsByTagName('head')[0];
+
+    const style = document.createElement('link');
+    style.rel = 'stylesheet';
+    style.href = `map.css`;
+    head.appendChild(style);
+  }
+
   async onMapReady(map: Map) {
+    map.fitBounds(
+      latLngBounds(latLng(48.037661708884016, 10.563431572323458), latLng(45.54864651887529, 5.866776298885955))
+    );
+
     const initialOpacity = 0.6;
 
     const dialectCode = id => `CH-${id}`;
