@@ -122,3 +122,7 @@ a {
     color: mat.get-color-from-palette($app-primary, 300);
   }
 }
+
+[dir='rtl'] mat-icon.rtl-flip {
+  transform: scale(-1, 1);
+}

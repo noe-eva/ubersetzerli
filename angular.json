@@ -38,7 +38,8 @@
               },
               {
                 "input": "./node_modules/leaflet/dist/leaflet.css",
-                "bundleName": "map"
+                "bundleName": "map",
+                "inject": false
               }
             ],
             "stylePreprocessorOptions": {
@@ -180,7 +181,7 @@
         "prerender": {
           "builder": "@nguniversal/builders:prerender",
           "options": {
-            "routes": ["/"]
+            "routes": ["/", "/about"]
           },
           "configurations": {
             "production": {

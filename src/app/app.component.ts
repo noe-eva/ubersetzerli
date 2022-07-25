@@ -10,6 +10,7 @@ import {firstValueFrom} from 'rxjs';
 import {NavigationEnd, Router} from '@angular/router';
 import {GoogleAnalyticsService} from './core/modules/google-analytics/google-analytics.service';
 import {Capacitor} from '@capacitor/core';
+import {languageCodeNormalizer} from './components/language-selector/language-selector.component';
 import {isPlatformServer} from '@angular/common';
 
 @Component({
@@ -84,7 +85,12 @@ export class AppComponent implements AfterViewInit {
   }
 
   listenLanguageChange() {
+    const urlParam = this.urlParams.get('lang');
+
     if (!('navigator' in globalThis) || !('document' in globalThis)) {
+      if (urlParam) {
+        this.transloco.setActiveLang(urlParam);
+      }
       return;
     }
 
@@ -92,7 +98,7 @@ export class AppComponent implements AfterViewInit {
       .pipe(
         tap(lang => {
           document.documentElement.lang = lang;
-          document.dir = ['he', 'ar'].includes(lang) ? 'rtl' : 'ltr';
+          document.dir = ['he', 'ar', 'fa', 'ku', 'ps', 'sd', 'ug', 'ur', 'yi'].includes(lang) ? 'rtl' : 'ltr';
 
           // Set pre-rendered cloud function path with lang attribute
           const openSearch = Array.from(document.head.children).find(t => t.getAttribute('rel') === 'search');
@@ -104,21 +110,7 @@ export class AppComponent implements AfterViewInit {
       )
       .subscribe();
 
-    const urlParam = this.urlParams.get('lang');
-    let [navigatorParam] = navigator.language.split('-');
-    if (navigatorParam === 'zh') {
-      // Handle simplified (china) vs traditional (hong kong, taiwan) chinese
-      navigatorParam = navigator.language === 'zh-CN' ? 'zh-CN' : 'zh-HK';
-    }
-    if (navigatorParam === 'pt') {
-      // Handle brazilian vs european portuguese
-      navigatorParam = navigator.language;
-    }
-    if (navigatorParam === 'iw') {
-      // Handle Hebrew
-      navigatorParam = 'he';
-    }
-    this.transloco.setActiveLang(urlParam || navigatorParam);
+    this.transloco.setActiveLang(urlParam || languageCodeNormalizer(navigator.language));
   }
 
   checkURLEmbedding(): void {
