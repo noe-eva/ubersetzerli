@@ -100,4 +100,4 @@ export class MapComponent extends BaseComponent {
   declarations: [MapComponent],
   imports: [MatDialogModule, LeafletModule, HttpClientModule, NgxsModule.forFeature([])],
 })
-export class SimpleDialogModule {}
+export class MapDialogModule {}
