@@ -68,7 +68,7 @@ jobs:
           path: dist/ubersetzerli/browser/
 
       - name: Remove original html file from before prerendering
-        run: rm -f dist/sign-translate/browser/index.original.html || true
+        run: rm -f dist/ubersetzerli/browser/index.original.html || true
 
       - name: Run Lighthouse against a static dist dir
         uses: treosh/lighthouse-ci-action@v9

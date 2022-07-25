@@ -97,9 +97,12 @@ async function makeIOS(
     promisify(fs.writeFile)(filePath(locale, 'name.txt'), title),
     promisify(fs.writeFile)(filePath(locale, 'description.txt'), description),
     promisify(fs.writeFile)(filePath(locale, 'apple_tv_privacy_policy.txt'), ''),
-    promisify(fs.writeFile)(filePath(locale, 'privacy_url.txt'), `https://sign.mt/legal/privacy?lang=${locale}`),
-    promisify(fs.writeFile)(filePath(locale, 'marketing_url.txt'), `https://sign.mt/about?lang=${locale}`),
-    promisify(fs.writeFile)(filePath(locale, 'support_url.txt'), `https://github.com/sign/translate/issues`),
+    promisify(fs.writeFile)(
+      filePath(locale, 'privacy_url.txt'),
+      `https://ubersetzerli.mt/legal/privacy?lang=${locale}`
+    ),
+    promisify(fs.writeFile)(filePath(locale, 'marketing_url.txt'), `https://ubersetzerli.mt/about?lang=${locale}`),
+    promisify(fs.writeFile)(filePath(locale, 'support_url.txt'), `https://github.com/noe-eva/ubersetzerli/issues`),
     // TODO keywords
     // TODO promotional_text
     // TODO release_notes
