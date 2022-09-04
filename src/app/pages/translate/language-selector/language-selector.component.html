@@ -7,7 +7,7 @@
       <ng-container *ngIf="detectedLanguage$ | async as detectedLanguage; else detectLanguage">
         <mat-tab>
           <ng-template mat-tab-label>
-            {{ t('detected', {lang: translationKey + '.' + detectedLanguage | transloco}) }}
+            {{ t('detected', {lang: langNames[detectedLanguage]}) }}
           </ng-template>
         </mat-tab>
       </ng-container>
@@ -17,8 +17,8 @@
     </ng-container>
     <mat-tab (select)="selectLanguage(lang)" *ngFor="let lang of topLanguages">
       <ng-template mat-tab-label>
-        <app-flag-icon *ngIf="flags" [flag]="lang" [alt]="translationKey + '.' + lang | transloco"></app-flag-icon>
-        {{ translationKey + '.' + lang | transloco }}
+        <app-flag-icon *ngIf="flags" [flag]="lang" [alt]="langNames[lang]"></app-flag-icon>
+        {{ langNames[lang] }}
       </ng-template>
     </mat-tab>
   </mat-tab-group>
@@ -26,21 +26,15 @@
   <!-- Language button for small screens -->
   <ng-container *ngIf="hasLanguageDetection && detectedLanguage$ | async as detectedLanguage; else detectLanguage">
     <button [matMenuTriggerFor]="signedLanguagesMenu" class="menu-language-button" color="primary" mat-button>
-      <app-flag-icon
-        *ngIf="flags"
-        [flag]="detectedLanguage"
-        [alt]="translationKey + '.' + detectedLanguage | transloco"></app-flag-icon>
-      {{ t('detected', {lang: translationKey + '.' + detectedLanguage | transloco}) }}
+      <app-flag-icon *ngIf="flags" [flag]="detectedLanguage" [alt]="langNames[detectedLanguage]"></app-flag-icon>
+      {{ t('detected', {lang: langNames[detectedLanguage]}) }}
     </button>
   </ng-container>
   <ng-template #detectLanguage>
     <button [matMenuTriggerFor]="signedLanguagesMenu" class="menu-language-button" color="primary" mat-button>
       <ng-container *ngIf="language; else noLanguage">
-        <app-flag-icon
-          *ngIf="flags"
-          [flag]="language"
-          [alt]="translationKey + '.' + language | transloco"></app-flag-icon>
-        {{ translationKey + '.' + language | transloco }}
+        <app-flag-icon *ngIf="flags" [flag]="language" [alt]="langNames[language]"></app-flag-icon>
+        {{ langNames[language] }}
       </ng-container>
       <ng-template #noLanguage>{{ t('detect') }}</ng-template>
     </button>
@@ -64,7 +58,7 @@
           *ngIf="flags"
           [flag]="language"
           [alt]="translationKey + '.' + language | transloco"></app-flag-icon>
-        {{ translationKey + '.' + language | transloco }}
+        {{ langNames[language] }}
       </button>
     </ng-template>
   </mat-menu>

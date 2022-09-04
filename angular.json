@@ -29,6 +29,16 @@
                 "glob": "**/*.json",
                 "input": "node_modules/@sign/i18n/build/",
                 "output": "./assets/i18n/"
+              },
+              {
+                "glob": "**/*",
+                "input": "node_modules/@sign-mt/browsermt/artifacts/",
+                "output": "./browsermt/"
+              },
+              {
+                "glob": "worker.js",
+                "input": "node_modules/@sign-mt/browsermt/build/bundled/",
+                "output": "./browsermt/"
               }
             ],
             "styles": [
@@ -89,7 +99,11 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ubersetzerli:build"
+            "browserTarget": "ubersetzerli:build",
+            "headers": {
+              "Cross-Origin-Opener-Policy": "same-origin",
+              "Cross-Origin-Embedder-Policy": "require-corp"
+            }
           },
           "configurations": {
             "production": {

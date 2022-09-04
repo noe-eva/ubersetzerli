@@ -53,7 +53,7 @@ describe('SpokenToSignedComponent', () => {
   it('text change should dispatch action', fakeAsync(() => {
     const spy = spyOn(store, 'dispatch');
     component.inputText.patchValue('test');
-    tick(500);
+    tick(300);
 
     expect(spy).toHaveBeenCalledWith(new SetInputLanguageText('test'));
     expect(spy).toHaveBeenCalledTimes(1);

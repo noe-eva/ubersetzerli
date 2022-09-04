@@ -8,6 +8,12 @@
     [attr.aria-label]="'translate.language-selector.more' | transloco">
     <mat-icon svgIcon="switzerland"></mat-icon>
   </button>
+  <!--  <button-->
+  <!--    mat-icon-button-->
+  <!--    [attr.aria-label]="'settings.title' | transloco"-->
+  <!--    [routerLink]="[{outlets: {settings: ['s'], dialog: ['settings']}}]">-->
+  <!--    <mat-icon>settings</mat-icon>-->
+  <!--  </button>-->
 </mat-toolbar>
 
 <div id="container">
@@ -59,6 +65,9 @@
     </div>
   </div>
   <a id="feedback" href="https://github.com/noe-eva/ubersetzerli/issues" target="_blank">
-    {{ 'translate.feedback' | transloco }}
+    {{ 'settings.support.feedback.send' | transloco }}
   </a>
 </div>
+
+<!-- Router outlet for the settings dialog -->
+<router-outlet name="dialog"></router-outlet>

@@ -7,6 +7,7 @@ import {Select, Store} from '@ngxs/store';
 import {SetInputLanguageText} from '../../../modules/translate/translate.actions';
 import {SafeUrl} from '@angular/platform-browser';
 import {TranslateStateModel} from '../../../modules/translate/translate.state';
+import {isIOS, isMacLike} from 'src/app/core/constants';
 
 @Component({
   selector: 'app-spoken-to-signed',
@@ -44,10 +45,9 @@ export class SpokenToSignedComponent extends BaseComponent implements OnInit {
     // Local text changes
     this.inputText.valueChanges
       .pipe(
-        debounce(() => interval(500)),
+        debounce(() => interval(300)),
         skipWhile(text => !text), // Don't run on empty text, on app launch
-        map(text => text.trim()),
-        distinctUntilChanged(),
+        distinctUntilChanged((a, b) => a.trim() === b.trim()),
         tap(text => this.store.dispatch(new SetInputLanguageText(text))),
         takeUntil(this.ngUnsubscribe)
       )

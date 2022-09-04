@@ -21,6 +21,7 @@ import {FlagIconComponent} from './components/flag-icon/flag-icon.component';
 import {UploadComponent} from './pages/translate/spoken-to-signed/upload/upload.component';
 import {TRANSLOCO_LOADER} from '@ngneat/transloco';
 import {HttpLoader} from './core/modules/transloco/transloco.loader';
+import {LazyDialogEntryComponent} from './pages/translate/dialog-entry.component';
 
 @NgModule({
   declarations: [

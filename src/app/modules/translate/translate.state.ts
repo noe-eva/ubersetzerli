@@ -1,6 +1,5 @@
 import {Injectable} from '@angular/core';
 import {Action, NgxsOnInit, Select, State, StateContext} from '@ngxs/store';
-// eslint-disable-next-line max-len
 import {
   ChangeTranslation,
   FlipTranslationDirection,
@@ -115,6 +114,7 @@ export class TranslateState implements NgxsOnInit {
     {text}: SetInputLanguageText
   ): Promise<void> {
     const {spokenLanguage} = getState();
+    const trimmedText = text.trim();
     patchState({
       inputLanguageText: text,
       detectedLanguage: !text || spokenLanguage ? null : await this.service.detectSpokenLanguage(text),
