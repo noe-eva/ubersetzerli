@@ -1,7 +1,7 @@
 import * as admin from 'firebase-admin';
 admin.initializeApp({
-  projectId: process.env.GOOGLE_CLOUD_PROJECT,
-  databaseURL: 'https://sign-mt-default-rtdb.firebaseio.com/',
+  projectId: 'ubersetzerli',
+  databaseURL: 'https://ubersetzerli-default-rtdb.firebaseio.com/',
 });
 
 import {prerenderFunctions} from './prerender/controller';

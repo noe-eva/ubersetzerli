@@ -4,7 +4,6 @@ import {Observable, switchMap} from 'rxjs';
 import {TranslocoService} from '@ngneat/transloco';
 import {filter, takeUntil, tap} from 'rxjs/operators';
 import {BaseComponent} from '../../../components/base/base.component';
-import {Observable} from 'rxjs';
 import {MatDialog} from '@angular/material/dialog';
 import {ComponentType} from '@angular/cdk/overlay';
 
@@ -21,6 +20,7 @@ export class LanguageSelectorComponent extends BaseComponent implements OnInit, 
   @Input() hasLanguageDetection = false;
   @Input() languages: string[];
   @Input() translationKey: string;
+  @Input() translationScope: string = null;
   @Input() urlParameter: string;
 
   @Input() language: string;
@@ -51,7 +51,7 @@ export class LanguageSelectorComponent extends BaseComponent implements OnInit, 
       .pipe(
         // wait until relevant language file has been loaded
         switchMap(() => this.transloco.events$),
-        filter(e => e.type === 'translationLoadSuccess' && e.payload.scope === this.translationKey),
+        filter(e => e.type === 'translationLoadSuccess' && e.payload.scope === this.translationScope),
         tap(() => this.setLangNames(this.transloco.getActiveLang())),
         takeUntil(this.ngUnsubscribe)
       )

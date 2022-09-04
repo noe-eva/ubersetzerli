@@ -132,15 +132,7 @@ export class TranslateState implements NgxsOnInit {
       return of();
     }
 
-    if (spokenToSigned) {
-      const actualSpokenLanguage = spokenLanguage || detectedLanguage;
-      return this.service
-        .translateSpokenToSigned(inputLanguageText, actualSpokenLanguage, signedLanguage)
-        .pipe(tap(outputText => patchState({outputLanguageText: outputText})));
-    }
-
     const actualSignedLanguage = signedLanguage || detectedLanguage;
-
     return this.service
       .translateSignedToSpoken(inputLanguageText, actualSignedLanguage, spokenLanguage)
       .pipe(tap(outputText => patchState({outputLanguageText: outputText})));

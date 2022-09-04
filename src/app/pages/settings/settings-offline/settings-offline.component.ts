@@ -1,26 +1,16 @@
 import {Component, OnInit} from '@angular/core';
-import {isIOS} from '../../../core/constants';
 import {AssetsService, AssetState} from '../../../core/services/assets/assets.service';
 import {MatTreeNestedDataSource} from '@angular/material/tree';
 import {NestedTreeControl} from '@angular/cdk/tree';
 import {TranslocoService} from '@ngneat/transloco';
 
 const OFFLINE_PATHS = {
-  avatarGlb: '3d/character.glb',
-  avatarUsdz: '3d/character.usdz',
-  pix2pixGenerator: 'models/generator/model.h5.layers16/',
-  pix2pixUpscaler: 'models/upscaler/model.h5.layers/',
   translation: {
     spokenToSigned: {
-      SpokenSigned: 'models/browsermt/spoken-to-signed/spoken-signed/',
-      EnFr: 'models/browsermt/spoken-to-signed/en-fr/',
+      ChDe: 'models/browsermt/spoken-to-signed/ch-de/',
     },
   },
 };
-
-if (!isIOS) {
-  delete OFFLINE_PATHS.avatarUsdz;
-}
 
 @Component({
   selector: 'app-settings-offline',

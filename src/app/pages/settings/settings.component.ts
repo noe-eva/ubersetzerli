@@ -38,10 +38,7 @@ export class SettingsPageComponent implements OnInit {
     },
     {
       name: 'other',
-      pages: [
-        {path: 'offline', icon: 'airplanemode_active'},
-        {path: 'appearance', icon: 'account_box'},
-      ],
+      pages: [{path: 'offline', icon: 'airplanemode_active'}],
     },
   ];
 

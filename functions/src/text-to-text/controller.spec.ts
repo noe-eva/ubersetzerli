@@ -14,20 +14,9 @@ describe('TextToTextTranslationEndpoint', () => {
     controller = new TextToTextTranslationEndpoint(testEnvironment.database, testEnvironment.bucket);
   });
 
-  it('should error invalid direction', async () => {
-    const mockReq = new MockExpressRequest({
-      url: '/',
-      params: {direction: 'abc'},
-    });
-    const mockRes = new MockExpressResponse({request: mockReq});
-
-    await expect(controller.request(mockReq, mockRes)).rejects.toThrow(new Error('Invalid "direction" requested'));
-  });
-
   it('should error missing "from"', async () => {
     const mockReq = new MockExpressRequest({
       url: '/',
-      params: {direction: 'spoken-to-signed'},
       query: {to: 'us'},
     });
     const mockRes = new MockExpressResponse({request: mockReq});
@@ -40,7 +29,6 @@ describe('TextToTextTranslationEndpoint', () => {
   it('should error missing "to"', async () => {
     const mockReq = new MockExpressRequest({
       url: '/',
-      params: {direction: 'spoken-to-signed'},
       query: {from: 'en'},
     });
     const mockRes = new MockExpressResponse({request: mockReq});
@@ -53,7 +41,6 @@ describe('TextToTextTranslationEndpoint', () => {
   it('should error missing "text"', async () => {
     const mockReq = new MockExpressRequest({
       url: '/',
-      params: {direction: 'spoken-to-signed'},
       query: {from: 'en', to: 'us'},
     });
     const mockRes = new MockExpressResponse({request: mockReq});
@@ -64,20 +51,18 @@ describe('TextToTextTranslationEndpoint', () => {
   it('should error missing model files', async () => {
     const mockReq = new MockExpressRequest({
       url: '/',
-      params: {direction: 'spoken-to-signed'},
       query: {from: 'en', to: 'us', text: 'hello'},
     });
     const mockRes = new MockExpressResponse({request: mockReq});
 
     await expect(controller.request(mockReq, mockRes)).rejects.toThrow(
-      new Error('No model or fallback model files found for direction')
+      new Error('No model or fallback model files found')
     );
   });
 
   async function translateExample() {
     const mockReq = new MockExpressRequest({
       url: '/',
-      params: {direction: 'spoken-to-signed'},
       query: {from: 'en', to: 'ru', text: 'hello'},
     });
     const mockRes = new MockExpressResponse({request: mockReq});
@@ -90,7 +75,6 @@ describe('TextToTextTranslationEndpoint', () => {
     const response = await translateExample();
 
     expect(response).toEqual({
-      direction: 'spoken-to-signed',
       from: 'en',
       to: 'ru',
       text: 'Здравствуйте,',
@@ -99,7 +83,7 @@ describe('TextToTextTranslationEndpoint', () => {
 
   it('should cache translation response', async () => {
     const helloMd5 = '5d41402abc4b2a76b9719d911017c592';
-    const ref = testEnvironment.database.ref('/translations/spoken-to-signed/en-ru/' + helloMd5);
+    const ref = testEnvironment.database.ref('/translations/en-ru/' + helloMd5);
     const snapshotBefore = await ref.once('value');
     expect(snapshotBefore.exists()).toBe(false);
 
@@ -117,7 +101,7 @@ describe('TextToTextTranslationEndpoint', () => {
 
   it('should respond with cached response if exists', async () => {
     const helloMd5 = '5d41402abc4b2a76b9719d911017c592';
-    const ref = testEnvironment.database.ref('/translations/spoken-to-signed/en-ru/' + helloMd5);
+    const ref = testEnvironment.database.ref('/translations/en-ru/' + helloMd5);
     await ref.set({
       text: 'hello',
       counter: 1,

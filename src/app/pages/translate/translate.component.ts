@@ -72,32 +72,6 @@ export class TranslateComponent extends BaseComponent implements OnInit {
     }
   }
 
-  async playVideos(): Promise<void> {
-    if (!('window' in globalThis)) {
-      return;
-    }
-
-    // Autoplay videos don't play before page interaction, or after re-opening PWA without refresh
-    fromEvent(window, 'click')
-      .pipe(
-        tap(async () => {
-          const videos = Array.from(document.getElementsByTagName('video'));
-
-          for (const video of videos) {
-            if (video.autoplay && video.paused) {
-              try {
-                await video.play();
-              } catch (e) {
-                console.error(e);
-              }
-            }
-          }
-        }),
-        takeUntil(this.ngUnsubscribe)
-      )
-      .subscribe();
-  }
-
   setSignedLanguage(lang: string): void {
     this.store.dispatch(new SetSignedLanguage(lang));
   }

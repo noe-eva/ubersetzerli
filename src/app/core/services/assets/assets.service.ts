@@ -23,7 +23,7 @@ type ProgressCallback = (receivedLength: number, totalLength: number) => void;
   providedIn: 'root',
 })
 export class AssetsService {
-  static BUCKET_URL = 'https://firebasestorage.googleapis.com/v0/b/sign-mt-assets/o/';
+  static BUCKET_URL = 'https://firebasestorage.googleapis.com/v0/b/ubersetzerli-assets/o/';
 
   stat(path: string): AssetState {
     if (path.endsWith('/')) {

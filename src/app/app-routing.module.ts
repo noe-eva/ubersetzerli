@@ -17,7 +17,6 @@ const routes: Routes = [
       },
     ],
   },
-  {path: 'benchmark', component: BenchmarkComponent},
   {path: 'about', loadChildren: () => import('./pages/landing/landing.module').then(m => m.LandingModule)},
   {path: 'legal', loadChildren: () => import('./pages/landing/landing.module').then(m => m.LandingModule)},
   {

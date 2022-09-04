@@ -7,13 +7,13 @@ import {InitialNavigation} from '@angular/router';
 export const environment = {
   production: false,
   firebase: {
-    apiKey: 'AIzaSyAtVDGmDVCwWunWW2ocgeHWnAsUhHuXvcg',
-    authDomain: 'sign-mt.firebaseapp.com',
-    projectId: 'sign-mt',
-    storageBucket: 'sign-mt.appspot.com',
-    messagingSenderId: '665830225099',
-    appId: '1:665830225099:web:18e0669d5847a4b047974e',
-    measurementId: null,
+    apiKey: 'AIzaSyBPg6tNJi_dW_l8OphZUdwJDchq_Ualts8',
+    authDomain: 'ubersetzerli.firebaseapp.com',
+    projectId: 'ubersetzerli',
+    storageBucket: 'ubersetzerli.appspot.com',
+    messagingSenderId: '254209171339',
+    appId: '1:254209171339:web:e9d8b473ae0fe79b72598e',
+    measurementId: 'G-23WMZM7W7Q',
   },
   initialNavigation: 'enabledNonBlocking' as InitialNavigation,
 };

@@ -1,9 +1,10 @@
 import {Injectable} from '@angular/core';
 import {LanguageIdentifier} from 'cld3-asm';
 import {GoogleAnalyticsService} from '../../core/modules/google-analytics/google-analytics.service';
-import {Observable, of} from 'rxjs';
+import {Observable, of, switchMap} from 'rxjs';
 import {HttpClient} from '@angular/common/http';
 import {map} from 'rxjs/operators';
+import {PivotTranslationService} from './pivot-translation.service';
 
 const OBSOLETE_LANGUAGE_CODES = {
   iw: 'he',
@@ -162,7 +163,11 @@ export class TranslationService {
     'zu',
   ];
 
-  constructor(private ga: GoogleAnalyticsService, private http: HttpClient) {}
+  constructor(
+    private ga: GoogleAnalyticsService,
+    private http: HttpClient,
+    private pivotTranslation: PivotTranslationService
+  ) {}
 
   async initCld(): Promise<void> {
     if (this.cld) {
@@ -184,35 +189,30 @@ export class TranslationService {
     return this.spokenLanguages.includes(correctedCode) ? correctedCode : DEFAULT_SPOKEN_LANGUAGE;
   }
 
-  translateSpokenToSigned(text: string, spokenLanguage: string, signedLanguage: string): Observable<string> {
-    const api = 'https://nlp.biu.ac.il/~ccohenya8/sign/sentence/';
-    return of(`${api}?slang=${spokenLanguage}&dlang=${signedLanguage}&sentence=${encodeURIComponent(text)}`);
+  translateSignedToSpoken(text: string, dialect: string, dstLang: string): Observable<string> {
+    return of(dialect).pipe(
+      switchMap(dialect => {
+        if (dialect === 'CH-TI') {
+          return of({srcLang: 'it', pivot: text});
+        }
+        if (['CH-VD', 'CH-NE', 'CH-GE', 'CH-JU'].includes(dialect)) {
+          return of({srcLang: 'fr', pivot: text});
+        } else {
+          return this.pivotTranslation
+            .translate(text, dialect, 'de')
+            .pipe(map(({text}) => ({srcLang: 'de', pivot: text})));
+        }
+      }),
+      switchMap(({srcLang, pivot}) => {
+        if (srcLang === dstLang) {
+          return of(pivot);
+        }
+
+        const params = `client=gtx&sl=${srcLang}&tl=${dstLang}&dt=t&q=${encodeURIComponent(pivot)}`;
+        return this.http
+          .get(`https://translate.googleapis.com/translate_a/single?${params}`)
+          .pipe(map(res => res[0][0][0] as string));
+      })
+    );
   }
-
-  translateSignedToSpoken(text: string, signedLanguage: string, spokenLanguage: string): Observable<string> {
-    const srcLang = ['CH-TI'].includes(signedLanguage)
-      ? 'it'
-      : ['CH-VD', 'CH-NE', 'CH-GE', 'CH-JU'].includes(signedLanguage)
-      ? 'fr'
-      : 'de';
-    const dstLang = spokenLanguage;
-
-    // Caching
-    // const hash = md5(`${srcLang}-${dstLang}-${text}`);
-    // const obj = this.db.object(srcLang + '/' + dstLang + '/' + hash);
-    //       obj.valueChanges()
-    //         .pipe(take(1))
-    //         .subscribe(async (value: { src: string, tgt: string }) => {
-    //           if (value) {
-    //             resolve(value.tgt);
-    //           } else {
-
-    const params = `client=gtx&sl=${srcLang}&tl=${dstLang}&dt=t&q=${encodeURIComponent(text)}`;
-
-    return this.http
-      .get(`https://translate.googleapis.com/translate_a/single?${params}`)
-      .pipe(map(res => res[0][0][0] as string));
-  }
-
-  async translate(src) {}
 }

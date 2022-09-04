@@ -42,6 +42,10 @@ mat-toolbar {
       display: block;
     }
   }
+
+  button {
+    color: white;
+  }
 }
 
 :host.keyboard-open mat-toolbar {

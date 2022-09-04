@@ -1,7 +1,7 @@
 import {FirebaseTestEnvironmentContext} from '../../firebase.extend-spec';
 
 const MODEL_FILES = ['lex.50.50.enru.s2t.bin', 'model.enru.intgemm.alphas.bin', 'vocab.enru.spm'];
-const STORAGE_PREFIX = 'models/browsermt/spoken-to-signed/en-ru/';
+const STORAGE_PREFIX = 'models/browsermt/en-ru/';
 
 export function setupModelFiles(testEnvironment: FirebaseTestEnvironmentContext) {
   beforeAll(async () => {

@@ -8,12 +8,12 @@
     [attr.aria-label]="'translate.language-selector.more' | transloco">
     <mat-icon svgIcon="switzerland"></mat-icon>
   </button>
-  <!--  <button-->
-  <!--    mat-icon-button-->
-  <!--    [attr.aria-label]="'settings.title' | transloco"-->
-  <!--    [routerLink]="[{outlets: {settings: ['s'], dialog: ['settings']}}]">-->
-  <!--    <mat-icon>settings</mat-icon>-->
-  <!--  </button>-->
+  <button
+    mat-icon-button
+    [attr.aria-label]="'settings.title' | transloco"
+    [routerLink]="[{outlets: {settings: ['s'], dialog: ['settings']}}]">
+    <mat-icon>settings</mat-icon>
+  </button>
 </mat-toolbar>
 
 <div id="container">
@@ -56,6 +56,7 @@
         [hasLanguageDetection]="spokenToSigned"
         [languages]="translation.spokenLanguages"
         translationKey="languages"
+        translationScope="languages"
         urlParameter="spl"
         (languageChange)="setSpokenLanguage($event)"></app-language-selector>
     </div>

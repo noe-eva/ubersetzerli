@@ -62,7 +62,7 @@
         "function": "translate-prerender"
       },
       {
-        "source": "/api/**",
+        "source": "/api/text-to-text",
         "function": "translate-textToText"
       },
       {

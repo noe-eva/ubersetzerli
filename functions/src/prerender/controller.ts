@@ -7,11 +7,11 @@ export function prerenderOpenSearch(req: express.Request, res: express.Response)
 
   const body = `
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
-  <ShortName>Sign Translate</ShortName>
-  <Description>Translate on Sign Translate</Description>
-  <Image height="16" type="image/icon" width="16">https://sign.mt/assets/icons/favicon.ico</Image>
-  <Url type="text/html" method="get" template="https://sign.mt/?text={searchTerms}&amp;utm_source=opensearch"/>
-  <Query role="example" searchTerms="Hello"></Query>
+  <ShortName>übersetzerli</ShortName>
+  <Description>Get translations from übersetzerli.</Description>
+  <Image height="16" type="image/icon" width="16">https://ubersetzer.li/assets/icons/favicon.svg</Image>
+  <Url type="text/html" method="get" template="https://ubersetzer.li/?text={searchTerms}&amp;utm_source=opensearch"/>
+  <Query role="example" searchTerms="Grüzi"></Query>
 </OpenSearchDescription>`;
 
   res.set('Content-Type', 'application/opensearchdescription+xml; charset=UTF-8');
