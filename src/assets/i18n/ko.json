@@ -29,12 +29,6 @@
         "download": "번역 다운로드",
         "copy": "번역 복사",
         "share": "번역 공유"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "사람 비디오 모델 로드 중",
-          "generating": "비디오 생성"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "언어 또는 지역 변경"
+  },
+  "settings": {
+    "title": "설정",
+    "close": "설정 닫기",
+    "support": {
+      "title": "지원하다",
+      "feedback": {
+        "title": "피드백",
+        "send": "피드백 보내기"
+      },
+      "about": {
+        "title": "에 대한"
+      }
+    },
+    "voice": {
+      "title": "목소리",
+      "input": {
+        "title": "입력"
+      },
+      "output": {
+        "title": "산출"
+      }
+    },
+    "other": {
+      "title": "다른",
+      "offline": {
+        "title": "오프라인",
+        "actions": {
+          "toggle": "{{라벨}} 전환",
+          "download": "오프라인 모델 다운로드",
+          "delete": "오프라인 모델 캐시 제거",
+          "reDownload": "오프라인 모델 다시 다운로드"
+        },
+        "files": {
+          "translation": "번역",
+          "translation.ChDe": "스위스-독일어에서 고지 독일어로"
+        }
+      }
+    }
   }
 }

@@ -29,12 +29,6 @@
         "download": "Übersetzung herunterladen",
         "copy": "Übersetzung kopieren",
         "share": "Übersetzung teilen"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "Menschliches Videomodell wird geladen",
-          "generating": "Video generieren"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "Sprache oder Region ändern"
+  },
+  "settings": {
+    "title": "Einstellungen",
+    "close": "Einstellungen schließen",
+    "support": {
+      "title": "Unterstützung",
+      "feedback": {
+        "title": "Rückmeldung",
+        "send": "Feedback abschicken"
+      },
+      "about": {
+        "title": "Um"
+      }
+    },
+    "voice": {
+      "title": "Stimme",
+      "input": {
+        "title": "Eingang"
+      },
+      "output": {
+        "title": "Ausgang"
+      }
+    },
+    "other": {
+      "title": "Andere",
+      "offline": {
+        "title": "Offline",
+        "actions": {
+          "toggle": "{{Label}} umschalten",
+          "download": "Laden Sie das Offline-Modell herunter",
+          "delete": "Leeren Sie den Offline-Modell-Cache",
+          "reDownload": "Laden Sie das Offline-Modell erneut herunter"
+        },
+        "files": {
+          "translation": "Übersetzung",
+          "translation.ChDe": "Schweizerdeutsch nach Hochdeutsch"
+        }
+      }
+    }
   }
 }

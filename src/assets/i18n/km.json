@@ -29,12 +29,6 @@
         "download": "ទាញយកការបកប្រែ",
         "copy": "ចម្លងការបកប្រែ",
         "share": "ចែករំលែកការបកប្រែ"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "កំពុងផ្ទុកគំរូវីដេអូរបស់មនុស្ស",
-          "generating": "ការបង្កើតវីដេអូ"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "ផ្លាស់ប្តូរភាសា ឬតំបន់"
+  },
+  "settings": {
+    "title": "ការកំណត់",
+    "close": "បិទការកំណត់",
+    "support": {
+      "title": "គាំទ្រ",
+      "feedback": {
+        "title": "មតិកែលម្អ",
+        "send": "ផ្ញើមតិកែលម្អ"
+      },
+      "about": {
+        "title": "អំពី"
+      }
+    },
+    "voice": {
+      "title": "សំឡេង",
+      "input": {
+        "title": "បញ្ចូល"
+      },
+      "output": {
+        "title": "ទិន្នផល"
+      }
+    },
+    "other": {
+      "title": "ផ្សេងទៀត",
+      "offline": {
+        "title": "ក្រៅបណ្តាញ",
+        "actions": {
+          "toggle": "បិទ/បើក {{label}}",
+          "download": "ទាញយកម៉ូដែលក្រៅបណ្តាញ",
+          "delete": "សម្អាតឃ្លាំងសម្ងាត់គំរូក្រៅបណ្តាញ",
+          "reDownload": "ទាញយកគំរូក្រៅបណ្តាញឡើងវិញ"
+        },
+        "files": {
+          "translation": "ការបកប្រែ",
+          "translation.ChDe": "ស្វីស-អាល្លឺម៉ង់ ទៅ អាឡឺម៉ង់ខ្ពស់។"
+        }
+      }
+    }
   }
 }

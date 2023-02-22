@@ -29,12 +29,6 @@
         "download": "Download Dikanteny",
         "copy": "Adikao Dikanteny",
         "share": "Mizara Dikanteny"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "Loading modely video olombelona",
-          "generating": "Mamorona video"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "Hanova fiteny na faritra"
+  },
+  "settings": {
+    "title": "Fikirana",
+    "close": "Akatona ny fika",
+    "support": {
+      "title": "MANAMPY",
+      "feedback": {
+        "title": "Feedback",
+        "send": "Mandefa hevitra"
+      },
+      "about": {
+        "title": "About"
+      }
+    },
+    "voice": {
+      "title": "FEO",
+      "input": {
+        "title": "fahan'ny"
+      },
+      "output": {
+        "title": "Fivoahana"
+      }
+    },
+    "other": {
+      "title": "Hafa",
+      "offline": {
+        "title": "ivelan'ny aterineto",
+        "actions": {
+          "toggle": "Toggle {{label}}",
+          "download": "Misintona Modely an-tserasera",
+          "delete": "Diovy ny Cache Model Offline",
+          "reDownload": "Avereno alaina ny modely an-tserasera"
+        },
+        "files": {
+          "translation": "Translation",
+          "translation.ChDe": "Soisa-Alemana mankany High-German"
+        }
+      }
+    }
   }
 }

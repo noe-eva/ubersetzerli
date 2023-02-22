@@ -29,12 +29,6 @@
         "download": "Khoasolla Phetolelo",
         "copy": "Kopitsa Phetolelo",
         "share": "Arolelana Phetolelo"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "E kenya mofuta oa video oa motho",
-          "generating": "Ho hlahisa video"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "Fetola puo kapa sebaka"
+  },
+  "settings": {
+    "title": "Litlhophiso",
+    "close": "Koala litlhophiso",
+    "support": {
+      "title": "Tšehetso",
+      "feedback": {
+        "title": "Maikutlo",
+        "send": "Romella maikutlo"
+      },
+      "about": {
+        "title": "About"
+      }
+    },
+    "voice": {
+      "title": "Lentsoe",
+      "input": {
+        "title": "Kenyeletso"
+      },
+      "output": {
+        "title": "Sephetho"
+      }
+    },
+    "other": {
+      "title": "Tse ding",
+      "offline": {
+        "title": "Offline",
+        "actions": {
+          "toggle": "Fetolela {{label}}",
+          "download": "Khoasolla Mohlala oa Offline",
+          "delete": "Hlatsoa Cache ea Moetso oa Offline",
+          "reDownload": "Khoasolla Hape Moetso oa Offline"
+        },
+        "files": {
+          "translation": "Phetolelo",
+          "translation.ChDe": "Se-Swiss-Jeremane ho isa ho Sejeremane se Phahameng"
+        }
+      }
+    }
   }
 }

@@ -29,12 +29,6 @@
         "download": "Tarjima yuklab olish",
         "copy": "Tarjimani nusxalash",
         "share": "Tarjimani ulashish"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "Inson video modeli yuklanmoqda",
-          "generating": "Video yaratish"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "Til yoki mintaqani o'zgartiring"
+  },
+  "settings": {
+    "title": "Sozlamalar",
+    "close": "Sozlamalarni yoping",
+    "support": {
+      "title": "Qo'llab-quvvatlash",
+      "feedback": {
+        "title": "Fikr-mulohaza",
+        "send": "Fikr-mulohaza yuboring"
+      },
+      "about": {
+        "title": "Haqida"
+      }
+    },
+    "voice": {
+      "title": "Ovoz",
+      "input": {
+        "title": "Kiritish"
+      },
+      "output": {
+        "title": "Chiqish"
+      }
+    },
+    "other": {
+      "title": "Boshqa",
+      "offline": {
+        "title": "Oflayn",
+        "actions": {
+          "toggle": "{{label}}-ni almashtirish",
+          "download": "Oflayn modelni yuklab oling",
+          "delete": "Oflayn model keshini tozalash",
+          "reDownload": "Oflayn modelni qayta yuklab oling"
+        },
+        "files": {
+          "translation": "Tarjima",
+          "translation.ChDe": "Shveytsariya-nemis tilidan oliy nemis tiliga"
+        }
+      }
+    }
   }
 }

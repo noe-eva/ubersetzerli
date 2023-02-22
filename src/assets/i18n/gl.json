@@ -29,12 +29,6 @@
         "download": "Descargar Tradución",
         "copy": "Copiar a tradución",
         "share": "Compartir tradución"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "Cargando modelo de vídeo humano",
-          "generating": "Xerando vídeo"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "Cambiar idioma ou rexión"
+  },
+  "settings": {
+    "title": "Configuración",
+    "close": "Pecha a configuración",
+    "support": {
+      "title": "Apoiar",
+      "feedback": {
+        "title": "Comentarios",
+        "send": "Enviar comentarios"
+      },
+      "about": {
+        "title": "Sobre"
+      }
+    },
+    "voice": {
+      "title": "Voz",
+      "input": {
+        "title": "Entrada"
+      },
+      "output": {
+        "title": "Saída"
+      }
+    },
+    "other": {
+      "title": "Outra",
+      "offline": {
+        "title": "Sen conexión",
+        "actions": {
+          "toggle": "Alternar {{label}}",
+          "download": "Descargar modelo offline",
+          "delete": "Limpar a caché de modelos sen conexión",
+          "reDownload": "Volve descargar o modelo sen conexión"
+        },
+        "files": {
+          "translation": "Tradución",
+          "translation.ChDe": "Suízo-alemán ao alto alemán"
+        }
+      }
+    }
   }
 }

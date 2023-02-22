@@ -29,12 +29,6 @@
         "download": "Last ned oversettelse",
         "copy": "Kopier oversettelse",
         "share": "Del oversettelse"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "Laster inn menneskelig videomodell",
-          "generating": "Genererer video"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "Endre språk eller region"
+  },
+  "settings": {
+    "title": "Innstillinger",
+    "close": "Lukk innstillingene",
+    "support": {
+      "title": "Brukerstøtte",
+      "feedback": {
+        "title": "Tilbakemelding",
+        "send": "Send tilbakemelding"
+      },
+      "about": {
+        "title": "Om"
+      }
+    },
+    "voice": {
+      "title": "Stemme",
+      "input": {
+        "title": "Inndata"
+      },
+      "output": {
+        "title": "Produksjon"
+      }
+    },
+    "other": {
+      "title": "Annen",
+      "offline": {
+        "title": "Frakoblet",
+        "actions": {
+          "toggle": "Slå på {{label}}",
+          "download": "Last ned offline modell",
+          "delete": "Tøm frakoblet modellbuffer",
+          "reDownload": "Last ned frakoblet modell på nytt"
+        },
+        "files": {
+          "translation": "Oversettelse",
+          "translation.ChDe": "Sveitsisk-tysk til høytysk"
+        }
+      }
+    }
   }
 }

@@ -29,12 +29,6 @@
         "download": "تحميل الترجمة",
         "copy": "نسخ الترجمة",
         "share": "مشاركة الترجمة"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "تحميل نموذج فيديو بشري",
-          "generating": "توليد الفيديو"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "تغيير اللغة أو المنطقة"
+  },
+  "settings": {
+    "title": "إعدادات",
+    "close": "أغلق الإعدادات",
+    "support": {
+      "title": "يدعم",
+      "feedback": {
+        "title": "تعليق",
+        "send": "ارسل رأيك"
+      },
+      "about": {
+        "title": "عن"
+      }
+    },
+    "voice": {
+      "title": "صوت",
+      "input": {
+        "title": "مدخل"
+      },
+      "output": {
+        "title": "انتاج |"
+      }
+    },
+    "other": {
+      "title": "آخر",
+      "offline": {
+        "title": "غير متصل على الانترنت",
+        "actions": {
+          "toggle": "تبديل {{label}}",
+          "download": "تنزيل نموذج غير متصل",
+          "delete": "تطهير مخبأ نموذج غير متصل",
+          "reDownload": "إعادة تنزيل النموذج غير المتصل"
+        },
+        "files": {
+          "translation": "ترجمة",
+          "translation.ChDe": "سويسرية ألمانية إلى ألمانية عالية"
+        }
+      }
+    }
   }
 }

@@ -29,12 +29,6 @@
         "download": "Tərcüməni yükləyin",
         "copy": "Tərcüməni Kopyalayın",
         "share": "Tərcüməni Paylaşın"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "İnsan video modeli yüklənir",
-          "generating": "Videonun yaradılması"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "Dili və ya bölgəni dəyişdirin"
+  },
+  "settings": {
+    "title": "Parametrlər",
+    "close": "Parametrləri bağlayın",
+    "support": {
+      "title": "Dəstək",
+      "feedback": {
+        "title": "Əlaqə",
+        "send": "Rəy göndərin"
+      },
+      "about": {
+        "title": "Haqqında"
+      }
+    },
+    "voice": {
+      "title": "Səs",
+      "input": {
+        "title": "Giriş"
+      },
+      "output": {
+        "title": "Çıxış"
+      }
+    },
+    "other": {
+      "title": "Digər",
+      "offline": {
+        "title": "Oflayn",
+        "actions": {
+          "toggle": "{{label}} dəyişin",
+          "download": "Offline Modeli yükləyin",
+          "delete": "Oflayn Model Keşini Təmizləyin",
+          "reDownload": "Offline Modeli Yenidən Yükləyin"
+        },
+        "files": {
+          "translation": "Tərcümə",
+          "translation.ChDe": "İsveçrə-Almaniyadan Yüksək Almancaya"
+        }
+      }
+    }
   }
 }

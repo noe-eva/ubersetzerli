@@ -29,12 +29,6 @@
         "download": "ترجمہ ڈاؤن لوڈ کریں۔",
         "copy": "ترجمہ کاپی کریں۔",
         "share": "ترجمہ شیئر کریں۔"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "انسانی ویڈیو ماڈل لوڈ ہو رہا ہے۔",
-          "generating": "ویڈیو بنا رہا ہے۔"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "زبان یا علاقہ تبدیل کریں۔"
+  },
+  "settings": {
+    "title": "ترتیبات",
+    "close": "ترتیبات بند کریں۔",
+    "support": {
+      "title": "حمایت",
+      "feedback": {
+        "title": "تاثرات",
+        "send": "رائے بھیجیں"
+      },
+      "about": {
+        "title": "کے بارے میں"
+      }
+    },
+    "voice": {
+      "title": "آواز",
+      "input": {
+        "title": "ان پٹ"
+      },
+      "output": {
+        "title": "آؤٹ پٹ"
+      }
+    },
+    "other": {
+      "title": "دیگر",
+      "offline": {
+        "title": "آف لائن",
+        "actions": {
+          "toggle": "ٹوگل {{label}}",
+          "download": "آف لائن ماڈل ڈاؤن لوڈ کریں۔",
+          "delete": "آف لائن ماڈل کیشے کو صاف کریں۔",
+          "reDownload": "آف لائن ماڈل دوبارہ ڈاؤن لوڈ کریں۔"
+        },
+        "files": {
+          "translation": "ترجمہ",
+          "translation.ChDe": "سوئس-جرمن سے ہائی-جرمن"
+        }
+      }
+    }
   }
 }

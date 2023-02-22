@@ -29,12 +29,6 @@
         "download": "I-download ang Pagsasalin",
         "copy": "Kopyahin ang Pagsasalin",
         "share": "Ibahagi ang Pagsasalin"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "Nilo-load ang modelo ng video ng tao",
-          "generating": "Bumubuo ng video"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "Baguhin ang wika o rehiyon"
+  },
+  "settings": {
+    "title": "Mga setting",
+    "close": "Isara ang mga setting",
+    "support": {
+      "title": "Suporta",
+      "feedback": {
+        "title": "Feedback",
+        "send": "Magbigay ng feedback"
+      },
+      "about": {
+        "title": "Tungkol sa"
+      }
+    },
+    "voice": {
+      "title": "Boses",
+      "input": {
+        "title": "Input"
+      },
+      "output": {
+        "title": "Output"
+      }
+    },
+    "other": {
+      "title": "Iba pa",
+      "offline": {
+        "title": "Offline",
+        "actions": {
+          "toggle": "I-toggle ang {{label}}",
+          "download": "I-download ang Offline na Modelo",
+          "delete": "Purge Offline Model Cache",
+          "reDownload": "Muling I-download ang Offline na Modelo"
+        },
+        "files": {
+          "translation": "Pagsasalin",
+          "translation.ChDe": "Swiss-German hanggang High-German"
+        }
+      }
+    }
   }
 }

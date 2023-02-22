@@ -29,12 +29,6 @@
         "download": "ትርጉም አውርድ",
         "copy": "ትርጉም ቅዳ",
         "share": "አጋራ ትርጉም"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "የሰው ቪዲዮ ሞዴል በመጫን ላይ",
-          "generating": "ቪዲዮ በማመንጨት ላይ"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "ቋንቋ ወይም ክልል ቀይር"
+  },
+  "settings": {
+    "title": "ቅንብሮች",
+    "close": "ቅንብሮችን ዝጋ",
+    "support": {
+      "title": "ድጋፍ",
+      "feedback": {
+        "title": "ግብረ መልስ",
+        "send": "ግብረ - መልስ ላክ"
+      },
+      "about": {
+        "title": "ስለ"
+      }
+    },
+    "voice": {
+      "title": "ድምፅ",
+      "input": {
+        "title": "ግቤት"
+      },
+      "output": {
+        "title": "ውፅዓት"
+      }
+    },
+    "other": {
+      "title": "ሌላ",
+      "offline": {
+        "title": "ከመስመር ውጭ",
+        "actions": {
+          "toggle": "{{label}} ቀይር",
+          "download": "ከመስመር ውጭ ሞዴል አውርድ",
+          "delete": "ከመስመር ውጭ የሞዴል መሸጎጫ ያጽዱ",
+          "reDownload": "ከመስመር ውጭ ሞዴል እንደገና ያውርዱ"
+        },
+        "files": {
+          "translation": "ትርጉም",
+          "translation.ChDe": "ስዊስ-ጀርመን ወደ ከፍተኛ-ጀርመን"
+        }
+      }
+    }
   }
 }

@@ -29,12 +29,6 @@
         "download": "Descarrega Traducció",
         "copy": "Copia Traducció",
         "share": "Comparteix la traducció"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "S'està carregant el model de vídeo humà",
-          "generating": "Generació de vídeo"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "Canvia l'idioma o la regió"
+  },
+  "settings": {
+    "title": "Configuració",
+    "close": "Tanca la configuració",
+    "support": {
+      "title": "Suport",
+      "feedback": {
+        "title": "Feedback",
+        "send": "Enviar comentaris"
+      },
+      "about": {
+        "title": "Sobre"
+      }
+    },
+    "voice": {
+      "title": "Veu",
+      "input": {
+        "title": "Entrada"
+      },
+      "output": {
+        "title": "Sortida"
+      }
+    },
+    "other": {
+      "title": "Altres",
+      "offline": {
+        "title": "Fora de línia",
+        "actions": {
+          "toggle": "Commuta {{label}}",
+          "download": "Baixeu el model fora de línia",
+          "delete": "Purga la memòria cau de models fora de línia",
+          "reDownload": "Torneu a baixar el model fora de línia"
+        },
+        "files": {
+          "translation": "Traducció",
+          "translation.ChDe": "Suís-alemany a alt alemany"
+        }
+      }
+    }
   }
 }

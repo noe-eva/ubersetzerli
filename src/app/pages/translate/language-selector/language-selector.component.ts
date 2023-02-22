@@ -1,6 +1,6 @@
 import {Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges} from '@angular/core';
-import {Select} from '@ngxs/store';
-import {Observable, switchMap} from 'rxjs';
+import {Store} from '@ngxs/store';
+import {switchMap} from 'rxjs';
 import {TranslocoService} from '@ngneat/transloco';
 import {filter, takeUntil, tap} from 'rxjs/operators';
 import {BaseComponent} from '../../../components/base/base.component';
@@ -13,7 +13,7 @@ import {ComponentType} from '@angular/cdk/overlay';
   styleUrls: ['./language-selector.component.scss'],
 })
 export class LanguageSelectorComponent extends BaseComponent implements OnInit, OnChanges {
-  @Select(state => state.translate.detectedLanguage) detectedLanguage$: Observable<string>;
+  detectedLanguage$ = this.store.select<string>(state => state.translate.detectedLanguage);
 
   @Input() flags = false;
   @Input() map = false;
@@ -33,7 +33,7 @@ export class LanguageSelectorComponent extends BaseComponent implements OnInit, 
   displayNames: Intl.DisplayNames;
   langNames: {[lang: string]: string} = {};
 
-  constructor(private dialog: MatDialog, private transloco: TranslocoService) {
+  constructor(private store: Store, private transloco: TranslocoService, private dialog: MatDialog) {
     super();
   }
 

@@ -29,12 +29,6 @@
         "download": "Landa Ukuhumusha",
         "copy": "Kopisha Ukuhumusha",
         "share": "Yabelana ngokuhumusha"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "Ilayisha imodeli yevidiyo yomuntu",
-          "generating": "Ikhiqiza ividiyo"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "Shintsha ulimi noma isifunda"
+  },
+  "settings": {
+    "title": "Izilungiselelo",
+    "close": "Vala izilungiselelo",
+    "support": {
+      "title": "Ukusekela",
+      "feedback": {
+        "title": "Impendulo",
+        "send": "Thumela impendulo"
+      },
+      "about": {
+        "title": "Mayelana"
+      }
+    },
+    "voice": {
+      "title": "Izwi",
+      "input": {
+        "title": "Okokufaka"
+      },
+      "output": {
+        "title": "Okukhiphayo"
+      }
+    },
+    "other": {
+      "title": "Okunye",
+      "offline": {
+        "title": "Okungaxhunyiwe ku-inthanethi",
+        "actions": {
+          "toggle": "Guqula {{ilebula}}",
+          "download": "Landa imodeli engaxhunyiwe ku-inthanethi",
+          "delete": "Hlanza Inqolobane Yemodeli Engaxhunyiwe Ku-inthanethi",
+          "reDownload": "Dawuniloda Kabusha Imodeli Engaxhunyiwe Ku-inthanethi"
+        },
+        "files": {
+          "translation": "Ukuhumusha",
+          "translation.ChDe": "I-Swiss-German kuya ku-High-German"
+        }
+      }
+    }
   }
 }

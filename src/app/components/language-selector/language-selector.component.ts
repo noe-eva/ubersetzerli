@@ -127,17 +127,40 @@ export function languageCodeNormalizer(languageCode) {
 }
 
 @Component({
-  selector: 'app-language-selector',
+  selector: 'app-app-language-selector',
   templateUrl: './language-selector.component.html',
   styleUrls: ['./language-selector.component.scss'],
 })
-export class LanguageSelectorComponent {
+export class AppLanguageSelectorComponent {
   current: string;
 
-  languages = SITE_LANGUAGES;
+  languages = this.groupLanguages();
 
   constructor(private router: Router, private route: ActivatedRoute, private transloco: TranslocoService) {
     this.current = transloco.getActiveLang();
+  }
+
+  private groupLanguages() {
+    const languageGroups = [];
+    let lastGroup = {label: 'A', languages: []};
+    let didCrossZ = false;
+    for (const language of SITE_LANGUAGES) {
+      let label = language.value.charAt(0);
+      const isAZ = label.charCodeAt(0) > 64 && label.charCodeAt(0) < 91;
+      if (!isAZ || didCrossZ) {
+        didCrossZ = true;
+        label = 'OTHER';
+      }
+
+      if (label !== lastGroup.label) {
+        languageGroups.push(lastGroup);
+        lastGroup = {label, languages: []};
+      }
+      lastGroup.languages.push(language);
+    }
+
+    languageGroups.push(lastGroup);
+    return languageGroups;
   }
 
   async change(event: Event) {

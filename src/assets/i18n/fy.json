@@ -29,12 +29,6 @@
         "download": "Download oersetting",
         "copy": "Kopiearje oersetting",
         "share": "Diele oersetting"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "Laden fan minsklik fideomodel",
-          "generating": "It generearjen fan fideo"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "Feroarje taal of regio"
+  },
+  "settings": {
+    "title": "Ynstellings",
+    "close": "Ynstellings slute",
+    "support": {
+      "title": "Stypje",
+      "feedback": {
+        "title": "Feedback",
+        "send": "Kommentaar ferstjoere"
+      },
+      "about": {
+        "title": "Oer"
+      }
+    },
+    "voice": {
+      "title": "Lûd",
+      "input": {
+        "title": "Ynfier"
+      },
+      "output": {
+        "title": "Utfier"
+      }
+    },
+    "other": {
+      "title": "Oar",
+      "offline": {
+        "title": "Offline",
+        "actions": {
+          "toggle": "Skeakelje {{label}}",
+          "download": "Download offline model",
+          "delete": "Purge Offline Model Cache",
+          "reDownload": "Re-Download Offline Model"
+        },
+        "files": {
+          "translation": "Oersetting",
+          "translation.ChDe": "Switsersk-Dútsk oant Heechdútsk"
+        }
+      }
+    }
   }
 }

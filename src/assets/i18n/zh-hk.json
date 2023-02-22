@@ -29,12 +29,6 @@
         "download": "下載翻譯",
         "copy": "複製翻譯",
         "share": "分享翻譯"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "加載人類視頻模型",
-          "generating": "生成視頻"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "更改語言或地區"
+  },
+  "settings": {
+    "title": "設置",
+    "close": "關閉設置",
+    "support": {
+      "title": "支持",
+      "feedback": {
+        "title": "反饋",
+        "send": "發送反饋"
+      },
+      "about": {
+        "title": "關於"
+      }
+    },
+    "voice": {
+      "title": "嗓音",
+      "input": {
+        "title": "輸入"
+      },
+      "output": {
+        "title": "輸出"
+      }
+    },
+    "other": {
+      "title": "其他",
+      "offline": {
+        "title": "離線",
+        "actions": {
+          "toggle": "切換{{label}}",
+          "download": "下載離線模型",
+          "delete": "清除離線模型緩存",
+          "reDownload": "重新下載離線模型"
+        },
+        "files": {
+          "translation": "翻譯",
+          "translation.ChDe": "瑞士德語到高地德語"
+        }
+      }
+    }
   }
 }

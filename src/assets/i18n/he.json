@@ -24,12 +24,6 @@
         "download": "הורדת תרגום",
         "copy": "העתקת תרגום",
         "share": "שיתוף תרגום"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "טוען דגם וידאו אנושי",
-          "generating": "יצירת וידאו"
-        }
       }
     },
     "upload": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "שנה שפה או אזור"
+  },
+  "settings": {
+    "title": "הגדרות",
+    "close": "סגור הגדרות",
+    "support": {
+      "title": "תמיכה",
+      "feedback": {
+        "title": "מָשׁוֹב",
+        "send": "שלח משוב"
+      },
+      "about": {
+        "title": "על אודות"
+      }
+    },
+    "voice": {
+      "title": "קוֹל",
+      "input": {
+        "title": "קֶלֶט"
+      },
+      "output": {
+        "title": "תְפוּקָה"
+      }
+    },
+    "other": {
+      "title": "אַחֵר",
+      "offline": {
+        "title": "לא מקוון",
+        "actions": {
+          "toggle": "החלף את {{תווית}}",
+          "download": "הורד דגם לא מקוון",
+          "delete": "ניקוי מטמון מודל לא מקוון",
+          "reDownload": "הורד מחדש מודל לא מקוון"
+        },
+        "files": {
+          "translation": "תִרגוּם",
+          "translation.ChDe": "שוויצרית-גרמנית עד גרמנית גבוהה"
+        }
+      }
+    }
   }
 }

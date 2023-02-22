@@ -29,12 +29,6 @@
         "download": "Translation Download",
         "copy": "Котормосун көчүрүү",
         "share": "Котормо менен бөлүшүү"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "Адамдын видео модели жүктөлүүдө",
-          "generating": "Видео түзүлүүдө"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "Тилди же аймакты өзгөртүү"
+  },
+  "settings": {
+    "title": "Орнотуулар",
+    "close": "Жөндөөлөрдү жабуу",
+    "support": {
+      "title": "Колдоо",
+      "feedback": {
+        "title": "Пикир",
+        "send": "Пикир жөнөтүү"
+      },
+      "about": {
+        "title": "Жөнүндө"
+      }
+    },
+    "voice": {
+      "title": "Үн",
+      "input": {
+        "title": "Киргизүү"
+      },
+      "output": {
+        "title": "Чыгуу"
+      }
+    },
+    "other": {
+      "title": "Башка",
+      "offline": {
+        "title": "Оффлайн",
+        "actions": {
+          "toggle": "{{label}} которуштуруу",
+          "download": "Оффлайн моделин жүктөп алыңыз",
+          "delete": "Оффлайн моделдин кэшин тазалоо",
+          "reDownload": "Оффлайн моделин кайра жүктөө"
+        },
+        "files": {
+          "translation": "Translation",
+          "translation.ChDe": "Швейцариялык-Германиядан Жогорку Германияга"
+        }
+      }
+    }
   }
 }

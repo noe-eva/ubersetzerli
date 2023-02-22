@@ -3,9 +3,9 @@ import {RouterModule, Routes} from '@angular/router';
 import {TranslateComponent} from './pages/translate/translate.component';
 import {environment} from '../environments/environment';
 import {LazyDialogEntryComponent} from './pages/translate/dialog-entry.component';
+import {NotFoundComponent} from './pages/not-found/not-found.component';
 
 const routes: Routes = [
-  {path: '', component: TranslateComponent},
   {
     path: '',
     component: TranslateComponent,
@@ -17,12 +17,14 @@ const routes: Routes = [
       },
     ],
   },
-  {path: 'about', loadChildren: () => import('./pages/landing/landing.module').then(m => m.LandingModule)},
-  {path: 'legal', loadChildren: () => import('./pages/landing/landing.module').then(m => m.LandingModule)},
   {
     path: 's', // to prevent the settings from loading on page load, adding one level of route (i.e. s/offline)
     outlet: 'settings',
     loadChildren: () => import('./pages/settings/settings.module').then(m => m.SettingsPageModule),
+  },
+  {
+    path: '**',
+    component: NotFoundComponent,
   },
 ];
 

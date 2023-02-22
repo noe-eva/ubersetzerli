@@ -15,11 +15,11 @@ import {isIOS, isMacLike} from 'src/app/core/constants';
   styleUrls: ['./spoken-to-signed.component.scss'],
 })
 export class SpokenToSignedComponent extends BaseComponent implements OnInit {
-  @Select(state => state.translate) translate$: Observable<TranslateStateModel>;
-  @Select(state => state.translate.inputMode) inputMode$: Observable<string>;
-  @Select(state => state.translate.inputLanguageText) inputText$: Observable<string>;
-  @Select(state => state.translate.outputLanguageText) outputText$: Observable<string>;
-  @Select(state => state.translate.spokenLanguage) spokenLanguage$: Observable<string>;
+  translate$ = this.store.select<TranslateStateModel>(state => state.translate);
+  inputMode$ = this.store.select<string>(state => state.translate.inputMode);
+  inputText$ = this.store.select<string>(state => state.translate.inputLanguageText);
+  outputText$ = this.store.select<string>(state => state.translate.outputLanguageText);
+  spokenLanguage$ = this.store.select<string>(state => state.translate.spokenLanguage);
 
   inputLanguage: string;
   outputLanguage: string;

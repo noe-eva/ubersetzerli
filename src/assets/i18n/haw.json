@@ -29,12 +29,6 @@
         "download": "Hoʻoiho i ka unuhi",
         "copy": "E kope i ka unuhi",
         "share": "Kaʻana unuhi"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "Ke hoʻouka nei i ke kumu hoʻohālike wikiō kanaka",
-          "generating": "Hoʻopuka wikiō"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "Hoʻololi i ka ʻōlelo a i ʻole ka ʻāina"
+  },
+  "settings": {
+    "title": "Nā hoʻonohonoho",
+    "close": "Pani i nā hoʻonohonoho",
+    "support": {
+      "title": "Kākoʻo",
+      "feedback": {
+        "title": "Manaʻo manaʻo",
+        "send": "Hoʻouna manaʻo"
+      },
+      "about": {
+        "title": "E pili ana"
+      }
+    },
+    "voice": {
+      "title": "Leo",
+      "input": {
+        "title": "Hookomo"
+      },
+      "output": {
+        "title": "Hoʻopuka"
+      }
+    },
+    "other": {
+      "title": "'ē aʻe",
+      "offline": {
+        "title": "Pahemo",
+        "actions": {
+          "toggle": "Hoʻololi {{label}}",
+          "download": "Hoʻoiho i ke kumu hoʻohālike hoʻopahemo",
+          "delete": "E hoʻomaʻemaʻe i ka pahu hoʻohālike hoʻopahemo",
+          "reDownload": "Hoʻoiho hou i ke kumu hoʻohālike hoʻopahemo"
+        },
+        "files": {
+          "translation": "Unuhi",
+          "translation.ChDe": "Swiss-German a kiʻekiʻe-German"
+        }
+      }
+    }
   }
 }

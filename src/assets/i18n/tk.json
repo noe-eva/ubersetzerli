@@ -29,12 +29,6 @@
         "download": "Terjimäni göçürip al",
         "copy": "Terjimäni göçüriň",
         "share": "Terjimäni paýlaş"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "Adam wideo modelini ýüklemek",
-          "generating": "Wideo döretmek"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "Dili ýa-da sebiti üýtgediň"
+  },
+  "settings": {
+    "title": "Sazlamalar",
+    "close": "Sazlamalary ýapyň",
+    "support": {
+      "title": "Goldaw",
+      "feedback": {
+        "title": "Seslenme",
+        "send": "Ters jogap iberiň"
+      },
+      "about": {
+        "title": "Takmynan"
+      }
+    },
+    "voice": {
+      "title": "Ses",
+      "input": {
+        "title": "Giriş"
+      },
+      "output": {
+        "title": "Çykyş"
+      }
+    },
+    "other": {
+      "title": "Beýlekiler",
+      "offline": {
+        "title": "Oflayn",
+        "actions": {
+          "toggle": "{{Etiket}} çalyş",
+          "download": "Oflayn modelini göçürip alyň",
+          "delete": "Oflayn model keşini arassalaň",
+          "reDownload": "Oflayn modeli täzeden göçürip alyň"
+        },
+        "files": {
+          "translation": "Terjime",
+          "translation.ChDe": "Şweýsariýa-nemeslerden ýokary nemeslere"
+        }
+      }
+    }
   }
 }

@@ -29,12 +29,6 @@
         "download": "Descargar traducción",
         "copy": "Copiar traducción",
         "share": "Compartir traducción"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "Cargando modelo de video humano",
-          "generating": "Generando video"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "Cambiar idioma o región"
+  },
+  "settings": {
+    "title": "Ajustes",
+    "close": "Cerrar configuración",
+    "support": {
+      "title": "Apoyo",
+      "feedback": {
+        "title": "Comentario",
+        "send": "Enviar comentarios"
+      },
+      "about": {
+        "title": "Acerca de"
+      }
+    },
+    "voice": {
+      "title": "Voz",
+      "input": {
+        "title": "Aporte"
+      },
+      "output": {
+        "title": "Producción"
+      }
+    },
+    "other": {
+      "title": "Otro",
+      "offline": {
+        "title": "Desconectado",
+        "actions": {
+          "toggle": "Alternar {{etiqueta}}",
+          "download": "Descargar modelo sin conexión",
+          "delete": "Purgar caché de modelo fuera de línea",
+          "reDownload": "Volver a descargar el modelo sin conexión"
+        },
+        "files": {
+          "translation": "Traducción",
+          "translation.ChDe": "Suizo-alemán a alto alemán"
+        }
+      }
+    }
   }
 }

@@ -34,6 +34,7 @@
 }
 
 .translation-input {
+  position: relative;
   padding: 20px 24px;
   color: map-get(mat.$light-theme-foreground-palette, text);
 
@@ -49,6 +50,7 @@
     background-color: transparent;
     color: inherit;
     border: none;
+    direction: unset; // Important for initial cursor position
     font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
     font-size: 24px;
     line-height: 32px;
@@ -68,6 +70,7 @@
     text-align: end;
     font-size: 12px;
     line-height: 40px;
+    padding-inline: 10px;
   }
 }
 

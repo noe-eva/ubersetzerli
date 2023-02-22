@@ -29,12 +29,6 @@
         "download": "Soo deji Tarjumaadda",
         "copy": "Koobi Turjumaada",
         "share": "La wadaag Turjumaada"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "Soodejinaya qaabka muuqaalka dadka",
-          "generating": "Soo saarista muuqaal"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "Beddel luqadda ama gobolka"
+  },
+  "settings": {
+    "title": "Dejinta",
+    "close": "Xir dejinta",
+    "support": {
+      "title": "Taageero",
+      "feedback": {
+        "title": "Jawaab celin",
+        "send": "Soo dir jawaab celin"
+      },
+      "about": {
+        "title": "Ku saabsan"
+      }
+    },
+    "voice": {
+      "title": "Codka",
+      "input": {
+        "title": "Gelida"
+      },
+      "output": {
+        "title": "Wax soo saarka"
+      }
+    },
+    "other": {
+      "title": "Mid kale",
+      "offline": {
+        "title": "offline",
+        "actions": {
+          "toggle": "Beddel {{calaamad}}",
+          "download": "Soo deji Modelka khadka tooska ah",
+          "delete": "Ka saar Cache Model-ka Khadka Tooska ah",
+          "reDownload": "Dib u soo deji Modelka khadka tooska ah"
+        },
+        "files": {
+          "translation": "Turjumaada",
+          "translation.ChDe": "Swiss-Jarmal ilaa Jarmal-sare"
+        }
+      }
+    }
   }
 }

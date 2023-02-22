@@ -29,12 +29,6 @@
         "download": "Scaricate a traduzzione",
         "copy": "Copy Translation",
         "share": "Share Translation"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "Caricà u mudellu di video umanu",
-          "generating": "Generazione di video"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "Cambia lingua o regione"
+  },
+  "settings": {
+    "title": "Settings",
+    "close": "Chiudi i paràmetri",
+    "support": {
+      "title": "Supportu",
+      "feedback": {
+        "title": "Feedback",
+        "send": "Mandate feedback"
+      },
+      "about": {
+        "title": "À propositu"
+      }
+    },
+    "voice": {
+      "title": "Voce",
+      "input": {
+        "title": "Input"
+      },
+      "output": {
+        "title": "Output"
+      }
+    },
+    "other": {
+      "title": "Altru",
+      "offline": {
+        "title": "Offline",
+        "actions": {
+          "toggle": "Toggle {{label}}",
+          "download": "Scaricate u mudellu offline",
+          "delete": "Purga a cache di mudelli offline",
+          "reDownload": "Scaricate di novu u mudellu offline"
+        },
+        "files": {
+          "translation": "Traduzzione",
+          "translation.ChDe": "Svizzeru-tedescu à altu-tedescu"
+        }
+      }
+    }
   }
 }

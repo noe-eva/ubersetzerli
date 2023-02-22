@@ -29,12 +29,6 @@
         "download": "Download Cyfieithiad",
         "copy": "Copi Cyfieithiad",
         "share": "Rhannu Cyfieithiad"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "Llwytho model fideo dynol",
-          "generating": "Cynhyrchu fideo"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "Newid iaith neu ranbarth"
+  },
+  "settings": {
+    "title": "Gosodiadau",
+    "close": "Cau gosodiadau",
+    "support": {
+      "title": "Cefnogaeth",
+      "feedback": {
+        "title": "Adborth",
+        "send": "Anfon adborth"
+      },
+      "about": {
+        "title": "Ynghylch"
+      }
+    },
+    "voice": {
+      "title": "Llais",
+      "input": {
+        "title": "Mewnbwn"
+      },
+      "output": {
+        "title": "Allbwn"
+      }
+    },
+    "other": {
+      "title": "Arall",
+      "offline": {
+        "title": "All-lein",
+        "actions": {
+          "toggle": "Toglo {{label}}",
+          "download": "Lawrlwythwch Model All-lein",
+          "delete": "Cael gwared ar Cache Model All-lein",
+          "reDownload": "Ail-lawrlwytho Model All-lein"
+        },
+        "files": {
+          "translation": "Cyfieithiad",
+          "translation.ChDe": "Swisaidd-Almaeneg i Uchel-Almaeneg"
+        }
+      }
+    }
   }
 }

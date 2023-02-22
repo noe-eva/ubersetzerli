@@ -3,8 +3,8 @@ import {networkInterfaces} from 'os';
 import {env} from './env';
 
 const config: CapacitorConfig = {
-  appId: 'mt.sign.translate',
-  appName: 'Sign Translate',
+  appId: 'li.ubersetzer.translate',
+  appName: 'ubersetzerli',
   webDir: 'dist/ubersetzerli/browser',
   bundledWebRuntime: false,
   server: getServer(),
@@ -19,6 +19,7 @@ const config: CapacitorConfig = {
   },
   android: {
     path: 'android',
+    useLegacyBridge: false,
   },
 };
 

@@ -29,12 +29,6 @@
         "download": "Ladda ner översättning",
         "copy": "Kopiera översättning",
         "share": "Dela översättning"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "Laddar mänsklig videomodell",
-          "generating": "Genererar video"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "Ändra språk eller region"
+  },
+  "settings": {
+    "title": "inställningar",
+    "close": "Stäng inställningarna",
+    "support": {
+      "title": "Stöd",
+      "feedback": {
+        "title": "Respons",
+        "send": "Skicka synpunkter"
+      },
+      "about": {
+        "title": "Handla om"
+      }
+    },
+    "voice": {
+      "title": "Röst",
+      "input": {
+        "title": "Inmatning"
+      },
+      "output": {
+        "title": "Produktion"
+      }
+    },
+    "other": {
+      "title": "Övrig",
+      "offline": {
+        "title": "Off-line",
+        "actions": {
+          "toggle": "Växla {{label}}",
+          "download": "Ladda ner offlinemodell",
+          "delete": "Rensa offlinemodellcache",
+          "reDownload": "Ladda ner offlinemodell igen"
+        },
+        "files": {
+          "translation": "Översättning",
+          "translation.ChDe": "schweizisk-tysk till högtysk"
+        }
+      }
+    }
   }
 }

@@ -29,12 +29,6 @@
         "download": "Fordítás letöltése",
         "copy": "Fordítás másolása",
         "share": "Fordítás megosztása"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "Emberi videomodell betöltése",
-          "generating": "Videó generálása"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "Nyelv vagy régió módosítása"
+  },
+  "settings": {
+    "title": "Beállítások",
+    "close": "Zárja be a beállításokat",
+    "support": {
+      "title": "Támogatás",
+      "feedback": {
+        "title": "Visszacsatolás",
+        "send": "Visszajelzés küldése"
+      },
+      "about": {
+        "title": "Ról ről"
+      }
+    },
+    "voice": {
+      "title": "Hang",
+      "input": {
+        "title": "Bemenet"
+      },
+      "output": {
+        "title": "Kimenet"
+      }
+    },
+    "other": {
+      "title": "Egyéb",
+      "offline": {
+        "title": "Offline",
+        "actions": {
+          "toggle": "Váltás: {{label}}",
+          "download": "Offline modell letöltése",
+          "delete": "Az offline modell gyorsítótárának kiürítése",
+          "reDownload": "Töltse le újra az offline modellt"
+        },
+        "files": {
+          "translation": "Fordítás",
+          "translation.ChDe": "svájci-németről felnémetre"
+        }
+      }
+    }
   }
 }

@@ -29,12 +29,6 @@
         "download": "Prenesite prevod",
         "copy": "Kopiraj prevod",
         "share": "Delite prevod"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "Nalaganje človeškega video modela",
-          "generating": "Ustvarjanje videa"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "Spremenite jezik ali regijo"
+  },
+  "settings": {
+    "title": "nastavitve",
+    "close": "Zapri nastavitve",
+    "support": {
+      "title": "Podpora",
+      "feedback": {
+        "title": "Povratne informacije",
+        "send": "Pošlji povratno informacijo"
+      },
+      "about": {
+        "title": "O tem"
+      }
+    },
+    "voice": {
+      "title": "Glas",
+      "input": {
+        "title": "Vnos"
+      },
+      "output": {
+        "title": "Izhod"
+      }
+    },
+    "other": {
+      "title": "drugo",
+      "offline": {
+        "title": "Brez povezave",
+        "actions": {
+          "toggle": "Preklopi {{label}}",
+          "download": "Prenesite model brez povezave",
+          "delete": "Počisti predpomnilnik modela brez povezave",
+          "reDownload": "Ponovno prenesite model brez povezave"
+        },
+        "files": {
+          "translation": "Prevajanje",
+          "translation.ChDe": "švicarsko-nemški v visokonemški"
+        }
+      }
+    }
   }
 }

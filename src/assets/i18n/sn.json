@@ -29,12 +29,6 @@
         "download": "Dhaunirodha Shanduro",
         "copy": "Copy Translation",
         "share": "Goverana Shanduro"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "Kurodha modhi yevhidhiyo yemunhu",
-          "generating": "Kugadzira vhidhiyo"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "Shandura mutauro kana dunhu"
+  },
+  "settings": {
+    "title": "Settings",
+    "close": "Vhara zvigadziriso",
+    "support": {
+      "title": "Support",
+      "feedback": {
+        "title": "Feedback",
+        "send": "Tumira mhinduro"
+      },
+      "about": {
+        "title": "About"
+      }
+    },
+    "voice": {
+      "title": "Voice",
+      "input": {
+        "title": "Input"
+      },
+      "output": {
+        "title": "Output"
+      }
+    },
+    "other": {
+      "title": "Zvimwe",
+      "offline": {
+        "title": "Offline",
+        "actions": {
+          "toggle": "Shandura {{label}}",
+          "download": "Dhawunirodha Offline Model",
+          "delete": "Bvisa Offline Model Cache",
+          "reDownload": "Dhawunirodhazve Offline Model"
+        },
+        "files": {
+          "translation": "Shanduro",
+          "translation.ChDe": "Swiss-German kusvika High-German"
+        }
+      }
+    }
   }
 }

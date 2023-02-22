@@ -8,7 +8,7 @@ import {googlePlayLocales} from './locales.android';
 import {iOSLocales} from './locales.ios';
 import {iosDevices, androidDevices} from './devices';
 
-const assetsDir = `src/assets/promotional/about/`;
+const assetsDir = `src/assets/promotional/about`;
 mkdir(`${assetsDir}/iphone`);
 mkdir(`${assetsDir}/android`);
 
@@ -88,7 +88,7 @@ async function makeIOS(
   };
   await screenshot(page, cViewport, imgPath(locale, cViewport, 'main'));
   // Copy main page for the about page
-  if (device === 'iPhone 13 Pro') {
+  if (device === 'iPhone 14 Pro') {
     fs.copyFileSync(imgPath(locale, cViewport, 'main'), `${assetsDir}/iphone/${pageLang}.png`);
   }
 
@@ -127,7 +127,12 @@ async function main() {
   const chromiumBrowser = await chromium.launch({headless: false});
 
   for (const device of androidDevices.concat(iosDevices)) {
+    if (!(device in devices)) {
+      console.log(devices);
+      throw new Error(`Device ${device} is unknown`);
+    }
     if (!('screen' in devices[device])) {
+      console.log(devices[device]);
       throw new Error(`Device ${device} is missing screen values`);
     }
   }
@@ -165,7 +170,7 @@ async function main() {
   };
 
   const concurrency = 20;
-  const allContexts = androidContexts.concat(iosContexts).sort((a, b) => (Math.random() > 0.5 ? 1 : -1));
+  const allContexts = androidContexts.concat(iosContexts).sort(() => (Math.random() > 0.5 ? 1 : -1));
   await asyncPoolAll(concurrency, allContexts, screenCapture);
   await webkitBrowser.close();
   await chromiumBrowser.close();

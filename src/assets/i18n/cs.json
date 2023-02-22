@@ -29,12 +29,6 @@
         "download": "Stáhnout Překlad",
         "copy": "Kopírovat překlad",
         "share": "Sdílet překlad"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "Načítání modelu lidského videa",
-          "generating": "Generování videa"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "Změňte jazyk nebo oblast"
+  },
+  "settings": {
+    "title": "Nastavení",
+    "close": "Zavřete nastavení",
+    "support": {
+      "title": "Podpěra, podpora",
+      "feedback": {
+        "title": "Zpětná vazba",
+        "send": "Poslat zpětnou vazbu"
+      },
+      "about": {
+        "title": "O"
+      }
+    },
+    "voice": {
+      "title": "Hlas",
+      "input": {
+        "title": "Vstup"
+      },
+      "output": {
+        "title": "Výstup"
+      }
+    },
+    "other": {
+      "title": "jiný",
+      "offline": {
+        "title": "Offline",
+        "actions": {
+          "toggle": "Přepnout {{label}}",
+          "download": "Stáhnout offline model",
+          "delete": "Vyčistit mezipaměť modelu offline",
+          "reDownload": "Znovu si stáhněte offline model"
+        },
+        "files": {
+          "translation": "Překlad",
+          "translation.ChDe": "švýcarsko-německý až hornoněmecký"
+        }
+      }
+    }
   }
 }

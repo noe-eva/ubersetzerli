@@ -29,12 +29,6 @@
         "download": "Deskargatu Itzulpena",
         "copy": "Kopiatu Itzulpena",
         "share": "Partekatu itzulpena"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "Giza bideo eredua kargatzen",
-          "generating": "Bideoa sortzea"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "Aldatu hizkuntza edo eskualdea"
+  },
+  "settings": {
+    "title": "Ezarpenak",
+    "close": "Itxi ezarpenak",
+    "support": {
+      "title": "Laguntza",
+      "feedback": {
+        "title": "Iritzia",
+        "send": "Bidali iritzia"
+      },
+      "about": {
+        "title": "Buruz"
+      }
+    },
+    "voice": {
+      "title": "Ahotsa",
+      "input": {
+        "title": "Sarrera"
+      },
+      "output": {
+        "title": "Irteera"
+      }
+    },
+    "other": {
+      "title": "Bestela",
+      "offline": {
+        "title": "Lineaz kanpo",
+        "actions": {
+          "toggle": "Aldatu {{label}}",
+          "download": "Deskargatu lineaz kanpoko eredua",
+          "delete": "Garbitu lineaz kanpoko ereduaren cachea",
+          "reDownload": "Deskargatu berriro lineaz kanpoko eredua"
+        },
+        "files": {
+          "translation": "Itzulpena",
+          "translation.ChDe": "Suitzako-alemanetik goi-alemanera"
+        }
+      }
+    }
   }
 }

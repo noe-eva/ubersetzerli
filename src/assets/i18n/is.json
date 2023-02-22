@@ -29,12 +29,6 @@
         "download": "Sækja þýðingu",
         "copy": "Afrita þýðing",
         "share": "Deila þýðingu"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "Hleður mannlegt myndbandslíkan",
-          "generating": "Búa til myndband"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "Breyta tungumáli eða svæði"
+  },
+  "settings": {
+    "title": "Stillingar",
+    "close": "Lokaðu stillingum",
+    "support": {
+      "title": "Stuðningur",
+      "feedback": {
+        "title": "Endurgjöf",
+        "send": "Senda athugasemdir"
+      },
+      "about": {
+        "title": "Um"
+      }
+    },
+    "voice": {
+      "title": "Rödd",
+      "input": {
+        "title": "Inntak"
+      },
+      "output": {
+        "title": "Framleiðsla"
+      }
+    },
+    "other": {
+      "title": "Annað",
+      "offline": {
+        "title": "Ótengdur",
+        "actions": {
+          "toggle": "Skipta á {{label}}",
+          "download": "Sækja fyrirmynd án nettengingar",
+          "delete": "Hreinsaðu skyndiminni án nettengingar",
+          "reDownload": "Sæktu líkan án nettengingar aftur"
+        },
+        "files": {
+          "translation": "Þýðing",
+          "translation.ChDe": "Sviss-þýska til há-þýska"
+        }
+      }
+    }
   }
 }

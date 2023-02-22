@@ -2,31 +2,33 @@ const {simpleSitemapAndIndex} = require('sitemap');
 const path = require('path');
 const fs = require('fs');
 
-const now = new Date();
-const baseUrls = [
-  '/',
-  // '/about', // '/about/languages', '/about/contribute', '/about/tools',
-  // '/legal/terms', '/legal/privacy', '/legal/licenses'
-];
-
+// Get list of supported languages
 const baseDir = __dirname + `${path.sep}..${path.sep}`;
-
-const urls = [...baseUrls];
-
-// Add language urls
 const langsDir = `${baseDir}src${path.sep}assets${path.sep}i18n`;
+const languages = [];
 for (const file of fs.readdirSync(langsDir)) {
   const [lang] = file.split('.');
-  for (const url of baseUrls) {
-    urls.push(url + `?lang=${lang}`);
-  }
+  languages.push(lang);
+}
+
+const lastmod = new Date();
+const baseUrls = ['/'];
+
+const sourceData = [];
+
+for (const url of baseUrls) {
+  sourceData.push({
+    url,
+    lastmod,
+    links: languages.map(lang => ({lang, url: `${url}?lang=${lang}`})),
+  });
 }
 
 // writes sitemaps and index out to the destination you provide.
 simpleSitemapAndIndex({
   hostname: 'https://ubersetzer.li',
   destinationDir: `${baseDir}dist/ubersetzerli/browser/`,
-  sourceData: urls.map(url => ({url, lastmod: now})),
+  sourceData,
   gzip: false,
 })
   .then(() => process.exit(0))

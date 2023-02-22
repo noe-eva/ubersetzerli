@@ -29,12 +29,6 @@
         "download": "Lejupielādēt tulkojumu",
         "copy": "Kopēt tulkojumu",
         "share": "Kopīgot tulkojumu"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "Notiek cilvēka video modeļa ielāde",
-          "generating": "Notiek video ģenerēšana"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "Mainiet valodu vai reģionu"
+  },
+  "settings": {
+    "title": "Iestatījumi",
+    "close": "Aizveriet iestatījumus",
+    "support": {
+      "title": "Atbalsts",
+      "feedback": {
+        "title": "Atsauksmes",
+        "send": "Sūtiet atsauksmes"
+      },
+      "about": {
+        "title": "Par"
+      }
+    },
+    "voice": {
+      "title": "Balss",
+      "input": {
+        "title": "Ievade"
+      },
+      "output": {
+        "title": "Izvade"
+      }
+    },
+    "other": {
+      "title": "Cits",
+      "offline": {
+        "title": "Bezsaistē",
+        "actions": {
+          "toggle": "Pārslēgt {{label}}",
+          "download": "Lejupielādēt bezsaistes modeli",
+          "delete": "Iztīriet bezsaistes modeļa kešatmiņu",
+          "reDownload": "Atkārtoti lejupielādējiet bezsaistes modeli"
+        },
+        "files": {
+          "translation": "Tulkošana",
+          "translation.ChDe": "Šveices-vācu uz augstvācu"
+        }
+      }
+    }
   }
 }

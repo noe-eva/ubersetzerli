@@ -29,12 +29,6 @@
         "download": "ດາວໂຫຼດການແປ",
         "copy": "ສຳເນົາການແປ",
         "share": "ແບ່ງປັນການແປ"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "ກຳລັງໂຫຼດຕົວແບບວິດີໂອຂອງມະນຸດ",
-          "generating": "ກຳລັງສ້າງວິດີໂອ"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "ປ່ຽນພາສາ ຫຼືພາກພື້ນ"
+  },
+  "settings": {
+    "title": "ການຕັ້ງຄ່າ",
+    "close": "ປິດການຕັ້ງຄ່າ",
+    "support": {
+      "title": "ສະຫນັບສະຫນູນ",
+      "feedback": {
+        "title": "ຄໍາຕິຊົມ",
+        "send": "ສົ່ງຄໍາຄິດເຫັນ"
+      },
+      "about": {
+        "title": "ກ່ຽວກັບ"
+      }
+    },
+    "voice": {
+      "title": "ສຽງ",
+      "input": {
+        "title": "ປ້ອນຂໍ້ມູນ"
+      },
+      "output": {
+        "title": "ຜົນຜະລິດ"
+      }
+    },
+    "other": {
+      "title": "ອື່ນໆ",
+      "offline": {
+        "title": "ອອບໄລນ໌",
+        "actions": {
+          "toggle": "ສະຫຼັບ {{label}}",
+          "download": "ດາວໂຫລດແບບອອບໄລນ໌",
+          "delete": "ລ້າງແຄດຕົວແບບອອບໄລນ໌",
+          "reDownload": "ດາວໂຫຼດແບບອອບໄລນ໌ຄືນໃໝ່"
+        },
+        "files": {
+          "translation": "ການແປ",
+          "translation.ChDe": "ສະວິດ-ເຢຍລະມັນ ຫາ ສູງ-ເຢຍລະມັນ"
+        }
+      }
+    }
   }
 }

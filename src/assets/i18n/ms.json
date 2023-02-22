@@ -29,12 +29,6 @@
         "download": "Muat turun Terjemahan",
         "copy": "Salin Terjemahan",
         "share": "Kongsi Terjemahan"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "Memuatkan model video manusia",
-          "generating": "Menjana video"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "Tukar bahasa atau wilayah"
+  },
+  "settings": {
+    "title": "tetapan",
+    "close": "Tutup tetapan",
+    "support": {
+      "title": "Sokongan",
+      "feedback": {
+        "title": "Maklum balas",
+        "send": "Hantar maklumbalas"
+      },
+      "about": {
+        "title": "Tentang"
+      }
+    },
+    "voice": {
+      "title": "Suara",
+      "input": {
+        "title": "Input"
+      },
+      "output": {
+        "title": "Pengeluaran"
+      }
+    },
+    "other": {
+      "title": "Lain-lain",
+      "offline": {
+        "title": "Luar talian",
+        "actions": {
+          "toggle": "Togol {{label}}",
+          "download": "Muat turun Model Luar Talian",
+          "delete": "Bersihkan Cache Model Luar Talian",
+          "reDownload": "Muat Turun Semula Model Luar Talian"
+        },
+        "files": {
+          "translation": "Terjemahan",
+          "translation.ChDe": "Swiss-Jerman kepada High-Jerman"
+        }
+      }
+    }
   }
 }

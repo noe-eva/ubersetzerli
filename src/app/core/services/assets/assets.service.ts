@@ -1,6 +1,5 @@
 import {Injectable} from '@angular/core';
 import {Capacitor} from '@capacitor/core';
-import write_blob from 'capacitor-blob-writer';
 
 /**
  * Navigator.storage is used as iOS service worker cache is limited to 50MB.
@@ -9,6 +8,7 @@ import write_blob from 'capacitor-blob-writer';
 
 export type AssetState = {
   name?: string;
+  label?: string;
   path: string;
   exists: boolean;
   size?: number;
@@ -150,7 +150,7 @@ export class AssetsService {
 
   async deleteFile(path: string) {
     return Promise.all([
-      this.deleteNavigatorStorageFile(path).catch(e => {}),
+      this.deleteNavigatorStorageFile(path).catch(() => {}),
       this.deleteCapacitorGetFileUri(path).catch(() => {}),
     ]);
   }
@@ -219,6 +219,7 @@ export class AssetsService {
 
       const file = await fileHandle.getFile();
       if (Number(stat.size) !== file.size) {
+        // 2023-02-07: file.size in safari is always 0
         console.error('File size mismatch', stat, file);
         return null;
       }
@@ -236,13 +237,17 @@ export class AssetsService {
   }
 
   async deleteCapacitorGetFileUri(path: string) {
-    const {Directory, Filesystem} = await import('@capacitor/filesystem');
+    const {Directory, Filesystem} = await import(
+      /* webpackChunkName: "@capacitor/filesystem" */ '@capacitor/filesystem'
+    );
     const fileOptions = {directory: Directory.External, path};
     await Filesystem.deleteFile(fileOptions);
   }
 
   async capacitorGetFileUri(path: string, download: CallableFunction, downloadDone: CallableFunction) {
-    const {Directory, Filesystem} = await import('@capacitor/filesystem');
+    const {Directory, Filesystem} = await import(
+      /* webpackChunkName: "@capacitor/filesystem" */ '@capacitor/filesystem'
+    );
 
     const fileOptions = {directory: Directory.External, path};
     try {
@@ -255,7 +260,8 @@ export class AssetsService {
     } catch (e) {
       // File does not exist
       const blob = await download(true);
-      await write_blob({
+      const writeBlob = await import(/* webpackChunkName: "@capacitor/blob-writer" */ 'capacitor-blob-writer');
+      await writeBlob.default({
         path,
         directory: Directory.External,
         blob,
@@ -265,7 +271,7 @@ export class AssetsService {
       await downloadDone();
     }
 
-    if (Capacitor.getPlatform() !== 'web') {
+    if (Capacitor.isNativePlatform()) {
       const {uri} = await Filesystem.getUri(fileOptions);
       return Capacitor.convertFileSrc(uri);
     }

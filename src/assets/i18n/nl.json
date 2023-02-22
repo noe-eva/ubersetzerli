@@ -29,12 +29,6 @@
         "download": "Vertaling downloaden",
         "copy": "Vertaling kopiëren",
         "share": "Vertaling delen"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "Menselijk videomodel laden",
-          "generating": "Video genereren"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "Wijzig taal of regio"
+  },
+  "settings": {
+    "title": "Instellingen",
+    "close": "Instellingen sluiten",
+    "support": {
+      "title": "Steun",
+      "feedback": {
+        "title": "Feedback",
+        "send": "Stuur feedback"
+      },
+      "about": {
+        "title": "Over"
+      }
+    },
+    "voice": {
+      "title": "Stem",
+      "input": {
+        "title": "Invoer"
+      },
+      "output": {
+        "title": "Uitgang"
+      }
+    },
+    "other": {
+      "title": "Ander",
+      "offline": {
+        "title": "offline",
+        "actions": {
+          "toggle": "Wissel {{label}}",
+          "download": "Offline-model downloaden",
+          "delete": "Leeg de offline modelcache",
+          "reDownload": "Offline-model opnieuw downloaden"
+        },
+        "files": {
+          "translation": "Vertaling",
+          "translation.ChDe": "Zwitserduits tot Hoogduits"
+        }
+      }
+    }
   }
 }

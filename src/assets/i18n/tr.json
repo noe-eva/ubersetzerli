@@ -29,12 +29,6 @@
         "download": "Çeviriyi İndir",
         "copy": "Çeviriyi Kopyala",
         "share": "Çeviriyi Paylaş"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "İnsan video modeli yükleniyor",
-          "generating": "Video oluşturuluyor"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "Dili veya bölgeyi değiştir"
+  },
+  "settings": {
+    "title": "Ayarlar",
+    "close": "Ayarları kapat",
+    "support": {
+      "title": "Destek",
+      "feedback": {
+        "title": "Geri bildirim",
+        "send": "Geribildirim yolla"
+      },
+      "about": {
+        "title": "Hakkında"
+      }
+    },
+    "voice": {
+      "title": "Ses",
+      "input": {
+        "title": "Giriş"
+      },
+      "output": {
+        "title": "Çıktı"
+      }
+    },
+    "other": {
+      "title": "Diğer",
+      "offline": {
+        "title": "çevrimdışı",
+        "actions": {
+          "toggle": "{{etiket}} değiştir",
+          "download": "Çevrimdışı Modeli İndir",
+          "delete": "Çevrimdışı Model Önbelleğini Temizle",
+          "reDownload": "Çevrimdışı Modeli Yeniden İndirin"
+        },
+        "files": {
+          "translation": "Tercüme",
+          "translation.ChDe": "İsviçre-Almanca'dan Yüksek Almanca'ya"
+        }
+      }
+    }
   }
 }

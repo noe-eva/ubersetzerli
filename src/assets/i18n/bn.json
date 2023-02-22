@@ -29,12 +29,6 @@
         "download": "অনুবাদ ডাউনলোড করুন",
         "copy": "অনুলিপি অনুবাদ",
         "share": "অনুবাদ শেয়ার করুন"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "মানুষের ভিডিও মডেল লোড হচ্ছে",
-          "generating": "ভিডিও তৈরি করা হচ্ছে"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "ভাষা বা অঞ্চল পরিবর্তন করুন"
+  },
+  "settings": {
+    "title": "সেটিংস",
+    "close": "সেটিংস বন্ধ করুন",
+    "support": {
+      "title": "সমর্থন",
+      "feedback": {
+        "title": "প্রতিক্রিয়া",
+        "send": "মতামত পাঠানো"
+      },
+      "about": {
+        "title": "সম্পর্কিত"
+      }
+    },
+    "voice": {
+      "title": "ভয়েস",
+      "input": {
+        "title": "ইনপুট"
+      },
+      "output": {
+        "title": "আউটপুট"
+      }
+    },
+    "other": {
+      "title": "অন্যান্য",
+      "offline": {
+        "title": "অফলাইন",
+        "actions": {
+          "toggle": "টগল {{label}}",
+          "download": "অফলাইন মডেল ডাউনলোড করুন",
+          "delete": "অফলাইন মডেল ক্যাশে শুদ্ধ করুন",
+          "reDownload": "অফলাইন মডেল পুনরায় ডাউনলোড করুন"
+        },
+        "files": {
+          "translation": "অনুবাদ",
+          "translation.ChDe": "সুইস-জার্মান থেকে হাই-জার্মান"
+        }
+      }
+    }
   }
 }

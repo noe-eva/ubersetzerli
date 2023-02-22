@@ -29,12 +29,6 @@
         "download": "અનુવાદ ડાઉનલોડ કરો",
         "copy": "અનુવાદની નકલ કરો",
         "share": "અનુવાદ શેર કરો"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "માનવ વિડિઓ મૉડલ લોડ કરી રહ્યું છે",
-          "generating": "વિડિયો જનરેટ કરી રહ્યાં છીએ"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "ભાષા કે પ્રદેશ બદલો"
+  },
+  "settings": {
+    "title": "સેટિંગ્સ",
+    "close": "સેટિંગ્સ બંધ કરો",
+    "support": {
+      "title": "આધાર",
+      "feedback": {
+        "title": "પ્રતિભાવ",
+        "send": "પ્રતિસાદ મોકલ"
+      },
+      "about": {
+        "title": "વિશે"
+      }
+    },
+    "voice": {
+      "title": "અવાજ",
+      "input": {
+        "title": "ઇનપુટ"
+      },
+      "output": {
+        "title": "આઉટપુટ"
+      }
+    },
+    "other": {
+      "title": "અન્ય",
+      "offline": {
+        "title": "ઑફલાઇન",
+        "actions": {
+          "toggle": "{{label}} ટૉગલ કરો",
+          "download": "ઑફલાઇન મોડલ ડાઉનલોડ કરો",
+          "delete": "ઑફલાઇન મૉડલ કૅશ સાફ કરો",
+          "reDownload": "ઑફલાઇન મોડલ ફરીથી ડાઉનલોડ કરો"
+        },
+        "files": {
+          "translation": "અનુવાદ",
+          "translation.ChDe": "સ્વિસ-જર્મન થી હાઇ-જર્મન"
+        }
+      }
+    }
   }
 }

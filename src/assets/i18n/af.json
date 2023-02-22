@@ -29,12 +29,6 @@
         "download": "Laai vertaling af",
         "copy": "Kopieer vertaling",
         "share": "Deel vertaling"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "Laai tans menslike videomodel",
-          "generating": "Genereer video"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "Verander taal of streek"
+  },
+  "settings": {
+    "title": "Instellings",
+    "close": "Maak instellings toe",
+    "support": {
+      "title": "Ondersteuning",
+      "feedback": {
+        "title": "Terugvoer",
+        "send": "Stuur terugvoering"
+      },
+      "about": {
+        "title": "Oor"
+      }
+    },
+    "voice": {
+      "title": "Stem",
+      "input": {
+        "title": "Invoer"
+      },
+      "output": {
+        "title": "Uitset"
+      }
+    },
+    "other": {
+      "title": "Ander",
+      "offline": {
+        "title": "Vanlyn",
+        "actions": {
+          "toggle": "Wissel {{label}}",
+          "download": "Laai vanlyn model af",
+          "delete": "Maak vanlyn modelkas skoon",
+          "reDownload": "Laai weer vanlyn model af"
+        },
+        "files": {
+          "translation": "Vertaling",
+          "translation.ChDe": "Switsers-Duits tot Hoog-Duits"
+        }
+      }
+    }
   }
 }

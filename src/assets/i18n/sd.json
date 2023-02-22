@@ -29,12 +29,6 @@
         "download": "ڊائون لوڊ ترجمو",
         "copy": "نقل ڪريو ترجمو",
         "share": "ترجمو حصيداري ڪريو"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "انساني وڊيو ماڊل لوڊ ڪندي",
-          "generating": "وڊيو ٺاهي رهيو آهي"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "ٻولي يا علائقو تبديل ڪريو"
+  },
+  "settings": {
+    "title": "سيٽنگون",
+    "close": "سيٽنگون بند ڪريو",
+    "support": {
+      "title": "حمايت",
+      "feedback": {
+        "title": "راءِ",
+        "send": "موٽ موڪليو"
+      },
+      "about": {
+        "title": "بابت"
+      }
+    },
+    "voice": {
+      "title": "آواز",
+      "input": {
+        "title": "ان پٽ"
+      },
+      "output": {
+        "title": "پيداوار"
+      }
+    },
+    "other": {
+      "title": "ٻيو",
+      "offline": {
+        "title": "آف لائن",
+        "actions": {
+          "toggle": "ٽوگل ڪريو {{label}}",
+          "download": "ڊائون لوڊ آف لائن ماڊل",
+          "delete": "آف لائن ماڊل ڪيش کي صاف ڪريو",
+          "reDownload": "آف لائن ماڊل ٻيهر ڊائون لوڊ ڪريو"
+        },
+        "files": {
+          "translation": "ترجمو",
+          "translation.ChDe": "سوئس-جرمن کان اعلي-جرمن"
+        }
+      }
+    }
   }
 }

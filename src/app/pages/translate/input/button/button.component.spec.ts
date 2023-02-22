@@ -1,4 +1,4 @@
-import {ComponentFixture, fakeAsync, TestBed, tick} from '@angular/core/testing';
+import {ComponentFixture, fakeAsync, TestBed} from '@angular/core/testing';
 import {axe, toHaveNoViolations} from 'jasmine-axe';
 
 import {TranslateInputButtonComponent} from './button.component';

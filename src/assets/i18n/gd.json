@@ -29,12 +29,6 @@
         "download": "Luchdaich a-nuas eadar-theangachadh",
         "copy": "Dèan lethbhreac den eadar-theangachadh",
         "share": "Co-roinn eadar-theangachadh"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "Luchdaich a-nuas video duine model",
-          "generating": "A ' cruthachadh bhidio"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "Atharraich cànan no sgìre"
+  },
+  "settings": {
+    "title": "Suidhichidhean",
+    "close": "Dùin roghainnean",
+    "support": {
+      "title": "Taic",
+      "feedback": {
+        "title": "Fios air ais",
+        "send": "Cuir fios air ais"
+      },
+      "about": {
+        "title": "Mu dheidhinn"
+      }
+    },
+    "voice": {
+      "title": "Guth",
+      "input": {
+        "title": "Cuir a-steach"
+      },
+      "output": {
+        "title": "Toradh"
+      }
+    },
+    "other": {
+      "title": "Eile",
+      "offline": {
+        "title": "Offline",
+        "actions": {
+          "toggle": "Tog {{label}}",
+          "download": "Luchdaich a-nuas air loidhne an-asgaidh model.",
+          "delete": "Glan tasgadan modail far-loidhne",
+          "reDownload": "Luchdaich a-nuas am modail gun eadar-Lìon"
+        },
+        "files": {
+          "translation": "Eadar-theangachadh",
+          "translation.ChDe": "Eilbheis-Gearmailteach gu Àrd-Ghearmailtis"
+        }
+      }
+    }
   }
 }

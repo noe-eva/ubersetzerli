@@ -29,12 +29,6 @@
         "download": "Tải xuống bản dịch",
         "copy": "Sao chép bản dịch",
         "share": "Chia sẻ bản dịch"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "Đang tải mô hình video của con người",
-          "generating": "Tạo video"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "Thay đổi ngôn ngữ hoặc khu vực"
+  },
+  "settings": {
+    "title": "Cài đặt",
+    "close": "Đóng cài đặt",
+    "support": {
+      "title": "Ủng hộ",
+      "feedback": {
+        "title": "Nhận xét",
+        "send": "Gửi phản hồi"
+      },
+      "about": {
+        "title": "Về"
+      }
+    },
+    "voice": {
+      "title": "Tiếng nói",
+      "input": {
+        "title": "Đầu vào"
+      },
+      "output": {
+        "title": "đầu ra"
+      }
+    },
+    "other": {
+      "title": "Khác",
+      "offline": {
+        "title": "ngoại tuyến",
+        "actions": {
+          "toggle": "Chuyển đổi {{nhãn}}",
+          "download": "Tải xuống mô hình ngoại tuyến",
+          "delete": "Xóa bộ nhớ cache mô hình ngoại tuyến",
+          "reDownload": "Tải xuống lại mô hình ngoại tuyến"
+        },
+        "files": {
+          "translation": "Dịch",
+          "translation.ChDe": "Tiếng Đức-Thụy Sĩ sang tiếng Đức cao cấp"
+        }
+      }
+    }
   }
 }

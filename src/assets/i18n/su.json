@@ -29,12 +29,6 @@
         "download": "Unduh Tarjamahan",
         "copy": "Salin Tarjamahan",
         "share": "Bagikeun Tarjamahan"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "Ngamuat modél pidéo manusa",
-          "generating": "Ngahasilkeun video"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "Ganti basa atanapi daérah"
+  },
+  "settings": {
+    "title": "Setélan",
+    "close": "Tutup setélan",
+    "support": {
+      "title": "Ngarojong",
+      "feedback": {
+        "title": "Eupan balik",
+        "send": "Kirim eupan balik"
+      },
+      "about": {
+        "title": "Ngeunaan"
+      }
+    },
+    "voice": {
+      "title": "Sora",
+      "input": {
+        "title": "Input"
+      },
+      "output": {
+        "title": "Kaluaran"
+      }
+    },
+    "other": {
+      "title": "Lain",
+      "offline": {
+        "title": "Offline",
+        "actions": {
+          "toggle": "Togél {{label}}",
+          "download": "Unduh Modél Offline",
+          "delete": "Ngabersihan Offline Modél Cache",
+          "reDownload": "Unduh deui Modél Offline"
+        },
+        "files": {
+          "translation": "Tarjamahan",
+          "translation.ChDe": "Swiss-Jerman ka High-Jerman"
+        }
+      }
+    }
   }
 }

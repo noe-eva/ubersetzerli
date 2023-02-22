@@ -29,12 +29,6 @@
         "download": "دانلود ترجمه",
         "copy": "ترجمه کپی",
         "share": "ترجمه را به اشتراک بگذارید"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "در حال بارگیری مدل ویدیویی انسانی",
-          "generating": "در حال تولید ویدیو"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "زبان یا منطقه را تغییر دهید"
+  },
+  "settings": {
+    "title": "تنظیمات",
+    "close": "تنظیمات را ببندید",
+    "support": {
+      "title": "حمایت کردن",
+      "feedback": {
+        "title": "بازخورد",
+        "send": "ارسال بازخورد"
+      },
+      "about": {
+        "title": "در باره"
+      }
+    },
+    "voice": {
+      "title": "صدا",
+      "input": {
+        "title": "ورودی"
+      },
+      "output": {
+        "title": "خروجی"
+      }
+    },
+    "other": {
+      "title": "دیگر",
+      "offline": {
+        "title": "آفلاین",
+        "actions": {
+          "toggle": "تغییر وضعیت {{label}}",
+          "download": "دانلود مدل آفلاین",
+          "delete": "حافظه پنهان مدل آفلاین را پاک کنید",
+          "reDownload": "دانلود مجدد مدل آفلاین"
+        },
+        "files": {
+          "translation": "ترجمه",
+          "translation.ChDe": "سوئیسی-آلمانی به آلمانی عالی"
+        }
+      }
+    }
   }
 }

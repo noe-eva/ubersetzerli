@@ -1,23 +1,23 @@
 import {ComponentFixture, TestBed} from '@angular/core/testing';
 import {axe, toHaveNoViolations} from 'jasmine-axe';
 
-import {languageCodeNormalizer, LanguageSelectorComponent, SITE_LANGUAGES} from './language-selector.component';
+import {languageCodeNormalizer, AppLanguageSelectorComponent, SITE_LANGUAGES} from './language-selector.component';
 import {AppTranslocoTestingModule} from '../../core/modules/transloco/transloco-testing.module';
 import {RouterModule} from '@angular/router';
 
-describe('LanguageSelectorComponent', () => {
-  let component: LanguageSelectorComponent;
-  let fixture: ComponentFixture<LanguageSelectorComponent>;
+describe('AppLanguageSelectorComponent', () => {
+  let component: AppLanguageSelectorComponent;
+  let fixture: ComponentFixture<AppLanguageSelectorComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [LanguageSelectorComponent],
+      declarations: [AppLanguageSelectorComponent],
       imports: [AppTranslocoTestingModule, RouterModule.forRoot([])],
     }).compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LanguageSelectorComponent);
+    fixture = TestBed.createComponent(AppLanguageSelectorComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
@@ -44,6 +44,12 @@ describe('LanguageSelectorComponent', () => {
       const requests = await Promise.all(files.map(f => fetch(f)));
       for (const req of requests) {
         expect(req.ok).toBeTruthy();
+      }
+
+      const jsons = await Promise.all(requests.map(r => r.json()));
+      for (const json of jsons) {
+        const text = JSON.stringify(json);
+        expect(text).not.toContain('&#'); // No URL Encoded characters
       }
     });
   }

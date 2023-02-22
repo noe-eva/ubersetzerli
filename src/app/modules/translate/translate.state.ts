@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-import {Action, NgxsOnInit, Select, State, StateContext} from '@ngxs/store';
+import {Action, NgxsOnInit, State, StateContext, Store} from '@ngxs/store';
 import {
   ChangeTranslation,
   FlipTranslationDirection,
@@ -7,12 +7,11 @@ import {
   SetSignedLanguage,
   SetSpokenLanguage,
   SetInputLanguageText,
-  UploadPoseFile,
 } from './translate.actions';
 import {TranslationService} from './translate.service';
-import {Observable, of} from 'rxjs';
+import {EMPTY, Observable} from 'rxjs';
 import {tap} from 'rxjs/operators';
-import {Capacitor} from '@capacitor/core';
+import {PivotTranslationService} from './pivot-translation.service';
 
 export type InputMode = 'upload' | 'text';
 
@@ -37,7 +36,7 @@ const initialState: TranslateStateModel = {
   detectedLanguage: null,
 
   inputLanguageText: '',
-  outputLanguageText: null,
+  outputLanguageText: '',
 };
 
 @Injectable()
@@ -46,7 +45,7 @@ const initialState: TranslateStateModel = {
   defaults: initialState,
 })
 export class TranslateState implements NgxsOnInit {
-  constructor(private service: TranslationService) {}
+  constructor(private store: Store, private service: TranslationService) {}
 
   ngxsOnInit({dispatch}: StateContext<TranslateStateModel>): any {
     dispatch(ChangeTranslation);
@@ -126,23 +125,16 @@ export class TranslateState implements NgxsOnInit {
   @Action(ChangeTranslation, {cancelUncompleted: true})
   changeTranslation({getState, patchState, dispatch}: StateContext<TranslateStateModel>): Observable<any> {
     const {spokenToSigned, spokenLanguage, signedLanguage, detectedLanguage, inputLanguageText} = getState();
-    patchState({outputLanguageText: null});
+    patchState({outputLanguageText: ''});
 
-    if (!inputLanguageText) {
-      return of();
+    const trimmedInputLanguageText = inputLanguageText.trim();
+    if (!trimmedInputLanguageText) {
+      return EMPTY;
     }
 
     const actualSignedLanguage = signedLanguage || detectedLanguage;
     return this.service
-      .translateSignedToSpoken(inputLanguageText, actualSignedLanguage, spokenLanguage)
+      .translateSignedToSpoken(trimmedInputLanguageText, actualSignedLanguage, spokenLanguage)
       .pipe(tap(outputText => patchState({outputLanguageText: outputText})));
-  }
-
-  @Action(UploadPoseFile)
-  uploadPoseFile({getState, patchState}: StateContext<TranslateStateModel>, {url}: UploadPoseFile): void {
-    const {spokenToSigned} = getState();
-    if (spokenToSigned) {
-      patchState({outputLanguageText: url});
-    }
   }
 }

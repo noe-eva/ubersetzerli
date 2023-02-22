@@ -1,7 +1,7 @@
 import {initializeTestEnvironment} from '@firebase/rules-unit-testing';
 import {RulesTestContext, RulesTestEnvironment} from '@firebase/rules-unit-testing/dist/src/public_types';
-import firebase from 'firebase/compat';
 import {FirebaseFirestore} from '@firebase/firestore-types';
+import {FirebaseDatabase} from '@firebase/database-types';
 import {Bucket, Storage} from '@google-cloud/storage';
 import fetch from 'node-fetch';
 import * as fs from 'fs';
@@ -28,13 +28,13 @@ service firebase.storage {
 export interface FirebaseTestEnvironmentContext {
   env: RulesTestEnvironment;
   context: RulesTestContext;
-  database: firebase.database.Database;
+  database: FirebaseDatabase;
   firestore: FirebaseFirestore;
   storage: Storage;
   bucket: Bucket;
 }
 
-export function setupFirebaseTestEnvironment() {
+export function setupFirebaseTestEnvironment(clearStorage = true): FirebaseTestEnvironmentContext {
   const testEnvironmentContext: FirebaseTestEnvironmentContext = {} as any;
 
   beforeAll(async () => {
@@ -72,7 +72,7 @@ export function setupFirebaseTestEnvironment() {
             const buffer = await req.buffer();
             return [buffer];
           },
-          getSignedUrl: () => ref.getDownloadURL(),
+          getSignedUrl: () => ref.getDownloadURL().then(url => [url]),
           publicUrl: () => ref.getDownloadURL(),
           delete: () => ref.delete(),
         };
@@ -91,7 +91,9 @@ export function setupFirebaseTestEnvironment() {
   beforeEach(async () => {
     await testEnvironmentContext.env.clearDatabase();
     await testEnvironmentContext.env.clearFirestore();
-    await testEnvironmentContext.env.clearStorage();
+    if (clearStorage) {
+      await testEnvironmentContext.env.clearStorage();
+    }
   });
 
   afterAll(async () => {

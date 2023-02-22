@@ -31,9 +31,3 @@ export class SetInputLanguageText {
 export class ChangeTranslation {
   static readonly type = '[Translate] Change Translation';
 }
-
-export class UploadPoseFile {
-  static readonly type = '[Translate] Upload Pose File';
-
-  constructor(public url: string) {}
-}

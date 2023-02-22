@@ -29,12 +29,6 @@
         "download": "Laadige alla tõlge",
         "copy": "Kopeeri tõlge",
         "share": "Jaga tõlget"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "Inimese videomudeli laadimine",
-          "generating": "Video genereerimine"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "Muutke keelt või piirkonda"
+  },
+  "settings": {
+    "title": "Seaded",
+    "close": "Sulge seaded",
+    "support": {
+      "title": "Toetus",
+      "feedback": {
+        "title": "Tagasiside",
+        "send": "Saada tagasisidet"
+      },
+      "about": {
+        "title": "Umbes"
+      }
+    },
+    "voice": {
+      "title": "Hääl",
+      "input": {
+        "title": "Sisend"
+      },
+      "output": {
+        "title": "Väljund"
+      }
+    },
+    "other": {
+      "title": "muud",
+      "offline": {
+        "title": "Võrguühenduseta",
+        "actions": {
+          "toggle": "Lülita {{label}}",
+          "download": "Laadige alla võrguühenduseta mudel",
+          "delete": "Tühjendage võrguühenduseta mudeli vahemälu",
+          "reDownload": "Laadige võrguühenduseta mudel uuesti alla"
+        },
+        "files": {
+          "translation": "Tõlge",
+          "translation.ChDe": "Šveitsi-saksa keelest kõrgsaksa keelde"
+        }
+      }
+    }
   }
 }

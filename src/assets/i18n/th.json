@@ -29,12 +29,6 @@
         "download": "ดาวน์โหลดการแปล",
         "copy": "คัดลอกการแปล",
         "share": "แบ่งปันการแปล"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "กำลังโหลดโมเดลวิดีโอของมนุษย์",
-          "generating": "กำลังสร้างวิดีโอ"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "เปลี่ยนภาษาหรือภูมิภาค"
+  },
+  "settings": {
+    "title": "การตั้งค่า",
+    "close": "ปิดการตั้งค่า",
+    "support": {
+      "title": "สนับสนุน",
+      "feedback": {
+        "title": "ข้อเสนอแนะ",
+        "send": "ส่งความคิดเห็น"
+      },
+      "about": {
+        "title": "เกี่ยวกับ"
+      }
+    },
+    "voice": {
+      "title": "เสียง",
+      "input": {
+        "title": "ป้อนข้อมูล"
+      },
+      "output": {
+        "title": "เอาต์พุต"
+      }
+    },
+    "other": {
+      "title": "อื่น",
+      "offline": {
+        "title": "ออฟไลน์",
+        "actions": {
+          "toggle": "สลับ {{ป้ายกำกับ}}",
+          "download": "ดาวน์โหลดโมเดลออฟไลน์",
+          "delete": "ล้างแคชโมเดลออฟไลน์",
+          "reDownload": "ดาวน์โหลดโมเดลออฟไลน์อีกครั้ง"
+        },
+        "files": {
+          "translation": "แปล",
+          "translation.ChDe": "สวิสเยอรมันถึงเยอรมันสูง"
+        }
+      }
+    }
   }
 }

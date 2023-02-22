@@ -29,12 +29,6 @@
         "download": "Atsisiųskite vertimą",
         "copy": "Kopijuoti vertimą",
         "share": "Pasidalinti vertimu"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "Įkeliamas žmogaus vaizdo modelis",
-          "generating": "Kuriamas vaizdo įrašas"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "Pakeiskite kalbą arba regioną"
+  },
+  "settings": {
+    "title": "Nustatymai",
+    "close": "Uždaryti nustatymus",
+    "support": {
+      "title": "Palaikymas",
+      "feedback": {
+        "title": "Atsiliepimas",
+        "send": "Siųsti atsiliepimą"
+      },
+      "about": {
+        "title": "Apie"
+      }
+    },
+    "voice": {
+      "title": "Balsas",
+      "input": {
+        "title": "Įvestis"
+      },
+      "output": {
+        "title": "Išvestis"
+      }
+    },
+    "other": {
+      "title": "Kita",
+      "offline": {
+        "title": "Neprisijungus",
+        "actions": {
+          "toggle": "Perjungti {{label}}",
+          "download": "Atsisiųskite modelį neprisijungus",
+          "delete": "Išvalykite neprisijungus naudojamo modelio talpyklą",
+          "reDownload": "Iš naujo atsisiųskite neprisijungus naudojamą modelį"
+        },
+        "files": {
+          "translation": "Vertimas",
+          "translation.ChDe": "Iš šveicarų-vokiečių į aukštųjų vokiečių k"
+        }
+      }
+    }
   }
 }

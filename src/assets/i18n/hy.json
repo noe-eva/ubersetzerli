@@ -29,12 +29,6 @@
         "download": "Ներբեռնեք թարգմանությունը",
         "copy": "Պատճենել թարգմանությունը",
         "share": "Share Translation"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "Մարդկային տեսանյութի մոդելի բեռնում",
-          "generating": "Տեսանյութի գեներացում"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "Փոխել լեզուն կամ տարածաշրջանը"
+  },
+  "settings": {
+    "title": "Կարգավորումներ",
+    "close": "Փակել կարգավորումները",
+    "support": {
+      "title": "Աջակցություն",
+      "feedback": {
+        "title": "Հետադարձ կապ",
+        "send": "Ուղարկել գնահատական"
+      },
+      "about": {
+        "title": "Մասին"
+      }
+    },
+    "voice": {
+      "title": "Ձայն",
+      "input": {
+        "title": "Մուտքագրում"
+      },
+      "output": {
+        "title": "Արդյունք"
+      }
+    },
+    "other": {
+      "title": "Այլ",
+      "offline": {
+        "title": "Անցանց",
+        "actions": {
+          "toggle": "Փոխարկել {{label}}",
+          "download": "Ներբեռնեք անցանց մոդելը",
+          "delete": "Մաքրել անցանց մոդելի քեշը",
+          "reDownload": "Նորից ներբեռնեք անցանց մոդելը"
+        },
+        "files": {
+          "translation": "Թարգմանություն",
+          "translation.ChDe": "շվեյցարական-գերմաներենից բարձր գերմաներեն"
+        }
+      }
+    }
   }
 }

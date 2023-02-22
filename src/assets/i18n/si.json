@@ -29,12 +29,6 @@
         "download": "පරිවර්තනය බාගන්න",
         "copy": "පරිවර්තනය පිටපත් කරන්න",
         "share": "පරිවර්තනය බෙදාගන්න"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "මානව වීඩියෝ ආකෘතිය පූරණය කරමින්",
-          "generating": "වීඩියෝ උත්පාදනය"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "භාෂාව හෝ කලාපය වෙනස් කරන්න"
+  },
+  "settings": {
+    "title": "සැකසුම්",
+    "close": "සැකසුම් වසන්න",
+    "support": {
+      "title": "සහාය",
+      "feedback": {
+        "title": "ප්රතිපෝෂණ",
+        "send": "ප්‍රතිපෝෂණ යවන්න"
+      },
+      "about": {
+        "title": "ගැන"
+      }
+    },
+    "voice": {
+      "title": "හඬ",
+      "input": {
+        "title": "ආදානය"
+      },
+      "output": {
+        "title": "ප්රතිදානය"
+      }
+    },
+    "other": {
+      "title": "අනික්",
+      "offline": {
+        "title": "නොබැඳි",
+        "actions": {
+          "toggle": "{{label}} ටොගල් කරන්න",
+          "download": "නොබැඳි ආකෘතිය බාගන්න",
+          "delete": "නොබැඳි ආකෘති හැඹිලිය ඉවත් කරන්න",
+          "reDownload": "නොබැඳි ආකෘතිය නැවත බාගන්න"
+        },
+        "files": {
+          "translation": "පරිවර්තනය",
+          "translation.ChDe": "ස්විස්-ජර්මානු සිට ඉහළ ජර්මානු"
+        }
+      }
+    }
   }
 }

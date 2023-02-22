@@ -29,12 +29,6 @@
         "download": "ژباړه ډاونلوډ کړئ",
         "copy": "کاپي ژباړه",
         "share": "ژباړه شریک کړئ"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "د انسان ویډیو ماډل پورته کول",
-          "generating": "ویډیو جوړول"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "ژبه یا سیمه بدله کړئ"
+  },
+  "settings": {
+    "title": "ترتیبات",
+    "close": "تنظیمات بند کړئ",
+    "support": {
+      "title": "ملاتړ",
+      "feedback": {
+        "title": "فیډبیک",
+        "send": "نظر واستوئ"
+      },
+      "about": {
+        "title": "په اړه"
+      }
+    },
+    "voice": {
+      "title": "غږ",
+      "input": {
+        "title": "داخلول"
+      },
+      "output": {
+        "title": "محصول"
+      }
+    },
+    "other": {
+      "title": "نور",
+      "offline": {
+        "title": "آفلاین",
+        "actions": {
+          "toggle": "بدلول {{label}}",
+          "download": "آفلاین ماډل ډاونلوډ کړئ",
+          "delete": "د آفلاین ماډل کیچ پاک کړئ",
+          "reDownload": "آفلاین ماډل بیا ډاونلوډ کړئ"
+        },
+        "files": {
+          "translation": "ژباړه",
+          "translation.ChDe": "سویس-جرمني ته لوړ جرمني"
+        }
+      }
+    }
   }
 }

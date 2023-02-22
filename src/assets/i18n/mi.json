@@ -29,12 +29,6 @@
         "download": "Tikiake Whakamaori",
         "copy": "Tārua Whakamāoritanga",
         "share": "Tiri Whakamaori"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "Uta ana tauira ataata tangata",
-          "generating": "Te whakaputa ataata"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "Hurihia te reo, rohe ranei"
+  },
+  "settings": {
+    "title": "Tautuhinga",
+    "close": "Katia nga tautuhinga",
+    "support": {
+      "title": "Tautoko",
+      "feedback": {
+        "title": "Urupare",
+        "send": "Tuku urupare"
+      },
+      "about": {
+        "title": "Mō"
+      }
+    },
+    "voice": {
+      "title": "Reo",
+      "input": {
+        "title": "Whakauru"
+      },
+      "output": {
+        "title": "Putanga"
+      }
+    },
+    "other": {
+      "title": "Ētahi atu",
+      "offline": {
+        "title": "Tuimotu",
+        "actions": {
+          "toggle": "Takahuri {{label}}",
+          "download": "Tikiake Tauira Tuimotu",
+          "delete": "Pure Tuimotu Keteroki Tauira",
+          "reDownload": "Tikiake Anō Tauira Tuimotu"
+        },
+        "files": {
+          "translation": "Whakamaoritanga",
+          "translation.ChDe": "Swiss-Tiamana ki High-German"
+        }
+      }
+    }
   }
 }

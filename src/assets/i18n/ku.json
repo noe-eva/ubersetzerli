@@ -29,12 +29,6 @@
         "download": "Download Translation",
         "copy": "Wergerandinê kopî bikin",
         "share": "Share Werger"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "Modela vîdyoya mirovî tê barkirin",
-          "generating": "Vîdyoyê diafirîne"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "Ziman an herêmê biguherînin"
+  },
+  "settings": {
+    "title": "Settings",
+    "close": "Mîhengan bigire",
+    "support": {
+      "title": "Alîkarî",
+      "feedback": {
+        "title": "Feedback",
+        "send": "Bersiv bişînin"
+      },
+      "about": {
+        "title": "Ji dor"
+      }
+    },
+    "voice": {
+      "title": "Deng",
+      "input": {
+        "title": "Beyan"
+      },
+      "output": {
+        "title": "Karûabr"
+      }
+    },
+    "other": {
+      "title": "Yên din",
+      "offline": {
+        "title": "Offline",
+        "actions": {
+          "toggle": "Biguherîne {{ label}}",
+          "download": "Modela Offline dakêşin",
+          "delete": "Cache Modela Offline Paqij bike",
+          "reDownload": "Modela Offline ji nû ve dakêşin"
+        },
+        "files": {
+          "translation": "Werger",
+          "translation.ChDe": "Swîsrî-Almanî berbi Bilind-Almanî"
+        }
+      }
+    }
   }
 }

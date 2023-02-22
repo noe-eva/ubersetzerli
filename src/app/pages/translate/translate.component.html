@@ -11,12 +11,13 @@
   <button
     mat-icon-button
     [attr.aria-label]="'settings.title' | transloco"
-    [routerLink]="[{outlets: {settings: ['s'], dialog: ['settings']}}]">
+    [routerLink]="[{outlets: {settings: ['s'], dialog: ['settings']}}]"
+    [queryParamsHandling]="'preserve'">
     <mat-icon>settings</mat-icon>
   </button>
 </mat-toolbar>
 
-<div id="container">
+<div class="container">
   <div id="input-mode-group">
     <app-translate-input-button mode="text" icon="translate"></app-translate-input-button>
     <app-translate-input-button mode="upload" icon="upload"></app-translate-input-button>

@@ -29,12 +29,6 @@
         "download": "Unduh Terjemahan",
         "copy": "Salin Terjemahan",
         "share": "Bagikan Terjemahan"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "Memuat model video manusia",
-          "generating": "Membuat video"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "Ubah bahasa atau wilayah"
+  },
+  "settings": {
+    "title": "Pengaturan",
+    "close": "Tutup pengaturan",
+    "support": {
+      "title": "Mendukung",
+      "feedback": {
+        "title": "Masukan",
+        "send": "Kirim umpan balik"
+      },
+      "about": {
+        "title": "Tentang"
+      }
+    },
+    "voice": {
+      "title": "Suara",
+      "input": {
+        "title": "Memasukkan"
+      },
+      "output": {
+        "title": "Keluaran"
+      }
+    },
+    "other": {
+      "title": "Lainnya",
+      "offline": {
+        "title": "Luring",
+        "actions": {
+          "toggle": "Alihkan {{label}}",
+          "download": "Unduh Model Offline",
+          "delete": "Bersihkan Cache Model Offline",
+          "reDownload": "Unduh Ulang Model Offline"
+        },
+        "files": {
+          "translation": "Terjemahan",
+          "translation.ChDe": "Swiss-Jerman ke High-Jerman"
+        }
+      }
+    }
   }
 }

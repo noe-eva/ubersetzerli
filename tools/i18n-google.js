@@ -36,12 +36,12 @@ async function getAvailableLanguages() {
   return matches.map(m => m[1]);
 }
 
-function extract(text, attribute, value) {
-  const exp = new RegExp(`${attribute}="${value}".*?>(.*?)<`, 'gi');
-  console.log(exp);
-  console.log(text.match(exp));
-  return text.match(exp)[6];
-}
+// function extract(text, attribute, value) {
+//   const exp = new RegExp(`${attribute}="${value}".*?>(.*?)<`, 'gi');
+//   console.log(exp);
+//   console.log(text.match(exp));
+//   return text.match(exp)[6];
+// }
 
 async function applyGoogleLanguage(language, filePath) {
   console.log({language});
@@ -62,7 +62,15 @@ async function applyGoogleLanguage(language, filePath) {
     );
 
   let [_1, uploadTypes, browseComputer] = /class="TEGJAb">(.*?)<.*?sSlcId.*?>(.*?)</g.exec(main);
-  uploadTypes = uploadTypes.trim();
+  uploadTypes = uploadTypes
+    .trim()
+    .replace('docx', 'mp4')
+    .replace('DOCX', 'MP4')
+    .replace('pdf', 'ogv')
+    .replace('PDF', 'OGV')
+    .replace('xlsx', 'webm')
+    .replace('XLSX', 'WEBM')
+    .replace(/[,、]? ?.?PPTX/i, '');
 
   const [aboutTitle, languagesTitle, contributeTitle, toolsTitle] = [
     ...about.matchAll(/h-c-header__nav-li-link.*?"\s*title="(.*?)"/g),
@@ -73,19 +81,22 @@ async function applyGoogleLanguage(language, filePath) {
     .map(m => m[1])
     .slice(5);
 
+  let tryButton = /<a href="https:\/\/translate\.google\.com.*?"\s*title="(.*?)"/.exec(about)[1];
+  tryButton = tryButton.replace('Google', 'Sign').replace('GOOGLE', 'SIGN');
+
   const extraSuggestion = {
     keyboard: {
       ctrl: ctrl.trim(),
       shift: shift.trim(),
     },
     translate: {
-      title: 'übersetzerli',
+      title: /<title>(.*?)<\/title>/g.exec(main)[1].replace('Google', 'Sign').replace('&#39;', "'"),
       'language-selector': {
         detected: '{{lang}}',
       },
     },
     landing: {
-      try: /<a href="https:\/\/translate\.google\.com.*?"\s*title="(.*?)"/.exec(about)[1],
+      try: tryButton,
     },
   };
   const extraForce = {
@@ -97,7 +108,7 @@ async function applyGoogleLanguage(language, filePath) {
       swapLanguages: swapLanguages.trim(),
 
       'language-selector': {
-        detect: /\[\[\["auto","(.*?)"\]/g.exec(main)[1],
+        detect: /\[\[\["auto","(.*?)"]/g.exec(main)[1],
         // "detected": "{lang} - Detected" // TODO get from a js file?
       },
       // "spoken-to-signed": {

@@ -4,6 +4,6 @@
     "outDir": "./out-tsc/app",
     "types": ["@types/dom-speech-recognition", "@types/node"]
   },
-  "files": ["src/main.ts", "src/polyfills.ts"],
+  "files": ["src/main.ts"],
   "include": ["src/**/*.d.ts", "src/app/pages/translate/map/map.component.ts", "node_modules/@types/chrome/index.d.ts"]
 }

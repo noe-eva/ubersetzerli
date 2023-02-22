@@ -29,12 +29,6 @@
         "download": "Niżżel Traduzzjoni",
         "copy": "Kopja tat-Traduzzjoni",
         "share": "Share Traduzzjoni"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "Tagħbija tal-mudell tal-vidjo uman",
-          "generating": "Ġenerazzjoni tal-vidjo"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "Ibdel il-lingwa jew ir-reġjun"
+  },
+  "settings": {
+    "title": "Settings",
+    "close": "Agħlaq is-settings",
+    "support": {
+      "title": "Appoġġ",
+      "feedback": {
+        "title": "Feedback",
+        "send": "Ibgħat feedback"
+      },
+      "about": {
+        "title": "Dwar"
+      }
+    },
+    "voice": {
+      "title": "Leħen",
+      "input": {
+        "title": "Input"
+      },
+      "output": {
+        "title": "Output"
+      }
+    },
+    "other": {
+      "title": "Oħrajn",
+      "offline": {
+        "title": "Offline",
+        "actions": {
+          "toggle": "Aqleb {{label}}",
+          "download": "Niżżel il-Mudell Offline",
+          "delete": "Neħħi l-Cache tal-Mudell Offline",
+          "reDownload": "Niżżel mill-ġdid il-Mudell Offline"
+        },
+        "files": {
+          "translation": "Traduzzjoni",
+          "translation.ChDe": "Żvizzeru-Ġermaniż għal Ġermaniż Għoli"
+        }
+      }
+    }
   }
 }

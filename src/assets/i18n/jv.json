@@ -29,12 +29,6 @@
         "download": "Download Terjemahan",
         "copy": "Salin Terjemahan",
         "share": "Nuduhake Terjemahan"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "Loading model video manungsa",
-          "generating": "Nggawe video"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "Ganti basa utawa wilayah"
+  },
+  "settings": {
+    "title": "Setelan",
+    "close": "Nutup setelan",
+    "support": {
+      "title": "Nyokong",
+      "feedback": {
+        "title": "Tanggepan",
+        "send": "Ngirim saran"
+      },
+      "about": {
+        "title": "Babagan"
+      }
+    },
+    "voice": {
+      "title": "Swara",
+      "input": {
+        "title": "Input"
+      },
+      "output": {
+        "title": "Output"
+      }
+    },
+    "other": {
+      "title": "Liyane",
+      "offline": {
+        "title": "Offline",
+        "actions": {
+          "toggle": "Ganti {{label}}",
+          "download": "Download Model Offline",
+          "delete": "Mbusak Cache Model Offline",
+          "reDownload": "Ngundhuh maneh Model Offline"
+        },
+        "files": {
+          "translation": "Ngartekne",
+          "translation.ChDe": "Swiss-Jerman kanggo High-Jerman"
+        }
+      }
+    }
   }
 }

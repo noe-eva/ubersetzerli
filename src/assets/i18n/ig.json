@@ -29,12 +29,6 @@
         "download": "Budata Ntụgharị asụsụ",
         "copy": "Detuo ntụgharị asụsụ",
         "share": "Kekọrịta ntụgharị asụsụ"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "Na-ebu ihe ngosi vidiyo mmadụ",
-          "generating": "Na-emepụta vidiyo"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "Gbanwee asụsụ ma ọ bụ mpaghara"
+  },
+  "settings": {
+    "title": "Ntọala",
+    "close": "Mechie ntọala",
+    "support": {
+      "title": "Nkwado",
+      "feedback": {
+        "title": "Nzaghachi",
+        "send": "Zipu nzaghachi"
+      },
+      "about": {
+        "title": "Ihe gbasara"
+      }
+    },
+    "voice": {
+      "title": "Olu",
+      "input": {
+        "title": "Ntinye"
+      },
+      "output": {
+        "title": "Mpụta"
+      }
+    },
+    "other": {
+      "title": "Ndị ọzọ",
+      "offline": {
+        "title": "Na-anọghị n'ịntanetị",
+        "actions": {
+          "toggle": "Tụgharịa {{label}}",
+          "download": "Budata Model na-anọghị n'ịntanetị",
+          "delete": "Hichapụ cache Model na-anọghị n'ịntanetị",
+          "reDownload": "Budata Model na-anọghị n'ịntanetị"
+        },
+        "files": {
+          "translation": "Ntụgharị asụsụ",
+          "translation.ChDe": "Switzerland-German ruo High-German"
+        }
+      }
+    }
   }
 }

@@ -29,12 +29,6 @@
         "download": "Koperani Zomasulira",
         "copy": "Koperani Kumasulira",
         "share": "Gawani Zomasulira"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "Kutsegula chitsanzo chamavidiyo amunthu",
-          "generating": "Kupanga kanema"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "Sinthani chinenero kapena dera"
+  },
+  "settings": {
+    "title": "Zokonda",
+    "close": "Tsekani zokonda",
+    "support": {
+      "title": "Thandizo",
+      "feedback": {
+        "title": "Ndemanga",
+        "send": "Tumizani ndemanga"
+      },
+      "about": {
+        "title": "Za"
+      }
+    },
+    "voice": {
+      "title": "Mawu",
+      "input": {
+        "title": "Zolowetsa"
+      },
+      "output": {
+        "title": "Zotulutsa"
+      }
+    },
+    "other": {
+      "title": "Zina",
+      "offline": {
+        "title": "Zopanda intaneti",
+        "actions": {
+          "toggle": "Sinthani {{label}}",
+          "download": "Tsitsani Mtundu wa Offline",
+          "delete": "Chotsani Chosungira Chachitsanzo cha Offline",
+          "reDownload": "Tsitsaninso Mtundu Wopanda intaneti"
+        },
+        "files": {
+          "translation": "Kumasulira",
+          "translation.ChDe": "Swiss-German kupita ku High-German"
+        }
+      }
+    }
   }
 }

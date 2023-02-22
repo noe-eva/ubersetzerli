@@ -29,12 +29,6 @@
         "download": "Ṣe igbasilẹ Itumọ",
         "copy": "Daakọ Itumọ",
         "share": "Pin Itumọ"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "Ikojọpọ awoṣe fidio eniyan",
-          "generating": "Ti o npese fidio"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "Yi ede tabi agbegbe pada"
+  },
+  "settings": {
+    "title": "Ètò",
+    "close": "Pa eto",
+    "support": {
+      "title": "Atilẹyin",
+      "feedback": {
+        "title": "Esi",
+        "send": "Firanṣẹ esi"
+      },
+      "about": {
+        "title": "Nipa"
+      }
+    },
+    "voice": {
+      "title": "Ohùn",
+      "input": {
+        "title": "Iṣawọle"
+      },
+      "output": {
+        "title": "Abajade"
+      }
+    },
+    "other": {
+      "title": "Omiiran",
+      "offline": {
+        "title": "Aisinipo",
+        "actions": {
+          "toggle": "Yipada {{aami}}",
+          "download": "Ṣe igbasilẹ Awoṣe Aisinipo",
+          "delete": "Pa Kaṣe Awoṣe Aisinipo kuro",
+          "reDownload": "Tun-Download Offline Awoṣe"
+        },
+        "files": {
+          "translation": "Itumọ",
+          "translation.ChDe": "Swiss-German to Ga-German"
+        }
+      }
+    }
   }
 }

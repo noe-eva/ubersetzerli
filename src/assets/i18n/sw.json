@@ -29,12 +29,6 @@
         "download": "Pakua Tafsiri",
         "copy": "Nakili Tafsiri",
         "share": "Shiriki Tafsiri"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "Inapakia muundo wa video wa binadamu",
-          "generating": "Inazalisha video"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "Badilisha lugha au eneo"
+  },
+  "settings": {
+    "title": "Mipangilio",
+    "close": "Funga mipangilio",
+    "support": {
+      "title": "Msaada",
+      "feedback": {
+        "title": "Maoni",
+        "send": "Tuma maoni"
+      },
+      "about": {
+        "title": "Kuhusu"
+      }
+    },
+    "voice": {
+      "title": "Sauti",
+      "input": {
+        "title": "Ingizo"
+      },
+      "output": {
+        "title": "Pato"
+      }
+    },
+    "other": {
+      "title": "Nyingine",
+      "offline": {
+        "title": "Nje ya mtandao",
+        "actions": {
+          "toggle": "Geuza {{lebo}}",
+          "download": "Pakua Muundo wa Nje ya Mtandao",
+          "delete": "Futa Akiba ya Muundo wa Nje ya Mtandao",
+          "reDownload": "Pakua Upya Muundo wa Nje ya Mtandao"
+        },
+        "files": {
+          "translation": "Tafsiri",
+          "translation.ChDe": "Kiswisi-Kijerumani hadi Kijerumani cha Juu"
+        }
+      }
+    }
   }
 }

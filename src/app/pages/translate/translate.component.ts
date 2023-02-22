@@ -1,7 +1,5 @@
 import {Component, HostBinding, OnInit} from '@angular/core';
-import {Select, Store} from '@ngxs/store';
-import {SetSetting} from '../../modules/settings/settings.actions';
-import {fromEvent, Observable} from 'rxjs';
+import {Store} from '@ngxs/store';
 import {BaseComponent} from '../../components/base/base.component';
 import {takeUntil, tap} from 'rxjs/operators';
 import {
@@ -12,7 +10,6 @@ import {
 import {TranslocoService} from '@ngneat/transloco';
 import {TranslationService} from '../../modules/translate/translate.service';
 import {Capacitor} from '@capacitor/core';
-import {Keyboard} from '@capacitor/keyboard';
 import {Meta, Title} from '@angular/platform-browser';
 
 @Component({
@@ -21,8 +18,8 @@ import {Meta, Title} from '@angular/platform-browser';
   styleUrls: ['./translate.component.scss'],
 })
 export class TranslateComponent extends BaseComponent implements OnInit {
-  @Select(state => state.translate.signedLanguage) signedLanguage$: Observable<string>;
-  @Select(state => state.translate.spokenToSigned) spokenToSigned$: Observable<boolean>;
+  spokenToSigned$ = this.store.select<boolean>(state => state.translate.spokenToSigned);
+  signedLanguage$ = this.store.select<string>(state => state.translate.signedLanguage);
 
   @HostBinding('class.spoken-to-signed') spokenToSigned: boolean;
   @HostBinding('class.keyboard-open') keyboardOpen: boolean;
@@ -66,7 +63,7 @@ export class TranslateComponent extends BaseComponent implements OnInit {
 
   async initKeyboardListeners() {
     if (Capacitor.isNativePlatform()) {
-      const {Keyboard} = await import('@capacitor/keyboard');
+      const {Keyboard} = await import(/* webpackChunkName: "@capacitor/keyboard" */ '@capacitor/keyboard');
       Keyboard.addListener('keyboardWillShow', () => (this.keyboardOpen = true));
       Keyboard.addListener('keyboardWillHide', () => (this.keyboardOpen = false));
     }

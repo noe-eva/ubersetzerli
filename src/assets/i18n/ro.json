@@ -29,12 +29,6 @@
         "download": "Descărcați traducerea",
         "copy": "Copiați traducerea",
         "share": "Partajați traducerea"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "Se încarcă modelul video uman",
-          "generating": "Generare video"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "Schimbați limba sau regiunea"
+  },
+  "settings": {
+    "title": "Setări",
+    "close": "Închideți setările",
+    "support": {
+      "title": "A sustine",
+      "feedback": {
+        "title": "Părere",
+        "send": "Trimite feedback"
+      },
+      "about": {
+        "title": "Despre"
+      }
+    },
+    "voice": {
+      "title": "Voce",
+      "input": {
+        "title": "Intrare"
+      },
+      "output": {
+        "title": "Ieșire"
+      }
+    },
+    "other": {
+      "title": "Alte",
+      "offline": {
+        "title": "Deconectat",
+        "actions": {
+          "toggle": "Comutați {{label}}",
+          "download": "Descărcați modelul offline",
+          "delete": "Ștergeți memoria cache a modelului offline",
+          "reDownload": "Re-descărcați modelul offline"
+        },
+        "files": {
+          "translation": "Traducere",
+          "translation.ChDe": "Elvețian-german la înaltă germană"
+        }
+      }
+    }
   }
 }

@@ -29,12 +29,6 @@
         "download": "Zazzage Fassara",
         "copy": "Kwafi Fassara",
         "share": "Raba Fassarar"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "Ana loda samfurin bidiyo na ɗan adam",
-          "generating": "Samar da bidiyo"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "Canja harshe ko yanki"
+  },
+  "settings": {
+    "title": "Saituna",
+    "close": "Rufe saituna",
+    "support": {
+      "title": "Taimako",
+      "feedback": {
+        "title": "Jawabin",
+        "send": "Aika martani"
+      },
+      "about": {
+        "title": "Game da"
+      }
+    },
+    "voice": {
+      "title": "Murya",
+      "input": {
+        "title": "Shigarwa"
+      },
+      "output": {
+        "title": "Fitowa"
+      }
+    },
+    "other": {
+      "title": "Sauran",
+      "offline": {
+        "title": "Offline",
+        "actions": {
+          "toggle": "Juyawa {{lamba}}",
+          "download": "Zazzage Model Offline",
+          "delete": "Share Cache Model Offline",
+          "reDownload": "Sake Sauke Samfurin Wajen Layi"
+        },
+        "files": {
+          "translation": "Fassara",
+          "translation.ChDe": "Swiss-Jamus zuwa High-Jamus"
+        }
+      }
+    }
   }
 }

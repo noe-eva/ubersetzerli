@@ -11,18 +11,12 @@ mat-tab-group {
 
 // Make language expansion menu show the correct icon
 button.menu-icon-button {
-  margin-top: 2px;
-
   mat-icon {
     transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  &[aria-expanded] mat-icon {
+  &[aria-expanded='true'] mat-icon {
     transform: rotateZ(-180deg);
-  }
-
-  @media (prefers-color-scheme: dark) {
-    color: map-get(mat.$dark-theme-foreground-palette, icon);
   }
 }
 
@@ -46,57 +40,18 @@ button.menu-language-button {
   }
 }
 
-::ng-deep {
-  .mat-tab-header {
-    border-bottom-width: 0;
-  }
+:host ::ng-deep div[role='tab'] {
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 0 16px;
+}
 
-  .mat-tab-label {
-    min-width: unset !important;
-    text-transform: uppercase;
-    padding: 0 16px !important;
-    opacity: 1 !important;
-    font-weight: 400 !important;
+::ng-deep .language-selector-menu {
+  max-height: calc(100vh - 64px - 68px - 48px) !important;
+}
 
-    @media (prefers-color-scheme: dark) {
-      color: map-get(mat.$dark-theme-foreground-palette, text);
-    }
-
-    &.mat-tab-label-active {
-      color: mat.get-color-from-palette($app-primary, 700);
-      transition: color 0.2s;
-    }
-  }
-
-  // Animation is quite slow
-  .mat-ink-bar {
-    transition: 250ms cubic-bezier(0.35, 0, 0.25, 1) !important;
-  }
-
-  // Mat tab has a bug that when changing tabs, the height of the body is at least 1 px
-  .mat-tab-body-wrapper {
-    display: none !important;
-  }
-
-  .language-selector-menu {
-    margin-top: 5px;
-  }
-
-  button.menu-language-button span.mat-button-wrapper {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-  }
-
-  @media #{$mat-lt-lg} {
-    .language-selector-menu {
-      max-width: none !important;
-      width: 100vw;
-
-      .mat-menu-content div {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, 130px);
-      }
-    }
-  }
+button.menu-language-button {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }

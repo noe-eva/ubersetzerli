@@ -5,6 +5,7 @@ import {Observable, of, switchMap} from 'rxjs';
 import {HttpClient} from '@angular/common/http';
 import {map} from 'rxjs/operators';
 import {PivotTranslationService} from './pivot-translation.service';
+import {IANASignedLanguages} from '../../core/helpers/iana/languages';
 
 const OBSOLETE_LANGUAGE_CODES = {
   iw: 'he',
@@ -175,7 +176,7 @@ export class TranslationService {
     }
     const cld3 = await this.ga.trace('cld', 'import', () => import(/* webpackChunkName: "cld3-asm" */ 'cld3-asm'));
     const cldFactory = await this.ga.trace('cld', 'load', () => cld3.loadModule());
-    this.cld = await this.ga.trace('cld', 'create', () => cldFactory.create(1, 500));
+    this.cld = await this.ga.trace('cld', 'create', () => cldFactory.create(1, 5000));
   }
 
   async detectSpokenLanguage(text: string): Promise<string> {

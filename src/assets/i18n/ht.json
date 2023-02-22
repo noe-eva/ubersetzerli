@@ -29,12 +29,6 @@
         "download": "Telechaje Tradiksyon",
         "copy": "Kopi Tradiksyon",
         "share": "Pataje tradiksyon"
-      },
-      "progress-bars": {
-        "human-pose-viewer": {
-          "loading": "Chaje modèl videyo imen",
-          "generating": "Jenere videyo"
-        }
       }
     },
     "dialects": {
@@ -119,5 +113,44 @@
   },
   "language-selector": {
     "label": "Chanje lang oswa rejyon an"
+  },
+  "settings": {
+    "title": "Anviwònman",
+    "close": "Fèmen anviwònman yo",
+    "support": {
+      "title": "Sipò",
+      "feedback": {
+        "title": "Feedback",
+        "send": "Voye fidbak"
+      },
+      "about": {
+        "title": "Konsènan"
+      }
+    },
+    "voice": {
+      "title": "Vwa",
+      "input": {
+        "title": "Antre"
+      },
+      "output": {
+        "title": "Sòti"
+      }
+    },
+    "other": {
+      "title": "Lòt",
+      "offline": {
+        "title": "Offline",
+        "actions": {
+          "toggle": "Aktivite {{label}}",
+          "download": "Telechaje Offline Modèl",
+          "delete": "Purge Offline Modèl Cache",
+          "reDownload": "Re-Telechaje Offline Modèl"
+        },
+        "files": {
+          "translation": "Tradiksyon",
+          "translation.ChDe": "Swis-Alman pou High-Alman"
+        }
+      }
+    }
   }
 }
