@@ -77,8 +77,14 @@ export class MapComponent extends BaseComponent implements OnInit {
     };
 
     const style = feature => {
+      console.log('feature', feature.id);
+      const fillColor = ['VD', 'NE', 'GE', 'JU'].includes(feature.id)
+        ? 'green'
+        : feature.id === 'TI'
+        ? 'orange'
+        : '#E31A1C';
       return modifyStyle(feature, {
-        fillColor: '#E31A1C',
+        fillColor,
         weight: 2,
         opacity: 1,
         color: 'white',
